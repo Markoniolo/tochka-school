@@ -1,67 +1,81 @@
-// Вызов функции при загрузке страницы и изменении размера окна
+// воспроизведение видео video-wrapper по кнопке play
 document.addEventListener('DOMContentLoaded', (event) => {
-    const poster = document.querySelector('.video-poster');
-    const playerButton = document.querySelector('.player-button');
-    const iframe = document.querySelector('.video-iframe');
+    const playerButtonBox = document.querySelector('.player-button-box');
+    const videoPlayer = document.querySelector('.video-player');
+    if (!playerButtonBox || !videoPlayer) return
 
-    var courseWatch_count = 0;
-
-    if (poster && playerButton && iframe) {
-        const playVideo = () => {
-            poster.style.display = 'none';
-            playerButton.style.display = 'none';
-            iframe.style.display = 'block';
-            //   iframe.src += "&autoplay=1"; // Автозапуск видео
-            iframe.src = iframe.getAttribute('data-src') + "&autoplay=1&muted=1&t=0"; // Автозапуск видео
-
-            if(iframe.classList.contains("course_watch")){
-                var handleCourseWatch = function( r_iframe ) {
-                    var handler = function(event) {
-                        var message = JSON.parse(event.data);
-
-                        // console.log(message.type); // some type
-
-                        if(courseWatch_count == 0){
-                            // console.log(message);
-                            switch (message.type) {
-                                case 'player:ready':
-                                    // console.log(message);
-                                    r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:play',data: {}}), '*');
-                                    r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:unMute',data: {time: 0}}), '*');
-                                    r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:setCurrentTime',data: {time: 0}}), '*');
-                                case 'player:rollState':
-                                    // console.log(message);
-                                    if(message.data.state == 'play'){
-                                        r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:pause',data: {}}), '*');
-                                    }
-                                    if(message.data.state == 'complete' ){
-                                        r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:setCurrentTime',data: {time: 0}}), '*');
-                                        r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:play',data: {}}), '*');
-                                        courseWatch_count++;
-                                        //window.removeEventListener("message", handleCourseWatch);
-                                        // console.log(message.data.state);
-                                    }
-                                // break;
-                            };
-                        }else{
-                            window.removeEventListener("message", handleCourseWatch);
-                        }
-                    };
-                    return handler;
-                };
-
-                var r_iframe = document.querySelector('.course_watch');
-                // console.log(r_iframe);
-                window.addEventListener('message', handleCourseWatch(r_iframe));
-
-
-            }
-        };
-
-        poster.addEventListener('click', playVideo);
-        playerButton.addEventListener('click', playVideo);
+    playerButtonBox.addEventListener('click', playVideo, { once: true })
+    function playVideo () {
+        videoPlayer.play()
+        playerButtonBox.style.display = 'none'
+        videoPlayer.setAttribute('controls', 'true')
     }
-});
+})
+
+// Вызов функции при загрузке страницы и изменении размера окна
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     const poster = document.querySelector('.video-poster');
+//     const playerButton = document.querySelector('.player-button');
+//     const iframe = document.querySelector('.video-iframe');
+//
+//     var courseWatch_count = 0;
+//
+//     if (poster && playerButton && iframe) {
+//         const playVideo = () => {
+//             poster.style.display = 'none';
+//             playerButton.style.display = 'none';
+//             iframe.style.display = 'block';
+//             //   iframe.src += "&autoplay=1"; // Автозапуск видео
+//             iframe.src = iframe.getAttribute('data-src') + "&autoplay=1&muted=1&t=0"; // Автозапуск видео
+//
+//             if(iframe.classList.contains("course_watch")){
+//                 var handleCourseWatch = function( r_iframe ) {
+//                     var handler = function(event) {
+//                         var message = JSON.parse(event.data);
+//
+//                         // console.log(message.type); // some type
+//
+//                         if(courseWatch_count == 0){
+//                             // console.log(message);
+//                             switch (message.type) {
+//                                 case 'player:ready':
+//                                     // console.log(message);
+//                                     r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:play',data: {}}), '*');
+//                                     r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:unMute',data: {time: 0}}), '*');
+//                                     r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:setCurrentTime',data: {time: 0}}), '*');
+//                                 case 'player:rollState':
+//                                     // console.log(message);
+//                                     if(message.data.state == 'play'){
+//                                         r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:pause',data: {}}), '*');
+//                                     }
+//                                     if(message.data.state == 'complete' ){
+//                                         r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:setCurrentTime',data: {time: 0}}), '*');
+//                                         r_iframe.contentWindow.postMessage(JSON.stringify({type: 'player:play',data: {}}), '*');
+//                                         courseWatch_count++;
+//                                         //window.removeEventListener("message", handleCourseWatch);
+//                                         // console.log(message.data.state);
+//                                     }
+//                                 // break;
+//                             };
+//                         }else{
+//                             window.removeEventListener("message", handleCourseWatch);
+//                         }
+//                     };
+//                     return handler;
+//                 };
+//
+//                 var r_iframe = document.querySelector('.course_watch');
+//                 // console.log(r_iframe);
+//                 window.addEventListener('message', handleCourseWatch(r_iframe));
+//
+//
+//             }
+//         };
+//
+//         poster.addEventListener('click', playVideo);
+//         playerButton.addEventListener('click', playVideo);
+//     }
+// });
 
 //скрипт для шапки
 $(function(){

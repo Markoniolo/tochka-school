@@ -3088,29 +3088,29 @@ Styles for Page error
     position: relative;
 }
 
-.video-poster {
+.video-player {
     width: 100%;
     height: 100%;
-    cursor: pointer;
 }
 
-.video-iframe {
-    display: none;
-    width: 100%;
-    height: 100%;
+.player-button-box {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .player-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 99px;
     height: 99px;
     background: url('../img/play.svg') no-repeat center center;
     background-size: contain;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    cursor: pointer;
 }
 
 .video-wrapper iframe {height: 350px;}
