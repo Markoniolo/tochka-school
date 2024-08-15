@@ -11,6 +11,9 @@
       h2.informer__title.title Никогда не оставим с предметом 1 на 1
       .informer__box
         picture.informer__picture
+          source(srcset=`${staticImg('informer/informer-1_335.webp')} 1x, ${staticImg('informer/informer-1_670.webp')} 2x` type='image/webp' media="(max-width: 1200px)")
+          source(srcset=staticImg('informer/informer-1.webp') type='image/webp')
+          source(srcset=`${staticImg('informer/informer-1_335.png')} 1x, ${staticImg('informer/informer-1_670.png')} 2x` media="(max-width: 1200px)")
           img.informer__image(src=staticImg('informer/informer-1.png') alt='')
         ul.informer__list
           each item in informerList
