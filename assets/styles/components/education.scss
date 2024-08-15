@@ -1,0 +1,129 @@
+.education {
+  padding: 77px 0 64px;
+  background: #f6faff;
+  margin-bottom: 70px;
+  @include media(md) {
+    padding: 40px 0;
+    margin-bottom: 40px;
+  }
+}
+
+.education_blue {
+  @include bgImg('education/education-bg.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f6faff;
+  @include media(lg) {
+    background-image: none;
+  }
+}
+
+.education__title {
+  margin-bottom: 56px;
+  @include media(md) {
+    margin-bottom: 32px;
+  }
+}
+
+.education__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px 0;
+  justify-content: space-between;
+  padding: 0;
+  @include media(md) {
+    gap: 24px 0;
+  }
+}
+
+.education__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e3ebfe;
+  border-radius: 10px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  width: calc(50% - 46px);
+  @include media(lg) {
+    width: calc(50% - 20px);
+  }
+  @include media(md) {
+    width: 100%;
+  }
+  &:last-of-type {
+    margin: 0 auto;
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: -26px;
+      width: 37px;
+      height: 7px;
+      transform: rotate(90deg);
+      @include bgIcon('education/education-line.svg');
+      @include media(md) {
+        content: none;
+      }
+    }
+    &::after {
+      left: 135px;
+    }
+    &::before {
+      right: 135px;
+    }
+  }
+  &:nth-child(1), &:nth-child(2) {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -26px;
+      left: calc(50% - 3px);
+      width: 37px;
+      height: 7px;
+      transform: rotate(90deg);
+      @include bgIcon('education/education-line.svg');
+      @include media(md) {
+        content: none;
+      }
+    }
+  }
+  &:nth-child(n):not(:first-child)::before {
+    @include media(md) {
+      content: '';
+      position: absolute;
+      top: -15px;
+      bottom: unset;
+      left: calc(50% - 2px);
+      width: 20px;
+      height: 4px;
+      transform: rotate(90deg);
+      @include bgIcon('education/education-line_mob.svg');
+    }
+  }
+}
+
+.education__icon {
+  flex-shrink: 0;
+  width: 160px;
+  height: 115px;
+  @include media(sm) {
+    width: 80px;
+    height: 57px;
+  }
+}
+
+.education__text {
+  padding: 16px 18px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 144%;
+  @include media(sm) {
+    font-size: 14px;
+    padding: 16px 18px 16px 8px;
+  }
+  @include media(xxs) {
+    font-size: 12px;
+  }
+}

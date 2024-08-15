@@ -1,0 +1,80 @@
+h1 {
+  color: #222;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #222;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.list li {
+  display: flex;
+  gap: 20px;
+}
+
+.list li p {
+  margin-bottom: 0;
+}
+
+.list li p span {
+  color: #fa6d6d;
+}
+
+.list li:before {
+  content: "";
+  background: url(../img/check.svg) center / cover no-repeat;
+  width: 29px;
+  height: 29px;
+  min-width: 29px;
+}
+
+.list li.not:before {
+  background: url(../img/check-not.svg) center / cover no-repeat;
+}
+
+.green-list .list li:before,
+.greens .list li:before {
+  background: url(../img/check-green2.svg) center / cover no-repeat;
+}
+
+.caption {
+  color: #222;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 136%;
+  @include media(md) {
+    font-size: 32px;
+    line-height: 136%;
+  }
+  @include media(sm) {
+    font-size: 20px;
+    line-height: 122%;
+  }
+}
+
+.title {
+  color: #222;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 122%;
+  @include media(md) {
+    font-size: 30px;
+  }
+  @include media(sm) {
+    font-size: 27px;
+  }
+}

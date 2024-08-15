@@ -1,0 +1,18 @@
+-
+  const informerList = [
+    'Каждый предмет ребёнку будет помогать усваивать тьютор. Тьютор - профессиональный преподаватель по выбранному предмету.',
+    'Тьютор проверит домашнюю работу, разберет вместе с ребенком ошибки, поможет их исправить и всегда будет на связи.',
+    'С тьютором невозможна ситуация «я не понял тему»',
+  ]
+
+.informer
+  .container
+    .informer__area
+      h2.informer__title.title Никогда не оставим с предметом 1 на 1
+      .informer__box
+        picture.informer__picture
+          img.informer__image(src=staticImg('informer/informer-1.png') alt='')
+        ul.informer__list
+          each item in informerList
+            li= item
+

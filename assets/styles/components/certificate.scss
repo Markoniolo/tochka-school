@@ -1,0 +1,123 @@
+.certificate {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  @include media(md) {
+    margin-bottom: 49px;
+  }
+  @include media(sm) {
+    margin-bottom: 40px;
+  }
+}
+
+.certificate__area {
+  @include media(sm) {
+    border: 1px solid #e3ebfe;
+    border-radius: 10px;
+    box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.09);
+    background: #eef3ff;
+    padding: 30px 13px 20px;
+  }
+}
+
+.certificate__title {
+  margin-bottom: 50px;
+  text-align: center;
+  @include media(lg) {
+    margin-bottom: 30px;
+  }
+  @include media(sm) {
+    margin-bottom: 21px;
+  }
+}
+
+.certificate__box {
+  position: relative;
+  border: 1px solid #e3ebfe;
+  border-radius: 10px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.09);
+  background: #eef3ff;
+  min-height: 352px;
+  padding: 60px 111px;
+  display: flex;
+  align-items: center;
+  @include media(lg) {
+    min-height: 217px;
+    padding: 30px 16px 30px 266px;
+  }
+  @include media(sm) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    border: none;
+  }
+}
+
+.certificate__picture {
+  position: absolute;
+  z-index: 1;
+  top: -31px;
+  left: 12px;
+  width: 403px;
+  height: 438px;
+  @include media(lg) {
+    top: 11px;
+    left: 39px;
+    width: 197px;
+    height: 214px;
+  }
+  @include media(sm) {
+    position: static;
+    width: 257px;
+    height: 280px;
+  }
+  &::before {
+    content: '';
+    width: 385px;
+    height: 239px;
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    left: 18px;
+    transform: rotate(-6.9deg);
+    @include bgIcon('certificate/certificate-decor.svg');
+    @include media(lg) {
+      width: 188px;
+      height: 117px;
+      top: 28px;
+      left: 6px;
+    }
+    @include media(sm) {
+      content: none;
+    }
+  }
+}
+
+.certificate__image {
+  width: 100%;
+  height: 100%;
+}
+
+.certificate__text {
+  margin-left: auto;
+  max-width: 760px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 154%;
+  @include media(lg) {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 157%;
+  }
+  @include media(sm) {
+    font-weight: 500;
+    line-height: 144%;
+    text-align: center;
+  }
+  a {
+    text-decoration: underline;
+    color: #000000;
+  }
+}

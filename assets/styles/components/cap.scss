@@ -1,0 +1,139 @@
+.cap {
+  margin-bottom: 35px;
+  @include media(sm) {
+    margin-bottom: 25px;
+  }
+}
+
+.cap_blue {
+  .cap__area {
+    background: radial-gradient(87.15% 85.67% at 8.52% 18%, rgb(222, 237, 255) 0%, rgb(199, 224, 255) 100%);
+    @include media(sm) {
+      background: none;
+    }
+  }
+}
+
+.cap__area {
+  padding: 65px 69px;
+  position: relative;
+  min-height: 468px;
+  border-radius: 16px;
+  @include media(md) {
+    overflow: hidden;
+    padding: 34px 32px;
+    min-height: 417px;
+  }
+  @include media(sm) {
+    min-height: auto;
+    padding: 0;
+    position: static;
+    border-radius: 0;
+  }
+}
+
+.cap__decor {
+  @include media(md) {
+    display: none;
+  }
+}
+
+.cap__decor_external-1 {
+  position: absolute;
+  top: 67px;
+  right: 571px;
+  transform: rotate(45deg);
+}
+
+.cap__decor_external-2 {
+  position: absolute;
+  bottom: 80px;
+  right: 650px;
+  transform: rotate(-32deg);
+}
+
+.cap__box {
+  max-width: 395px;
+  @include media(sm) {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 15px;
+    background: radial-gradient(87.15% 85.67% at 8.52% 18%, rgb(222, 237, 255) 0%, rgb(199, 224, 255) 100%);
+    padding: 20px 18px;
+    border-radius: 10px;
+    min-height: 192px;
+  }
+}
+
+.cap__tag {
+  margin-bottom: 22px;
+}
+
+.cap__title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 136%;
+  text-align: left;
+  @include media(md) {
+    margin-bottom: 31px;
+    font-size: 32px;
+    line-height: 136%;
+  }
+  @include media(sm) {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 122%;
+  }
+}
+
+.cap__picture {
+  position: absolute;
+  top: 28px;
+  right: 68px;
+  @include media(md) {
+    top: unset;
+    bottom: -31px;
+    right: -70px;
+  }
+  @include media(sm) {
+    bottom: -15px;
+    right: -42px;
+  }
+}
+
+.cap__image {
+  width: 518px;
+  height: 416px;
+  @include media(md) {
+    width: 504px;
+    height: 406px;
+  }
+  @include media(sm) {
+    width: 278px;
+    height: 171px;
+  }
+}
+
+.cap__text {
+  margin-bottom: 77px;
+  max-width: 395px;
+  font-size: 15px;
+  line-height: 144%;
+  @include media(md) {
+    max-width: 355px;
+    margin-bottom: 46px;
+  }
+  @include media(sm) {
+    max-width: 100%;
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+}
+
+.cap__button {
+  @include media(sm) {
+    width: 100%;
+  }
+}
