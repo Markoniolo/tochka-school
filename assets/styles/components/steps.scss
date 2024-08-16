@@ -21,6 +21,12 @@
   .steps__box {
     border: 1px solid #e3ebfe;
   }
+  .steps__form {
+    border: 1px solid #e3ebfe;
+  }
+  .steps__form-box {
+    background: #f6faff;
+  }
 }
 
 .steps_green {
@@ -36,6 +42,12 @@
   }
   .steps__box {
     border: 1px solid #e8f9e9;
+  }
+  .steps__form {
+    border: 1px solid #e8f9e9;
+  }
+  .steps__form-box {
+    background: #f7fdf7;
   }
 }
 
@@ -143,15 +155,16 @@
 }
 
 .steps__doc {
+  display: none;
   position: relative;
   margin-top: 114px;
   border-radius: 16px;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
   padding: 30px 341px 30px 73px;
-  display: flex;
   align-items: center;
   @include media(lg) {
+    display: flex;
     padding: 35px 173px 35px 35px;
     margin-top: 20px;
   }
@@ -222,4 +235,84 @@
 .steps__doc-image {
   width: 100%;
   height: 100%;
+}
+
+.steps__form {
+  position: relative;
+  margin-top: 54px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  min-height: 732px;
+  overflow: hidden;
+  @include media(lg) {
+    display: none;
+  }
+}
+
+.steps__form-title {
+  max-width: 725px;
+  margin: 0 auto 50px;
+  text-align: center;
+  line-height: 142%;
+}
+
+.steps__form-picture {
+  position: absolute;
+  bottom: -170px;
+  left: 3px;
+  transform: rotate(38deg);
+  width: 623px;
+  height: 720px;
+}
+
+.steps__form-image {
+  width: 100%;
+  height: 100%;
+}
+
+.steps__form-box {
+  padding: 45px;
+  width: 563px;
+  margin-left: auto;
+  border: 1px solid #e3ebfe;
+  border-radius: 11px;
+  background: #f6faff;
+}
+
+.steps__form-input {
+  background-color: transparent;
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+    @include media(sm) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.steps__form-button {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  padding: 17px 28px;
+  font-size: 18px;
+  @include media(sm) {
+    margin-top: 20px;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.steps__form-note {
+  font-size: 15px;
+  line-height: 144%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+  max-width: 370px;
+  margin: 30px auto 0;
+  @include media(sm) {
+    margin: 15px auto 0;
+  }
 }
