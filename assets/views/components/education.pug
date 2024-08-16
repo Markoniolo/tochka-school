@@ -7,11 +7,19 @@
     'Выполняете домашние работы, контрольные работы и проходите аттестацию онлайн',
   ]
 
-.education.education_blue
-  .container
-    h2.education__title.title Как проходит обучение на экстернате
-    ul.education__list
-      each item, index in educationList
-        li.education__item
-          img.education__icon(src=staticImg(`education/education-icon-${index+1}.svg`) alt='')
-          .education__text= item
+mixin education(mod)
+  .education(class = mod ? `education_${mod}` : false)
+    .education__bg
+      svg(width='1920' height='678' viewbox='0 0 1920 678' fill='none' xmlns='http://www.w3.org/2000/svg')
+        rect.rect(width='1920' height='678' fill='#F6FAFF')
+        circle.circle-1(cx='1681' cy='102' r='24' fill='#E3EBFE')
+        circle.circle-2(cx='225.074' cy='586.069' r='5' transform='rotate(-133.483 225.074 586.069)' fill='#87A3E3')
+        circle.circle-3(cx='1565.07' cy='138.069' r='5' transform='rotate(-133.483 1565.07 138.069)' fill='#87A3E3')
+        circle.circle-4(cx='182.274' cy='522.274' r='20' transform='rotate(-133.483 182.274 522.274)' fill='#E3EBFE')
+    .container
+      h2.education__title.title Как проходит обучение на экстернате
+      ul.education__list
+        each item, index in educationList
+          li.education__item
+            img.education__icon(src=staticImg(`education/education-icon-${index+1}_${mod}.svg`) alt='')
+            .education__text= item

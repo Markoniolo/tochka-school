@@ -5,6 +5,20 @@
   }
 }
 
+.program_blue {
+  .program__list li {
+    color: #5e7ea5;
+    background: #e0ecfb;
+  }
+}
+
+.program_green {
+  .program__list li {
+    background: #e7f9e8;
+    color: #75af7a;
+  }
+}
+
 .program__title {
   margin-bottom: 30px;
   @include media(md) {
@@ -52,8 +66,6 @@
     font-weight: 600;
     font-size: 15px;
     line-height: 144%;
-    color: #5e7ea5;
-    background: #e0ecfb;
     @include media(sm) {
       font-size: 9px;
       padding: 8px 10px;

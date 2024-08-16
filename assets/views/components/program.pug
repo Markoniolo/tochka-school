@@ -10,10 +10,11 @@
     'Физическая культура',
   ]
 
-.program
-  .container
-    h2.program__title.title!= 'Программа <span>1 класса</span>'
-    .program__text Составлена на основе государственного образовательного стандарта. Все предметы — как в обычной школе.
-    ul.program__list
-      each item in programList
-        li= item
+mixin program(mod)
+  .program(class = mod ? mod : false)
+    .container
+      h2.program__title.title!= 'Программа <span>1 класса</span>'
+      .program__text Составлена на основе государственного образовательного стандарта. Все предметы — как в обычной школе.
+      ul.program__list
+        each item in programList
+          li= item

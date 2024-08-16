@@ -1,73 +1,74 @@
-section#Reviews.reviews.blue
-  .container
-    .d-flex.align-items-center.justify-content-center.reviews-title
-      h2 Говорят ученики и родители
-      .reviews-btn
-        .swiper-button-prev.review-prev
-        .swiper-button-next.review-next
-    .swiper.reviewsSwiper
-      .swiper-wrapper
-        .swiper-slide
-          .review-name.d-flex.align-items-center
-            img(src='assets/img/user1.png' alt='')
-            span Пушкарева Анна
-          .review-content-block
-            .review-content
-              p На обучение записались, чтобы подтянуть геометрию, алгебру, выйти на “пятерки” по геометрии. Своих целей достигли. Улучшились оценки, по геометрии вышли на “5”.
-              p Темы на курсе разбираем раньше, чем в школе. Соответственно, ребёнок уже готов к изучению новой темы.
-          .review-footer
-            p Математика, 8 класс
-            span г. Москва
-        .swiper-slide
-          .review-name.d-flex.align-items-center
-            img(src='assets/img/user2.png' alt='')
-            span Рыжкова Вера
-          .review-content-block
-            .review-content
-              p «В течение полугода изменились оценки и понимание предметов. Кроме этого, дочь начала.»
-            .review-video
-              .video-wrapper
-                .player-button-box
-                  .player-button
-                video.video-player(src='assets/video/babenko-russian-language.mp4' poster='assets/img/watch.jpg' preload='metadata')
-          .review-footer
-            p Математика, русский язык, 8 класс
-            span г. Краснодар
-        .swiper-slide
-          .review-name.d-flex.align-items-center
-            img(src='assets/img/user3.png' alt='')
-            span Стрункина Анна
-          .review-content-block
-            .review-content
-              p В течение полугода изменились оценки и понимание предметов. Кроме этого, дочь начала понимать математику и быстрее считать, оценки выросли. Очень радуется, что соображает в классе быстрее всех и решает задания правильно. Планирует и дальше заниматься, хотя и устаёт.
-              p Отношение тьютора и учителя замечательное, они подсказывают и объясняют материал по несколько раз. Меня всё устраивает, а главное ребёнок начал трудиться и понимать. Спасибо большое за такую нелёгкую работу. Желаю, чтобы школа росла и развивалась! Я очень благодарна за ваш труд, который вы вложили в образование моей дочки.
-          .review-footer
-            p Математика, русский язык, 5 класс
-            span г. Балашиха
-        .swiper-slide
-          .review-name.d-flex.align-items-center
-            img(src='assets/img/user4.png' alt='')
-            span Рыжкова Вера
-          .review-content-block
-            .review-content
-              p «В течение полугода изменились оценки и понимание предметов. Кроме этого, дочь начала.»
-            .review-video
-              .video-wrapper
-                .player-button-box
-                  .player-button
-                video.video-player(src='assets/video/babenko-russian-language.mp4' poster='assets/img/watch.jpg' preload='metadata')
-          .review-footer
-            p Математика, русский язык, 5 класс
-            span г. Балашиха
-        .swiper-slide
-          .review-name.d-flex.align-items-center
-            img(src='assets/img/user5.png' alt='')
-            span Зозуля Георгий
-          .review-content-block
-            .review-content
-              p Мой сын совсем не любил математику. Да и учитель плохо объясняет. У всего класса сплошные “2” и “3”. Странно, почему учителя на это смотрят сквозь пальцы.
-              p Когда мы пришли в вашу школу - всё изменилось. Сын стал понимать предмет. Сейчас знает на твёрдую четвёрку. Несмотря на то, что темы в «»Точке знаний» иногда отстают от школьной программы ...
-          .review-footer
-            p Математика, русский язык, 5 класс
-            span г. Балашиха
-      .swiper-pagination
+mixin reviews(mod)
+  section#Reviews.reviews(class = mod ? mod : false)
+    .container
+      .d-flex.align-items-center.justify-content-center.reviews-title
+        h2 Говорят ученики и родители
+        .reviews-btn
+          .swiper-button-prev.review-prev
+          .swiper-button-next.review-next
+      .swiper.reviewsSwiper
+        .swiper-wrapper
+          .swiper-slide
+            .review-name.d-flex.align-items-center
+              img(src='assets/img/user1.png' alt='')
+              span Пушкарева Анна
+            .review-content-block
+              .review-content
+                p На обучение записались, чтобы подтянуть геометрию, алгебру, выйти на “пятерки” по геометрии. Своих целей достигли. Улучшились оценки, по геометрии вышли на “5”.
+                p Темы на курсе разбираем раньше, чем в школе. Соответственно, ребёнок уже готов к изучению новой темы.
+            .review-footer
+              p Математика, 8 класс
+              span г. Москва
+          .swiper-slide
+            .review-name.d-flex.align-items-center
+              img(src='assets/img/user2.png' alt='')
+              span Рыжкова Вера
+            .review-content-block
+              .review-content
+                p «В течение полугода изменились оценки и понимание предметов. Кроме этого, дочь начала.»
+              .review-video
+                .video-wrapper
+                  .player-button-box
+                    .player-button
+                  video.video-player(src='assets/video/babenko-russian-language.mp4' poster='assets/img/watch.jpg' preload='metadata')
+            .review-footer
+              p Математика, русский язык, 8 класс
+              span г. Краснодар
+          .swiper-slide
+            .review-name.d-flex.align-items-center
+              img(src='assets/img/user3.png' alt='')
+              span Стрункина Анна
+            .review-content-block
+              .review-content
+                p В течение полугода изменились оценки и понимание предметов. Кроме этого, дочь начала понимать математику и быстрее считать, оценки выросли. Очень радуется, что соображает в классе быстрее всех и решает задания правильно. Планирует и дальше заниматься, хотя и устаёт.
+                p Отношение тьютора и учителя замечательное, они подсказывают и объясняют материал по несколько раз. Меня всё устраивает, а главное ребёнок начал трудиться и понимать. Спасибо большое за такую нелёгкую работу. Желаю, чтобы школа росла и развивалась! Я очень благодарна за ваш труд, который вы вложили в образование моей дочки.
+            .review-footer
+              p Математика, русский язык, 5 класс
+              span г. Балашиха
+          .swiper-slide
+            .review-name.d-flex.align-items-center
+              img(src='assets/img/user4.png' alt='')
+              span Рыжкова Вера
+            .review-content-block
+              .review-content
+                p «В течение полугода изменились оценки и понимание предметов. Кроме этого, дочь начала.»
+              .review-video
+                .video-wrapper
+                  .player-button-box
+                    .player-button
+                  video.video-player(src='assets/video/babenko-russian-language.mp4' poster='assets/img/watch.jpg' preload='metadata')
+            .review-footer
+              p Математика, русский язык, 5 класс
+              span г. Балашиха
+          .swiper-slide
+            .review-name.d-flex.align-items-center
+              img(src='assets/img/user5.png' alt='')
+              span Зозуля Георгий
+            .review-content-block
+              .review-content
+                p Мой сын совсем не любил математику. Да и учитель плохо объясняет. У всего класса сплошные “2” и “3”. Странно, почему учителя на это смотрят сквозь пальцы.
+                p Когда мы пришли в вашу школу - всё изменилось. Сын стал понимать предмет. Сейчас знает на твёрдую четвёрку. Несмотря на то, что темы в «»Точке знаний» иногда отстают от школьной программы ...
+            .review-footer
+              p Математика, русский язык, 5 класс
+              span г. Балашиха
+        .swiper-pagination

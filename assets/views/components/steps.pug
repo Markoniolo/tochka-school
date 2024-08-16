@@ -6,19 +6,27 @@
     'Начните учиться на экстернате «Точки Знаний» и проходите аттестацию онлайн.',
   ]
 
-section.steps.steps_blue
-  .container
-    h2.steps__title.title 4 шага к поступлению на экстернат
-    .steps__area
-      each item, index in stepsList
-        .steps__box
-          .steps__number
-            img.steps__number-icon(src=staticImg(`study-number${index+1}.svg`) alt='')
-          .steps__inner
-            p= item
-    .steps__doc
-      .steps__doc-title Скачивайте руководство по переходу на экстернат с «Точкой Знаний»
-      picture.steps__doc-picture
-        source(srcset=staticImg('steps/steps-doc.webp') type='image/webp')
-        img.steps__doc-image(src=staticImg('steps/steps-doc.png') alt='')
-      a.steps__doc-button.btn-warning(href='#modal-external' data-fancybox) Скачать
+mixin steps(mod)
+  section.steps(class = mod ? mod : false)
+    .steps__bg
+      svg(width='1920' height='785' viewbox='0 0 1920 785' fill='none' xmlns='http://www.w3.org/2000/svg')
+        rect.rect(width='1920' height='785' fill='#F6FAFF')
+        circle.circle-1(cx='1755' cy='60' r='24' fill='#E3EBFE')
+        circle.circle-2(cx='227.074' cy='586.069' r='5' transform='rotate(-133.483 227.074 586.069)' fill='#87A3E3')
+        circle.circle-3(cx='1639.07' cy='96.0686' r='5' transform='rotate(-133.483 1639.07 96.0686)' fill='#87A3E3')
+        circle.circle-4(cx='184.274' cy='522.274' r='20' transform='rotate(-133.483 184.274 522.274)' fill='#E3EBFE')
+    .container
+      h2.steps__title.title 4 шага к поступлению на экстернат
+      .steps__area
+        each item, index in stepsList
+          .steps__box
+            .steps__number
+              img.steps__number-icon(src=staticImg(`study-number${index+1}.svg`) alt='')
+            .steps__inner
+              p= item
+      .steps__doc
+        .steps__doc-title Скачивайте руководство по переходу на экстернат с «Точкой Знаний»
+        picture.steps__doc-picture
+          source(srcset=staticImg('steps/steps-doc.webp') type='image/webp')
+          img.steps__doc-image(src=staticImg('steps/steps-doc.png') alt='')
+        a.steps__doc-button.btn-warning(href='#modal-external' data-fancybox) Скачать

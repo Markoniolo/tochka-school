@@ -1,10 +1,47 @@
 .lectures {
   padding: 70px 0;
-  background: #f6faff;
   margin-bottom: 70px;
   @include media(md) {
     padding: 40px 0;
     margin-bottom: 40px;
+  }
+}
+
+.lectures_blue {
+  background: #f6faff;
+  .lectures__tags li {
+    color: #91add0;
+    background: #e8f2ff;
+  }
+  .lectures__list li {
+    &::before {
+      @include bgIcon('icons/check_blue.svg');
+    }
+  }
+  .lectures__nav {
+    background-color: #c7e0ff;
+  }
+  .lectures__box, .lectures__picture {
+    border: 1px solid #e3ebfe;
+  }
+}
+
+.lectures_green {
+  background: #e7f9e8;
+  .lectures__tags li {
+    background: #d6f1d9;
+    color: #75af7a;
+  }
+  .lectures__list li {
+    &::before {
+      @include bgIcon('icons/check_green.svg');
+    }
+  }
+  .lectures__nav {
+    background-color: #75AF7A;
+  }
+  .lectures__box, .lectures__picture {
+    border: 1px solid #e8f9e9;
   }
 }
 
@@ -58,7 +95,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c7e0ff;
   @include media(md) {
     width: 48px;
     height: 48px;
@@ -127,7 +163,6 @@
   margin-right: 27px;
   flex-shrink: 0;
   background-color: #fff;
-  border: 1px solid #e3ebfe;
   border-radius: 10px;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
   @include media(md) {
@@ -157,7 +192,6 @@
   padding: 40px 40px 45px;
   border-radius: 10px;
   background-color: #fff;
-  border: 1px solid #e3ebfe;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
   @include media(md) {
     padding: 25px 15px 28px;
@@ -201,7 +235,6 @@
       left: 0;
       width: 29px;
       height: 29px;
-      @include bgIcon('check.svg');
       @include media(md) {
         top: 0;
         width: 19px;
@@ -236,8 +269,6 @@
     font-weight: 600;
     font-size: 13px;
     line-height: 144%;
-    color: #91add0;
-    background: #e8f2ff;
     border-radius: 13px;
     @include media(md) {
       border-radius: 5px;

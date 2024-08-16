@@ -6,12 +6,34 @@
   }
 }
 
+.consult_blue {
+  .consult__area {
+    background: #eef3ff;
+    border: 1px solid #e3ebfe;
+  }
+  .consult__image-box {
+    &::after {
+      background: url(../img/licence/licence-bg_blue.svg) center / contain no-repeat;
+    }
+  }
+}
+
+.consult_green {
+  .consult__area {
+    background: #e7f9e8;
+    border: 1px solid #e8f9e9;
+  }
+  .consult__image-box {
+    &::after {
+      background: url(../img/licence/licence-bg_green.svg) center / contain no-repeat;
+    }
+  }
+}
+
 .consult__area {
   position: relative;
   min-height: 352px;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.09);
-  background: #eef3ff;
-  border: 1px solid #e3ebfe;
   border-radius: 10px;
   padding: 45px;
   @include media(md) {
@@ -95,10 +117,9 @@
 
   &::after {
     content: '';
-    background: url(../img/licence-bg.svg) center / contain no-repeat;
     position: absolute;
     z-index: -1;
-    bottom: 45px;
+    bottom: 35px;
     left: -115px;
     width: 599px;
     height: 341px;

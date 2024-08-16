@@ -7,27 +7,28 @@
     'Педагогический стаж 10 лет.',
   ]
 
-.lectures
-  .container
-    h2.lectures__title.title Кто будет вести уроки&nbsp;для&nbsp;Вас
-    .lectures__area
-      .lectures__slider
-        .lectures__wrapper.swiper-wrapper
-          each slide in [1,2,3,4,5]
-            .lectures__slide.swiper-slide
-              .lectures__inner
-                picture.lectures__picture
-                  img.lectures__image(src=staticImg('lectures/lectures-1.png') alt='')
-                .lectures__box
-                  .lectures__name Бабенко Анна Юрьевна
-                  ul.lectures__list
-                    each item in lecturesList
-                      li= item
-                  ul.lectures__tags
-                    li Русский язык
-                    li Литературное чтение
-                    li Математика
-      .lectures__nav-box
-        button.lectures__nav.lectures__nav_prev
-        .lectures__pagination
-        button.lectures__nav.lectures__nav_next
+mixin lectures (mod)
+  .lectures(class = mod ? mod : false)
+    .container
+      h2.lectures__title.title Кто будет вести уроки&nbsp;для&nbsp;Вас
+      .lectures__area
+        .lectures__slider
+          .lectures__wrapper.swiper-wrapper
+            each slide in [1,2,3,4,5]
+              .lectures__slide.swiper-slide
+                .lectures__inner
+                  picture.lectures__picture
+                    img.lectures__image(src=staticImg('lectures/lectures-1.png') alt='')
+                  .lectures__box
+                    .lectures__name Бабенко Анна Юрьевна
+                    ul.lectures__list
+                      each item in lecturesList
+                        li= item
+                    ul.lectures__tags
+                      li Русский язык
+                      li Литературное чтение
+                      li Математика
+        .lectures__nav-box
+          button.lectures__nav.lectures__nav_prev
+          .lectures__pagination
+          button.lectures__nav.lectures__nav_next

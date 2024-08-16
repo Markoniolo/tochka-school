@@ -12,6 +12,21 @@
       background: none;
     }
   }
+  .cap__decor .path {
+    fill: #727E99;
+  }
+}
+
+.cap_green {
+  .cap__area {
+    background: #e4ffe5;
+    @include media(sm) {
+      background: none;
+    }
+  }
+  .cap__decor .path {
+    fill: #75AF7A;
+  }
 }
 
 .cap__area {

@@ -1,4 +1,5 @@
 .education {
+  position: relative;
   padding: 77px 0 64px;
   background: #f6faff;
   margin-bottom: 70px;
@@ -6,17 +7,58 @@
     padding: 40px 0;
     margin-bottom: 40px;
   }
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .education_blue {
-  @include bgImg('education/education-bg.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f6faff;
-  @include media(lg) {
-    background-image: none;
+  .rect {
+    fill: #F6FAFF;
   }
+  .circle-1, .circle-4 {
+    fill: #E3EBFE;
+  }
+  .circle-2, .circle-3 {
+    fill: #87A3E3;
+  }
+  .education__item {
+    border: 1px solid #e3ebfe;
+  }
+}
+
+.education_green {
+  background-color: #e7f9e8;
+  .rect {
+    fill: #e7f9e8;
+  }
+  .circle-1, .circle-4 {
+    fill: #cbf1cc;
+  }
+  .circle-2, .circle-3 {
+    fill: #aadfac;
+  }
+  .education__item {
+    border: 1px solid #e8f9e9;
+  }
+}
+
+.education__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  @include media(lg) {
+    display: none;
+  }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
 }
 
 .education__title {
@@ -42,7 +84,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  border: 1px solid #e3ebfe;
   border-radius: 10px;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
   background: #fff;

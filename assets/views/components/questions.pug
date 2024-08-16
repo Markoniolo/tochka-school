@@ -27,14 +27,15 @@
     },
   ]
 
-section.questions.blue
-  .container
-    .questions-blk
-      h2 Отвечаем на вопросы
-      #accordion.accordion
-         each item, index in questionsList
-           .accordion-item
-             button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target=`#faq${index+1}` aria-expanded='true' aria-controls='faq1')= item.headline
-             .accordion-collapse.collapse(id=`faq${index+1}` aria-labelledby=item.ariaLabelledBy data-bs-parent='#accordion')
-               .accordion-body
-                 p= item.text
+mixin questions(mod)
+  section.questions(class = mod ? mod : false)
+    .container
+      .questions-blk
+        h2 Отвечаем на вопросы
+        #accordion.accordion
+           each item, index in questionsList
+             .accordion-item
+               button.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target=`#faq${index+1}` aria-expanded='true' aria-controls='faq1')= item.headline
+               .accordion-collapse.collapse(id=`faq${index+1}` aria-labelledby=item.ariaLabelledBy data-bs-parent='#accordion')
+                 .accordion-body
+                   p= item.text

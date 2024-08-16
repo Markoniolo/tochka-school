@@ -1,15 +1,52 @@
 .steps {
+  position: relative;
   overflow: hidden;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .steps_blue {
-  @include bgImg('steps/steps-bg.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #f6faff;
+  .rect {
+    fill: #F6FAFF;
+  }
+  .circle-1, .circle-4 {
+    fill: #E3EBFE;
+  }
+  .circle-2, .circle-3 {
+    fill: #87A3E3;
+  }
+  .steps__box {
+    border: 1px solid #e3ebfe;
+  }
+}
+
+.steps_green {
+  background-color: #e7f9e8;
+  .rect {
+    fill: #e7f9e8;
+  }
+  .circle-1, .circle-4 {
+    fill: #cbf1cc;
+  }
+  .circle-2, .circle-3 {
+    fill: #aadfac;
+  }
+  .steps__box {
+    border: 1px solid #e8f9e9;
+  }
+}
+
+.steps__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   @include media(lg) {
-    background-image: none;
+    display: none;
   }
 }
 
@@ -35,7 +72,6 @@
   display: flex;
   align-items: center;
   position: relative;
-  border: 1px solid #e3ebfe;
   border-radius: 10px;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
   background: #fff;

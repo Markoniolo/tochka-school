@@ -5,10 +5,31 @@
   }
 }
 
+.informer_blue {
+  .informer__area {
+    background: #f6faff;
+  }
+  .informer__list li {
+    &::before {
+      @include bgIcon('icons/check_blue.svg');
+    }
+  }
+}
+
+.informer_green {
+  .informer__area {
+    background: #e7f9e8;
+  }
+  .informer__list li {
+    &::before {
+      @include bgIcon('icons/check_green-dark.svg');
+    }
+  }
+}
+
 .informer__area {
   padding: 45px 40px 28px;
   border-radius: 16px;
-  background: #f6faff;
   @include media(md) {
     padding: 30px 15px 30px;
   }
@@ -83,7 +104,6 @@
     left: 0;
     width: 29px;
     height: 29px;
-    @include bgIcon('check.svg');
     @include media(md) {
       width: 19px;
       height: 19px;
