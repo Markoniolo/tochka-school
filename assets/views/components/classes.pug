@@ -11,11 +11,23 @@ section#Class.classes
           button#pills-tab3.nav-link(data-bs-toggle='pill' data-bs-target='#tab3' type='button' role='tab' aria-controls='pills-contact' aria-selected='false') 3
         li.nav-item(role='presentation')
           button#pills-tab4.nav-link(data-bs-toggle='pill' data-bs-target='#tab4' type='button' role='tab' aria-controls='pills-contact' aria-selected='false') 4
-      .classes-external
-        picture.classes-external__picture
-          img.classes-external__image
       #pills-tabContent.tab-content
         #tab1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-tab1')
+          .classes-external
+            picture.classes-external__picture
+              source(srcset=staticImg('classes-external/classes-external_100.svg') media="(max-width: 992px)")
+              source(srcset=staticImg('classes-external/classes-external_197.svg') media="(max-width: 1440px)")
+              img.classes-external__image(src=staticImg('classes-external/classes-external.svg') alt='')
+            .classes-external__area
+              .classes-external__class 1 класс
+              .classes-external__head
+                .classes-external__title Экстернат
+                ul.classes-external__tags
+                  each item in ['Аттестация онлайн','Прикрепление к школе','Семейное обучение']
+                    li= item
+              .classes-external__text.
+                Получайте школьное образование дома. Онлайн. С лучшими учителями РФ, внимательными тьюторам и&nbsp;аттестацией.
+              a.classes-external__button.btn-warning(href='#') Выбрать
           .row
             .col-md-6
               .classes-teacher.d-flex.align-items-streight
@@ -115,6 +127,21 @@ section#Class.classes
               li.page-item.arw
                 a.page-link(href='#')
         #tab2.tab-pane.fade.show(role='tabpanel' aria-labelledby='pills-tab2')
+          .classes-external.classes-external_green
+            picture.classes-external__picture
+              source(srcset=staticImg('classes-external/classes-external_100.svg') media="(max-width: 992px)")
+              source(srcset=staticImg('classes-external/classes-external_197.svg') media="(max-width: 1440px)")
+              img.classes-external__image(src=staticImg('classes-external/classes-external.svg') alt='')
+            .classes-external__area
+              .classes-external__class 2 класс
+              .classes-external__head
+                .classes-external__title Экстернат
+                ul.classes-external__tags
+                  each item in ['Аттестация онлайн','Прикрепление к школе','Семейное обучение']
+                    li= item
+              .classes-external__text.
+                Получайте школьное образование дома. Онлайн. С лучшими учителями РФ, внимательными тьюторам и&nbsp;аттестацией.
+              a.classes-external__button.btn-warning(href='#') Выбрать
           .row
             .col-md-6
               .classes-teacher.d-flex.align-items-streight

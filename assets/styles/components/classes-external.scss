@@ -1,0 +1,150 @@
+.classes-external {
+  margin-bottom: 32px;
+  border: 1px solid #e3ebfe;
+  border-radius: 10px;
+  background: #ebf4ff;
+  padding: 25px;
+  display: flex;
+  @include media(lg) {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  @include media(sm) {
+    display: block;
+    padding: 15px;
+  }
+}
+
+.classes-external_green {
+  background: #e7f9e8;
+  ul.classes-external__tags li {
+    background: #d6f1d9;
+    color: #75af7a;
+  }
+}
+
+.classes-external__picture {
+  display: block;
+  width: 394px;
+  height: 229px;
+  flex-shrink: 0;
+  margin-right: 40px;
+  @include media(lg) {
+    margin-right: 25px;
+    width: 197px;
+    height: 239px;
+  }
+  @include media(sm) {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 15px;
+  }
+}
+
+.classes-external__image {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  @include media(lg) {
+    border-radius: 5px;
+  }
+}
+
+.classes-external__area {
+
+}
+
+.classes-external__class {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 143%;
+  color: #222;
+  opacity: 0.5;
+  @include media(lg) {
+    margin-bottom: 8px;
+  }
+}
+
+.classes-external__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  @include media(lg) {
+    display: block;
+  }
+}
+
+.classes-external__title {
+  margin-bottom: 15px;
+  margin-right: 42px;
+  flex-shrink: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 144%;
+  color: #222;
+  @include media(lg) {
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  @include media(sm) {
+    height: 70px;
+    margin-bottom: 25px;
+  }
+}
+
+ul.classes-external__tags {
+  margin-top: 6px;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include media(lg) {
+    margin-bottom: 25px;
+    gap: 15px;
+  }
+  @include media(sm) {
+    display: none;
+  }
+  li {
+    border-radius: 4px;
+    padding: 7px 11px;
+    background: #e0ecfb;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 144%;
+    color: #5e7ea5;
+    @include media(lg) {
+      padding: 10px;
+      font-size: 10px;
+    }
+  }
+}
+
+.classes-external__text {
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 144%;
+  @include media(lg) {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.classes-external__button {
+  display: inline-block;
+  min-width: 175px;
+  text-align: center;
+  padding: 12px 28px;
+  @include media(lg) {
+    min-width: 320px;
+  }
+  @include media(sm) {
+    min-width: 100%;
+  }
+}

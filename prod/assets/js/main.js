@@ -4,6 +4,7 @@ if (lecturesSlider) lecturesSliderInit()
 
 function lecturesSliderInit () {
   const lecturesSliderSwiper = new Swiper(lecturesSlider, {
+    autoHeight: true,
     slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
@@ -12,7 +13,9 @@ function lecturesSliderInit () {
     },
     pagination: {
       el: ".lectures__pagination",
-      type: "bullets",
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (++index) + '</span>';
+      },
     },
     thumbs: {
       swiper: swiper,
