@@ -245,7 +245,8 @@ Styles for Offer
 }
 
 .offer h1 {margin: 0 auto 25px;}
-.offer h1 span {display: block;}
+.offer h1 span {display: block;
+  font-weight: 700;}
 
 .offer-block {
   gap: 5px;
@@ -346,6 +347,10 @@ Styles for Offer
   top: 99%;
   left: 0;
   z-index: 1;
+}
+
+.primary-offer h1 span {
+  font-weight: 700;
 }
 
 .primary-offer-block span.offer-class {
@@ -797,6 +802,10 @@ Styles for Numbers
   font-weight: 700;
   line-height: 1.22;
   min-width: 276px;
+}
+
+.numbers .count {
+  font-weight: 700;
 }
 
 .numbers p:last-child {
