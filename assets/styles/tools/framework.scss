@@ -46,6 +46,14 @@ h2 {
   background: url(../img/check-not.svg) center / cover no-repeat;
 }
 
+.list li.not {
+  color: #c9c9c9;
+}
+
+.green-list .list li.not:before {
+  background: url(../img/check-not.svg) center / cover no-repeat;
+}
+
 .green-list .list li:before,
 .greens .list li:before {
   background: url(../img/check-green2.svg) center / cover no-repeat;
@@ -77,4 +85,11 @@ h2 {
   @include media(sm) {
     font-size: 27px;
   }
+}
+
+.iti {
+  --iti-path-flags-1x: url('../img/intl-tell-input/flags.webp');
+  --iti-path-flags-2x: url('../img/intl-tell-input/flags@2x.webp');
+  --iti-path-globe-1x: url('../img/intl-tell-input/globe.webp');
+  --iti-path-globe-2x: url('../img/intl-tell-input/globe@2x.webp');
 }

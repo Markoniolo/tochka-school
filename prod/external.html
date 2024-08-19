@@ -627,7 +627,7 @@
             </div>
           </div>
         </div>
-        <div class="steps__form">
+        <form class="steps__form" data-element="external-form">
           <div class="steps__form-title title">Скачивайте руководство по переходу на экстернат с «Точкой Знаний»</div>
           <picture class="steps__form-picture">
             <source srcset="assets/img/steps/steps-doc_623.webp" type="image/webp">
@@ -635,15 +635,15 @@
           </picture>
           <div class="steps__form-box">
             <input class="steps__form-input input-gray" name="name" placeholder="Ваше имя" type="text">
-            <input class="steps__form-input input-gray" name="tel" placeholder="Номер телефона" type="tel">
-            <input class="steps__form-input input-gray" name="email" placeholder="Электронная почта" type="email">
+            <input class="steps__form-input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+            <input class="steps__form-input input-gray" name="email" placeholder="Электронная почта" type="email" required>
             <button class="steps__form-button btn-warning">Скачать</button>
             <div class="steps__form-note">
               Нажимая на кнопку «Скачать», я соглашаюсь с
               <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">политикой обработки персональных данных.</a>
             </div>
           </div>
-        </div>
+        </form>
         <div class="steps__doc">
           <div class="steps__doc-title">Скачивайте руководство по переходу на экстернат с «Точкой Знаний»</div>
           <picture class="steps__doc-picture">
@@ -712,9 +712,6 @@
                   </p>
                 </li>
               </ul>
-              <div class="price-start">
-                <span>Старт обучения: 10 сентября</span>
-              </div>
               <div class="price-blocks price-month">
                 <p class="prblk">
                   В рассрочку в месяц:
@@ -738,7 +735,7 @@
           </div>
           <div class="col-lg-6">
             <div class="price-blk">
-              <span class="price-title">Занятия онлайн + в записи</span>
+              <span class="price-title">Занятия в записи</span>
               <ul class="list list-unstyled">
                 <li class="not">
                   <p>Онлайн-уроки по программе 1 класса с сентября по май</p>
@@ -769,9 +766,6 @@
                   </p>
                 </li>
               </ul>
-              <div class="price-start">
-                <span>Старт обучения: 10 сентября</span>
-              </div>
               <div class="price-blocks price-month">
                 <p class="prblk">
                   В рассрочку в месяц:
@@ -1006,11 +1000,11 @@
         </div>
       </div>
     </section>
-    <form class="modal-external" id="modal-external">
+    <form class="modal-external" id="modal-external" data-element="external-form">
       <div class="modal-external__title">Скачивайте руководство о&nbsp;переходе на экстернат с&nbsp;«Точкой Знаний»</div>
       <input class="modal-external__input input-gray" name="name" placeholder="Ваше имя" type="text">
-      <input class="modal-external__input input-gray" name="tel" placeholder="Номер телефона" type="tel">
-      <input class="modal-external__input input-gray" name="email" placeholder="Электронная почта" type="email">
+      <input class="modal-external__input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+      <input class="modal-external__input input-gray" name="email" placeholder="Электронная почта" type="email" required>
       <button class="modal-external__button btn-warning">Скачать</button>
       <div class="modal-external__note">
         Нажимая на кнопку «Скачать», я соглашаюсь с

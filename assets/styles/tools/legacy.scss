@@ -322,6 +322,10 @@ Styles for Offer
   padding: 195px 0 0;
 }
 
+.primary-offer .container {
+  z-index: 3;
+}
+
 .primary-offer:after {
   content: "";
   background: url(../img/primary-bg.svg) bottom center no-repeat;
@@ -692,7 +696,7 @@ blockquote {
 }
 
 blockquote:before, blockquote:after {
-  content: "вЂњ";
+  content: "“";
   color: rgba(114, 126, 153, 0.52);
   font-size: 255px;
   font-style: italic;
@@ -707,7 +711,7 @@ blockquote:before {
 }
 
 blockquote:after {
-  content: "вЂњ";
+  content: "“";
   transform: rotate(180deg);
   right: 0;
   bottom: -70px;

@@ -27,6 +27,11 @@
   .cap__decor .path {
     fill: #75AF7A;
   }
+  .cap__box {
+    @include media(sm) {
+      background: #e4ffe5;
+    }
+  }
 }
 
 .cap__area {

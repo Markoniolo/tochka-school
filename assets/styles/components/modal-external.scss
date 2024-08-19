@@ -7,6 +7,13 @@
     border-radius: 5px;
     padding: 30px 15px;
   }
+  .iti {
+    margin-bottom: 30px;
+    width: 100%;
+    @include media(sm) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .modal-external__title {

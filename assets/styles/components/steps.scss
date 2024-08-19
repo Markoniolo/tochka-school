@@ -249,6 +249,13 @@
   @include media(lg) {
     display: none;
   }
+  .iti {
+    margin-bottom: 30px;
+    width: 100%;
+    @include media(sm) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .steps__form-title {
