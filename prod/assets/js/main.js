@@ -21,7 +21,13 @@ for (let i = 0; i < externalFormArray.length; i++) {
     if (!input.value.trim()) {
       input.classList.add("error")
     } else if (iti.isValidNumber()) {
-      console.log('post')
+      $.request('MainFunctions::onSendMessageTb', {
+        data: {
+          'name': form.querySelector("[name='name']").value,
+          'phone': form.querySelector("[name='tel']").value,
+          'email': form.querySelector("[name='email']").value,
+        }
+      });
       clearForm()
       window.open('https://tochka-school.ru/storage/app/media/Dokumenti/Eksternat_Tocka_Znanii.pdf', '_blank')
     } else {

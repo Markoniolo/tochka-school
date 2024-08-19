@@ -1,0 +1,11 @@
+mixin attach(mod)
+  .attach(class = mod ? `attach_${mod}` : false)
+    .container
+      .attach__area
+        picture.attach__picture
+          source(srcset=staticImg('attach/attach.webp') type='image/webp')
+          img.attach__image(src=staticImg('attach/attach.png') alt='')
+        .attach__title.title
+          span Бесплатное прикрепление
+          |
+          | к гимназии «Суханово», Московская область

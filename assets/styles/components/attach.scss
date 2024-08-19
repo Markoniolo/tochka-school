@@ -1,0 +1,65 @@
+.attach {
+  margin-bottom: 70px;
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.attach_blue {
+  background: radial-gradient(87.15% 85.67% at 8.52% 18%, rgb(222, 237, 255) 0%, rgb(199, 224, 255) 100%);
+}
+
+.attach_green {
+  background-color: #CBF0CD;
+}
+
+.attach__area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  @include media(md) {
+    padding: 25px;
+  }
+  @include media(sm) {
+    padding: 30px 0 40px;
+    flex-direction: column;
+  }
+}
+
+.attach__picture {
+  margin-right: 40px;
+  width: 132px;
+  height: 122px;
+  flex-shrink: 0;
+  @include media(md) {
+    margin-right: 35px;
+    width: 108px;
+    height: 100px;
+  }
+  @include media(sm) {
+    margin-right: 0;
+    margin-bottom: 25px;
+    width: 88px;
+    height: 81px;
+  }
+}
+
+.attach__image {
+  width: 100%;
+  height: 100%;
+}
+
+.attach__title {
+  @include media(md) {
+    font-size: 25px;
+  }
+  @include media(sm) {
+    text-align: center;
+    font-size: 20px;
+  }
+  span {
+    display: block;
+    font-weight: 700;
+  }
+}
