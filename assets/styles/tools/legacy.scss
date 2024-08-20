@@ -505,6 +505,11 @@ Styles for Direction
   line-height: 1;
   display: block;
   color: #000;
+  transition-duration: 0.3s;
+  transition-property: color;
+  &:hover {
+    color: #0a58ca;
+  }
 }
 
 .direction-blk a.title:after {
@@ -513,14 +518,43 @@ Styles for Direction
   width: 146px;
   height: 9px;
   display: block;
-  margin:15px 0 11px;
+  margin: 15px 0 11px;
 }
 
-.direction-blk p {
+.direction-blk p, .direction-blk span {
   margin-bottom: 53px;
   color: #000;
   font-size: 20px;
   line-height: 1;
+  @include media(md) {
+    font-size: 15px;
+    line-height: 133%;
+  }
+}
+
+.direction-line {
+  display: flex;
+  align-items: flex-start;
+}
+
+.direction-external {
+  position: relative;
+  z-index: 1;
+  margin-top: -3px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 144%;
+  color: #858ea5;
+  padding: 4px 9px;
+  border: 1px solid #ffca42;
+  border-radius: 5px;
+  @include media(md) {
+    border-radius: 4px;
+    font-size: 11px;
+    margin-left: 15px;
+    padding: 3px 7px;
+  }
 }
 
 .direction-blk .btn {

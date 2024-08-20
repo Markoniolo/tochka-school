@@ -78,6 +78,8 @@ p {
 
 a {
   text-decoration: none;
+  transition-duration: 0.3s;
+  transition-property: color;
 }
 
 section {
