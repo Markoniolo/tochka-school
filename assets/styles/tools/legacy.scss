@@ -3149,9 +3149,9 @@ Styles for Adaptive
   .direction-blk {padding: 20px 15px 15px;}
   .direction-blk a.title {font-size: 18px;}
   .direction-blk a.title:after {margin: 6px 0 9px;}
-  .direction-blk p {font-size: 15px; margin-bottom: 19px;}
+  .direction-blk p, .direction-blk span {font-size: 15px; margin-bottom: 19px;}
   .direction-blk .btn {font-size: 13px; width: 105px; padding: 6px 10px;}
-  .direction .row > div .direction-blk:after {background-size: 140px 140px !important;}
+  .direction .row > div .direction-blk:after {background-size: 86px 86px !important;}
   .offer-blk .tooltips {left: 0;}
   .offer-blk .tooltips:after {left: 50px;}
   .about-block {gap: 15px;}
@@ -3809,7 +3809,7 @@ Styles for Adaptive
   .direction .row > div .direction-blk:after {background-size: 145px 125px !important;}
   .offer-blk:nth-child(5) span:before {margin-left: 20px;}
   .direction .row {gap: 15px;}
-  .direction-blk p {margin-bottom: 13px;}
+  .direction-blk p, .direction-blk span {margin-bottom: 13px;}
   .about h2 span {display: block;}
   .about-blk:nth-child(1) .about-content p:last-child {max-width: 95%;}
   .about-blk {flex-direction: column;}
