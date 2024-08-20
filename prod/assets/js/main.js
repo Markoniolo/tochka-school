@@ -69,7 +69,47 @@ function lecturesSliderInit () {
     thumbs: {
       swiper: swiper,
     },
-  });
+    breakpoints: {
+      1200: {
+        spaceBetween: 120
+      }
+    }
+  })
+
+  sliderItemsToggleInit()
+
+  function sliderItemsToggleInit () {
+    const boxes = lecturesSlider.querySelectorAll('[data-element="lectures__box"]')
+    for (let i = 0; i < boxes.length; i++) {
+      itemsToggleInit(boxes[i])
+    }
+  }
+
+  function itemsToggleInit (box) {
+    const list = box.querySelector('[data-element="lectures__list"]')
+    const items = list.querySelectorAll('li')
+    const button = box.querySelector('[data-element="lectures__more"]')
+
+    const maxItems = window.innerWidth < 992 ? 3 : 4
+
+    if (items.length > maxItems) {
+      button.addEventListener('click', toggleItems)
+      list.classList.add('lectures__list_hide')
+    } else {
+      button.style.display = 'none'
+    }
+
+    function toggleItems () {
+      if (list.classList.contains('lectures__list_open')) {
+        button.innerHTML = 'Показать ещё'
+        list.classList.remove('lectures__list_open')
+      } else {
+        button.innerHTML = 'Скрыть'
+        list.classList.add('lectures__list_open')
+      }
+      lecturesSliderSwiper.update()
+    }
+  }
 }
 
 // воспроизведение видео video-wrapper по кнопке play

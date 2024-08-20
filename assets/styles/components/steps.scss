@@ -240,11 +240,11 @@
 .steps__form {
   position: relative;
   margin-top: 54px;
-  padding: 40px;
+  padding: 40px 40px 0;
   border-radius: 16px;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
   background: #fff;
-  min-height: 732px;
+  min-height: 630px;
   overflow: hidden;
   @include media(lg) {
     display: none;
@@ -260,7 +260,7 @@
 
 .steps__form-title {
   max-width: 725px;
-  margin: 0 auto 50px;
+  margin: 0 auto 26px;
   text-align: center;
   line-height: 142%;
 }
@@ -268,10 +268,10 @@
 .steps__form-picture {
   position: absolute;
   bottom: -170px;
-  left: 3px;
+  left: 97px;
   transform: rotate(38deg);
-  width: 623px;
-  height: 720px;
+  width: 490px;
+  height: 566px;
 }
 
 .steps__form-image {
@@ -280,21 +280,18 @@
 }
 
 .steps__form-box {
-  padding: 45px;
+  padding: 40px 45px 45px;
   width: 563px;
   margin-left: auto;
-  border: 1px solid #e3ebfe;
-  border-radius: 11px;
+  border-radius: 11px 11px 0 0;
   background: #f6faff;
 }
 
 .steps__form-input {
   background-color: transparent;
+  padding: 15px 28px;
   &:not(:last-of-type) {
-    margin-bottom: 30px;
-    @include media(sm) {
-      margin-bottom: 15px;
-    }
+    margin-bottom: 25px;
   }
 }
 
@@ -304,9 +301,6 @@
   margin-top: 40px;
   padding: 17px 28px;
   font-size: 18px;
-  @include media(sm) {
-    margin-top: 20px;
-  }
   &:focus {
     box-shadow: none;
   }
