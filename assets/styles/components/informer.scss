@@ -96,6 +96,10 @@
   position: relative;
   @include media(md) {
     padding-left: 29px;
+    font-size: 15px;
+  }
+  @include media(sm) {
+    font-size: 14px;
   }
   &::before {
     content: '';
