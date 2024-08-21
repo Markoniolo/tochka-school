@@ -29,7 +29,7 @@ for (let i = 0; i < externalFormArray.length; i++) {
         }
       });
       clearForm()
-      window.open('https://docs.google.com/gview?embedded=true&url=https://tochka-school.ru/storage/app/media/Dokumenti/Eksternat_Tocka_Znanii.pdf', '_blank')
+      window.open('https://tochka-school.ru/storage/app/media/Dokumenti/Eksternat_Tocka_Znanii.pdf', '_blank')
     } else {
       input.classList.add("error")
     }

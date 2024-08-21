@@ -1,0 +1,12 @@
+.manual
+  .container
+    .manual__area
+      .manual__inner
+        h1.manual__title.title
+          | Готово!
+          br
+          | Скачать можно тут
+        picture.manual__picture
+          source(srcset=staticImg('manual/manual.webp') type='image/webp')
+          img.manual__image(src=staticImg('manual/manual.png') alt='')
+        a.manual__download.btn-warning(href='https://tochka-school.ru/storage/app/media/Dokumenti/Eksternat_Tocka_Znanii.pdf' target='_blank') Получить руководство!
