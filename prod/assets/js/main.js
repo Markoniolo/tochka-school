@@ -469,6 +469,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 1,
+  spaceBetween: 12,
   navigation: {
     nextEl: ".teacher-next",
     prevEl: ".teacher-prev",

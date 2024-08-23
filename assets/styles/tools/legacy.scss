@@ -829,6 +829,10 @@ Styles for Numbers
 .number-block {justify-content: space-between;}
 .number-block > div {width: auto;}
 
+.numbers {
+  overflow: hidden;
+}
+
 .numbers p {
   color: #222;
   text-align: center;
@@ -968,6 +972,10 @@ Styles for Teachers
 }
 
 .teacher-info .type {display: none;}
+
+.teachers > .container > .btn-study {
+  justify-content: center;
+}
 
 .teachers-slider {
   gap: 45px;
@@ -1374,7 +1382,7 @@ Styles for Platform
 --------------------
 */
 .platform {padding-bottom: 130px;}
-.platform h2 {margin-bottom: 130px;}
+.platform h2 {margin-bottom: 70px;}
 
 .platform-block {
   border-radius: 10px;
@@ -3587,6 +3595,8 @@ Styles for Adaptive
 }
 
 @media (max-width: 767px) {
+  .licence-info {max-width: 270px;}
+  .licence-number {max-width: 270px;}
   body.fix-top {padding-top: 84px;}
   h1 {font-size: 28px;}
   h2 {font-size: 26px;}
