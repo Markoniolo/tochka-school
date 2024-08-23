@@ -1,12 +1,16 @@
 .lectures {
-  padding: 70px 0;
   margin-bottom: 70px;
   @include media(md) {
-    padding: 40px 0;
     margin-bottom: 40px;
   }
   .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
     overflow: hidden;
+    @include media(md) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 }
 
