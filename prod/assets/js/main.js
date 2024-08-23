@@ -201,14 +201,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //скрипт для шапки
 $(function(){
-  $(window).scroll(function() {
+  fixedHeader()
+  $(window).scroll(fixedHeader);
+
+  function fixedHeader () {
     if($(this).scrollTop() >= 10) {
       $('header, nav, body').addClass('fixed');
     }
     else{
       $('header, nav, body').removeClass('fixed');
     }
-  });
+  }
 });
 
 
