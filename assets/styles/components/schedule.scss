@@ -1,0 +1,166 @@
+.schedule {
+  margin-bottom: 70px;
+  @include media(lg) {
+    margin-bottom: 40px;
+  }
+}
+
+.schedule__area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  @include media(lg) {
+    gap: 30px;
+  }
+  @include media(sm) {
+    gap: 25px;
+  }
+}
+
+.schedule__toggle {
+  font-weight: 500;
+  font-size: 15px;
+  color: #000000;
+  padding: 18px 35px;
+  border: 1px solid #ffca42;
+  border-radius: 10px;
+  background-color: transparent;
+  @include media(lg) {
+    padding: 13px 32px;
+  }
+  @include media(sm) {
+    width: 100%;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+}
+
+.schedule__table {
+  width: 100%;
+  text-align: center;
+  @include media(lg) {
+    overflow-x: auto;
+    width: calc(100% + 24px);
+    margin: 0 -12px;
+  }
+}
+
+.schedule__table.hide {
+  display: none;
+}
+
+.schedule__row {
+  display: flex;
+  @include media(lg) {
+    &::before, &::after {
+      content: "";
+      width: 12px;
+      flex-shrink: 0;
+    }
+  }
+  &:first-child {
+    margin-bottom: 11px;
+    position: sticky;
+    z-index: 10;
+    top: 66px;
+    @include media(lg) {
+      margin-bottom: 7px;
+      position: relative;
+      top: 0;
+    }
+    @include media(sm) {
+      margin-bottom: 10px;
+    }
+    .schedule__cell {
+      background: #dde8f5;
+      border-radius: 3px;
+      padding: 11px 10px;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 144%;
+      color: #6681a3;
+      @include media(lg) {
+        font-size: 13px;
+      }
+      @include media(sm) {
+        font-size: 10px;
+      }
+      &:first-child {
+        background: #f6faff;
+        @include media(lg) {
+          font-size: 15px;
+          position: static;
+        }
+        @include media(sm) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  &:not(:first-child) {
+    margin-bottom: 8px;
+    @include media(lg) {
+      padding-left: 56px;
+    }
+    @include media(sm) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.schedule__cell {
+  flex-shrink: 0;
+  background: #e8f2ff;
+  padding: 15px 6px;
+  width: 155px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 144%;
+  color: #91add0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media(lg) {
+    width: 135px;
+    font-size: 13px;
+  }
+  @include media(sm) {
+    font-size: 10px;
+    padding: 7px 6px;
+    width: 100px;
+  }
+  &:first-child {
+    width: 186px;
+    margin-right: 25px;
+    background: #f6faff;
+    font-weight: 600;
+    @include media(lg) {
+      position: absolute;
+      z-index: 1;
+      left: 12px;
+      font-size: 15px;
+      width: 73px;
+      margin-right: 17px;
+    }
+    @include media(sm) {
+      font-size: 10px;
+      width: 51px;
+    }
+  }
+  &:not(:last-of-type) {
+    margin-right: 8px;
+    @include media(sm) {
+      margin-right: 5px;
+    }
+  }
+  span {
+    margin-left: 4px;
+    font-weight: 600;
+    @include media(lg) {
+      display: none;
+    }
+  }
+}
+
