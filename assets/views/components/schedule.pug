@@ -1,6 +1,6 @@
 -
   const scheduleHead = [
-    'Время<span> начала урока</span>',
+    'Время начала урока',
     'Понедельник',
     'Вторник',
     'Среда',
@@ -21,17 +21,19 @@
   ]
 
 mixin schedule(mod)
-  .schedule(data-element="schedule")
+  .schedule(data-element="schedule" class = mod ? mod : false)
     .container
       .schedule__area
         button.schedule__toggle(data-element="schedule__toggle-top") Скрыть расписание
-        .schedule__table(data-element="schedule__table")
-          .schedule__row(data-element="schedule__row")
-            each item in scheduleHead
-              .schedule__cell!= item
-          each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
-            .schedule__row
-              each item, index in scheduleBody
-                .schedule__cell(data-element = index === 0 ? "schedule__cell" : false)= item
+        .schedule__box(data-element="schedule__box")
+          .schedule__time(data-element="schedule__time") Время
+          .schedule__table
+            .schedule__row(data-element="schedule__row")
+              each item, index in scheduleHead
+                .schedule__cell(class = index === 0 ? 'schedule__cell_time' : false)!= item
+            each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+              .schedule__row
+                each item, index in scheduleBody
+                  .schedule__cell(data-element = index === 0 ? "schedule__cell" : false)= item
         button.schedule__toggle(data-element="schedule__toggle-bottom") Скрыть расписание
 
