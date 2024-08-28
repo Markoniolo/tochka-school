@@ -314,6 +314,7 @@ $(document).ready(function(){
   if ($('.footer-nav h3').length) {
     $('.footer-nav h3').click(function(){
       $(this).siblings('ul').toggleClass('active');
+      $(this).toggleClass('active');
     });
   }
 
@@ -422,6 +423,7 @@ $(document).ready(function(){
 
 // Навигация по разделу
   $('.navigation-btn, .nav-link').click(function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     var button = $('.navigation-btn');
     if (button.text() === 'Навигация по разделу') {
       button.text('Закрыть навигацию');
@@ -433,12 +435,11 @@ $(document).ready(function(){
     let gradeUrl = window.location.search.replace( /gr=\w*\d*/, "");
     gradeUrl = gradeUrl.replace("?&", "?");
     if (gradeUrl.includes('?')) {
-      gradeUrl = gradeUrl.replace("?", "?gr="+nav_link.attr('id').replace("pills-tab", "")+"&");
+      gradeUrl = gradeUrl.replace("?", "?gr="+nav_link.attr('id')?.replace("pills-tab", "")+"&");
     } else {
-      gradeUrl = gradeUrl + "?gr="+nav_link.attr('id').replace("pills-tab", "");
+      gradeUrl = gradeUrl + "?gr="+nav_link.attr('id')?.replace("pills-tab", "");
     }
     history.replaceState(null, document.title, gradeUrl);
-
   });
 
   $(document).on('mouseup', function(e){
@@ -545,6 +546,8 @@ function setSlideOpacity() {
 }
 
 // Инициализация Swiper в зависимости от ширины экрана
+const aboutSwiper = document.querySelector('.aboutSwiper')
+if (aboutSwiper) initSwiper()
 function initSwiper() {
   if (checkScreenWidth()) {
     swipers = new Swiper(".aboutSwiper", {
@@ -577,10 +580,7 @@ function initSwiper() {
     setSlideOpacity();
   } else {
     swipers = new Swiper(".aboutSwiper", {
-      cardsEffect: {
-        perSlideOffset: 10,
-        perSlideRotate: 0,
-      },
+      spaceBetween: 10,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

@@ -190,7 +190,7 @@ header .nav-block > div.nav-consult {
 }
 
 .nav-tel {
-  display: block;
+  display: inline-block;
   color: #222;
   font-size: 19px;
   font-weight: 600;
@@ -210,7 +210,7 @@ header .nav-block > div.nav-contact {
 }
 
 .nav-contact .whatsapp {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   color: #222;
@@ -223,7 +223,7 @@ header .nav-block > div.nav-contact {
 .nav-contact .whatsapp:before {margin-right: 0;}
 
 .nav-email {
-  display: block;
+  display: inline-block;
   color: #222;
   font-size: 14px;
   line-height: 1.7;
@@ -2545,7 +2545,11 @@ Styles for Page end
   right: -30px;
 }
 
-.school-info {padding-top: 0;}
+.school-info {
+  padding-top: 0;
+  position: relative;
+  z-index: 2;
+}
 
 .school-info-block {
   display: flex;
@@ -2848,7 +2852,10 @@ Styles for About
   line-height: 1.68;
 }
 
-.about .blue {background: #E4F0FF;}
+.about .blue {
+  background: #E4F0FF;
+  margin-top: 70px;
+}
 
 .about .blue .about-container {
   background: transparent;
@@ -3166,6 +3173,9 @@ Styles for Adaptive
   .direction .row > div .direction-blk:after {background-size: 86px 86px !important;}
   .offer-blk .tooltips {left: 0;}
   .offer-blk .tooltips:after {left: 50px;}
+  .about .blue {
+    margin-top: 0;
+  }
   .about-block {gap: 15px;}
   .about-blk span {font-size: 17px;}
   .about-blk p {font-size: 14px; margin-bottom: 20px;}
@@ -3248,7 +3258,8 @@ Styles for Adaptive
   .footer-blk > div {width: 100%;}
   .footer-nav h3 {padding: 17px 0; cursor: pointer; margin-bottom: 0; font-size: 17px; display: flex; align-items: center; gap: 15px; border-top: 1px solid rgba(255, 255, 255, 0.07);}
   .fblk-nav {border-bottom: 1px solid rgba(255, 255, 255, 0.07);}
-  .footer-nav h3:after {content: ""; background: url(../img/footer-arw.svg) no-repeat; width: 8px; height: 5px;}
+  .footer-nav h3:after {content: ""; background: url(../img/footer-arw.svg) no-repeat; width: 8px; height: 5px; transition: 0.3s transform}
+  .footer-nav h3.active:after {transform: rotate(180deg)}
   .footer-nav ul {display: none; gap: 10px; margin-bottom: 10px;}
   .footer-nav ul.active {display: flex; flex-direction: column;}
   .footer-contact {margin-top: 30px;}
