@@ -626,7 +626,6 @@ function scheduleInit () {
   window.addEventListener('scroll', rowFixedCalculate)
   window.addEventListener('resize', tableFixedCalculate)
 
-  tableFixedCalculate()
   rowFixedCalculate()
 
   function rowFixedCalculate () {
@@ -675,6 +674,7 @@ function scheduleInit () {
   }
 
   function showTable () {
+    setTimeout(() => tableFixedCalculate(), 0)
     table.classList.remove('hide')
     toggleBottom.style.display = "block"
     toggleTop.innerHTML = 'Скрыть расписание'
