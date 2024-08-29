@@ -173,22 +173,14 @@
 
 .schedule__cell {
   flex-shrink: 0;
-  padding: 15px 6px;
   width: 155px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 144%;
-  border-radius: 3px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   @include media(lg) {
     width: 135px;
-    font-size: 13px;
   }
   @include media(sm) {
-    font-size: 10px;
-    padding: 7px 6px;
     width: 100px;
   }
   &:not(:last-child) {
@@ -213,6 +205,29 @@
       font-size: 10px;
       width: 51px;
     }
+  }
+}
+
+.schedule__cell span {
+  flex-grow: 1;
+  padding: 15px 6px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 144%;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include media(lg) {
+    font-size: 13px;
+  }
+  @include media(sm) {
+    font-size: 10px;
+    padding: 7px 6px;
+  }
+  &:not(:first-child) {
+    border-top: 5px solid #ffffff;
   }
 }
 

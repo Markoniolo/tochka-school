@@ -1,14 +1,4 @@
 -
-  const scheduleBodyNew = [
-    ['ИЗО и Технология'],
-    ['Литература', 'Ещё один предмет'],
-    ['Математика. Базовый уровень'],
-    ['Биология'],
-    ['География'],
-    ['Обществознание'],
-    ['Математика. Продвинутый уровень'],
-  ]
-
   const scheduleHead = [
     'Время начала урока',
     'Понедельник',
@@ -29,6 +19,16 @@
     'Обществознание',
     'Математика. Продвинутый уровень',
   ]
+  const scheduleBodyNew = [
+    ['10:00'],
+    ['ИЗО и Технология'],
+    ['Литература', 'Ещё один предмет'],
+    ['Математика. Базовый уровень'],
+    ['Биология','География','Обществознание'],
+    ['География'],
+    ['Обществознание'],
+    ['Математика. Продвинутый уровень'],
+  ]
 
 mixin schedule(mod)
   .schedule(data-element="schedule" class = mod ? mod : false)
@@ -43,7 +43,9 @@ mixin schedule(mod)
                 .schedule__cell(class = index === 0 ? 'schedule__cell_time' : false)!= item
             each item in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
               .schedule__row
-                each item, index in scheduleBody
-                  .schedule__cell(data-element = index === 0 ? "schedule__cell" : false)= item
+                each item, index in scheduleBodyNew
+                  .schedule__cell(data-element = index === 0 ? "schedule__cell" : false)
+                    each cell in item
+                      span= cell
         button.schedule__toggle(data-element="schedule__toggle-bottom") Скрыть расписание
 
