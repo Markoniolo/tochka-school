@@ -674,11 +674,11 @@ function scheduleInit () {
   }
 
   function showTable () {
-    setTimeout(() => tableFixedCalculate(), 0)
     table.classList.remove('hide')
     toggleBottom.style.display = "block"
     toggleTop.innerHTML = 'Скрыть расписание'
     row.style.transform = 'none'
     cellTime.style.transform = 'none'
+    setTimeout(() => tableFixedCalculate(), 100)
   }
 }
