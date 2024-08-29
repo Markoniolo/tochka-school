@@ -2678,7 +2678,6 @@ footer a, footer a:hover {color: #FFF;}
 footer ul li a:hover {text-decoration: underline;}
 
 .footer-logo {margin-bottom: 54px;}
-.footer-logo a.logo-mb {display: none;}
 .footer-requisites {margin-bottom: 61px;}
 
 .footer-requisites p {
@@ -3444,8 +3443,6 @@ Styles for Adaptive
   .footer-bottom {border: none; padding: 0; margin-top: 31px; gap: 31px; flex-direction: column;}
   .footer-bottom p {color: rgba(255, 255, 255, 0.50);}
   .footer-company p:not(:last-child) {max-width: 80%;}
-  .footer-logo a {display: none;}
-  .footer-logo a.logo-mb {display: block;}
   .fblk-nav {padding-right: 0;}
   .footer-bottom p:nth-child(1) {order: 2;}
   .footer-bottom p:nth-child(2) {order: 1;}
@@ -3914,6 +3911,7 @@ Styles for Adaptive
   .social ul, .footer-nav h3 {justify-content: center;}
   .fblk {margin-top: 28px; display: flex; flex-direction: column;}
   footer .lk, .footer-logo {margin-bottom: 28px;}
+  footer .lk, .footer-logo img {width: 191px; height: 69px;}
   footer .lk a {max-width: 224px; margin: 0 auto;}
   .primary-offer-block {max-width: 100%;}
   .primary-offer-block a {width: 224px;}

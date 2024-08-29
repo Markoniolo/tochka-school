@@ -309,7 +309,6 @@ $(document).ready(function(){
 
 // Навигация по разделу
   $('.navigation-btn, .nav-link').click(function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
     var button = $('.navigation-btn');
     if (button.text() === 'Навигация по разделу') {
       button.text('Закрыть навигацию');
@@ -336,6 +335,9 @@ $(document).ready(function(){
     }
   });
 
+  $('.school-info-nav .nav-link').click(function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
 
 // $(document).ready(function() END
 });
