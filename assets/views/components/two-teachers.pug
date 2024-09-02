@@ -1,0 +1,26 @@
+-
+  const twoTeachersArea = [
+    {
+      inner: '<span>Учитель:</span> понятно и интересно объяснит тему на уроке',
+      image: 'two-teachers-1.png'
+    },
+    {
+      inner: '<span>Ребёнок:</span> увлечется учёбой, получит отличные оценки и&nbsp;твёрдые знания',
+      image: 'two-teachers-2.png'
+    },
+    {
+      inner: '<span>Тьютор:</span> проверит задания и&nbsp;поможет&nbsp;исправить ошибки',
+      image: 'two-teachers-3.png'
+    },
+  ]
+
+section.two-teachers
+  .container
+    h2.two-teachers__title.title С ребёнком занимаются сразу 2 педагога
+    .two-teachers__text Помогаем на всех этапах: от разбора темы до выполнения заданий.
+    .two-teachers__text Что приводит к твёрдым знаниям, отличным оценкам и интересу к учёбе.
+    .two-teachers__area
+      each item in twoTeachersArea
+        .two-teachers__box
+          img.two-teachers__image(src=staticImg(`two-teachers/${item.image}`) alt='')
+          .two-teachers__inner!= item.inner

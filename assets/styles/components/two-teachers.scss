@@ -1,0 +1,158 @@
+.two-teachers {
+
+}
+
+.two-teachers_blue {
+
+}
+
+.two-teachers__title {
+  margin-bottom: 37px;
+  @include media(lg) {
+    margin-bottom: 12px;
+  }
+  @include media(xs) {
+    margin-bottom: 18px;
+  }
+}
+
+.two-teachers__text {
+  text-align: center;
+  font-size: 15px;
+  line-height: 144%;
+  &:first-of-type {
+    @include media(xs) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.two-teachers__area {
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-between;
+  @include media(lg) {
+    max-width: 700px;
+    width: 100%;
+    margin: 75px auto 0;
+  }
+  @include media(xs) {
+    margin-top: 70px;
+    flex-direction: column;
+  }
+}
+
+.two-teachers__box {
+  max-width: 407px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media(lg) {
+    max-width: 204px;
+  }
+  @include media(xs) {
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    gap: 0 34px;
+  }
+  &:not(:last-child) {
+    @include media(xs) {
+      margin-bottom: 52px;
+    }
+  }
+  &:nth-child(2) {
+    position: relative;
+    @include media(lg) {
+      max-width: 228px;
+    }
+    @include media(xs) {
+      max-width: 100%;
+      flex-direction: row-reverse;
+      margin-bottom: 58px;
+    }
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 60px;
+      width: 152px;
+      height: 69px;
+      @include bgIcon('two-teachers/two-teachers-line.svg');
+      @include media(lg) {
+        top: 45px;
+        width: 86px;
+        height: 39px;
+      }
+    }
+    &::before {
+      transform: rotate(147deg);
+      left: -100px;
+      @include media(lg) {
+        left: -52px;
+      }
+      @include media(xs) {
+        left: 145px;
+        top: -59px;
+        transform: rotate(193deg);
+      }
+    }
+    &::after {
+      transform: scale(1, -1) rotate(-33deg);
+      right: -100px;
+      @include media(lg) {
+        right: -52px;
+      }
+      @include media(xs) {
+        left: 144px;
+        top: 154px;
+        transform: rotate(-63deg);
+      }
+    }
+  }
+}
+
+.two-teachers__image {
+  margin-bottom: -8px;
+  width: 225px;
+  height: 230px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
+  border: 1px solid #e3ebfe;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  @include media(lg) {
+    border-radius: 6px 6px 0 0;
+    width: 140px;
+    height: 143px;
+  }
+  @include media(xs) {
+    width: 133px;
+    height: 136px;
+  }
+}
+
+.two-teachers__inner {
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
+  border: 1px solid #e3ebfe;
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 144%;
+  padding: 23px;
+  text-align: center;
+  background-color: #ffffff;
+  @include media(lg) {
+    border-radius: 6px;
+    text-align: left;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  @include media(xs) {
+    padding: 10px 13px;
+  }
+  span {
+    font-weight: 600;
+    @include media(lg) {
+      display: block;
+    }
+  }
+}
