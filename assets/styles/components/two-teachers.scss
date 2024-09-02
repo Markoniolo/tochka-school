@@ -3,7 +3,45 @@
 }
 
 .two-teachers_blue {
+  background-color: $blue;
+  .two-teachers__box {
+    &:nth-child(2) {
+      &::before, &::after {
+        @include bgIcon('two-teachers/two-teachers-line.svg');
+      }
+    }
+  }
+  .two-teachers__inner, .two-teachers__image {
+    border: 1px solid #e3ebfe;
+  }
+}
 
+.two-teachers_green {
+  background-color: $green;
+  .two-teachers__box {
+    &:nth-child(2) {
+      &::before, &::after {
+        @include bgIcon('two-teachers/two-teachers-line_green.svg');
+      }
+    }
+  }
+  .two-teachers__inner, .two-teachers__image {
+    border: 1px solid #d4eed6;
+  }
+}
+
+.two-teachers_violet {
+  background-color: $violet;
+  .two-teachers__box {
+    &:nth-child(2) {
+      &::before, &::after {
+        @include bgIcon('two-teachers/two-teachers-line_violet.svg');
+      }
+    }
+  }
+  .two-teachers__inner, .two-teachers__image {
+    border: 1px solid #e9e5f6;
+  }
 }
 
 .two-teachers__title {
@@ -78,7 +116,6 @@
       top: 60px;
       width: 152px;
       height: 69px;
-      @include bgIcon('two-teachers/two-teachers-line.svg');
       @include media(lg) {
         top: 45px;
         width: 86px;
@@ -117,7 +154,6 @@
   width: 225px;
   height: 230px;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
-  border: 1px solid #e3ebfe;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
   @include media(lg) {
@@ -133,7 +169,6 @@
 
 .two-teachers__inner {
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
-  border: 1px solid #e3ebfe;
   border-radius: 10px;
   font-size: 17px;
   line-height: 144%;
@@ -148,6 +183,7 @@
   }
   @include media(xs) {
     padding: 10px 13px;
+    line-height: 130%;
   }
   span {
     font-weight: 600;
