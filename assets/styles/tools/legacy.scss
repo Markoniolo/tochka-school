@@ -1817,20 +1817,32 @@ Styles for Offer teacher
 Styles for Schedule
 --------------------
 */
-.schedule {padding: 0;}
+.schedul {padding: 0;}
 
 .schedul-blk {
   padding: 34px 0;
-  background: url(../img/schedule-bg.svg) right center no-repeat;
+  position: relative;
 }
 
-.schedule h2 {margin-bottom: 0;}
+.schedul h2 {margin-bottom: 0;}
 .schedul-blk {gap: 69px;}
 
 .schedule-info {
   border: 1px solid #C7D3F1;
   padding: 23px 30px;
   border-radius: 6px;
+}
+
+.schedule-info:after {
+  content: "";
+  position: absolute;
+  background: url(../img/schedule-bg.svg) right center / contain no-repeat;
+  width: 180px;
+  height: 201px;
+  top: 50%;
+  right: 40px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
 .schedule-info p {margin-bottom: 0;}
@@ -3084,7 +3096,7 @@ Styles for Page error
 .violet.reviews .swiper-button-prev, .violet.reviews .swiper-button-next {background-color: #BBB0E5;}
 .violet .accordion-button::after, .violet .accordion-button:not(.collapsed)::after {background-color: rgba(187, 176, 229, 0.502);}
 .violet-block .offer-teacher-info h1 {color: #ffffff;}
-.violer-block .schedule {border: 1px solid #E9E5F6;}
+.violer-block .schedul {border: 1px solid #E9E5F6;}
 .violet .teacher-work-info, .violet-block .teacher-block-info span, .violet-block .teacher-block-info ul li, .violet-block .teacher-block-image, .violet-block .important-info:before, .violet-block .price-blk, .violet .accordion-item, .violet .teacher-work-image {border: 1px solid #E9E5F6;}
 
 .greens .study-blk {border: 1px solid #C9EFCB;}
