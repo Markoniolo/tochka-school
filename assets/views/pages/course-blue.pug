@@ -1,0 +1,8 @@
+extends ../components/_layout/layout
+
+block head
+  +title('Страница курса синяя')
+
+block body
+  include ../components/lectures_single
+  +lectures_single('lectures_blue')

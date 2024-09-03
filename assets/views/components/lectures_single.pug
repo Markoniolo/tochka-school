@@ -1,0 +1,30 @@
+-
+  const lecturesList = [
+    'Учитель года Воронежской области в 2022 году.',
+    'Призер Всероссийского конкурса «Мои инновации в образовании-2017».',
+    'Почетная грамота департамента образования, науки и молодежной политики Воронежской области, 2018.',
+    'Финалист Всероссийского конкурса «Учитель года России-2022».',
+    'Педагогический стаж 10 лет.',
+    'Учитель года Воронежской области в 2022 году.',
+    'Призер Всероссийского конкурса «Мои инновации в образовании-2017».',
+    'Почетная грамота департамента образования, науки и молодежной политики Воронежской области, 2018.',
+    'Финалист Всероссийского конкурса «Учитель года России-2022».',
+    'Педагогический стаж 10 лет.',
+  ]
+
+mixin lectures_single (mod)
+  .lectures.lectures_single(class = mod ? mod : false)
+    .container
+      h2.lectures__title.title Учитель
+      .lectures__area
+        .lectures__inner
+          picture.lectures__picture
+            source(srcset=staticImg('lectures/lectures-1_mob.png') media="(max-width: 992px)")
+            img.lectures__image(src=staticImg('lectures/lectures-1.png') alt='')
+          .lectures__box(data-element="lectures__box")
+            .lectures__name Бабенко Анна Юрьевна
+            ul.lectures__list(data-element="lectures__list")
+              each item in lecturesList
+                li= item
+            .lectures__bottom
+              button.lectures__more(data-element="lectures__more") Показать полностью
