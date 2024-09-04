@@ -1738,11 +1738,17 @@ Styles for Offer teacher
   background: var(--1111, radial-gradient(87.15% 85.67% at 8.52% 18%, #DEEDFF 0%, #C7E0FF 100%));
   padding: 65px 69px;
   position: relative;
+  min-height: 458px;
 }
 
 .offer-teacher-info {
+  min-height: 328px;
   max-width: 700px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 
 .teacher-class {
@@ -1758,9 +1764,15 @@ Styles for Offer teacher
   margin-bottom: 22px;
 }
 
+.offer-teacher-info .btn-starts:after {
+  content: none;
+}
+
 .offer-teacher-info h1 {
   text-align: left;
-  margin-bottom: 93px;
+  margin-bottom: 22px;
+  font-size: 35px;
+  //margin-bottom: 93px;
   line-height: 1.36;;
 }
 
@@ -1817,7 +1829,11 @@ Styles for Offer teacher
 Styles for Schedule
 --------------------
 */
-.schedul {padding: 0;}
+.schedul {
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
 
 .schedul-blk {
   padding: 34px 0;
