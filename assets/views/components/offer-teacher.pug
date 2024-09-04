@@ -1,14 +1,13 @@
-section.offer-teacher
-  .container
-    .offer-teacher-block
-      .offer-teacher-info
-        span.teacher-class 1 &kcy;&lcy;&acy;&scy;&scy;
-        h1
-          | &Mcy;&acy;&tcy;&iecy;&mcy;&acy;&tcy;&icy;&kcy;&acy;
-          | &pcy;&ocy; &pcy;&rcy;&ocy;&gcy;&rcy;&acy;&mcy;&mcy;&iecy; &Mcy;. &Icy;. &Mcy;&ocy;&rcy;&ocy; &laquo;&SHcy;&kcy;&ocy;&lcy;&acy; &Rcy;&ocy;&scy;&scy;&icy;&icy;&raquo;
-        .d-flex.align-items-center.justify-content-between.offer-teacher-name-blk
-          a.anchor.btn.btn-warning.btn-starts(href='#block1') &Ncy;&acy;&chcy;&acy;&tcy;&softcy; &ocy;&bcy;&ucy;&chcy;&iecy;&ncy;&icy;&iecy;
-          span.offer-teacher-name &Kcy;&ocy;&ncy;&scy;&tcy;&acy;&ncy;&tcy;&icy;&ncy;&ocy;&vcy;&acy; &IEcy;&vcy;&gcy;&iecy;&ncy;&icy;&yacy; &Vcy;&lcy;&acy;&dcy;&icy;&mcy;&icy;&rcy;&ocy;&vcy;&ncy;&acy;
-      .offer-teacher-image
-        .offer-teacher-image-blk
-          img(src='assets/img/teacher-offer.png' alt='')
+mixin offer-teacher(title)
+  section.offer-teacher.offer-teacher-fix
+    .container
+      .offer-teacher-block
+        .offer-teacher-info
+          span.teacher-class 1 &kcy;&lcy;&acy;&scy;&scy;
+          h1= title
+          .d-flex.align-items-center.justify-content-between.offer-teacher-name-blk
+            a.anchor.btn.btn-warning.btn-starts(href='#block1') &Ncy;&acy;&chcy;&acy;&tcy;&softcy; &ocy;&bcy;&ucy;&chcy;&iecy;&ncy;&icy;&iecy;
+            span.offer-teacher-name &Kcy;&ocy;&ncy;&scy;&tcy;&acy;&ncy;&tcy;&icy;&ncy;&ocy;&vcy;&acy; &IEcy;&vcy;&gcy;&iecy;&ncy;&icy;&yacy; &Vcy;&lcy;&acy;&dcy;&icy;&mcy;&icy;&rcy;&ocy;&vcy;&ncy;&acy;
+        .offer-teacher-image
+          .offer-teacher-image-blk
+            img(src='assets/img/teacher-offer.png' alt='')

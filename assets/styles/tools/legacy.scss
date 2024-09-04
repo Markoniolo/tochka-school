@@ -1742,7 +1742,6 @@ Styles for Offer teacher
 }
 
 .offer-teacher-info {
-  min-height: 328px;
   max-width: 700px;
   position: relative;
 }
@@ -3092,7 +3091,7 @@ Styles for Page error
 .video-wrapper iframe {height: 350px;}
 
 .violet, .violet-block .price-title, .violet-block .price-month, .violet-block .licence-block  {background: #F6F4FF;}
-.violet-block .offer-teacher-block {background: radial-gradient(337.67% 76.38% at 3.61% 0%, #C5BCE8 0%, #9C8FCD 100%);}
+.violet-block .offer-teacher-block {min-height: 236px;background: radial-gradient(337.67% 76.38% at 3.61% 0%, #C5BCE8 0%, #9C8FCD 100%);}
 .violet .teacher-work-content .row > div:nth-child(2):before, .violet .teacher-work-content .row > div:nth-child(2):after {background: url(../img/teacher-work-line-violet.svg) left center / contain no-repeat;}
 .violet .study-blk {
   background: transparent;
