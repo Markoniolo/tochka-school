@@ -1745,10 +1745,6 @@ Styles for Offer teacher
   min-height: 328px;
   max-width: 700px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
 }
 
 .teacher-class {
@@ -1770,9 +1766,7 @@ Styles for Offer teacher
 
 .offer-teacher-info h1 {
   text-align: left;
-  margin-bottom: 22px;
-  font-size: 35px;
-  //margin-bottom: 93px;
+  margin-bottom: 93px;
   line-height: 1.36;;
 }
 
