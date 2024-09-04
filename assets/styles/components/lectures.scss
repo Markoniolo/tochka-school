@@ -288,12 +288,9 @@
 
 .lectures__box {
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   padding: 32px 38px 158px;
   border-radius: 10px;
-  overflow: hidden;
   background-color: #fff;
   box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
   @include media(lg) {
@@ -304,6 +301,13 @@
     padding: 53px 15px 100px;
     flex-grow: 1;
   }
+}
+
+.lectures__box-inner {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
 }
 
 .lectures__name {
@@ -351,10 +355,7 @@
       }
     }
     &:not(:last-of-type) {
-      margin-bottom: 16px;
-      @include media(md) {
-        margin-bottom: 15px;
-      }
+      margin-bottom: 22px;
     }
   }
 }
@@ -376,6 +377,7 @@
   right: 0;
   padding: 20px 38px 35px;
   background-color: #ffffff;
+  border-radius: 10px;
   @include media(lg) {
     padding: 15px 15px 28px;
   }

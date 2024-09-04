@@ -25,20 +25,21 @@ mixin lectures (mod)
                     source(srcset=staticImg('lectures/lectures-1_mob.png') media="(max-width: 992px)")
                     img.lectures__image(src=staticImg('lectures/lectures-1.png') alt='')
                   .lectures__box(data-element="lectures__box")
-                    .lectures__name Бабенко Анна Юрьевна
-                    ul.lectures__list(data-element="lectures__list")
-                      if slide === 1
-                        each item in lecturesList
-                          li= item
-                      else
-                        each item in lecturesList2
-                          li= item
-                    .lectures__bottom
-                      button.lectures__more(data-element="lectures__more") Показать полностью
-                      ul.lectures__tags
-                        li Русский язык
-                        li Литературное чтение
-                        li Математика
+                    .lectures__box-inner
+                      .lectures__name Бабенко Анна Юрьевна
+                      ul.lectures__list(data-element="lectures__list")
+                        if slide === 1
+                          each item in lecturesList
+                            li= item
+                        else
+                          each item in lecturesList2
+                            li= item
+                      .lectures__bottom
+                        button.lectures__more(data-element="lectures__more") Показать полностью
+                        ul.lectures__tags
+                          li Русский язык
+                          li Литературное чтение
+                          li Математика
         .lectures__nav-box
           button.lectures__nav.lectures__nav_prev
           .lectures__pagination
