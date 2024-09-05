@@ -2,7 +2,7 @@ lecturesSliderInit()
 
 function lecturesSliderInit () {
   const lecturesSlider = document.querySelector('.lectures__slider')
-  let lecturesInnerHeight = window.innerWidth = 420
+  let lecturesInnerHeight = 420
   let lecturesSliderSwiper
 
   if (lecturesSlider) {
