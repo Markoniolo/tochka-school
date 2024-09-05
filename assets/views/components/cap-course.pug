@@ -1,0 +1,16 @@
+mixin cap-course(mod, text="Курс по подготовке к ЕГЭ по физике по школьной программе 10 класса по физике по школьной")
+  .cap-course(class = mod ? mod : false)
+    .container
+      .cap-course__cont.cont
+        .cap-course__area
+          .cap-course__box
+            .cap-course__tag 10 класс
+            h1.cap-course__caption.caption= text
+            .cap-course__btns
+              a.cap-course__button.btn-warning(href='#block1') Начать обучение
+              .cap-course__teacher
+                span Учитель:
+                |
+                | Константинова Евгения Владимировна
+          picture.cap-course__picture
+            img.cap-course__image(src=staticImg('cap-course/cap-course.png') alt='')

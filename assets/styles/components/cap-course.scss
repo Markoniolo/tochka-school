@@ -1,0 +1,186 @@
+.cap-course {
+  margin-bottom: 70px;
+  @include media(lg) {
+    margin-bottom: 40px;
+  }
+  @include media(xs) {
+    padding-bottom: 85px;
+  }
+}
+
+.cap-course_blue {
+  .cap-course__area {
+    background: linear-gradient(313deg, #c7e0ff 0%, #ddecff 100%);
+  }
+}
+
+.cap-course_green {
+  .cap-course__area {
+    background: #e4ffe5;
+  }
+}
+
+.cap-course_violet {
+  .cap-course__area {
+    background: radial-gradient(337.67% 76.38% at 3.61% 0,#c5bce8 0,#9c8fcd 100%);
+  }
+  .cap-course__caption {
+    color: #ffffff;
+  }
+}
+
+.cap-course__cont {
+
+}
+
+.cap-course__area {
+  display: flex;
+  align-self: center;
+  position: relative;
+  padding: 36px 61px 50px;
+  min-height: 500px;
+  border-radius: 0 0 29px 29px;
+  @include media(md) {
+    border-radius: 16px;
+    padding: 21px 29px 30px;
+    min-height: 417px;
+  }
+  @include media(xs) {
+    padding: 20px 20px 30px;
+    min-height: 220px;
+  }
+}
+
+.cap-course__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 710px;
+  width: 100%;
+  @include media(md) {
+    max-width: 100%;
+    padding-right: 276px;
+  }
+  @include media(xs) {
+    padding-right: 138px;
+    justify-content: space-between;
+  }
+}
+
+.cap-course__tag {
+  background: url(../img/offer-teacher-class.svg) center / cover no-repeat;
+  color: #222;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  padding: 5px 9px;
+  display: inline-block;
+  margin-bottom: 12px;
+  @include media(md) {
+    font-size: 17px;
+    padding: 4px 9px;
+  }
+  @include media(xs) {
+    margin-bottom: 10px;
+  }
+}
+
+.cap-course__caption {
+  text-align: left;
+  margin-bottom: 62px;
+  @include media(md) {
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 136%;
+  }
+  @include media(sm) {
+    font-size: 28px;
+    line-height: 136%;
+  }
+  @include media(xs) {
+    font-size: 16px;
+    line-height: 127%;
+  }
+}
+
+.cap-course__btns {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  @include media(md) {
+    flex-direction: column;
+  }
+}
+
+.cap-course__button {
+  position: relative;
+  padding: 17px 55px;
+  @include media(md) {
+    padding: 12px 55px;
+  }
+  @include media(xs) {
+    position: absolute;
+    bottom: -85px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.cap-course__teacher {
+  padding: 17px 34px;
+  font-weight: 600;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #ffffff;
+  @include media(md) {
+    margin-bottom: 27px;
+    text-align: left;
+    order: -1;
+    padding: 0;
+    font-size: 14px;
+    line-height: 141%;
+    font-weight: 400;
+    background-color: transparent;
+    border-radius: 0;
+  }
+  @include media(xs) {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  span {
+    display: none;
+    @include media(md) {
+      display: block;
+      font-weight: 600;
+    }
+  }
+}
+
+.cap-course__picture {
+  width: 387px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 38px;
+  @include media(md) {
+    width: 305px;
+    right: 0;
+  }
+  @include media(xs) {
+    width: 171px;
+  }
+}
+
+.cap-course__image {
+  height: 490px;
+  display: block;
+  @include media(md) {
+    height: 387px;
+  }
+  @include media(xs) {
+    height: 217px;
+  }
+}
+
