@@ -1,5 +1,9 @@
 .cap {
   margin-bottom: 35px;
+  margin-top: 40px;
+  @include media(md) {
+    margin-top: 0;
+  }
   @include media(sm) {
     margin-bottom: 25px;
   }
