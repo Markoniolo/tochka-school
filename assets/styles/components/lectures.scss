@@ -1,4 +1,5 @@
 .lectures {
+  background-color: #ffffff;
   margin-bottom: 70px;
   @include media(md) {
     margin-bottom: 40px;
@@ -15,7 +16,6 @@
 }
 
 .lectures_single {
-  background-color: #ffffff;
   .lectures__box {
     z-index: 1;
     padding: 32px 38px 60px;
@@ -43,7 +43,6 @@
 }
 
 .lectures_blue {
-  background: #f6faff;
   .lectures__tags li {
     color: #91add0;
     background: #e8f2ff;
@@ -62,7 +61,6 @@
 }
 
 .lectures_green {
-  background: #e7f9e8;
   .lectures__tags li {
     background: #d6f1d9;
     color: #75af7a;
@@ -81,7 +79,6 @@
 }
 
 .lectures_violet {
-  background: #ffffff;
   .lectures__tags li {
     background: #d6f1d9;
     color: #75af7a;

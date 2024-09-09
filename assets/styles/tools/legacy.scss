@@ -1551,11 +1551,12 @@ Styles for Classes
 
 .classes-teacher-image {
   background: #EBF4FF;
-  border-radius: 10px;
   display: flex;
   align-items: flex-end;
   width: 183px;
   min-width: 183px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .classes-teacher-image img {

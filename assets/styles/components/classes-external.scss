@@ -29,7 +29,7 @@
   height: 229px;
   flex-shrink: 0;
   margin-right: 40px;
-  @include media(lg) {
+  @include media(md) {
     margin-right: 25px;
     width: 197px;
     height: 239px;
