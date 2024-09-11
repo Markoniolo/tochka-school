@@ -2349,7 +2349,7 @@ Styles for Price
 .price-icon .price-row:before, .price-icon .price-row:after {content: none;}
 .price-icon .price-row {justify-content: center;}
 .price-icon .price-blk {padding: 25px 0;}
-.price-icon .btn-go {margin-top: 50px;}
+.price-icon .btn-go {margin-top: 20px;}
 
 .green-list .price-title, .green-list .price-month {background: #E7F9E8;}
 .green-list .price-shedule button {color: #698F6B;}
@@ -2687,83 +2687,7 @@ Styles for Page end
   height: 23px;
 }
 
-/*
---------------------
-Styles for Footer
---------------------
-*/
-footer {
-  margin-top: auto;
-  background: #3B414F;
-  color: #FFF;
-  font-size: 15px;
-  line-height: 1.6;
-}
 
-.footer-block {padding: 72px 0 34px;}
-
-footer a, footer a:hover {color: #FFF;}
-footer ul li a:hover {text-decoration: underline;}
-
-.footer-logo {margin-bottom: 54px;}
-.footer-requisites {margin-bottom: 61px;}
-
-.footer-requisites p {
-  color: rgba(255, 255, 255, 0.50);
-  margin-bottom: 0;
-}
-
-.footer-requisites p:not(:last-child) {margin-bottom: 30px;}
-.footer-requisites span {display: block;}
-
-.footer-company p {
-  color: #FFF;
-  line-height: 1.6;
-}
-
-.footer-company p:not(:last-child) {margin-bottom: 0;}
-.footer-adress {max-width: 230px;}
-
-footer h3 {
-  color: #FFF;
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 1;
-  margin-bottom: 35px;
-}
-
-.footer-nav ul {gap: 20px;}
-.footer-contact a {display: block;}
-
-.footer-contact .tel {
-  color: #FFF;
-  font-family: "avenirnextcyr";
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 7px;
-  line-height: normal;
-}
-
-.footer-contact .call {
-  display: block;
-  color: rgba(255, 255, 255, 0.40);
-  font-family: "avenirnextcyr";
-  line-height: normal;
-}
-
-.footer-contact p span {display: block;}
-
-.footer-contact a.whatsapp {margin: 47px 0 13px;}
-
-.whatsapp:before {
-  content: "";
-  background: url(../img/whatsapp.svg) no-repeat;
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-}
-
-.footer-contact .email {margin-bottom: 47px;}
 .social {margin-top: 51px;}
 .social p {margin-bottom: 21px;}
 .social ul {gap: 21px;}
