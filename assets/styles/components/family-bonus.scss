@@ -1,0 +1,80 @@
+.family-bonus {
+  margin-bottom: 70px;
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.family-bonus__area {
+  position: relative;
+  border-radius: 16px;
+  background-color: $blue;
+  padding: 42px 300px 42px 42px;
+  display: flex;
+  min-height: 262px;
+  @include media(md) {
+    padding: 20px;
+    display: block;
+  }
+}
+
+.family-bonus__box {
+
+}
+
+.family-bonus__top {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  @include media(md) {
+    margin-bottom: 20px;
+  }
+  &::after {
+    content: '';
+    margin-left: 40px;
+    flex-shrink: 0;
+    width: 181px;
+    height: 33px;
+    @include bgIcon('family-bonus/ic_family_bonus_line.svg');
+    @include media(md) {
+      width: 112px;
+      height: 20px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.family-bonus__title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 144%;
+  color: #222;
+  @include media(md) {
+    font-size: 20px;
+  }
+}
+
+.family-bonus__text {
+  font-weight: 600;
+  font-size: 18px;
+  @include media(md) {
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+}
+
+.family-bonus__image {
+  width: 315px;
+  height: 194px;
+  position: absolute;
+  top: 27px;
+  right: 17px;
+  @include media(md) {
+    position: static;
+    width: 269px;
+    height: 166px;
+    margin: 0 auto;
+    display: block;
+  }
+}

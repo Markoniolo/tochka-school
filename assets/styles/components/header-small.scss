@@ -1,0 +1,28 @@
+.header-small {
+  margin-bottom: 35px;
+  @include media(md) {
+    margin-bottom: 20px;
+  }
+}
+
+.header-small__area {
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  @include media(md) {
+    padding: 20px 0;
+  }
+}
+
+.header-small__logo {
+
+}
+
+.header-small__logo-image {
+  width: 193px;
+  height: 60px;
+  @include media(md) {
+    width: 136px;
+    height: 42px;
+  }
+}

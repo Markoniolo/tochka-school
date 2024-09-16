@@ -1,0 +1,37 @@
+.family-order
+  .cont-small
+    .family-order__area
+      .family-order__title Записаться на консультацию
+      .family-order__text.
+        Заполните форму ниже. Наш методист свяжется с Вами, чтобы определить время и провести встречу в видеоформате.
+      img.family-order__image(src=staticImg('family-order/family-order.svg') alt='')
+      form.family-order__form(data-element="family-order-form")
+        input.family-order__input.input-gray(name='name' placeholder='Ваше имя' type='text')
+        input.family-order__input.input-gray(name='tel' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
+        .family-order__note В какой мессенджер Вам написать
+        .family-order__line
+          label.family-order__radio
+            input.family-order__radio-input(name='messenger' value='tg' type='radio' checked)
+            .family-order__radio-view
+            img.family-order__radio-icon(src=staticImg('family-order/ic_messenger_tg.svg') alt='')
+          label.family-order__radio
+            input.family-order__radio-input(name='messenger' value='wp' type='radio')
+            .family-order__radio-view
+            img.family-order__radio-icon(src=staticImg('family-order/ic_messenger_wp.svg') alt='')
+        button.family-order__submit.btn-warning Записаться
+        label.family-order__checkbox
+          input.family-order__checkbox-input(name='policy' type='checkbox' checked)
+          .family-order__checkbox-view
+          .family-order__checkbox-text
+            | Даю Согласие на обработку персональных данных в соответствие с
+            |
+            a(href='#') Политикой.
+        label.family-order__checkbox
+          input.family-order__checkbox-input(name='news' type='checkbox')
+          .family-order__checkbox-view
+          .family-order__checkbox-text
+            | Согласен на
+            |
+            a(href='#') получение
+            |
+            | рекламы

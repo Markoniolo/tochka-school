@@ -1,0 +1,83 @@
+.family-stats {
+  margin-bottom: 50px;
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.family-stats__title {
+  text-align: left;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 122%;
+  color: #222;
+  @include media(md) {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  @include media(sm) {
+    font-size: 20px;
+  }
+}
+
+.family-stats__text {
+  font-size: 20px;
+  line-height: 148%;
+  color: rgba(0, 0, 0, 0.75);
+  @include media(md) {
+    font-size: 15px;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 32px;
+    @include media(md) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.family-stats__graph {
+  margin-top: 30px;
+  margin-bottom: 37px;
+  padding: 15px 15px 21px 15px;
+  border: 1px solid #e3ebfe;
+  border-radius: 10px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.09);
+  background: #fff;
+  @include media(md) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    padding: 6px 6px 12px 6px;
+  }
+}
+
+.family-stats__image {
+  border-radius: 10px;
+  @include media(md) {
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+
+.family-stats__graph-text {
+  margin-top: 22px;
+  font-size: 13px;
+  line-height: 148%;
+  color: rgba(0, 0, 0, 0.75);
+  font-style: italic;
+  @include media(md) {
+    font-size: 8px;
+    margin-top: 12px;
+  }
+}
+
+.family-stats__note {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 148%;
+  color: rgba(0, 0, 0, 0.75);
+  @include media(md) {
+    font-size: 15px;
+  }
+}

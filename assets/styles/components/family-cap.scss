@@ -1,0 +1,55 @@
+.family-cap {
+  margin-bottom: 70px;
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.family-cap__area {
+  background-color: $blue;
+  padding: 46px 70px 46px 45px;
+  border-radius: 10px;
+  position: relative;
+  @include media(md) {
+    padding: 30px 20px 30px 25px;
+  }
+  &::before {
+    content: '';
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    z-index: 1;
+    top: 22px;
+    right: 23px;
+    @include bgIcon('family-cap/ic_family_cap.svg');
+    @include media(md) {
+      top: 13px;
+      right: 15px;
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
+
+.family-cap__caption {
+  margin-bottom: 45px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 122%;
+  color: #222;
+  @include media(md) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.family-cap__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 122%;
+  color: #222;
+  @include media(md) {
+    font-size: 16px;
+  }
+}
