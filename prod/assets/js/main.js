@@ -67,7 +67,7 @@ function familyOrderFormInit () {
     } else if (iti.isValidNumber()) {
       console.log(familyOrderForm.querySelector("[name='name']").value, '----------',
         familyOrderForm.querySelector("[name='tel']").value)
-      clearForm()
+
     } else {
       input.classList.add("error")
     }
