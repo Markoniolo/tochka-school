@@ -1,0 +1,180 @@
+.family-thanks {
+  padding: 40px 0 70px;
+  overflow: hidden;
+  @include media(lg) {
+    padding: 30px 0 30px;
+  }
+}
+
+.family-thanks__caption {
+  position: relative;
+  max-width: 1135px;
+  width: 100%;
+  margin: 0 auto 90px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 122%;
+  text-align: center;
+  color: #222;
+  @include media(lg) {
+    max-width: 555px;
+    margin: 0 auto 35px;
+    font-size: 22px;
+  }
+  @include media(sm) {
+    max-width: 363px;
+    font-size: 18px;
+  }
+  &::before {
+    content: '';
+    transform: rotate(-26deg);
+    width: 204px;
+    height: 61px;
+    position: absolute;
+    z-index: -1;
+    top: 18px;
+    left: -122px;
+    @include bgIcon('family-thanks/family-thanks-decor-1.svg');
+    @include media(lg) {
+      transform: rotate(-54deg);
+      width: 97px;
+      height: 29px;
+      top: 25px;
+      left: -90px;
+    }
+    @include media(sm) {
+      content: none;
+    }
+  }
+  &::after {
+    content: '';
+    transform: rotate(32deg);
+    width: 137px;
+    height: 24px;
+    position: absolute;
+    z-index: -1;
+    top: 165px;
+    right: -85px;
+    @include bgIcon('family-thanks/family-thanks-decor-2.svg');
+    @include media(lg) {
+      width: 89px;
+      height: 15px;
+      top: 90px;
+      right: -75px;
+    }
+    @include media(sm) {
+      content: none;
+    }
+  }
+}
+
+.family-thanks__title {
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 122%;
+  text-align: center;
+  color: #222;
+  font-weight: 700;
+  @include media(lg) {
+    font-size: 16px;
+  }
+}
+
+.family-thanks__text {
+  max-width: 1199px;
+  margin: 0 auto 50px;
+  font-size: 24px;
+  text-align: center;
+  color: #222;
+  font-weight: 500;
+  line-height: 156%;
+  @include media(lg) {
+    margin: 0 auto 40px;
+    font-size: 16px;
+    max-width: 625px;
+  }
+  @include media(sm) {
+    font-size: 15px;
+  }
+}
+
+.family-thanks__area {
+  position: relative;
+  margin: 0 auto;
+  min-height: 330px;
+  max-width: 468px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  @include media(sm) {
+    min-height: 280px;
+    max-width: 369px;
+  }
+  &::before {
+    content: '';
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 50%, #fff 100%);
+    position: absolute;
+    z-index: 1;
+    right: -20px;
+    left: -20px;
+    bottom: -5px;
+    height: 150px;
+  }
+  &::after {
+    content: '';
+    transform: rotate(88deg);
+    position: absolute;
+    top: 20px;
+    right: -130px;
+    width: 197px;
+    height: 144px;
+    @include bgIcon('family-thanks/family-thanks-decor-4.svg');
+    @include media(lg) {
+      transform: rotate(72deg);
+      width: 119px;
+      height: 96px;
+      top: -20px;
+      right: -50px;
+    }
+    @include media(sm) {
+      transform: rotate(62deg);
+      width: 74px;
+      height: 54px;
+      top: -10px;
+      right: -5px;
+    }
+  }
+}
+
+.family-thanks__decor {
+  position: absolute;
+  bottom: 60px;
+  left: -260px;
+  width: 211px;
+  height: 37px;
+  transform: rotate(143deg);
+  @include media(lg) {
+    display: none;
+  }
+}
+
+.family-thanks__image {
+  position: absolute;
+  width: 468px;
+  height: 330px;
+  @include media(sm) {
+    width: 387px;
+    height: 280px;
+  }
+}
+
+.family-thanks__button {
+  position: relative;
+  z-index: 5;
+  max-width: 273px;
+  width: 100%;
+  margin-bottom: 28px;
+  @include media(sm) {
+    padding: 12px 28px;
+  }
+}
