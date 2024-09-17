@@ -7,7 +7,8 @@ function familyOrderFormInit () {
 
   const iti = window.intlTelInput(input, {
     utilsScript: "../libs/intlTelInputWithUtils.min",
-    initialCountry: 'ru'
+    initialCountry: 'ru',
+    separateDialCode: true
   })
 
   familyOrderForm.addEventListener('submit', (e) => {

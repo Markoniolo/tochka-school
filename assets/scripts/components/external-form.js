@@ -6,7 +6,8 @@ for (let i = 0; i < externalFormArray.length; i++) {
 
   const iti = window.intlTelInput(input, {
     utilsScript: "../libs/intlTelInputWithUtils.min",
-    initialCountry: 'ru'
+    initialCountry: 'ru',
+    separateDialCode: true
   })
 
   function resetError () {
