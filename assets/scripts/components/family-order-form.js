@@ -4,13 +4,19 @@ if (familyOrderForm) familyOrderFormInit()
 
 function familyOrderFormInit () {
   const input = familyOrderForm.querySelector("[data-element='input-phone-intl']")
+  const inputHidden = familyOrderForm.querySelector("[data-element='input-phone-hidden']")
 
   const iti = window.intlTelInput(input, {
     utilsScript: "../libs/intlTelInputWithUtils.min",
     initialCountry: 'ru',
-    hiddenInput: () => ({ phone: "tel", country: "country_code" }),
     separateDialCode: true
   })
+
+  input.addEventListener('input', updateHiddenInput)
+
+  function updateHiddenInput () {
+    inputHidden.value = iti.selectedCountryData.dialCode + input.value
+  }
 
   familyOrderForm.addEventListener('submit', (e) => {
     resetError()
@@ -20,7 +26,7 @@ function familyOrderFormInit () {
     } else if (iti.isValidNumber()) {
       familyOrderForm.submit()
       console.log(familyOrderForm.querySelector("[name='name']").value)
-      console.log(iti.selectedCountryData.dialCode + familyOrderForm.querySelector("[name='tel']").value)
+      console.log(inputHidden.value)
       //clearForm()
     } else {
       input.classList.add("error")

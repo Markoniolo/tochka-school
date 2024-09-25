@@ -26,7 +26,7 @@ for (let i = 0; i < externalFormArray.length; i++) {
         data: {
           'name': form.querySelector("[name='name']").value,
           'utm': form.querySelector("[name='utm']").value,
-          'phone': iti.selectedCountryData.dialCode + form.querySelector("[name='tel']").value,
+          'phone': iti.selectedCountryData.dialCode + input.value,
           'email': form.querySelector("[name='email']").value,
         }
       });
