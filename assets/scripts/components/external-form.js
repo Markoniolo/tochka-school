@@ -25,11 +25,12 @@ for (let i = 0; i < externalFormArray.length; i++) {
       $.request('MainFunctions::onSendMessageTb', {
         data: {
           'name': form.querySelector("[name='name']").value,
-          'phone': form.querySelector("[name='tel']").value,
+          'utm': form.querySelector("[name='utm']").value,
+          'phone': iti.selectedCountryData.dialCode + form.querySelector("[name='tel']").value,
           'email': form.querySelector("[name='email']").value,
         }
       });
-      clearForm()
+      //clearForm()
       window.open('https://tochka-school.ru/storage/app/media/Dokumenti/Eksternat_Tocka_Znanii.pdf', '_blank')
     } else {
       input.classList.add("error")

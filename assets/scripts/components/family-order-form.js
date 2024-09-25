@@ -11,15 +11,29 @@ function familyOrderFormInit () {
     separateDialCode: true
   })
 
+  // familyOrderForm.addEventListener('submit', (e) => {
+  //   resetError()
+  //   e.preventDefault()
+  //   if (!input.value.trim()) {
+  //     input.classList.add("error")
+  //   } else if (iti.isValidNumber()) {
+  //     console.log(familyOrderForm.querySelector("[name='name']").value, '----------',
+  //       iti.selectedCountryData.dialCode + familyOrderForm.querySelector("[name='tel']").value)
+  //
+  //   } else {
+  //     input.classList.add("error")
+  //   }
+  // })
+
   familyOrderForm.addEventListener('submit', (e) => {
     resetError()
     e.preventDefault()
     if (!input.value.trim()) {
       input.classList.add("error")
     } else if (iti.isValidNumber()) {
-      console.log(familyOrderForm.querySelector("[name='name']").value, '----------',
-        familyOrderForm.querySelector("[name='tel']").value)
-
+      console.log(familyOrderForm.querySelector("[name='name']").value)
+      console.log(iti.selectedCountryData.dialCode + familyOrderForm.querySelector("[name='tel']").value)
+      //clearForm()
     } else {
       input.classList.add("error")
     }
