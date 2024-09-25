@@ -59,22 +59,9 @@ function familyOrderFormInit () {
   const iti = window.intlTelInput(input, {
     utilsScript: "../libs/intlTelInputWithUtils.min",
     initialCountry: 'ru',
+    hiddenInput: () => ({ phone: "tel", country: "country_code" }),
     separateDialCode: true
   })
-
-  // familyOrderForm.addEventListener('submit', (e) => {
-  //   resetError()
-  //   e.preventDefault()
-  //   if (!input.value.trim()) {
-  //     input.classList.add("error")
-  //   } else if (iti.isValidNumber()) {
-  //     console.log(familyOrderForm.querySelector("[name='name']").value, '----------',
-  //       iti.selectedCountryData.dialCode + familyOrderForm.querySelector("[name='tel']").value)
-  //
-  //   } else {
-  //     input.classList.add("error")
-  //   }
-  // })
 
   familyOrderForm.addEventListener('submit', (e) => {
     resetError()
@@ -82,6 +69,7 @@ function familyOrderFormInit () {
     if (!input.value.trim()) {
       input.classList.add("error")
     } else if (iti.isValidNumber()) {
+      familyOrderForm.submit()
       console.log(familyOrderForm.querySelector("[name='name']").value)
       console.log(iti.selectedCountryData.dialCode + familyOrderForm.querySelector("[name='tel']").value)
       //clearForm()
