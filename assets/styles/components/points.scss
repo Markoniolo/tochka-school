@@ -3,10 +3,24 @@
   @include media(md) {
     padding: 40px 0;
   }
+  &_blue {
+    .points__item {
+      &::before {
+        @include bgIcon('icons/check_blue.svg');
+      }
+    }
+  }
   &_green {
     .points__item {
       &::before {
         @include bgIcon('icons/check_green.svg');
+      }
+    }
+  }
+  &_violet {
+    .points__item {
+      &::before {
+        @include bgIcon('icons/check_violet.svg');
       }
     }
   }
