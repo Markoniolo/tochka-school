@@ -75,7 +75,6 @@ function familyOrderFormInit () {
     if (!input.value.trim()) {
       input.classList.add("error")
     } else if (iti.isValidNumber()) {
-      familyOrderForm.submit()
       console.log(familyOrderForm.querySelector("[name='name']").value)
       console.log(inputHidden.value)
       //clearForm()

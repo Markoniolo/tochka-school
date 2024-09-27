@@ -2748,7 +2748,10 @@ footer .lk {display: none;}
 Styles for About
 --------------------
 */
-.about {padding-bottom: 0;}
+.about {
+  padding-bottom: 0;
+  margin-bottom: 70px;
+}
 .about h1 {margin-bottom: 50px;}
 
 .about-container {
@@ -2790,7 +2793,7 @@ Styles for About
 
 .about h2 {
   font-size: 32px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 37px;
 }
 
@@ -3126,6 +3129,9 @@ Styles for Adaptive
   .direction .row > div .direction-blk:after {background-size: 86px 86px !important;}
   .offer-blk .tooltips {left: 0;}
   .offer-blk .tooltips:after {left: 50px;}
+  .about {
+    margin-bottom: 40px;
+  }
   .about .blue {
     margin-top: 0;
   }

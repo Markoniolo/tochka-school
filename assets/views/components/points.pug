@@ -1,0 +1,12 @@
+mixin points(title, list1, list2, mod)
+  .points(class = mod ? mod : false)
+    .container
+      .points__area
+        h2.points__title.title= title
+        .points__box
+          ul.points__list
+            each item in list1
+              li.points__item= item
+          ul.points__list
+            each item in list2
+              li.points__item= item

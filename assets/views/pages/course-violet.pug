@@ -6,5 +6,13 @@ block head
 block body
   include ../components/cap-course
   +cap-course('cap-course_violet')
+  include ../components/points
+  +points('С нами у Вас всё-всё получится!',
+    ['Научим решать задания 1 и 2 части', 'Добьёмся понимания без зубрёжки', 'Отследим прогресс по «пробникам»'],
+    ['Поможем исправить ошибки', 'Разберём все тонкости экзамена',
+      'Подготовим на высокий балл'], 'points_fill-violet')
+  include ../components/study
+  +study('blue')
+  include ../components/schedul
   include ../components/lectures_single
   +lectures_single('lectures_violet')

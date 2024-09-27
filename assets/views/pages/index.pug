@@ -6,5 +6,13 @@ block head
 block body
   include ../components/primary-offer
   include ../components/direction
-  include ../components/classes
+  include ../components/about
+  include ../components/achiev
+  include ../components/concept
   include ../components/numbers
+  include ../components/points
+  +points('Нам по пути, если Вы:',
+    ['Хотите, чтобы ребёнку понятно объясняли материал','Живёте за границей и хотите учиться по российской программе',
+      'Ищете школу, где уделят внимание, помогут исправить ошибки, ответят на все вопросы'],
+    ['Планируете перейти на семейное обучение','Хотите учиться в позитивной среде, где ребёнка уважают и ценят',
+      'Недовольны качеством обучения и отношением к детям в обычной школе'])

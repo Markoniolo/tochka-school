@@ -1,0 +1,17 @@
+-
+  const achievList = [
+    'Резидент «Сколково»',
+    'Онлайн-школа года по версии «GetCourse»',
+    'Школа №1 в рейтинге школ на внешних платформах по версии «SmartRanking» (2024)',
+    'Партнёр «SmartRanking» — исследователя рынка онлайн-образования',
+    'Аккредитованная IT-компания',
+  ]
+
+.achiev
+  .container
+    h2.achiev__title.title!= '<span>Не просто школа.</span> «Точка Знаний» — это:'
+    .achiev__area
+      ul.achiev__list
+        each item in achievList
+          li.achiev__item= item
+      img.achiev__image(src=staticImg('achiev/achiev.svg') alt='')

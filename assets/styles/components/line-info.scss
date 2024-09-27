@@ -6,6 +6,15 @@
   @include media(sm) {
     margin-bottom: 40px;
   }
+  & + .points {
+    margin-top: -28px;
+    @include media(md) {
+      margin-top: -35px;
+    }
+    @include media(sm) {
+      margin-top: -40px;
+    }
+  }
 }
 
 .line-info_blue {

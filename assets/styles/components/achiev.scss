@@ -1,0 +1,113 @@
+.achiev {
+  padding: 70px 0 85px;
+  background-color: $blue;
+  margin-bottom: 70px;
+  @include media(md) {
+    margin-bottom: 40px;
+    padding: 40px 0;
+  }
+}
+
+.achiev__title {
+  margin-bottom: 60px;
+  @include media(md) {
+    margin-bottom: 30px;
+  }
+  @include media(xs) {
+    margin-bottom: 11px;
+  }
+  span {
+    font-weight: 700;
+    @include media(xs) {
+      display: block;
+    }
+  }
+}
+
+.achiev__area {
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.09);
+  background: #fff;
+  border: 1px solid #e3ebfe;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px 20px 45px;
+  @include media(md) {
+    padding: 30px 25px 30px 30px;
+  }
+  @include media(xs) {
+    flex-direction: column;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.achiev__list {
+  padding: 0;
+  max-width: 612px;
+  width: 100%;
+  @include media(xs) {
+    border: 1px solid #e3ebfe;
+    border-radius: 10px;
+    box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.09);
+    background: #fff;
+    padding: 30px;
+  }
+}
+
+.achiev__item {
+  position: relative;
+  padding-left: 53px;
+  list-style-type: none;
+  min-height: 33px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 144%;
+  display: flex;
+  align-items: center;
+  @include media(md) {
+    min-height: 29px;
+    font-size: 14px;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+    @include media(md) {
+      margin-bottom: 25px;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 33px;
+    height: 33px;
+    @include bgIcon('icons/check_blue.svg');
+    @include media(md) {
+      width: 29px;
+      height: 29px;
+    }
+  }
+}
+
+.achiev__image {
+  margin-left: 20px;
+  flex-shrink: 0;
+  width: 492px;
+  height: 355px;
+  @include media(md) {
+    width: 344px;
+    height: 248px;
+  }
+  @include media(xs) {
+    order: -1;
+    width: 299px;
+    height: 216px;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+}

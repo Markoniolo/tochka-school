@@ -6,6 +6,15 @@
   @include media(xs) {
     padding-bottom: 85px;
   }
+  & + .points {
+    margin-top: -70px;
+    @include media(lg) {
+      margin-top: -40px;
+    }
+    @include media(xs) {
+      padding-top: -85px;
+    }
+  }
 }
 
 .cap-course_blue {
