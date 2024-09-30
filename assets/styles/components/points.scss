@@ -73,20 +73,28 @@
         padding: 40px 20px;
       }
     }
-    .points__box {
-      justify-content: space-around;
-      gap: 0 20px;
-      @include media(xs) {
-        gap: 25px 0;
-      }
-    }
     .points__list {
-      width: auto;
+      justify-content: space-around;
+      @include media(sm) {
+        justify-content: space-between;
+        margin: 0 -10px;
+      }
       @include media(xs) {
-        width: 100%;
+        justify-content: normal;
+        margin: 0;
       }
     }
     .points__item {
+      width: 450px;
+      @include media(md) {
+        width: 330px;
+      }
+      @include media(sm) {
+        width: 320px;
+      }
+      @include media(xs) {
+        width: 100%;
+      }
       &::before {
         @include bgIcon('icons/check_violet-dark.svg');
       }
@@ -115,29 +123,31 @@
 }
 
 .points__list {
-  width: calc(50% - 20px);
   padding: 0;
-  @include media(xs) {
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px 0;
+  @include media(md) {
+    gap: 25px 0;
   }
 }
 
 .points__item {
-  &:not(:last-of-type) {
-    margin-bottom: 45px;
-    @include media(md) {
-      margin-bottom: 25px;
-    }
-  }
   list-style-type: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 144%;
   padding-left: 53px;
   position: relative;
+  width: calc(50% - 10px);
   @include media(md) {
     font-size: 14px;
     padding-left: 45px;
+  }
+  @include media(xs) {
+    width: 100%;
   }
   &::before {
     content: '';
