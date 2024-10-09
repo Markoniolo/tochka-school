@@ -1,0 +1,209 @@
+.cap-teacher {
+  margin-bottom: 70px;
+  color: #222;
+  @include media(lg) {
+    margin-bottom: 40px;
+  }
+}
+
+.cap-teacher__wrap {
+  @include media(md) {
+    padding-bottom: 75px;
+  }
+  @include media(xs) {
+    padding-bottom: 160px;
+  }
+}
+
+.cap-teacher__area {
+  background: linear-gradient(313deg, #c7e0ff 0%, #ddecff 100%);
+  display: flex;
+  align-self: center;
+  position: relative;
+  padding: 36px 61px 50px;
+  min-height: 500px;
+  border-radius: 0 0 29px 29px;
+  @include media(md) {
+    border-radius: 16px;
+    padding: 21px 29px 30px;
+    min-height: 417px;
+  }
+  @include media(xs) {
+    padding: 20px 20px 30px;
+    min-height: 220px;
+  }
+}
+
+.cap-teacher__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 900px;
+  width: 100%;
+  @include media(md) {
+    max-width: 100%;
+    padding-right: 276px;
+  }
+  @include media(xs) {
+    padding-right: 138px;
+    justify-content: space-between;
+  }
+}
+
+.cap-teacher__caption {
+  text-align: left;
+  margin-bottom: 37px;
+  @include media(md) {
+    margin-bottom: 29px;
+    font-size: 28px;
+    line-height: 136%;
+  }
+  @include media(sm) {
+    margin-bottom: 19px;
+    font-size: 28px;
+    line-height: 136%;
+  }
+  @include media(xs) {
+    font-size: 16px;
+    line-height: 127%;
+  }
+}
+
+.cap-teacher__note {
+  margin-bottom: 37px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 144%;
+  @include media(md) {
+    margin-bottom: 41px;
+    font-size: 16px;
+    line-height: 141%;
+  }
+  @include media(xs) {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 141%;
+  }
+}
+
+.cap-teacher__text {
+  width: 59%;
+  font-size: 15px;
+  line-height: 144%;
+  @include media(md) {
+    font-size: 12px;
+    line-height: 141%;
+    text-align: center;
+    border: 1px solid #e3ebfe;
+    border-radius: 10px;
+    box-shadow: 0 6px 13px 0 rgba(135, 163, 227, 0.07);
+    background: #f6faff;
+    padding: 13px 6px;
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  @include media(xs) {
+    bottom: -90px;
+  }
+}
+
+.cap-teacher__btns {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  @include media(md) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  @include media(xs) {
+    display: block;
+    position: static;
+  }
+}
+
+.cap-teacher__button {
+  display: inline-block;
+  max-width: 246px;
+  width: 100%;
+  padding: 17px 28px;
+  @include media(md) {
+    margin-top: 20px;
+    display: block;
+    max-width: 100%;
+    padding: 12px 55px;
+  }
+  @include media(xs) {
+    margin: 0;
+    position: absolute;
+    bottom: -160px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.cap-teacher__teacher {
+  margin-left: auto;
+  max-width: 364px;
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 8px;
+  padding: 17px 25px 15px;
+  background: #fff;
+  font-size: 15px;
+  @include media(md) {
+    order: -1;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    font-size: 14px;
+  }
+  @include media(xs) {
+    font-size: 12px;
+  }
+  span {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    @include media(md) {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    @include media(xs) {
+      font-size: 12px;
+    }
+  }
+}
+
+.cap-teacher__picture {
+  width: 387px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 38px;
+  @include media(md) {
+    width: 305px;
+    right: 0;
+  }
+  @include media(xs) {
+    width: 171px;
+  }
+}
+
+.cap-teacher__image {
+  height: 490px;
+  display: block;
+  @include media(md) {
+    height: 387px;
+  }
+  @include media(xs) {
+    height: 217px;
+  }
+}

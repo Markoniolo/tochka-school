@@ -1,0 +1,121 @@
+.contacts {
+  margin-bottom: 88px;
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+  &_blue {
+    .contacts__area {
+      background: #eef3ff;
+    }
+  }
+}
+
+.contacts__area {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.09);
+  padding: 50px 45px;
+  color: #222;
+  min-height: 297px;
+  display: flex;
+  @include media(md) {
+    padding: 30px;
+  }
+  @include media(xs) {
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts__box {
+  max-width: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  @include media(md) {
+    max-width: 370px;
+  }
+  @include media(xs) {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 24px;
+  text-align: left;
+  @include media(md) {
+    margin-bottom: 20px;
+  }
+  @include media(xs) {
+    text-align: center;
+  }
+}
+
+.contacts__text {
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 135%;
+  @include media(md) {
+    margin-bottom: 40px;
+    max-width: 282px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 164%
+  }
+  @include media(xs) {
+    max-width: 220px;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+}
+
+.contacts__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  @include media(md) {
+    flex-direction: column;
+    max-width: 263px;
+  }
+}
+
+.contacts__button {
+  padding: 16px;
+  width: calc(50% - 17px);
+  @include media(md) {
+    width: 100%;
+  }
+  &:last-of-type {
+    @include media(md) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.contacts__picture {
+  position: absolute;
+  top: -12px;
+  right: 93px;
+  @include media(md) {
+    width: 350px;
+    height: 247px;
+    top: unset;
+    bottom: 16px;
+    right: 26px;
+  }
+  @include media(xs) {
+    position: static;
+    margin-bottom: 31px;
+    width: 234px;
+    height: 162px;
+  }
+}
+
+.contacts__image {
+  width: 100%;
+  height: 100%;
+}

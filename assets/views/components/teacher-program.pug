@@ -1,0 +1,58 @@
+-
+  const teacherProgramList = [
+    {
+      name: 'Занятие 1. Задача 13. Уравнения.',
+      list: ['особенности оформления, критерии оценивания;','способы верного обоснования в пункте б).']
+    },
+    {
+      name: 'Занятие 2. Задача 15. Неравенства.',
+      list: ['особенности оформления, критерии оценивания;', 'использование ОДЗ.']
+    },
+    {
+      name: 'Занятие 3. Задача 16. Экономика. ',
+      list: ['особенности оформления, критерии оценивания;', 'понятие математической модели.']
+    },
+    {
+      name: 'Занятие 4. Задача 18. Параметр.',
+      list: ['особенности оформления, критерии оценивания;', 'анализ ситуаций, где лучше графо-аналитический метод, а где - алгебраический.']
+    },
+    {
+      name: 'Занятие 5. Задача 14. Стереометрия. ',
+      list: ['особенности оформления, критерии оценивания;', 'основные теоремы, использующиеся на ЕГЭ.']
+    },
+    {
+      name: 'Занятие 6. Задача 17. Планиметрия.',
+      list: ['особенности оформления, критерии оценивания', 'основные теоремы, использующиеся на ЕГЭ.']
+    },
+    {
+      name: 'Занятие 7. Задача 19. Теория чисел.',
+      list: ['особенности оформления, критерии оценивания;', 'способы приведения примеров и конструкций.']
+    }
+  ]
+
+.teacher-program
+  .container
+    .teacher-program__area
+      .teacher-program__inner
+        h2.teacher-program__title.title Программа обучения
+        .teacher-program__note 7 уроков = 7 заданий второй части “профиля” ЕГЭ
+        p.teacher-program__text.
+          На уроке разбираем критерии проверки конкретного задания второй
+          части, примеры правильного и неправильного оформления, «тонкие»
+          места, в которых дети чаще всего допускают неточности.
+        p.teacher-program__text.
+          В конце курса — зачетная работа, в которой Вы попрактикуетесь оценивать решения учеников.
+      .teacher-program__box
+        ul.teacher-program__list
+          .swiper-wrapper
+            li.teacher-program__space.swiper-slide
+            each item in teacherProgramList
+              li.teacher-program__item.swiper-slide
+                .teacher-program__name= item.name
+                ul.teacher-program__points
+                  each point in item.list
+                    li.teacher-program__point= point
+            li.teacher-program__item.teacher-program__item_final.swiper-slide
+              .teacher-program__name Зачетное задание
+              img.teacher-program__icon(src=staticImg('teacher-program/teacher-program-1.svg') alt='')
+            li.teacher-program__space.swiper-slide

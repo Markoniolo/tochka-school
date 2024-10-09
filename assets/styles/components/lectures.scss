@@ -96,6 +96,49 @@
   }
 }
 
+.lectures_course-teacher-blue {
+  margin-bottom: 0;
+  background: $blue;
+  @include media(md) {
+    margin-bottom: 0;
+  }
+  .lectures__tags li {
+    color: #91add0;
+    background: #e8f2ff;
+  }
+  .lectures__list {
+    margin-bottom: 0;
+    @include media(md) {
+      margin-bottom: 0;
+    }
+  }
+  .lectures__bottom {
+    display: none;
+  }
+  .lectures__box-inner {
+    overflow: visible;
+  }
+  .lectures__list li {
+    &::before {
+      @include bgIcon('icons/check_blue.svg');
+    }
+  }
+  .lectures__nav {
+    background-color: #c7e0ff;
+  }
+  .lectures__box, .lectures__picture {
+    border: 1px solid #e3ebfe;
+  }
+  .lectures__box {
+    padding: 32px 38px;
+  }
+  .lectures__picture {
+    margin-right: 20px;
+    width: 333px;
+    height: 334px;
+  }
+}
+
 .lectures__title {
   margin-bottom: 55px;
   @include media(md) {

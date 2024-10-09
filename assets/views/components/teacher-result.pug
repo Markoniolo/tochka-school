@@ -1,0 +1,23 @@
+-
+  const teacherResultList = [
+    'Разберётесь в критериях оценивания задач ЕГЭ',
+    'Будете знать основные методы решения задач, в том числе нестандартные;',
+    'Увидите, в каких местах ученики обычно допускают ошибки',
+    'Получите рекомендации по подготовке ребят к ЕГЭ',
+    'Получите удостоверение от МГПУ, который сможете использовать для подтверждения категории',
+  ]
+
+.teacher-result
+  .container
+    h2.teacher-result__title.title В результате
+    .teacher-result__area
+      ul.teacher-result__list
+        each item in teacherResultList
+          li.teacher-result__item= item
+      .teacher-result__box
+        .teacher-result__text.
+          Вы будете точно знать, можно ли на ЕГЭ использовать ОДЗ, корректно ли применять теорему Менелая
+          без доказательства и разрешен ли метод координат в стереометрии.
+        .teacher-result__text.
+          Словом, Ваши ученики будут “застрахованы” от большинства подводных камней, которые ожидают их на экзамене.
+        img.teacher-result__decor(src=staticImg('teacher-result/teacher-result-decor.svg') alt='')

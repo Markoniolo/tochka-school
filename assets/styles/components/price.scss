@@ -1,0 +1,62 @@
+.price {
+  &_teacher {
+    margin-bottom: 82px;
+    padding: 0;
+    @include media(md) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.price-label {
+  cursor: pointer;
+  background: #e7f2ff;
+  padding: 16px 36px;
+  @include media(xs) {
+    padding: 12px;
+  }
+}
+
+.price-label-inner {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.price-input {
+  display: none;
+  &:checked ~ .price-input-view {
+    &::before {
+      content: '';
+      border-radius: 2px;
+      width: 9px;
+      height: 9px;
+      background-color: #ffca42;
+    }
+  }
+}
+
+.price-input-view {
+  margin-right: 20px;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid #6885a9;
+  border-radius: 3px;
+  @include media(xs) {
+    margin-right: 12px;
+  }
+}
+
+.price-input-text {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 144%;
+  @include media(xs) {
+    font-size: 14px;
+  }
+}

@@ -1,77 +1,126 @@
 mixin price(mod)
-  section#block1.price.price-icon(class = mod ? mod : false)
-    .container
-      h2 Начните обучение на экстернате
-      .row.price-row
-        .col-lg-6
-          .price-blk
-            span.price-title Занятия онлайн + в записи
-            ul.list.list-unstyled
-              li
-                p Онлайн-уроки по программе 1 класса с сентября по май
-              li
-                p Записи уроков
-              li
-                p Личный тьютор-педагог по каждому предмету: проверка заданий, помощь в исправлении ошибок, обратная связь 5 дней в неделю.
-              li
-                p Входное и ежемесячное тестирование
-              li
-                p Прикрепление к школе-партнёру
-              li
-                p Прохождение аттестации
-              li
-                p!='<span>Бонус:</span> бесплатные занятия летом 2025'
-              li
-                p!='<span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка'
-            .price-blocks.price-month
-              p.prblk
-                | В рассрочку в месяц:
-                |
-                span.old-price 152 235 ₽
-                span.new-price 152 235 ₽
-              .sale-block
-                span.period На 12 месяцев
-                p.sale Скидка 25%
-            .price-blocks.price-year
-              p
-                | Полная стоимость:
-                |
-                span.old-price 49 014 ₽
-                span.new-price 143 280 ₽
-            a.btn.btn-warning.btn-go(href='#') Начать обучение
-        .col-lg-6
-          .price-blk
-            span.price-title Занятия в записи
-            ul.list.list-unstyled
-              li.not
-                p Онлайн-уроки по программе 1 класса с сентября по май
-              li
-                p Записи уроков
-              li
-                p Личный тьютор-педагог по каждому предмету: проверка заданий, помощь в исправлении ошибок, обратная связь 5 дней в неделю.
-              li
-                p Входное и ежемесячное тестирование
-              li
-                p Прикрепление к школе-партнёру
-              li
-                p Прохождение аттестации
-              li
-                p!='<span>Бонус:</span> бесплатные занятия летом 2025'
-              li
-                p!='<span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка'
-            .price-blocks.price-month
-              p.prblk
-                | В рассрочку в месяц:
-                |
-                span.old-price 152 235 ₽
-                span.new-price 152 235 ₽
-              .sale-block
-                span.period На 12 месяцев
-                p.sale Скидка 25%
-            .price-blocks.price-year
-              p
-                | Полная стоимость:
-                |
-                span.old-price 49 014 ₽
-                span.new-price 143 280 ₽
-            a.btn.btn-warning.btn-go(href='#') Начать обучение
+  if mod !== 'teacher'
+    section#block1.price.price-icon(class = mod ? `price_${mod}` : false)
+      .container
+        h2 Начните обучение на экстернате
+        .row.price-row
+          .col-lg-6
+            .price-blk
+              span.price-title Занятия онлайн + в записи
+              ul.list.list-unstyled
+                li
+                  p Онлайн-уроки по программе 1 класса с сентября по май
+                li
+                  p Записи уроков
+                li
+                  p Личный тьютор-педагог по каждому предмету: проверка заданий, помощь в исправлении ошибок, обратная связь 5 дней в неделю.
+                li
+                  p Входное и ежемесячное тестирование
+                li
+                  p Прикрепление к школе-партнёру
+                li
+                  p Прохождение аттестации
+                li
+                  p!='<span>Бонус:</span> бесплатные занятия летом 2025'
+                li
+                  p!='<span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка'
+              .price-blocks.price-month
+                p.prblk
+                  | В рассрочку в месяц:
+                  |
+                  span.old-price 152 235 ₽
+                  span.new-price 152 235 ₽
+                .sale-block
+                  span.period На 12 месяцев
+                  p.sale Скидка 25%
+              .price-blocks.price-year
+                p
+                  | Полная стоимость:
+                  |
+                  span.old-price 49 014 ₽
+                  span.new-price 143 280 ₽
+              a.btn.btn-warning.btn-go(href='#') Начать обучение
+          .col-lg-6
+            .price-blk
+              span.price-title Занятия в записи
+              ul.list.list-unstyled
+                li.not
+                  p Онлайн-уроки по программе 1 класса с сентября по май
+                li
+                  p Записи уроков
+                li
+                  p Личный тьютор-педагог по каждому предмету: проверка заданий, помощь в исправлении ошибок, обратная связь 5 дней в неделю.
+                li
+                  p Входное и ежемесячное тестирование
+                li
+                  p Прикрепление к школе-партнёру
+                li
+                  p Прохождение аттестации
+                li
+                  p!='<span>Бонус:</span> бесплатные занятия летом 2025'
+                li
+                  p!='<span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка'
+              .price-blocks.price-month
+                p.prblk
+                  | В рассрочку в месяц:
+                  |
+                  span.old-price 152 235 ₽
+                  span.new-price 152 235 ₽
+                .sale-block
+                  span.period На 12 месяцев
+                  p.sale Скидка 25%
+              .price-blocks.price-year
+                p
+                  | Полная стоимость:
+                  |
+                  span.old-price 49 014 ₽
+                  span.new-price 143 280 ₽
+              a.btn.btn-warning.btn-go(href='#') Начать обучение
+  else
+    section#block1.price.price-icon(class = mod ? `price_${mod}` : false)
+      .container
+        h2 Начните обучение на экстернате
+        .row.price-row
+          .col-lg-6
+            .price-blk
+              span.price-title Занятия онлайн + в записи
+              ul.list.list-unstyled
+                each item in ['7 онлайн-уроков по пятницам 17:00 - 18:30','Все занятия в записи','Зачетная работа','Сертификат от Точки Знаний']
+                  li
+                    p= item
+              label.price-label
+                .price-label-inner
+                  input.price-input(name='certificate' type='checkbox')
+                  .price-input-view
+                  .price-input-text Добавить удостоверение о повышении квалификации – 2 500 руб.
+              .price-start Старт обучения: 8 ноября
+              .price-blocks.price-month
+                p.prblk
+                  | Стоимость курса:
+                  |
+                  span.new-price 7 900 ₽
+              a.btn.btn-warning.btn-go(href='#') Начать обучение
+          .col-lg-6
+            .price-blk
+              span.price-title Занятия в записи
+              ul.list.list-unstyled
+                li.not
+                  p 7 онлайн-уроков по пятницам 17:00 - 18:30
+                li
+                  p Все занятия в записи
+                li
+                  p Зачетная работа
+                li
+                  p Сертификат от Точки Знаний
+              label.price-label
+                .price-label-inner
+                  input.price-input(name='certificate' type='checkbox')
+                  .price-input-view
+                  .price-input-text Добавить удостоверение о повышении квалификации – 2 500 руб.
+              .price-start Старт обучения: 8 ноября
+              .price-blocks.price-month
+                p.prblk
+                  | Стоимость курса:
+                  |
+                  span.new-price 3 900 ₽
+              a.btn.btn-warning.btn-go(href='#') Начать обучение

@@ -1,0 +1,25 @@
+extends ../components/_layout/layout
+
+block head
+  +title('Страница курс учителя')
+
+block body
+  include ../components/cap-teacher
+  include ../components/course-for
+  include ../components/teacher-study
+  include ../components/teacher-result
+  include ../components/lectures_single
+  -
+    const lecturesList = [
+     'Председатель экспертной комиссии по проверке ЕГЭ Санк-Петербурга (с 2018 по 2022 год)',
+     'Победитель всероссийского конкурса «Учитель Будущего» - 2021.',
+     'Многократный победитель различных конкурсов среди учителей математики (конкурс Эйлера, Творческий конкурс и др.).',
+     'Автор книги «Делимость с человеческим лицом».',
+    ]
+  +lectures_single('lectures_course-teacher-blue','Автор курса',lecturesList,'Георгий Игоревич Вольфсон','/assets/img/lectures/lectures-teacher.png','/assets/img/lectures/lectures-teacher.png')
+  include ../components/teacher-program
+  include ../components/teacher-doc
+  include ../components/price
+  +price('teacher')
+  include ../components/contacts
+  +contacts('blue')

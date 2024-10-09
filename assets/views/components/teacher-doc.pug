@@ -1,0 +1,13 @@
+.teacher-doc
+  .container
+    .teacher-doc__area
+      .teacher-doc__box
+        h2.teacher-doc__title.title По окончании обучения вы получите
+        ul.teacher-doc__list
+          each item in ['Сертификат от Точки Знаний','Удостоверение о повышении квалификации от Московского городского педагогического университа, который сможете использовать для подтверждения категории']
+            li.teacher-doc__item= item
+      .teacher-doc__gallery
+        picture.teacher-doc__picture.teacher-doc__picture_1(data-fancybox data-src=staticImg('teacher-doc/teacher-doc-1.png'))
+          img.teacher-doc__image(src=staticImg('teacher-doc/teacher-doc-1.png') alt='')
+        picture.teacher-doc__picture.teacher-doc__picture_2(data-fancybox data-src=staticImg('teacher-doc/teacher-doc-2.png'))
+          img.teacher-doc__image(src=staticImg('teacher-doc/teacher-doc-2.png') alt='')

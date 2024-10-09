@@ -1,0 +1,209 @@
+.teacher-program {
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.teacher-program__title {
+  margin-bottom: 37px;
+  text-align: left;
+  @include media(md) {
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  @include media(xs) {
+    margin-bottom: 24px;
+  }
+}
+
+.teacher-program__area {
+  position: relative;
+  z-index: 1;
+  color: #222;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0 0;
+  min-height: 394px;
+  @include media(md) {
+    display: block;
+    text-align: center;
+    height: 100%;
+    padding: 40px 0 0;
+  }
+  &::before, &::after {
+    content: '';
+    width: 688px;
+    height: 70px;
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    @include media(md) {
+      content: none;
+    }
+  }
+  &::before {
+    bottom: -1px;
+    transform: rotate(180deg);
+  }
+  &::after {
+    top: 15px;
+    height: 100px;
+  }
+}
+
+.teacher-program__inner {
+  margin-right: 50px;
+  width: 42%;
+  @include media(md) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.teacher-program__note {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 144%;
+  @include media(md) {
+    margin-bottom: 16px;
+  }
+}
+
+.teacher-program__text {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 144%;
+  @include media(md) {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+}
+
+.teacher-program__box {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  @include media(md) {
+    text-align: left;
+    margin: 25px auto 0;
+    padding: 0;
+    position: static;
+  }
+}
+
+.teacher-program__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  height: 376px;
+  @include media(md) {
+    height: auto;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .swiper-wrapper {
+    align-items: flex-end;
+  }
+}
+
+.teacher-program__space {
+  height: 100px;
+  @include media(md) {
+    display: none;
+  }
+}
+
+.teacher-program__item {
+  position: relative;
+  padding: 14px 18px 14px 49px;
+  border: 1px solid #e3ebfe;
+  border-radius: 4px;
+  box-shadow: 0 6px 13px 0 rgba(135, 163, 227, 0.07);
+  background: #f6faff;
+  height: auto;
+  width: 660px;
+  @include media(md) {
+    width: 100%;
+  }
+  @include media(xs) {
+    padding: 14px 18px 14px 34px;
+  }
+  &::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    @include bgIcon('icons/ic_teacher-program_point_yellow.svg');
+    position: absolute;
+    top: 19px;
+    left: 18px;
+    @include media(xs) {
+      left: 10px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  &_final {
+    display: flex;
+    align-items: center;
+    background: #c7e0ff;
+    .teacher-program__name {
+      margin-bottom: 0;
+    }
+    &::before {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.teacher-program__name {
+  margin-bottom: 3px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 144%;
+  @include media(xs) {
+    font-size: 15px;
+  }
+}
+
+.teacher-program__points {
+  list-style-type: none;
+  padding: 0;
+  @include media(xs) {
+    margin-left: -22px;
+  }
+}
+
+.teacher-program__point {
+  position: relative;
+  font-size: 15px;
+  line-height: 133%;
+  padding-left: 23px;
+  @include media(xs) {
+    font-size: 12px;
+  }
+  &::before {
+    content: '';
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+  }
+}
+
+.teacher-program__icon {
+  margin-left: 25px;
+  width: 43px;
+  height: 44px;
+}

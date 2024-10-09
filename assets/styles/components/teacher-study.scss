@@ -1,0 +1,84 @@
+.teacher-study {
+  padding: 60px 0 82px;
+  @include bgIcon('teacher-study/teacher-study-bg.svg');
+  background-size: cover;
+  @include media(md) {
+    padding: 40px 0;
+  }
+}
+
+.teacher-study__title {
+  margin-bottom: 60px;
+  @include media(md) {
+    margin-bottom: 30px;
+  }
+}
+
+.teacher-study__area {
+  box-shadow: 0 6px 13px 0 rgba(135, 163, 227, 0.07);
+  background: #f6faff;
+  border: 1px solid #e3ebfe;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 70px 32px;
+  @include media(md) {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+  }
+  @include media(xs) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.teacher-study__box {
+  color: #222;
+  max-width: 792px;
+  width: 100%;
+  @include media(xs) {
+    margin-bottom: 35px;
+  }
+}
+
+.teacher-study__headline {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 144%;
+  @include media(md) {
+    margin-bottom: 16px;
+    font-size: 17px;
+  }
+}
+
+.teacher-study__text {
+  font-size: 15px;
+  line-height: 144%;
+  @include media(md) {
+    font-size: 14px;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+    @include media(md) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.teacher-study__image {
+  margin-left: 70px;
+  flex-shrink: 0;
+  width: 268px;
+  height: 166px;
+  @include media(md) {
+    margin-left: 40px;
+  }
+  @include media(xs) {
+    margin-left: 0;
+    width: 164px;
+    height: 101px;
+  }
+}

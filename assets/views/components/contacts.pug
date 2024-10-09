@@ -1,0 +1,12 @@
+mixin contacts(mod)
+  .contacts(class=mod ? `contacts_${mod}` : false)
+    .container
+      .contacts__area
+        .contacts__box
+          h2.contacts__title.title Нужна консультация?
+          .contacts__text Задавайте любые вопросы, поможем подобрать занятия
+          picture.contacts__picture
+            img.contacts__image(src=staticImg('contacts/contacts-1.svg') alt='')
+          .contacts__buttons
+            a.contacts__button.btn-warning(href='#') Оставить заявку
+            a.contacts__button.btn-wp(href='#') Связаться в WhatsApp

@@ -109,10 +109,11 @@ function footerTitleArrayInit () {
   }
 }
 
-lecturesSliderInit()
+const lecturesSlider = document.querySelector('.lectures__slider')
+
+if (lecturesSlider) lecturesSliderInit()
 
 function lecturesSliderInit () {
-  const lecturesSlider = document.querySelector('.lectures__slider')
   let lecturesInnerHeight = 420
   let lecturesSliderSwiper
 
@@ -160,7 +161,6 @@ function lecturesSliderInit () {
   function itemsToggleInit (lecturesInner) {
     const box = lecturesInner.querySelector('[data-element="lectures__box"]')
     const button = box.querySelector('[data-element="lectures__more"]')
-
 
     if (box.clientHeight > lecturesInnerHeight) {
       button.addEventListener('click', toggleItems)
@@ -754,4 +754,26 @@ function scheduleInit () {
     cellTime.style.transform = 'none'
     setTimeout(() => tableFixedCalculate(), 100)
   }
+}
+
+const teacherProgramList = document.querySelector('.teacher-program__list')
+
+if (teacherProgramList) teacherProgramListInit()
+
+function teacherProgramListInit () {
+  let lastScrollTop = 0
+  const teacherProgramSwiper = new Swiper(teacherProgramList, {
+    direction: 'vertical',
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    allowTouchMove: false,
+    mousewheel: {
+      releaseOnEdges: true,
+    },
+    breakpoints: {
+      1200: {
+        allowTouchMove: true
+      },
+    },
+  })
 }

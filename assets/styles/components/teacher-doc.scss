@@ -1,0 +1,146 @@
+.teacher-doc {
+  padding: 40px 0 70px;
+  background: $blue;
+  margin-bottom: 70px;
+  @include media(md) {
+    margin-bottom: 40px;
+    padding: 40px 0;
+  }
+}
+
+.teacher-doc__area {
+  border: 1px solid #e3ebfe;
+  border-radius: 10px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 50px 45px;
+  display: flex;
+  align-items: center;
+  @include media(md) {
+    display: block;
+    padding: 30px;
+  }
+}
+
+.teacher-doc__box {
+
+}
+
+.teacher-doc__title {
+  margin-bottom: 40px;
+  text-align: left;
+  @include media(md) {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  @include media(xs) {
+    margin-bottom: 24px;
+  }
+}
+
+.teacher-doc__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px 0;
+  padding: 0;
+  list-style-type: none;
+  @include media(md) {
+    gap: 14px 0;
+  }
+}
+
+.teacher-doc__item {
+  position: relative;
+  padding-left: 48px;
+  font-size: 20px;
+  line-height: 149%;
+  color: rgba(20, 20, 20, 0.74);
+  @include media(md) {
+    padding-left: 40px;
+    font-size: 15px;
+  }
+  @include media(xs) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    @include bgIcon('icons/check_blue.svg');
+    @include media(md) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.teacher-doc__gallery {
+  position: relative;
+  max-width: 538px;
+  width: 100%;
+  height: 294px;
+  flex-shrink: 0;
+  @include media(md) {
+    max-width: 523px;
+    height: 286px;
+    margin: 24px auto 0;
+  }
+  @include media(xs) {
+    max-width: 304px;
+    height: 166px;
+  }
+}
+
+.teacher-doc__picture {
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transition-property: transform;
+  &:hover {
+    transform: scale(1.2);
+    z-index: 3;
+  }
+}
+
+.teacher-doc__picture_1 {
+  bottom: 0;
+  left: 0;
+  width: 292px;
+  height: 205px;
+  z-index: 1;
+  @include media(md) {
+    width: 284px;
+    height: 200px;
+  }
+  @include media(xs) {
+    width: 165px;
+    height: 116px;
+  }
+}
+
+.teacher-doc__picture_2 {
+  top: 0;
+  right: 0;
+  width: 380px;
+  height: 267px;
+  @include media(md) {
+    width: 370px;
+    height: 260px;
+  }
+  @include media(xs) {
+    width: 215px;
+    height: 151px;
+  }
+}
+
+.teacher-doc__image {
+  display: block;
+  height: 100%;
+}

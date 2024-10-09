@@ -1,0 +1,9 @@
+.course-for
+  .container
+    .course-for__area
+      h2.course-for__title.title Курс отлично подойдёт
+      ul.course-for__list
+        each item, index in ['Учителям математики старших классов','Репетиторам, которые готовят к ЕГЭ', 'Экспертам ЕГЭ, которые хотят повысить качество своей проверки']
+          li.course-for__item
+            img.course-for__image(src=staticImg(`course-for/course-for-${index+1}.svg`) alt='')
+            .course-for__text= item
