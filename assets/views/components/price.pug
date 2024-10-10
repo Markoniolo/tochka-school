@@ -79,10 +79,10 @@ mixin price(mod)
   else
     section#block1.price.price-icon(class = mod ? `price_${mod}` : false)
       .container
-        h2 Начните обучение на экстернате
+        h2 Стоимость курса
         .row.price-row
           .col-lg-6
-            .price-blk
+            .price-blk(data-element="price-teacher")
               span.price-title Занятия онлайн + в записи
               ul.list.list-unstyled
                 each item in ['7 онлайн-уроков по пятницам 17:00 - 18:30','Все занятия в записи','Зачетная работа','Сертификат от Точки Знаний']
@@ -90,7 +90,7 @@ mixin price(mod)
                     p= item
               label.price-label
                 .price-label-inner
-                  input.price-input(name='certificate' type='checkbox')
+                  input.price-input(name='certificate' type='checkbox' new-href="#new-href" new-price="10 400 ₽" data-element="price-teacher-checkbox")
                   .price-input-view
                   .price-input-text Добавить удостоверение о повышении квалификации – 2 500 руб.
               .price-start Старт обучения: 8 ноября
@@ -98,10 +98,10 @@ mixin price(mod)
                 p.prblk
                   | Стоимость курса:
                   |
-                  span.new-price 7 900 ₽
-              a.btn.btn-warning.btn-go(href='#') Начать обучение
+                  span.new-price(data-element="price-teacher-price") 7 900 ₽
+              a.btn.btn-warning.btn-go(href='#' old-href="#old-href" old-price="7 900 ₽" data-element="price-teacher-btn") Начать обучение
           .col-lg-6
-            .price-blk
+            .price-blk(data-element="price-teacher")
               span.price-title Занятия в записи
               ul.list.list-unstyled
                 li.not
@@ -114,7 +114,7 @@ mixin price(mod)
                   p Сертификат от Точки Знаний
               label.price-label
                 .price-label-inner
-                  input.price-input(name='certificate' type='checkbox')
+                  input.price-input(name='certificate' type='checkbox' new-href="#new-href" new-price="6 400 ₽" data-element="price-teacher-checkbox")
                   .price-input-view
                   .price-input-text Добавить удостоверение о повышении квалификации – 2 500 руб.
               .price-start Старт обучения: 8 ноября
@@ -122,5 +122,5 @@ mixin price(mod)
                 p.prblk
                   | Стоимость курса:
                   |
-                  span.new-price 3 900 ₽
-              a.btn.btn-warning.btn-go(href='#') Начать обучение
+                  span.new-price(data-element="price-teacher-price") 3 900 ₽
+              a.btn.btn-warning.btn-go(href='#' old-href="#old-href" old-price="3 900 ₽" data-element="price-teacher-btn") Начать обучение

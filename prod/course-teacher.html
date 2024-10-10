@@ -117,7 +117,7 @@
                 <a class="cap-teacher__button btn-warning anchor" href="#block1">Начать обучение</a>
                 <div class="cap-teacher__teacher">
                   <span>Георгий Игоревич Вольфсон</span>
-                  Председатель экспертной комиссии по проверке ЕГЭ(с 2018 по 2022 год)
+                  Председатель экспертной комиссии по проверке ЕГЭ (с 2018 по 2022 год)
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@
         </div>
       </div>
     </div>
-    <div class="lectures lectures_single lectures_course-teacher-blue" id="block1">
+    <div class="lectures lectures_single lectures_course-teacher-blue">
       <div class="container">
         <h2 class="lectures__title title">Автор курса</h2>
         <div class="lectures__area">
@@ -196,7 +196,7 @@
               <source srcset="/assets/img/lectures/lectures-teacher.png" media="(max-width: 992px)">
               <img class="lectures__image" src="/assets/img/lectures/lectures-teacher.png" alt="">
             </picture>
-            <div class="lectures__box">
+            <div class="lectures__box" data-element="lectures__box">
               <div class="lectures__box-inner">
                 <div class="lectures__name">Георгий Игоревич Вольфсон</div>
                 <ul class="lectures__list">
@@ -314,10 +314,10 @@
     </div>
     <section class="price price-icon price_teacher" id="block1">
       <div class="container">
-        <h2>Начните обучение на экстернате</h2>
+        <h2>Стоимость курса</h2>
         <div class="row price-row">
           <div class="col-lg-6">
-            <div class="price-blk">
+            <div class="price-blk" data-element="price-teacher">
               <span class="price-title">Занятия онлайн + в записи</span>
               <ul class="list list-unstyled">
                 <li>
@@ -335,7 +335,7 @@
               </ul>
               <label class="price-label">
                 <div class="price-label-inner">
-                  <input class="price-input" name="certificate" type="checkbox">
+                  <input class="price-input" name="certificate" type="checkbox" new-href="#new-href" new-price="10 400 ₽" data-element="price-teacher-checkbox">
                   <div class="price-input-view"></div>
                   <div class="price-input-text">Добавить удостоверение о повышении квалификации – 2 500 руб.</div>
                 </div>
@@ -344,14 +344,14 @@
               <div class="price-blocks price-month">
                 <p class="prblk">
                   Стоимость курса:
-                  <span class="new-price">7 900 ₽</span>
+                  <span class="new-price" data-element="price-teacher-price">7 900 ₽</span>
                 </p>
               </div>
-              <a class="btn btn-warning btn-go" href="#">Начать обучение</a>
+              <a class="btn btn-warning btn-go" href="#" old-href="#old-href" old-price="7 900 ₽" data-element="price-teacher-btn">Начать обучение</a>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="price-blk">
+            <div class="price-blk" data-element="price-teacher">
               <span class="price-title">Занятия в записи</span>
               <ul class="list list-unstyled">
                 <li class="not">
@@ -369,7 +369,7 @@
               </ul>
               <label class="price-label">
                 <div class="price-label-inner">
-                  <input class="price-input" name="certificate" type="checkbox">
+                  <input class="price-input" name="certificate" type="checkbox" new-href="#new-href" new-price="6 400 ₽" data-element="price-teacher-checkbox">
                   <div class="price-input-view"></div>
                   <div class="price-input-text">Добавить удостоверение о повышении квалификации – 2 500 руб.</div>
                 </div>
@@ -378,10 +378,10 @@
               <div class="price-blocks price-month">
                 <p class="prblk">
                   Стоимость курса:
-                  <span class="new-price">3 900 ₽</span>
+                  <span class="new-price" data-element="price-teacher-price">3 900 ₽</span>
                 </p>
               </div>
-              <a class="btn btn-warning btn-go" href="#">Начать обучение</a>
+              <a class="btn btn-warning btn-go" href="#" old-href="#old-href" old-price="3 900 ₽" data-element="price-teacher-btn">Начать обучение</a>
             </div>
           </div>
         </div>

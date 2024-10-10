@@ -8,6 +8,7 @@ function teacherProgramListInit () {
     direction: 'vertical',
     slidesPerView: 'auto',
     spaceBetween: 15,
+    slidesPerGroup: 2,
     allowTouchMove: false,
     mousewheel: {
       releaseOnEdges: true,

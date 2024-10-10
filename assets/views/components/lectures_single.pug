@@ -13,7 +13,7 @@
   ]
 
 mixin lectures_single (mod,title='Учитель',list=lecturesDefaultList,name='Бабенко Анна Юрьевна',image='/assets/img/lectures/lectures-1.png',imageMob='/assets/img/lectures/lectures-1_mob.png')
-  .lectures.lectures_single#block1(class = mod ? mod : false)
+  .lectures.lectures_single(class = mod ? mod : false)
     .container
       h2.lectures__title.title= title
       .lectures__area
@@ -21,7 +21,7 @@ mixin lectures_single (mod,title='Учитель',list=lecturesDefaultList,name=
           picture.lectures__picture
             source(srcset=imageMob media="(max-width: 992px)")
             img.lectures__image(src=image alt='')
-          .lectures__box(data-element=mod === 'teacher' ? "lectures__box" : false)
+          .lectures__box(data-element="lectures__box")
             .lectures__box-inner
               .lectures__name= name
               ul.lectures__list(data-element=mod === 'teacher' ? "lectures__list" : false)
