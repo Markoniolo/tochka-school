@@ -1,19 +1,36 @@
-.family-thanks
-  .container
-    h1.family-thanks__caption
-      | Отлично!
-      br
-      | Наш методист свяжется с Вами в ближайшее время,
-      | чтобы договориться о времени проведения консультации.
-    .family-thanks__title Скачивайте бонус!
-    .family-thanks__text
-      | Инструкция по переходу на семейное обучение
-      |
-      b «4 шага к учёбе дома»
-      |
-      | + список документов
-      | с примерами, которые понадобятся в случае выбора семейного формата.
-    .family-thanks__area
-      img.family-thanks__decor(src=staticImg('family-thanks/family-thanks-decor-3.svg') alt='')
-      img.family-thanks__image(src=staticImg('family-thanks/family-thanks-1.webp') alt='')
-      a.family-thanks__button.btn-warning(href='#' download) Скачать
+mixin family-thanks(mod='external')
+  .family-thanks(class=`family-thanks_${mod}`)
+    .container
+      if mod === 'external'
+        h1.family-thanks__caption
+          | Отлично!
+          br
+          | Наш методист свяжется с Вами в ближайшее время,
+          | чтобы договориться о времени проведения консультации.
+        .family-thanks__title Скачивайте бонус!
+        .family-thanks__text
+          | Инструкция по переходу на семейное обучение
+          |
+          b «4 шага к учёбе дома»
+          |
+          | + список документов
+          | с примерами, которые понадобятся в случае выбора семейного формата.
+        .family-thanks__area
+          img.family-thanks__decor(src=staticImg('family-thanks/family-thanks-decor-3.svg') alt='')
+          img.family-thanks__image(src=staticImg('family-thanks/family-thanks-1.webp') alt='')
+          a.family-thanks__button.btn-warning(href='#' download) Скачать
+      else
+        h1.family-thanks__caption
+          .family-thanks__caption-inner
+            | Позвоним в течение 30 минут в рабочее время с 9:00 до 21:00
+        p.family-thanks__text
+          | Задавайте любые вопросы, а мы ответим и поможем подобрать занятия
+        p.family-thanks__text
+          | Скачивайте практическое руководство для заботливых родителей
+          |
+          span «Как мотивировать ребёнка учиться»
+        .family-thanks__area
+          img.family-thanks__decor(src=staticImg('family-thanks/family-thanks-decor-3.svg') alt='')
+          picture.family-thanks__picture
+            img.family-thanks__image(src=staticImg('manual/manual.webp') alt='')
+          a.family-thanks__button.btn-warning(href='#' download) Скачать
