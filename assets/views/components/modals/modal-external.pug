@@ -2,6 +2,7 @@ form#modal-external.modal-external(data-element='external-form')
   .modal-external__title Скачивайте руководство о&nbsp;переходе на экстернат с&nbsp;«Точкой Знаний»
   input.modal-external__input.input-gray(name='name' placeholder='Ваше имя' type='text')
   input.modal-external__input.input-gray(name='tel' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
+  input(name='tel' type='hidden' required data-element='input-phone-hidden')
   input.modal-external__input.input-gray(name='email' placeholder='Электронная почта' type='email' required)
   label.modal-external__checkbox
     input.modal-external__checkbox-input(name='policy' type='checkbox')

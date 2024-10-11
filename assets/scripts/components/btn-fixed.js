@@ -9,7 +9,6 @@ function btnFixedInit () {
   window.addEventListener('scroll', checkBtnFixed)
 
   function checkBtnFixed () {
-    console.log(body.scrollHeight - window.pageYOffset)
     if (window.pageYOffset > start && body.scrollHeight - window.pageYOffset > end) {
       btnFixed.classList.add('btn-fixed_active')
     } else {

@@ -1,8 +1,10 @@
-const orderFormArray = document.querySelectorAll("[data-element='order-form']")
+const orderForm = document.querySelector("[data-element='order-form']")
 
-for (let i = 0; i < orderFormArray.length; i++) {
-  const form = orderFormArray[i]
-  const input = form.querySelector("[data-element='input-phone-intl']")
+if (orderForm) orderFormInit()
+
+function orderFormInit () {
+  const input = orderForm.querySelector("[data-element='input-phone-intl']")
+  const inputHidden = orderForm.querySelector("[data-element='input-phone-hidden']")
 
   const iti = window.intlTelInput(input, {
     utilsScript: "../libs/intlTelInputWithUtils.min",
@@ -10,26 +12,20 @@ for (let i = 0; i < orderFormArray.length; i++) {
     separateDialCode: true
   })
 
-  function resetError () {
-    input.classList.remove("error")
+  input.addEventListener('input', updateHiddenInput)
+
+  function updateHiddenInput () {
+    inputHidden.value = iti.selectedCountryData.dialCode + input.value
   }
 
-  input.addEventListener('input', resetError)
-
-  form.addEventListener('submit', (e) => {
+  orderForm.addEventListener('submit', (e) => {
     resetError()
     e.preventDefault()
     if (!input.value.trim()) {
       input.classList.add("error")
     } else if (iti.isValidNumber()) {
-      $.request('MainFunctions::onSendMessageTb', {
-        data: {
-          'name': form.querySelector("[name='name']").value,
-          'utm': form.querySelector("[name='utm']").value,
-          'phone': iti.selectedCountryData.dialCode + input.value,
-          'email': form.querySelector("[name='email']").value,
-        }
-      });
+      console.log(orderForm.querySelector("[name='name']").value)
+      console.log(inputHidden.value)
       //clearForm()
     } else {
       input.classList.add("error")
@@ -37,13 +33,13 @@ for (let i = 0; i < orderFormArray.length; i++) {
   })
 
   function clearForm () {
-    const inputs = form.querySelectorAll('input')
-    for (let i = 0; i < inputs.length; i++) {
-      inputs[i].value = ''
-    }
-    if (form.classList.contains('modal-external')) {
-      form.querySelector('.fancybox-close-small').click()
-    }
+    orderForm.querySelector("[name='name']").value = ''
+    orderForm.querySelector("[name='tel']").value = ''
   }
-}
 
+  function resetError () {
+    input.classList.remove("error")
+  }
+
+  input.addEventListener('input', resetError)
+}
