@@ -152,11 +152,19 @@ header .nav-block > div.nav-consult {
   margin-left: 5%;
 }
 
-.nav-consult .tg {
-  padding: 13px 20px;
-  width: 244px;
+.nav-consult .btn-warning, .nav-consult .btn-wp {
+  padding: 12px 20px;
+  max-width: 244px;
+  width: 100%;
   font-size: 13px;
   line-height: normal;
+  @include media(xs) {
+    max-width: 100%;
+  }
+}
+
+.nav-consult .btn-wp {
+  padding: 9px 20px;
 }
 
 .nav-consult span {
@@ -3057,7 +3065,8 @@ Styles for Adaptive
 
 @media (max-width: 1399px) {
   header .nav-block {padding-left: 0; padding-bottom: 0;}
-  header .nav-block > div.nav-consult {width: 50%; border-right: 0;}
+  header .nav-block > div.nav-consult {width: 50%; border-right: 0;
+    padding-bottom: 20px;}
   header .nav-block > div.nav-contact {width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.07); display: flex; justify-content: space-between; padding-bottom: 0;}
   header .nav-block > div.nav-contact > div {width: 50%; padding: 26px 10px;}
   header .nav-block > div.nav-contact > div:last-child {padding: 26px 50px;}
@@ -3104,7 +3113,7 @@ Styles for Adaptive
   .row {margin: 0 -7px;}
   .row>* {padding-left: 7px; padding-right: 7px;}
   header .nav-block > div {width: 48%;}
-  header .nav-block > div.nav-consult {width: 48%; padding: 0 30px;}
+  header .nav-block > div.nav-consult {width: 48%; padding: 0 30px 20px;}
   header .nav-block > div.nav-school, header .nav-block > div.nav-contact {padding-left: 0;}
   .slogan {display: none;}
   header .lk a, header.fixed .header-block .lk a {padding: 11px 17px;}

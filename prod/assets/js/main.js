@@ -1,3 +1,29 @@
+const btnFixed = document.querySelector('[data-element="btn-fixed"]')
+
+if (btnFixed) btnFixedInit()
+
+function btnFixedInit () {
+  const start = btnFixed.getAttribute('data-btn-fixed-start')
+  const end = btnFixed.getAttribute('data-btn-fixed-end')
+  const body = document.getElementsByTagName('body')[0]
+  window.addEventListener('scroll', checkBtnFixed)
+
+  function checkBtnFixed () {
+    console.log(body.scrollHeight - window.pageYOffset)
+    if (window.pageYOffset > start && body.scrollHeight - window.pageYOffset > end) {
+      btnFixed.classList.add('btn-fixed_active')
+    } else {
+      btnFixed.classList.remove('btn-fixed_active')
+    }
+  }
+}
+
+const selectArray = document.querySelectorAll('[data-role="custom-select"]')
+
+for (let i = 0; i < selectArray.length; i++) {
+  customSelect(selectArray[i])
+}
+
 const externalFormArray = document.querySelectorAll("[data-element='external-form']")
 
 for (let i = 0; i < externalFormArray.length; i++) {
@@ -109,11 +135,10 @@ function footerTitleArrayInit () {
   }
 }
 
-const lecturesSlider = document.querySelector('.lectures__slider')
-
-if (lecturesSlider) lecturesSliderInit()
+lecturesSliderInit()
 
 function lecturesSliderInit () {
+  const lecturesSlider = document.querySelector('.lectures__slider')
   let lecturesInnerHeight = 420
   let lecturesSliderSwiper
 
@@ -668,6 +693,56 @@ function initSwiper() {
     });
   }
 }
+
+const orderFormArray = document.querySelectorAll("[data-element='order-form']")
+
+for (let i = 0; i < orderFormArray.length; i++) {
+  const form = orderFormArray[i]
+  const input = form.querySelector("[data-element='input-phone-intl']")
+
+  const iti = window.intlTelInput(input, {
+    utilsScript: "../libs/intlTelInputWithUtils.min",
+    initialCountry: 'ru',
+    separateDialCode: true
+  })
+
+  function resetError () {
+    input.classList.remove("error")
+  }
+
+  input.addEventListener('input', resetError)
+
+  form.addEventListener('submit', (e) => {
+    resetError()
+    e.preventDefault()
+    if (!input.value.trim()) {
+      input.classList.add("error")
+    } else if (iti.isValidNumber()) {
+      $.request('MainFunctions::onSendMessageTb', {
+        data: {
+          'name': form.querySelector("[name='name']").value,
+          'utm': form.querySelector("[name='utm']").value,
+          'phone': iti.selectedCountryData.dialCode + input.value,
+          'email': form.querySelector("[name='email']").value,
+        }
+      });
+      //clearForm()
+    } else {
+      input.classList.add("error")
+    }
+  })
+
+  function clearForm () {
+    const inputs = form.querySelectorAll('input')
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].value = ''
+    }
+    if (form.classList.contains('modal-external')) {
+      form.querySelector('.fancybox-close-small').click()
+    }
+  }
+}
+
 
 const priceTeacherArray = document.querySelectorAll('[data-element="price-teacher"]')
 

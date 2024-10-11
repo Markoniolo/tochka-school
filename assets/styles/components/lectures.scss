@@ -43,6 +43,7 @@
 }
 
 .lectures_blue {
+  background-color: $blue;
   .lectures__tags li {
     color: #91add0;
     background: #e8f2ff;
@@ -61,6 +62,7 @@
 }
 
 .lectures_green {
+  background-color: $green;
   .lectures__tags li {
     background: #d6f1d9;
     color: #75af7a;

@@ -1,8 +1,7 @@
-const lecturesSlider = document.querySelector('.lectures__slider')
-
-if (lecturesSlider) lecturesSliderInit()
+lecturesSliderInit()
 
 function lecturesSliderInit () {
+  const lecturesSlider = document.querySelector('.lectures__slider')
   let lecturesInnerHeight = 420
   let lecturesSliderSwiper
 

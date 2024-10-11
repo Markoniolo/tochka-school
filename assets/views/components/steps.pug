@@ -33,12 +33,28 @@ mixin steps(mod)
           input.steps__form-input.input-gray(name='name' placeholder='Ваше имя' type='text')
           input.steps__form-input.input-gray(name='tel' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
           input.steps__form-input.input-gray(name='email' placeholder='Электронная почта' type='email' required)
+          label.steps__checkbox
+            input.steps__checkbox-input(name='policy' type='checkbox')
+            .steps__checkbox-view
+            .steps__checkbox-text
+              | Даю
+              |
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_obrabotku_personalnih_dannih_OOO.pdf'
+                target='_blank') Согласие
+              |
+              | на обработку персональных данных в соответствие с
+              |
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf'
+                target='_blank') Политикой.
+          label.steps__checkbox
+            input.steps__checkbox-input(name='news' type='checkbox')
+            .steps__checkbox-view
+            .steps__checkbox-text
+              | Согласен на
+              |
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf'
+                target='_blank') получение рекламы
           button.steps__form-button.btn-warning Скачать
-          .steps__form-note
-            | Нажимая на кнопку «Скачать», я соглашаюсь с
-            |
-            a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf' target='_blank')
-              | политикой обработки персональных данных.
       .steps__doc
         .steps__doc-title Скачивайте руководство по переходу на экстернат с «Точкой Знаний»
         picture.steps__doc-picture

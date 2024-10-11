@@ -1,0 +1,52 @@
+.btn-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transition-duration: $transition-duration;
+  transition-property: opacity;
+  .btn-fixed__button {
+    pointer-events: none;
+  }
+  &_active {
+    opacity: 1;
+    .btn-fixed__button {
+      pointer-events: all;
+    }
+  }
+}
+
+.btn-fixed__box {
+  border-left: 1px solid #e3ebfe;
+  border-right: 1px solid #e3ebfe;
+  border-top: 1px solid #e3ebfe;
+  border-radius: 4px 4px 0 0;
+  display: flex;
+  padding: 14px;
+  background-color: #FFFFFF;
+  @include media(md) {
+    padding: 7px;
+  }
+}
+
+.btn-fixed__button {
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  @include media(md) {
+    padding: 11px 40px;
+  }
+  &::after {
+    content: '';
+    @include bgIcon('icons/ic_btn_arrow_right.svg');
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+}

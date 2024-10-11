@@ -38,24 +38,55 @@
   }
 }
 
-.modal-external__button {
-  display: block;
-  width: 100%;
-  margin-top: 40px;
-  padding: 17px 28px;
-  @include media(sm) {
-    margin-top: 20px;
+.modal-external__checkbox {
+  cursor: pointer;
+  margin-top: 18px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal-external__checkbox-input {
+  display: none;
+  &:checked ~ .modal-external__checkbox-view {
+    &::before {
+      content: '';
+      border-radius: 1px;
+      width: 8px;
+      height: 8px;
+      background-color: #ffca42;
+    }
   }
 }
 
-.modal-external__note {
-  font-size: 15px;
+.modal-external__checkbox-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+  border: 2px solid #e6e6e6;
+  border-radius: 3px;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+}
+
+.modal-external__checkbox-text {
+  font-size: 14px;
   line-height: 144%;
-  text-align: center;
   color: rgba(0, 0, 0, 0.75);
-  max-width: 370px;
-  margin: 30px auto 0;
+  a {
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: underline;
+  }
+}
+
+.modal-external__button {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 17px 28px;
   @include media(sm) {
-    margin: 15px auto 0;
+    margin-top: 20px;
   }
 }

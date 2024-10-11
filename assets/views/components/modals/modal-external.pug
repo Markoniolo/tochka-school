@@ -3,9 +3,25 @@ form#modal-external.modal-external(data-element='external-form')
   input.modal-external__input.input-gray(name='name' placeholder='Ваше имя' type='text')
   input.modal-external__input.input-gray(name='tel' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
   input.modal-external__input.input-gray(name='email' placeholder='Электронная почта' type='email' required)
+  label.modal-external__checkbox
+    input.modal-external__checkbox-input(name='policy' type='checkbox')
+    .modal-external__checkbox-view
+    .modal-external__checkbox-text
+      | Даю
+      |
+      a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_obrabotku_personalnih_dannih_OOO.pdf'
+        target='_blank') Согласие
+      |
+      | на обработку персональных данных в соответствие с
+      |
+      a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf'
+        target='_blank') Политикой.
+  label.modal-external__checkbox
+    input.modal-external__checkbox-input(name='news' type='checkbox')
+    .modal-external__checkbox-view
+    .modal-external__checkbox-text
+      | Согласен на
+      |
+      a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf'
+        target='_blank') получение рекламы
   button.modal-external__button.btn-warning Скачать
-  .modal-external__note
-    | Нажимая на кнопку «Скачать», я соглашаюсь с
-    |
-    a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf' target='_blank')
-      | политикой обработки персональных данных.

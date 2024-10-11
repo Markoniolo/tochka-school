@@ -1,3 +1,10 @@
+.price + .contacts {
+  margin-top: 70px;
+  @include media(md) {
+    margin-top: 40px;
+  }
+}
+
 .contacts {
   margin-bottom: 88px;
   @include media(md) {
@@ -7,6 +14,18 @@
     .contacts__area {
       background: #eef3ff;
       border: 1px solid #e3ebfe;
+    }
+  }
+  &_green {
+    .contacts__area {
+      background: $green;
+      border: 1px solid #d4eed6;
+    }
+  }
+  &_green {
+    .contacts__area {
+      background: $green;
+      border: 1px solid #d4eed6;
     }
   }
 }
@@ -101,6 +120,8 @@
   position: absolute;
   top: -12px;
   right: 93px;
+  width: 470px;
+  height: 326px;
   @include media(md) {
     width: 350px;
     height: 247px;

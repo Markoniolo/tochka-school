@@ -86,7 +86,8 @@
         <div class="nav-consult">
           <span>&Ncy;&ucy;&zhcy;&ncy;&acy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&yacy;?</span>
           <p>&Ncy;&acy;&pcy;&icy;&shcy;&icy;&tcy;&iecy; &ncy;&acy;&mcy; &vcy; &Tcy;&iecy;&lcy;&iecy;&gcy;&rcy;&acy;&mcy;. &Ocy;&tcy;&vcy;&iecy;&tcy;&icy;&mcy; &ncy;&acy; &vcy;&scy;&iecy; &vcy;&ocy;&pcy;&rcy;&ocy;&scy;&ycy; &icy; &pcy;&ocy;&mcy;&ocy;&zhcy;&iecy;&mcy; &vcy; &vcy;&ycy;&bcy;&ocy;&rcy;&iecy;.</p>
-          <a class="btn btn-warning tg" href="https://t.me/matematikandrei">&Pcy;&ocy;&lcy;&ucy;&chcy;&icy;&tcy;&softcy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&yucy;</a>
+          <a class="btn btn-warning" href="#">Оставить заявку</a>
+          <a class="btn-wp" href="#">Связаться в WhatsApp</a>
         </div>
         <div class="nav-contact">
           <div>
@@ -129,7 +130,7 @@
               <a class="title" href="nachalnaya_shkola.html">Начальная школа</a>
               <div class="direction-line">
                 <span>1-4 класс</span>
-                <a class="direction-external" href="#">+Экстернат</a>
+                <a class="direction-external" href="#">+Семейное обучение</a>
               </div>
               <a class="btn btn-warning" href="nachalnaya_shkola.html">Выбрать</a>
             </div>
@@ -139,7 +140,7 @@
               <a class="title" href="srednyaya_shkola.html">Средняя школа</a>
               <div class="direction-line">
                 <span>5-8 класс</span>
-                <a class="direction-external" href="#">+Экстернат</a>
+                <a class="direction-external" href="#">+Семейное обучение</a>
               </div>
               <a class="btn btn-warning" href="srednyaya_shkola.html">Выбрать</a>
             </div>
@@ -341,6 +342,72 @@
         </div>
       </div>
     </section>
+    <div class="consult-gift">
+      <div class="container">
+        <div class="consult-gift__area">
+          <div class="consult-gift__title title">Оставьте заявку на консультацию</div>
+          <ul class="consult-gift__list">
+            <li class="consult-gift__item">Поможем подобрать занятия</li>
+            <li class="consult-gift__item">Подарим руководство для родителей <b>«Как мотивировать ребёнка учиться».</b> Учёба без лени, криков и истерик</li>
+          </ul>
+          <picture class="consult-gift__picture">
+            <source srcset="assets/img/consult-gift/consult-gift_mob.svg" media="(max-width: 768px)">
+            <img class="consult-gift__image" src="assets/img/consult-gift/consult-gift.svg" alt="">
+          </picture>
+          <a class="consult-gift__button btn-warning" href="#modal-order" data-fancybox>Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+    <form class="modal-order" id="modal-order" data-element="order-form">
+      <div class="modal-order__title">Подберём занятия для ребёнка.
+        <br />Оставьте заявку
+      </div>
+      <input class="modal-order__input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+      <input class="modal-order__input input-gray" name="name" placeholder="Имя родителя" type="text">
+      <input class="modal-order__input input-gray" name="email" placeholder="Ваш e-mail" type="email" required>
+      <select class="modal-order__select" data-role="custom-select" name="">
+        <option value="1">1 класс</option>
+        <option value="2">2 класс</option>
+        <option value="3">3 класс</option>
+        <option value="4">4 класс</option>
+        <option value="5">5 класс</option>
+        <option value="6">6 класс</option>
+        <option value="7">7 класс</option>
+        <option value="8">8 класс</option>
+        <option value="9">9 класс</option>
+        <option value="10">10 класс</option>
+        <option value="11">11 класс</option>
+      </select>
+      <label class="modal-order__checkbox">
+        <input class="modal-order__checkbox-input" name="policy" type="checkbox">
+        <div class="modal-order__checkbox-view"></div>
+        <div class="modal-order__checkbox-text">
+          Даю
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_obrabotku_personalnih_dannih_OOO.pdf" target="_blank">Согласие</a>
+          на обработку персональных данных в соответствие с
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">Политикой.</a>
+        </div>
+      </label>
+      <label class="modal-order__checkbox">
+        <input class="modal-order__checkbox-input" name="news" type="checkbox">
+        <div class="modal-order__checkbox-view"></div>
+        <div class="modal-order__checkbox-text">
+          Согласен на
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf" target="_blank">получение рекламы</a>
+        </div>
+      </label>
+      <button class="modal-order__button btn-warning">Оставить заявку</button>
+      <ul class="modal-order__list">
+        <li class="modal-order__item">Познакомим с форматом обучения</li>
+        <li class="modal-order__item">Покажем, как проходят занятия</li>
+        <li class="modal-order__item">Поможем подобрать обучение</li>
+      </ul>
+    </form>
+    <div class="btn-fixed" data-btn-fixed-start="400" data-btn-fixed-end="1700" data-element="btn-fixed">
+      <div class="btn-fixed__box">
+        <a class="btn-fixed__button btn-warning" href="#modal-order" data-fancybox>Подобрать занятия</a>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">

@@ -1,0 +1,27 @@
+.direction-line {
+  @include media(md) {
+    flex-direction: column;
+  }
+  @include media(xs) {
+    flex-direction: row;
+  }
+  span {
+    @include media(md) {
+      margin-bottom: 9px;
+    }
+    @include media(xs) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.direction-external {
+  @include media(md) {
+    margin-left: 0;
+    margin-bottom: 17px;
+  }
+  @include media(xs) {
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+}

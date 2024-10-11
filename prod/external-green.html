@@ -86,7 +86,8 @@
         <div class="nav-consult">
           <span>&Ncy;&ucy;&zhcy;&ncy;&acy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&yacy;?</span>
           <p>&Ncy;&acy;&pcy;&icy;&shcy;&icy;&tcy;&iecy; &ncy;&acy;&mcy; &vcy; &Tcy;&iecy;&lcy;&iecy;&gcy;&rcy;&acy;&mcy;. &Ocy;&tcy;&vcy;&iecy;&tcy;&icy;&mcy; &ncy;&acy; &vcy;&scy;&iecy; &vcy;&ocy;&pcy;&rcy;&ocy;&scy;&ycy; &icy; &pcy;&ocy;&mcy;&ocy;&zhcy;&iecy;&mcy; &vcy; &vcy;&ycy;&bcy;&ocy;&rcy;&iecy;.</p>
-          <a class="btn btn-warning tg" href="https://t.me/matematikandrei">&Pcy;&ocy;&lcy;&ucy;&chcy;&icy;&tcy;&softcy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&yucy;</a>
+          <a class="btn btn-warning" href="#">Оставить заявку</a>
+          <a class="btn-wp" href="#">Связаться в WhatsApp</a>
         </div>
         <div class="nav-contact">
           <div>
@@ -1260,11 +1261,25 @@
             <input class="steps__form-input input-gray" name="name" placeholder="Ваше имя" type="text">
             <input class="steps__form-input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
             <input class="steps__form-input input-gray" name="email" placeholder="Электронная почта" type="email" required>
+            <label class="steps__checkbox">
+              <input class="steps__checkbox-input" name="policy" type="checkbox">
+              <div class="steps__checkbox-view"></div>
+              <div class="steps__checkbox-text">
+                Даю
+                <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_obrabotku_personalnih_dannih_OOO.pdf" target="_blank">Согласие</a>
+                на обработку персональных данных в соответствие с
+                <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">Политикой.</a>
+              </div>
+            </label>
+            <label class="steps__checkbox">
+              <input class="steps__checkbox-input" name="news" type="checkbox">
+              <div class="steps__checkbox-view"></div>
+              <div class="steps__checkbox-text">
+                Согласен на
+                <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf" target="_blank">получение рекламы</a>
+              </div>
+            </label>
             <button class="steps__form-button btn-warning">Скачать</button>
-            <div class="steps__form-note">
-              Нажимая на кнопку «Скачать», я соглашаюсь с
-              <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">политикой обработки персональных данных.</a>
-            </div>
           </div>
         </form>
         <div class="steps__doc">
@@ -1411,19 +1426,19 @@
         </div>
       </div>
     </section>
-    <div class="consult consult_green">
+    <div class="contacts contacts_green">
       <div class="container">
-        <div class="consult__area">
-          <div class="consult__info">
-            <h2>Нужна консультация?</h2>
-            <p>Напишите нам. Ответим на все вопросы и&nbsp;поможем в выборе.</p>
-          </div>
-          <div class="consult__image-box">
-            <img class="consult__image" src="assets/img/consult.svg" alt="">
-          </div>
-          <div class="consult__links">
-            <a class="btn-social btn-social_tg" href="#">Написать в Telegram</a>
-            <a class="btn-social btn-social_wp" href="#">Написать в Whatsapp</a>
+        <div class="contacts__area">
+          <div class="contacts__box">
+            <h2 class="contacts__title title">Нужна консультация?</h2>
+            <div class="contacts__text">Задавайте любые вопросы, поможем подобрать занятия</div>
+            <picture class="contacts__picture">
+              <img class="contacts__image" src="assets/img/contacts/contacts-1_green.svg" alt="">
+            </picture>
+            <div class="contacts__buttons">
+              <a class="contacts__button btn-warning" href="#">Оставить заявку</a>
+              <a class="contacts__button btn-wp" href="#">Связаться в WhatsApp</a>
+            </div>
           </div>
         </div>
       </div>
@@ -1587,29 +1602,6 @@
         </div>
       </div>
     </section>
-    <section class="licence green-block">
-      <div class="container">
-        <div class="licence-block">
-          <div class="licence-info col-lg-5 col-sm-7">
-            <h2>Наша лицензия</h2>
-            <p>Работаем согласно лицензии на осуществление образовательной деятельности.</p>
-            <p>Это даёт Вам право получить налоговый вычет за обучение. Поможем оформить документы и подать заявление.</p>
-            <a class="btn btn-warning" href="assets/img/licence.webp" data-fancybox="production">Открыть лицензию</a>
-          </div>
-          <div class="licence-number col-lg-5 col-sm-6">
-            <p>
-              <span>Регистрационный номер лицензии:</span> № Л035-01218-23/00650937
-            </p>
-            <p>
-              <span>Дата предоставления лицензии:</span> 11 мая 2023
-            </p>
-          </div>
-          <div class="licence-image">
-            <img src="assets/img/licence.webp" alt="" width="360px">
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="page-end page-end_external">
       <div class="container">
         <div class="page-end-block">
@@ -1626,11 +1618,75 @@
       <input class="modal-external__input input-gray" name="name" placeholder="Ваше имя" type="text">
       <input class="modal-external__input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
       <input class="modal-external__input input-gray" name="email" placeholder="Электронная почта" type="email" required>
+      <label class="modal-external__checkbox">
+        <input class="modal-external__checkbox-input" name="policy" type="checkbox">
+        <div class="modal-external__checkbox-view"></div>
+        <div class="modal-external__checkbox-text">
+          Даю
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_obrabotku_personalnih_dannih_OOO.pdf" target="_blank">Согласие</a>
+          на обработку персональных данных в соответствие с
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">Политикой.</a>
+        </div>
+      </label>
+      <label class="modal-external__checkbox">
+        <input class="modal-external__checkbox-input" name="news" type="checkbox">
+        <div class="modal-external__checkbox-view"></div>
+        <div class="modal-external__checkbox-text">
+          Согласен на
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf" target="_blank">получение рекламы</a>
+        </div>
+      </label>
       <button class="modal-external__button btn-warning">Скачать</button>
-      <div class="modal-external__note">
-        Нажимая на кнопку «Скачать», я соглашаюсь с
-        <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">политикой обработки персональных данных.</a>
+    </form>
+    <div class="btn-fixed" data-btn-fixed-start="400" data-btn-fixed-end="1700" data-element="btn-fixed">
+      <div class="btn-fixed__box">
+        <a class="btn-fixed__button btn-warning" href="#modal-order" data-fancybox>Получить консультацию</a>
       </div>
+    </div>
+    <form class="modal-order" id="modal-order" data-element="order-form">
+      <div class="modal-order__title">Подберём занятия для ребёнка.
+        <br />Оставьте заявку
+      </div>
+      <input class="modal-order__input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+      <input class="modal-order__input input-gray" name="name" placeholder="Имя родителя" type="text">
+      <input class="modal-order__input input-gray" name="email" placeholder="Ваш e-mail" type="email" required>
+      <select class="modal-order__select" data-role="custom-select" name="">
+        <option value="1">1 класс</option>
+        <option value="2">2 класс</option>
+        <option value="3">3 класс</option>
+        <option value="4">4 класс</option>
+        <option value="5">5 класс</option>
+        <option value="6">6 класс</option>
+        <option value="7">7 класс</option>
+        <option value="8">8 класс</option>
+        <option value="9">9 класс</option>
+        <option value="10">10 класс</option>
+        <option value="11">11 класс</option>
+      </select>
+      <label class="modal-order__checkbox">
+        <input class="modal-order__checkbox-input" name="policy" type="checkbox">
+        <div class="modal-order__checkbox-view"></div>
+        <div class="modal-order__checkbox-text">
+          Даю
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_obrabotku_personalnih_dannih_OOO.pdf" target="_blank">Согласие</a>
+          на обработку персональных данных в соответствие с
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">Политикой.</a>
+        </div>
+      </label>
+      <label class="modal-order__checkbox">
+        <input class="modal-order__checkbox-input" name="news" type="checkbox">
+        <div class="modal-order__checkbox-view"></div>
+        <div class="modal-order__checkbox-text">
+          Согласен на
+          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf" target="_blank">получение рекламы</a>
+        </div>
+      </label>
+      <button class="modal-order__button btn-warning">Оставить заявку</button>
+      <ul class="modal-order__list">
+        <li class="modal-order__item">Познакомим с форматом обучения</li>
+        <li class="modal-order__item">Покажем, как проходят занятия</li>
+        <li class="modal-order__item">Поможем подобрать обучение</li>
+      </ul>
     </form>
   </main>
   <footer class="footer">

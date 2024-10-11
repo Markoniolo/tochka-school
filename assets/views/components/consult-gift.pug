@@ -1,0 +1,11 @@
+.consult-gift
+  .container
+    .consult-gift__area
+      .consult-gift__title.title Оставьте заявку на консультацию
+      ul.consult-gift__list
+        each item in ['Поможем подобрать занятия','Подарим руководство для родителей <b>«Как мотивировать ребёнка учиться».</b> Учёба без лени, криков и истерик']
+          li.consult-gift__item!= item
+      picture.consult-gift__picture
+        source(srcset=staticImg('consult-gift/consult-gift_mob.svg') media="(max-width: 768px)")
+        img.consult-gift__image(src=staticImg('consult-gift/consult-gift.svg') alt='')
+      a.consult-gift__button.btn-warning(href='#modal-order' data-fancybox) Оставить заявку
