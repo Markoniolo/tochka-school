@@ -23,6 +23,19 @@
   &::before {
     transform: translateY(-50%) rotate(180deg);
   }
+  .custom-select-opener {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+  }
+  .custom-select-panel {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 .custom-select-container * {
@@ -55,7 +68,6 @@
 
 .custom-select-panel {
   max-height: 0;
-  transition: max-height .5s ease-out, overflow-y 0.1s 0.5s;
   overflow: hidden;
   background-color: #FFFFFF;
   position: absolute;
@@ -63,7 +75,16 @@
   z-index: 1;
   width: 100%;
   padding: 0 21px;
-  margin: 4px 0;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  &::-webkit-scrollbar-track {
+    background: white;
+  }
 }
 
 .custom-select-container.is-open .custom-select-panel {
@@ -74,6 +95,7 @@
 .custom-select-option {
   padding: 4px 6px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .custom-select-option.has-focus {

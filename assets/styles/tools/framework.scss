@@ -104,3 +104,7 @@ h2 {
   --iti-path-globe-1x: url('../img/intl-tell-input/globe.webp');
   --iti-path-globe-2x: url('../img/intl-tell-input/globe@2x.webp');
 }
+
+.fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content {
+  cursor: default;
+}
