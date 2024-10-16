@@ -1,4 +1,4 @@
-form#modal-order.modal-order(data-element='order-form')
+form#modal-order.modal-order(data-element='order-form' data-docex="/_thanks" data-request-validate)
   .modal-order__title!= 'Подберём занятия для ребёнка. <br/>Оставьте заявку'
   input.modal-order__input.input-gray(name='tel' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
   input(name='tel' type='hidden' required data-element='input-phone-hidden')
@@ -29,6 +29,8 @@ form#modal-order.modal-order(data-element='order-form')
       a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf'
         target='_blank') получение рекламы
   button.modal-order__button.btn-warning Оставить заявку
+  .alert.alert-danger(data-validate-error)
+    p(data-message)
   ul.modal-order__list
     each item in ['Познакомим с форматом обучения','Покажем, как проходят занятия','Поможем подобрать обучение']
       li.modal-order__item= item

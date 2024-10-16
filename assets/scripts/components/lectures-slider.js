@@ -1,4 +1,7 @@
-lecturesSliderInit()
+try{
+  lecturesSliderInit()
+} catch(e) {}
+
 
 function lecturesSliderInit () {
   const lecturesSlider = document.querySelector('.lectures__slider')

@@ -239,7 +239,7 @@
         <a class="btn-fixed__button btn-warning" href="#modal-order" data-fancybox>Получить консультацию</a>
       </div>
     </div>
-    <form class="modal-order" id="modal-order" data-element="order-form">
+    <form class="modal-order" id="modal-order" data-element="order-form" data-docex="/_thanks" data-request-validate>
       <div class="modal-order__title">Подберём занятия для ребёнка.
         <br />Оставьте заявку
       </div>
@@ -279,6 +279,9 @@
         </div>
       </label>
       <button class="modal-order__button btn-warning">Оставить заявку</button>
+      <div class="alert alert-danger" data-validate-error>
+        <p data-message></p>
+      </div>
       <ul class="modal-order__list">
         <li class="modal-order__item">Познакомим с форматом обучения</li>
         <li class="modal-order__item">Покажем, как проходят занятия</li>

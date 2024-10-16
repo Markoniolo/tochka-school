@@ -134,7 +134,7 @@
           </div>
           <div class="cap__box">
             <div class="cap__tag teacher-class">1 класс</div>
-            <h1 class="cap__title">Экстернат</h1>
+            <h1 class="cap__title">Семейное обучение</h1>
             <picture class="cap__picture">
               <source srcset="assets/img/cap/cap-external_278.svg" media="(max-width: 992px)">
               <img class="cap__image" src="assets/img/cap/cap-external.svg" alt="">
@@ -1251,7 +1251,7 @@
             </div>
           </div>
         </div>
-        <form class="steps__form" data-element="external-form">
+        <form class="steps__form" data-element="external-form" data-docex="https://cms-dev.tochka-school.ru/storage/app/media/Dokumenti/Eksternat_Tocka_Znanii.pdf" data-request-validate>
           <div class="steps__form-title title">Скачивайте руководство по переходу на экстернат с «Точкой Знаний»</div>
           <picture class="steps__form-picture">
             <source srcset="assets/img/steps/steps-doc_623.webp" type="image/webp">
@@ -1280,6 +1280,11 @@
               </div>
             </label>
             <button class="steps__form-button btn-warning">Скачать</button>
+            <div class="steps__form-note">Нажимая на кнопку «Скачать», я соглашаюсь с<a href="https://cms-dev.tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">политикой обработки персональных данных.</a>
+            </div>
+            <div class="alert alert-danger" data-validate-error>
+              <p data-message></p>
+            </div>
           </div>
         </form>
         <div class="steps__doc">
@@ -1644,7 +1649,7 @@
         <a class="btn-fixed__button btn-warning" href="#modal-order" data-fancybox>Получить консультацию</a>
       </div>
     </div>
-    <form class="modal-order" id="modal-order" data-element="order-form">
+    <form class="modal-order" id="modal-order" data-element="order-form" data-docex="/_thanks" data-request-validate>
       <div class="modal-order__title">Подберём занятия для ребёнка.
         <br />Оставьте заявку
       </div>
@@ -1684,6 +1689,9 @@
         </div>
       </label>
       <button class="modal-order__button btn-warning">Оставить заявку</button>
+      <div class="alert alert-danger" data-validate-error>
+        <p data-message></p>
+      </div>
       <ul class="modal-order__list">
         <li class="modal-order__item">Познакомим с форматом обучения</li>
         <li class="modal-order__item">Покажем, как проходят занятия</li>

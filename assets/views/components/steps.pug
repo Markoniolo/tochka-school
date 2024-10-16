@@ -24,7 +24,8 @@ mixin steps(mod)
               img.steps__number-icon(src=staticImg(`study-number${index+1}.svg`) alt='')
             .steps__inner
               p= item
-      form.steps__form(data-element='external-form')
+      form.steps__form(data-element='external-form' data-docex="https://cms-dev.tochka-school.ru/storage/app/media/Dokumenti/Eksternat_Tocka_Znanii.pdf"
+        data-request-validate)
         .steps__form-title.title Скачивайте руководство по переходу на экстернат с «Точкой Знаний»
         picture.steps__form-picture
           source(srcset=staticImg('steps/steps-doc_623.webp') type='image/webp')
@@ -55,6 +56,12 @@ mixin steps(mod)
               a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf'
                 target='_blank') получение рекламы
           button.steps__form-button.btn-warning Скачать
+          .steps__form-note
+            | Нажимая на кнопку «Скачать», я соглашаюсь с
+            a(href='https://cms-dev.tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf'
+              target='_blank') политикой обработки персональных данных.
+          .alert.alert-danger(data-validate-error)
+            p(data-message)
       .steps__doc
         .steps__doc-title Скачивайте руководство по переходу на экстернат с «Точкой Знаний»
         picture.steps__doc-picture

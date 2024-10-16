@@ -130,7 +130,7 @@
               <a class="title" href="nachalnaya_shkola.html">Начальная школа</a>
               <div class="direction-line">
                 <span>1-4 класс</span>
-                <a class="direction-external" href="#">+Семейное обучение</a>
+                <div class="direction-external">+Семейное обучение</div>
               </div>
               <a class="btn btn-warning" href="nachalnaya_shkola.html">Выбрать</a>
             </div>
@@ -140,7 +140,7 @@
               <a class="title" href="srednyaya_shkola.html">Средняя школа</a>
               <div class="direction-line">
                 <span>5-8 класс</span>
-                <a class="direction-external" href="#">+Семейное обучение</a>
+                <div class="direction-external">+Семейное обучение</div>
               </div>
               <a class="btn btn-warning" href="srednyaya_shkola.html">Выбрать</a>
             </div>
@@ -358,7 +358,7 @@
         </div>
       </div>
     </div>
-    <form class="modal-order" id="modal-order" data-element="order-form">
+    <form class="modal-order" id="modal-order" data-element="order-form" data-docex="/_thanks" data-request-validate>
       <div class="modal-order__title">Подберём занятия для ребёнка.
         <br />Оставьте заявку
       </div>
@@ -398,6 +398,9 @@
         </div>
       </label>
       <button class="modal-order__button btn-warning">Оставить заявку</button>
+      <div class="alert alert-danger" data-validate-error>
+        <p data-message></p>
+      </div>
       <ul class="modal-order__list">
         <li class="modal-order__item">Познакомим с форматом обучения</li>
         <li class="modal-order__item">Покажем, как проходят занятия</li>
