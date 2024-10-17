@@ -1,10 +1,11 @@
 form#modal-order.modal-order(data-element='order-form' data-docex="/_thanks" data-request-validate)
   .modal-order__title!= 'Подберём занятия для ребёнка. <br/>Оставьте заявку'
+  input.input_utm(name='utm' type='hidden' value='')
   input.modal-order__input.input-gray(name='tel' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
   input(name='tel' type='hidden' required data-element='input-phone-hidden')
   input.modal-order__input.input-gray(name='name' placeholder='Имя родителя' type='text')
   input.modal-order__input.input-gray(name='email' placeholder='Ваш e-mail' type='email' required)
-  select.modal-order__select(data-role="custom-select" name="")
+  select.modal-order__select(data-role="custom-select" name="class_name")
     each item in [1,2,3,4,5,6,7,8,9,10,11]
       option(value=item)!= `${item} класс`
   label.modal-order__checkbox
@@ -29,8 +30,6 @@ form#modal-order.modal-order(data-element='order-form' data-docex="/_thanks" dat
       a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf'
         target='_blank') получение рекламы
   button.modal-order__button.btn-warning Оставить заявку
-  .alert.alert-danger(data-validate-error)
-    p(data-message)
   ul.modal-order__list
     each item in ['Познакомим с форматом обучения','Покажем, как проходят занятия','Поможем подобрать обучение']
       li.modal-order__item= item

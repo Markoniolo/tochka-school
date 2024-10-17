@@ -108,3 +108,11 @@ h2 {
 .fancybox-can-pan .fancybox-content, .fancybox-can-swipe .fancybox-content {
   cursor: default;
 }
+
+.error {
+  border: 1px solid red !important;
+}
+
+.error-text {
+  color: red !important;
+}

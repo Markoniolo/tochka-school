@@ -242,11 +242,12 @@
       <div class="modal-order__title">Подберём занятия для ребёнка.
         <br />Оставьте заявку
       </div>
+      <input class="input_utm" name="utm" type="hidden" value="">
       <input class="modal-order__input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
       <input name="tel" type="hidden" required data-element="input-phone-hidden">
       <input class="modal-order__input input-gray" name="name" placeholder="Имя родителя" type="text">
       <input class="modal-order__input input-gray" name="email" placeholder="Ваш e-mail" type="email" required>
-      <select class="modal-order__select" data-role="custom-select" name="">
+      <select class="modal-order__select" data-role="custom-select" name="class_name">
         <option value="1">1 класс</option>
         <option value="2">2 класс</option>
         <option value="3">3 класс</option>
@@ -278,9 +279,6 @@
         </div>
       </label>
       <button class="modal-order__button btn-warning">Оставить заявку</button>
-      <div class="alert alert-danger" data-validate-error>
-        <p data-message></p>
-      </div>
       <ul class="modal-order__list">
         <li class="modal-order__item">Познакомим с форматом обучения</li>
         <li class="modal-order__item">Покажем, как проходят занятия</li>

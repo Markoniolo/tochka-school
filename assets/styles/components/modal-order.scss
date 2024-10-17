@@ -36,6 +36,7 @@
   margin-top: 18px;
   display: flex;
   align-items: flex-start;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .modal-order__checkbox-input {
@@ -67,9 +68,8 @@
 .modal-order__checkbox-text {
   font-size: 14px;
   line-height: 144%;
-  color: rgba(0, 0, 0, 0.75);
   a {
-    color: rgba(0, 0, 0, 0.75);
+    color: inherit;
     text-decoration: underline;
   }
 }

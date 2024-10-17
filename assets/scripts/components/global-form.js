@@ -52,11 +52,17 @@ function consultFormData (globalForm) {
 function globalFormInit (form, func_name, type) {
   const globalForm = form
   const input = globalForm.querySelector("[data-element='input-phone-intl']")
-  const button = globalForm.querySelector(".btn-warning")
-  const loader = globalForm.querySelector("[data-element='btn-loader']")
+  input.addEventListener('input', function () {
+    this.value = this.value.replace(/\D+/g, '')
+  })
   const inputHidden = globalForm.querySelector("[data-element='input-phone-hidden']")
-  const alertP = globalForm.querySelector(".alert")
   const linkTo = globalForm.getAttribute("data-docex")
+
+  const news = form.querySelector('[name="news"]')
+  const policy = form.querySelector('[name="policy"]')
+
+  if (news) news.addEventListener('change', () => news.closest('label').classList.remove('error-text'))
+  if (policy) policy.addEventListener('change',() => policy.closest('label').classList.remove('error-text'))
 
   const iti = window.intlTelInput(input, {
     utilsScript: "../libs/intlTelInputWithUtils.min",
@@ -75,9 +81,6 @@ function globalFormInit (form, func_name, type) {
   }
 
   globalForm.addEventListener('submit', (e) => {
-    alertP.style.display = "none";
-    button.style.display = "none";
-    //loader.style.display = "block";
     resetError()
     e.preventDefault()
     if (!input.value.trim()) {
@@ -91,25 +94,39 @@ function globalFormInit (form, func_name, type) {
       }else if (type == 'consultFormData') {
         var form_data = consultFormData(globalForm);
       }
-      $.request('MainFunctions::'+func_name, {
-        data: form_data,
-        error: function(jqXHR, textStatus, errorThrown) {
-          //console.log(Object.values(JSON.parse(errorThrown.response))[1]);
-          button.style.display = "block";
-          //loader.style.display = "none";
-          alertP.textContent=Object.values(JSON.parse(errorThrown.response))[1];
-          alertP.style.display = "block";
-        },
-        success: function() {
-          console.log('success');
-          alertP.style.display = "none";
-          window.location.href = linkTo;
-          console.log(linkTo);
-          clearForm();
-          //window.open('https://tochka-school.ru/storage/app/media/Dokumenti/Eksternat_Tocka_Znanii.pdf', '_blank');
+
+      const email = globalForm.querySelector('[name="email"]')
+      let isValid = true
+      if (email) {
+        isValid = validateEmail(email)
+        if (!isValid) email.addEventListener('input', () => validateEmail(email))
+      }
+      if (news) {
+        if (!news.checked) {
+          news.closest('label').classList.add('error-text')
+          news.classList.add('error')
+          isValid = false
         }
-      });
-      //clearForm()
+      }
+      if (policy) {
+        if (!policy.checked) {
+          policy.closest('label').classList.add('error-text')
+          isValid = false
+        }
+      }
+
+      if (isValid) {
+        $.request('MainFunctions::'+func_name, {
+          data: form_data,
+          error: function(jqXHR, textStatus, errorThrown) {
+            //console.log(Object.values(JSON.parse(errorThrown.response))[1]);
+          },
+          success: function() {
+            window.location.href = linkTo;
+          }
+        });
+        //clearForm()
+      }
 
     } else {
       input.classList.add("error")
@@ -127,4 +144,14 @@ function globalFormInit (form, func_name, type) {
     }
   }
   input.addEventListener('input', resetError)
+
+  function validateEmail (email) {
+    if (/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email.value)) {
+      email.classList.remove('error')
+      return true
+    } else {
+      email.classList.add('error')
+      return false
+    }
+  }
 }
