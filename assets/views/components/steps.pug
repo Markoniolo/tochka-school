@@ -31,8 +31,10 @@ mixin steps(mod)
           source(srcset=staticImg('steps/steps-doc_623.webp') type='image/webp')
           img.steps__form-image(src=staticImg('steps/steps-doc_623.png') alt='')
         .steps__form-box
+          input.input_utm(name='utm' type='hidden' value='')
           input.steps__form-input.input-gray(name='name' placeholder='Ваше имя' type='text')
-          input.steps__form-input.input-gray(name='tel' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
+          input.steps__form-input.input-gray(name='phone' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
+          input(name='tel' type='hidden' required data-element='input-phone-hidden')
           input.steps__form-input.input-gray(name='email' placeholder='Электронная почта' type='email' required)
           label.steps__checkbox
             input.steps__checkbox-input(name='policy' type='checkbox')

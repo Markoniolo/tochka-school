@@ -172,8 +172,10 @@
           <div class="family-order__text">Заполните форму ниже. Наш методист свяжется с Вами, чтобы определить время и провести встречу в видеоформате.</div>
           <img class="family-order__image" src="assets/img/family-order/family-order.svg" alt="">
           <form class="family-order__form" data-element="family-order-form" data-docex="/thanks" data-request-validate>
+            <input class="input_utm" name="utm" type="hidden" value="">
             <input class="family-order__input input-gray" name="name" placeholder="Ваше имя" type="text">
             <input class="family-order__input input-gray" name="phone" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+            <input name="tel" type="hidden" required data-element="input-phone-hidden">
             <div class="family-order__note">В какой мессенджер Вам написать</div>
             <div class="family-order__line">
               <label class="family-order__radio">
@@ -188,9 +190,6 @@
               </label>
             </div>
             <button class="family-order__submit btn-warning">Записаться</button>
-            <div class="alert alert-danger" data-validate-error>
-              <p data-message></p>
-            </div>
             <label class="family-order__checkbox">
               <input class="family-order__checkbox-input" name="policy" type="checkbox">
               <div class="family-order__checkbox-view"></div>

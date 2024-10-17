@@ -153,6 +153,7 @@
   margin-top: 18px;
   display: flex;
   align-items: flex-start;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .family-order__checkbox-input {
@@ -184,9 +185,9 @@
 .family-order__checkbox-text {
   font-size: 14px;
   line-height: 144%;
-  color: rgba(0, 0, 0, 0.75);
+  color: inherit;
   a {
-    color: rgba(0, 0, 0, 0.75);
+    color: inherit;
     text-decoration: underline;
   }
 }

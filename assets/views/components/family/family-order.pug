@@ -6,8 +6,10 @@
         Заполните форму ниже. Наш методист свяжется с Вами, чтобы определить время и провести встречу в видеоформате.
       img.family-order__image(src=staticImg('family-order/family-order.svg') alt='')
       form.family-order__form(data-element="family-order-form" data-docex="/thanks" data-request-validate)
+        input.input_utm(name='utm' type='hidden' value='')
         input.family-order__input.input-gray(name='name' placeholder='Ваше имя' type='text')
         input.family-order__input.input-gray(name='phone' placeholder='Номер телефона' type='tel' required data-element='input-phone-intl')
+        input(name='tel' type='hidden' required data-element='input-phone-hidden')
         .family-order__note В какой мессенджер Вам написать
         .family-order__line
           label.family-order__radio

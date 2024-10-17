@@ -1258,8 +1258,10 @@
             <img class="steps__form-image" src="assets/img/steps/steps-doc_623.png" alt="">
           </picture>
           <div class="steps__form-box">
+            <input class="input_utm" name="utm" type="hidden" value="">
             <input class="steps__form-input input-gray" name="name" placeholder="Ваше имя" type="text">
-            <input class="steps__form-input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+            <input class="steps__form-input input-gray" name="phone" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+            <input name="tel" type="hidden" required data-element="input-phone-hidden">
             <input class="steps__form-input input-gray" name="email" placeholder="Электронная почта" type="email" required>
             <label class="steps__checkbox">
               <input class="steps__checkbox-input" name="policy" type="checkbox">
@@ -1281,9 +1283,6 @@
             </label>
             <button class="steps__form-button btn-warning">Скачать</button>
             <div class="steps__form-note">Нажимая на кнопку «Скачать», я соглашаюсь с<a href="https://cms-dev.tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">политикой обработки персональных данных.</a>
-            </div>
-            <div class="alert alert-danger" data-validate-error>
-              <p data-message></p>
             </div>
           </div>
         </form>
@@ -1654,7 +1653,7 @@
         <br />Оставьте заявку
       </div>
       <input class="input_utm" name="utm" type="hidden" value="">
-      <input class="modal-order__input input-gray" name="tel" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+      <input class="modal-order__input input-gray" name="phone" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
       <input name="tel" type="hidden" required data-element="input-phone-hidden">
       <input class="modal-order__input input-gray" name="name" placeholder="Имя родителя" type="text">
       <input class="modal-order__input input-gray" name="email" placeholder="Ваш e-mail" type="email" required>
