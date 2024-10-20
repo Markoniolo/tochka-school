@@ -1,4 +1,4 @@
-try{
+try {
   lecturesSliderInit()
 } catch(e) {}
 

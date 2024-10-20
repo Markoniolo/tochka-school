@@ -8,8 +8,11 @@ html(lang='ru')
     include _head
     block head
   body.fix-top#body
+    if VIEW !== 'marathon'
+      include ../marathon-informer
     include header
     main.wrapper
       block body
+    include ../modals/modal-order
     include footer
     include scripts

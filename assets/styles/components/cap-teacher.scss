@@ -52,6 +52,7 @@
 }
 
 .cap-teacher__caption {
+  width: 90%;
   text-align: left;
   margin-bottom: 37px;
   @include media(md) {
@@ -60,11 +61,13 @@
     line-height: 136%;
   }
   @include media(sm) {
+    width: 110%;
     margin-bottom: 19px;
     font-size: 28px;
     line-height: 136%;
   }
   @include media(xs) {
+    width: 100%;
     font-size: 16px;
     line-height: 127%;
   }

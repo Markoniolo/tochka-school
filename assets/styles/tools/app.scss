@@ -27,16 +27,8 @@ body {
   flex-direction: column;
 }
 
-body, html {
-  height: 100%;
-}
-
 body.lock {
   overflow: hidden;
-}
-
-body.fix-top {
-  padding-top: 108.5px;
 }
 
 body.lock:after {

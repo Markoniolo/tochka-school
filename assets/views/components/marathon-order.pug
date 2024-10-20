@@ -1,0 +1,50 @@
+-
+  const marathonOrderArea = [
+    {
+      headline: 'Для школьников',
+      list: [
+        '1 онлайн-урок с учителем',
+        '5 уроков в записи для повторения важных тем по математике',
+        '1 входное тестирование с проверкой',
+        '1 выходное тестирование с проверкой ',
+        '5 домашних заданий с проверкой ',
+      ]
+    },
+    {
+      headline: 'Для родителей',
+      list: [
+        '4 урока от педагогов «Точки Знаний»',
+        'Эфир с разбором ваших ситуаций и ответов на вопросы от спикеров марафона',
+        '<span>Бонус №1</span> Руководство «Как развивать внимательность ребёнка»',
+        '<span>Бонус №2</span> Руководство «Как развивать таланты и способности ребёнка»',
+      ]
+    }
+  ]
+
+.marathon-order
+  .container
+    h2.marathon-order__title Присоединяйтесь к марафону
+    .marathon-order__date
+      | Даты проведения марафона:
+      |
+      span 28 октября - 2 ноября
+    .marathon-order__wrap
+      .marathon-order__top
+        .marathon-order__name Осенний марафон для школьников и родителей
+      .marathon-order__area
+        each box in marathonOrderArea
+          .marathon-order__box
+            .marathon-order__headline= box.headline
+            ul.marathon-order__list
+              each item in box.list
+                li.marathon-order__item!= item
+      form.marathon-order__bottom
+        .marathon-order__class
+          .marathon-order__class-note Выберите класс:
+          select.marathon-order__select(data-role="custom-select" name="class_name")
+            each item in [1,2,3,4,5,6,7,8]
+              option(value=item)!= `${item} класс`
+        .marathon-order__price
+          .marathon-order__price-old 3700 рублей
+          .marathon-order__price-new 760 руб
+        a.marathon-order__button.btn-warning(href='#') Иду на марафон!

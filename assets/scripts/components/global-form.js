@@ -80,7 +80,7 @@ function globalFormInit (form, func_name, type) {
     input.classList.remove("error")
   }
 
-  globalForm.addEventListener('submit', (e) => {
+  globalForm.addEventListener('submit', async (e) => {
     resetError()
     e.preventDefault()
     if (!input.value.trim()) {
@@ -116,16 +116,8 @@ function globalFormInit (form, func_name, type) {
       }
 
       if (isValid) {
-        $.request('MainFunctions::'+func_name, {
-          data: form_data,
-          error: function(jqXHR, textStatus, errorThrown) {
-            //console.log(Object.values(JSON.parse(errorThrown.response))[1]);
-          },
-          success: function() {
-            window.location.href = linkTo;
-          }
-        });
-        //clearForm()
+        globalForm.submit();
+        window.location.href = linkTo;
       }
 
     } else {

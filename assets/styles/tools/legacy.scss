@@ -5,8 +5,8 @@ Styles for Header
 */
 header {
   width: 100%;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: -1px;
   left: 0;
   z-index: 100;
   max-height: 100vh;
@@ -17,7 +17,7 @@ header.fixed, header.fix {background: #ffffff;}
 
 .header-block {
   padding: 26px 0;
-  transition: all linear 0.5s;
+  transition: none !important;
 }
 
 header.fixed .header-block {padding: 10px 0;}
@@ -62,7 +62,10 @@ nav {
   margin: 0 88px 5px auto;
 }
 
-nav ul {gap: 46px;}
+nav ul {
+  gap: 46px;
+  display: flex;
+}
 
 nav a {
   color: #222;
@@ -1160,6 +1163,14 @@ Styles for Reviews
   background: #FFF;
   box-shadow: 0px 6px 13.4px 0px rgba(135, 163, 227, 0.07);
   padding: 20px 29px;
+}
+
+.reviews.orange {
+  background: #f5ebd3;
+}
+
+.reviews.orange .swiper-button-next, .reviews.orange .swiper-button-prev {
+  background-color: #EC872B;
 }
 
 .review-name {
@@ -3064,6 +3075,9 @@ Styles for Adaptive
 }
 
 @media (max-width: 1399px) {
+  .about-blk:nth-child(2) .about-image {
+    margin-left: auto;
+  }
   header .nav-block {padding-left: 0; padding-bottom: 0;}
   header .nav-block > div.nav-consult {width: 50%; border-right: 0;
     padding-bottom: 20px;}
@@ -3106,7 +3120,7 @@ Styles for Adaptive
 }
 
 @media (max-width: 1199px) {
-  body.fix-top {padding-top: 92.5px;}
+  //body.fix-top {padding-top: 92.5px;}
   h1 {font-size: 32px;}
   h2 {font-size: 30px; margin-bottom: 30px;}
   section {padding: 40px 0;}
@@ -3420,7 +3434,23 @@ Styles for Adaptive
 }
 
 @media (max-width: 991px) {
-  header .lk a, header.fixed .header-block .lk a {padding: 11px 15px; width: 194px;}
+  nav ul {
+    display: none;
+  }
+  header .logo {
+    order: 2;
+    margin-top: 0;
+  }
+  header .lk {order: 3;}
+  header .lk a, header .lk a, header.fixed .header-block .lk a {width: 29px; height: 29px; font-size: 0; border-radius: 50%; padding: 0; border: none;}
+  header .lk a:after {margin: 0 auto;}
+  nav {
+    margin: 0;
+  }
+  //body.fix-top {padding-top: 84px;}
+  .header-block {padding: 20px 0 16px;}
+  .mobile-nav {font-size: 0;}
+  .mobile-nav:before {background: url(../img/nav-mobile.svg) no-repeat; width: 25px; height: 20px;}
   .offer {padding-top: 100px;}
   .direction-blk {padding-top: 15px;}
   .direction-blk .btn {width: 102px; padding: 5px 10px;}
@@ -3576,10 +3606,13 @@ Styles for Adaptive
 }
 
 @media (max-width: 767px) {
+  .about-blk:nth-child(2) .about-image {
+    margin: -15px 60px -20px 0;
+  }
   .nav-box {align-items: center;}
   .licence-info {max-width: 270px;}
   .licence-number {max-width: 270px;}
-  body.fix-top {padding-top: 84px;}
+  //body.fix-top {padding-top: 84px;}
   h1 {font-size: 28px;}
   h2 {font-size: 26px;}
   section {padding: 30px 0;}
@@ -3767,7 +3800,7 @@ Styles for Adaptive
 }
 
 @media (max-width: 575px) {
-  body.fix-top {padding-top: 77px;}
+  //body.fix-top {padding-top: 77px;}
   h2 {line-height: 1.22;}
   .logo img {max-width: 115px;}
   header .nav-block > div.nav-consult {width: 75%; margin-top: 30px; gap: 7px;}

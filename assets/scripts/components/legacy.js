@@ -91,11 +91,11 @@ $(function(){
   $(window).scroll(fixedHeader);
 
   function fixedHeader () {
-    if($(this).scrollTop() >= 10) {
-      $('header, nav, body').addClass('fixed');
+    if (window.pageYOffset > 150) {
+      $('header').addClass('fixed');
     }
-    else{
-      $('header, nav, body').removeClass('fixed');
+    else if (window.pageYOffset < 100) {
+      $('header').removeClass('fixed');
     }
   }
 });

@@ -1,0 +1,14 @@
+extends ../components/_layout/layout
+
+block head
+  +title('Осенний марафон для школьников и родителей')
+
+block body
+  include ../components/marathon-cap
+  include ../components/marathon-child
+  include ../components/marathon-parents
+  include ../components/marathon-result
+  include ../components/marathon-order
+  include ../components/reviews
+  +reviews('orange')
+  include ../components/marathon-end
