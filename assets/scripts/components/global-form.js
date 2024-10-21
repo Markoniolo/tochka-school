@@ -138,7 +138,7 @@ function globalFormInit (form, func_name, type) {
   input.addEventListener('input', resetError)
 
   function validateEmail (email) {
-    if (/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/.test(email.value)) {
+    if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value)) {
       email.classList.remove('error')
       return true
     } else {
