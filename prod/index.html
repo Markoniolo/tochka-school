@@ -42,6 +42,18 @@
 </head>
 
 <body class="fix-top" id="body">
+  <div class="marathon-informer" data-element="marathon-informer">
+    <div class="container">
+      <div class="marathon-informer__area">
+        <div class="marathon-informer__text">
+          <span>Осенний марафон!</span>
+          Закрыть пробелы в знаниях и не дать ребенку скатиться в учёбе
+        </div>
+        <a class="marathon-informer__button" href="#">Записаться</a>
+        <button class="marathon-informer__close" data-element="marathon-informer__close"></button>
+      </div>
+    </div>
+  </div>
   <header class="fix header_shadow">
     <div class="container">
       <div class="header-block d-flex align-items-center justify-content-between">
@@ -53,12 +65,15 @@
         </div>
         <nav class="d-flex align-items-center">
           <button class="mobile-nav d-flex align-items-center">&Mcy;&iecy;&ncy;&yucy;</button>
-          <ul class="d-md-flex list-unstyled">
+          <ul class="list-unstyled">
             <li>
               <a href="index.html">&Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;</a>
             </li>
             <li>
               <a class="anchor" href="#Reviews">&Ocy;&tcy;&zcy;&ycy;&vcy;&ycy;</a>
+            </li>
+            <li>
+              <a href="#">Курс для учителя</a>
             </li>
           </ul>
         </nav>
@@ -358,59 +373,59 @@
         </div>
       </div>
     </div>
-    <form class="modal-order" id="modal-order" data-element="order-form" data-docex="/_thanks" data-request-validate>
-      <div class="modal-order__title">Подберём занятия для ребёнка.
-        <br />Оставьте заявку
-      </div>
-      <input class="input_utm" name="utm" type="hidden" value="">
-      <input class="modal-order__input input-gray" name="phone" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
-      <input name="tel" type="hidden" required data-element="input-phone-hidden">
-      <input class="modal-order__input input-gray" name="name" placeholder="Имя родителя" type="text">
-      <input class="modal-order__input input-gray" name="email" placeholder="Ваш e-mail" type="email" required>
-      <select class="modal-order__select" data-role="custom-select" name="class_name">
-        <option value="1">1 класс</option>
-        <option value="2">2 класс</option>
-        <option value="3">3 класс</option>
-        <option value="4">4 класс</option>
-        <option value="5">5 класс</option>
-        <option value="6">6 класс</option>
-        <option value="7">7 класс</option>
-        <option value="8">8 класс</option>
-        <option value="9">9 класс</option>
-        <option value="10">10 класс</option>
-        <option value="11">11 класс</option>
-      </select>
-      <label class="modal-order__checkbox">
-        <input class="modal-order__checkbox-input" name="policy" type="checkbox">
-        <div class="modal-order__checkbox-view"></div>
-        <div class="modal-order__checkbox-text">
-          Даю
-          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_obrabotku_personalnih_dannih_OOO.pdf" target="_blank">Согласие</a>
-          на обработку персональных данных в соответствие с
-          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">Политикой.</a>
-        </div>
-      </label>
-      <label class="modal-order__checkbox">
-        <input class="modal-order__checkbox-input" name="news" type="checkbox">
-        <div class="modal-order__checkbox-view"></div>
-        <div class="modal-order__checkbox-text">
-          Согласен на
-          <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf" target="_blank">получение рекламы</a>
-        </div>
-      </label>
-      <button class="modal-order__button btn-warning">Оставить заявку</button>
-      <ul class="modal-order__list">
-        <li class="modal-order__item">Познакомим с форматом обучения</li>
-        <li class="modal-order__item">Покажем, как проходят занятия</li>
-        <li class="modal-order__item">Поможем подобрать обучение</li>
-      </ul>
-    </form>
     <div class="btn-fixed" data-btn-fixed-start="400" data-btn-fixed-end="1700" data-element="btn-fixed">
       <div class="btn-fixed__box">
         <a class="btn-fixed__button btn-warning" href="#modal-order" data-fancybox>Подобрать занятия</a>
       </div>
     </div>
   </main>
+  <form class="modal-order" id="modal-order" data-element="order-form" data-docex="/_thanks" data-request-validate>
+    <div class="modal-order__title">Подберём занятия для ребёнка.
+      <br />Оставьте заявку
+    </div>
+    <input class="input_utm" name="utm" type="hidden" value="">
+    <input class="modal-order__input input-gray" name="phone" placeholder="Номер телефона" type="tel" required data-element="input-phone-intl">
+    <input name="tel" type="hidden" required data-element="input-phone-hidden">
+    <input class="modal-order__input input-gray" name="name" placeholder="Имя родителя" type="text">
+    <input class="modal-order__input input-gray" name="email" placeholder="Ваш e-mail" type="email" required>
+    <select class="modal-order__select" data-role="custom-select" name="class_name">
+      <option value="1">1 класс</option>
+      <option value="2">2 класс</option>
+      <option value="3">3 класс</option>
+      <option value="4">4 класс</option>
+      <option value="5">5 класс</option>
+      <option value="6">6 класс</option>
+      <option value="7">7 класс</option>
+      <option value="8">8 класс</option>
+      <option value="9">9 класс</option>
+      <option value="10">10 класс</option>
+      <option value="11">11 класс</option>
+    </select>
+    <label class="modal-order__checkbox">
+      <input class="modal-order__checkbox-input" name="policy" type="checkbox">
+      <div class="modal-order__checkbox-view"></div>
+      <div class="modal-order__checkbox-text">
+        Даю
+        <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_obrabotku_personalnih_dannih_OOO.pdf" target="_blank">Согласие</a>
+        на обработку персональных данных в соответствие с
+        <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Politika_obrabotki_personalnih_dannih_OOO.pdf" target="_blank">Политикой.</a>
+      </div>
+    </label>
+    <label class="modal-order__checkbox">
+      <input class="modal-order__checkbox-input" name="news" type="checkbox">
+      <div class="modal-order__checkbox-view"></div>
+      <div class="modal-order__checkbox-text">
+        Согласен на
+        <a href="https://tochka-school.ru/storage/app/media/Dokumenti/Soglasie_na_reklamnuyu_rassilku_OOO.pdf" target="_blank">получение рекламы</a>
+      </div>
+    </label>
+    <button class="modal-order__button btn-warning">Оставить заявку</button>
+    <ul class="modal-order__list">
+      <li class="modal-order__item">Познакомим с форматом обучения</li>
+      <li class="modal-order__item">Покажем, как проходят занятия</li>
+      <li class="modal-order__item">Поможем подобрать обучение</li>
+    </ul>
+  </form>
   <footer class="footer">
     <div class="container">
       <div class="footer__area">

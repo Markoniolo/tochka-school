@@ -216,7 +216,7 @@ function globalFormInit (form, func_name, type) {
     input.classList.remove("error")
   }
 
-  globalForm.addEventListener('submit', (e) => {
+  globalForm.addEventListener('submit', async (e) => {
     resetError()
     e.preventDefault()
     if (!input.value.trim()) {
@@ -252,16 +252,8 @@ function globalFormInit (form, func_name, type) {
       }
 
       if (isValid) {
-        $.request('MainFunctions::'+func_name, {
-          data: form_data,
-          error: function(jqXHR, textStatus, errorThrown) {
-            //console.log(Object.values(JSON.parse(errorThrown.response))[1]);
-          },
-          success: function() {
-            window.location.href = linkTo;
-          }
-        });
-        //clearForm()
+        globalForm.submit();
+        window.location.href = linkTo;
       }
 
     } else {
@@ -292,7 +284,7 @@ function globalFormInit (form, func_name, type) {
   }
 }
 
-try{
+try {
   lecturesSliderInit()
 } catch(e) {}
 
@@ -463,11 +455,11 @@ $(function(){
   $(window).scroll(fixedHeader);
 
   function fixedHeader () {
-    if($(this).scrollTop() >= 10) {
-      $('header, nav, body').addClass('fixed');
+    if (window.pageYOffset > 150) {
+      $('header').addClass('fixed');
     }
-    else{
-      $('header, nav, body').removeClass('fixed');
+    else if (window.pageYOffset < 100) {
+      $('header').removeClass('fixed');
     }
   }
 });
@@ -851,6 +843,63 @@ function initSwiper() {
       },
       grabCursor: true,
     });
+  }
+}
+
+const marathonChildThemes = document.querySelector('[data-element="marathon-child__themes"]')
+
+if (marathonChildThemes) marathonChildThemesInit()
+
+function marathonChildThemesInit () {
+  const navItems = document.querySelectorAll('[data-element="marathon-child__nav-item"]')
+  const boxes = document.querySelectorAll('[data-element="marathon-child__box"]')
+
+  for (let i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener('click', toggleBox)
+  }
+
+  function toggleBox () {
+    const oldNav = marathonChildThemes.querySelector('.marathon-child__nav-item_active')
+    oldNav.classList.remove('marathon-child__nav-item_active')
+    this.classList.add('marathon-child__nav-item_active')
+    const oldBox = marathonChildThemes.querySelector('.marathon-child__box_active')
+    oldBox.classList.remove('marathon-child__box_active')
+    const index = this.getAttribute('data-index')
+    boxes[index].classList.add('marathon-child__box_active')
+  }
+
+  const marathonChildClose = document.querySelector('[data-element="marathon-child__close"]')
+
+  marathonChildThemes.addEventListener('click', openModal)
+  marathonChildClose.addEventListener('click', closeModal)
+  window.addEventListener('click', windowCloseModal)
+
+  function openModal () {
+    marathonChildThemes.classList.add('marathon-child__themes_active')
+  }
+
+  function closeModal (e) {
+    e.stopPropagation()
+    marathonChildThemes.classList.remove('marathon-child__themes_active')
+  }
+
+  function windowCloseModal (e) {
+    if (!e.target.classList.contains('marathon-child__themes') && !e.target.closest('.marathon-child__themes')) {
+      marathonChildThemes.classList.remove('marathon-child__themes_active')
+    }
+  }
+}
+
+const marathonInformer = document.querySelector('[data-element="marathon-informer"]')
+
+if (marathonInformer) marathonInformerInit()
+
+function marathonInformerInit () {
+  const close = document.querySelector('[data-element="marathon-informer__close"]')
+  close.addEventListener('click', removeMarathon)
+
+  function removeMarathon () {
+    marathonInformer.remove()
   }
 }
 
