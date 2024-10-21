@@ -467,26 +467,26 @@
               </ul>
             </div>
           </div>
-          <form class="marathon-order__bottom">
+          <div class="marathon-order__bottom">
             <div class="marathon-order__class">
               <div class="marathon-order__class-note">Выберите класс:</div>
-              <select class="marathon-order__select" data-role="custom-select" name="class_name">
-                <option value="1">1 класс</option>
-                <option value="2">2 класс</option>
-                <option value="3">3 класс</option>
-                <option value="4">4 класс</option>
-                <option value="5">5 класс</option>
-                <option value="6">6 класс</option>
-                <option value="7">7 класс</option>
-                <option value="8">8 класс</option>
+              <select class="marathon-order__select" data-role="custom-select" name="class_name" data-element="marathon-order__select">
+                <option value="1" data-product-old-price="3701" data-product-new-price="761" data-product-link="#1">1 класс</option>
+                <option value="2" data-product-new-price="762" data-product-link="#2">2 класс</option>
+                <option value="3" data-product-old-price="3703" data-product-new-price="763" data-product-link="#3">3 класс</option>
+                <option value="4" data-product-old-price="3704" data-product-new-price="764" data-product-link="#4">4 класс</option>
+                <option value="5" data-product-old-price="3705" data-product-new-price="765" data-product-link="#5">5 класс</option>
+                <option value="6" data-product-old-price="3706" data-product-new-price="766" data-product-link="#6">6 класс</option>
+                <option value="7" data-product-old-price="3707" data-product-new-price="767" data-product-link="#7">7 класс</option>
+                <option value="8" data-product-old-price="3708" data-product-new-price="768" data-product-link="#8">8 класс</option>
               </select>
             </div>
             <div class="marathon-order__price">
-              <div class="marathon-order__price-old">3700 рублей</div>
-              <div class="marathon-order__price-new">760 руб</div>
+              <div class="marathon-order__price-old" data-element="marathon-order__price-old">3700 рублей</div>
+              <div class="marathon-order__price-new" data-element="marathon-order__price-new">760 руб</div>
             </div>
-            <a class="marathon-order__button btn-warning" href="#">Иду на марафон!</a>
-          </form>
+            <a class="marathon-order__button btn-warning" href="#" data-element="marathon-order__button">Иду на марафон!</a>
+          </div>
         </div>
       </div>
     </div>
