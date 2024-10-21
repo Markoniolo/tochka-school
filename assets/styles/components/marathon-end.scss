@@ -1,6 +1,13 @@
 .marathon-end {
   background-color: #fffaee;
   color: #222;
+  overflow: hidden;
+  .container {
+    @include media(xs) {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 .marathon-end__area {
@@ -21,10 +28,8 @@
     background-size: cover;
     min-height: 322px;
     max-width: 363px;
-    width: calc(100% + 24px);
-    position: relative;
-    left: -12px;
-    margin: 0 auto;
+    width: calc(100% + 22px);
+    margin: 0 -11px;
   }
 }
 
