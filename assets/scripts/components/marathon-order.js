@@ -16,10 +16,10 @@ function marathonOrderSelectInit () {
     button.href = link
     if (priceOldValue) {
       priceOld.style.display = 'block'
-      priceOld.innerHTML =`${priceOldValue} рублей`
+      priceOld.innerHTML =`${priceOldValue}`
     } else {
       priceOld.style.display = 'none'
     }
-    priceNew.innerHTML =`${priceNewValue} руб`
+    priceNew.innerHTML =`${priceNewValue}`
   }
 }

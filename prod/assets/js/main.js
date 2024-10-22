@@ -898,7 +898,15 @@ function marathonInformerInit () {
   const close = document.querySelector('[data-element="marathon-informer__close"]')
   close.addEventListener('click', removeMarathon)
 
-  function removeMarathon () {
+  function removeMarathon (e) {
+    e.preventDefault()
+    localStorage.setItem('isMarathonInformerShown', 'true')
+    marathonInformer.remove()
+  }
+
+  const isShown = localStorage.getItem('isMarathonInformerShown')
+
+  if (isShown && !marathonInformer.getAttribute('show-always')) {
     marathonInformer.remove()
   }
 }
@@ -921,11 +929,11 @@ function marathonOrderSelectInit () {
     button.href = link
     if (priceOldValue) {
       priceOld.style.display = 'block'
-      priceOld.innerHTML =`${priceOldValue} рублей`
+      priceOld.innerHTML =`${priceOldValue}`
     } else {
       priceOld.style.display = 'none'
     }
-    priceNew.innerHTML =`${priceNewValue} руб`
+    priceNew.innerHTML =`${priceNewValue}`
   }
 }
 
