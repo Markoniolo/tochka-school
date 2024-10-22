@@ -116,3 +116,9 @@ h2 {
 .error-text {
   color: red !important;
 }
+
+.sticky-header {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
