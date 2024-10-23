@@ -88,10 +88,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 //скрипт для шапки
 $(function(){
   fixedHeader()
-  $(window).scroll(fixedHeader);
+  window.addEventListener('scroll', fixedHeader, { passive: true });
 
   function fixedHeader () {
-    if (window.pageYOffset > 150) {
+    if (window.pageYOffset > 200) {
       $('header').addClass('fixed');
     }
     else if (window.pageYOffset < 100) {

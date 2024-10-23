@@ -34,7 +34,7 @@ body.lock {
 body.lock header {
   .container {
     position: relative;
-    z-index: 100;
+    z-index: 101;
     background-color: #FFFFFF;
   }
   &:after {
@@ -48,10 +48,26 @@ body.lock header {
     display: block;
     z-index: 99;
   }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #FFFFFF;
+  }
 }
 
 body.modal-open-noscroll {
   overflow: hidden;
+}
+
+body.fix-top {
+  header {
+    margin-bottom: 0;
+  }
 }
 
 input:not([type=checkbox]):not([type=radio]),

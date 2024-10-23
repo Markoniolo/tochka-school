@@ -11,9 +11,11 @@ header {
   z-index: 100;
   max-height: 100vh;
   overflow: auto;
+  margin-bottom: -66px;
+  background-color: white;
 }
 
-header.fixed, header.fix {background: #ffffff;}
+header.fixed {background: #ffffff;}
 
 .header-block {
   padding: 26px 0;

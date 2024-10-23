@@ -64,6 +64,7 @@
     display: block;
   }
   &_wide {
+    order: 5;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -76,6 +77,30 @@
       flex-direction: column;
       gap: 20px 0;
       padding-top: 30px;
+    }
+  }
+  &:nth-child(1) {
+    order: 1;
+    @include media(md) {
+      order: unset;
+    }
+  }
+  &:nth-child(2) {
+    order: 3;
+    @include media(md) {
+      order: unset;
+    }
+  }
+  &:nth-child(3) {
+    order: 2;
+    @include media(md) {
+      order: unset;
+    }
+  }
+  &:nth-child(4) {
+    order: 4;
+    @include media(md) {
+      order: unset;
     }
   }
 }
@@ -190,8 +215,8 @@
 }
 
 .marathon-parents__bonus-text {
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 17px;
   @include media(md) {
     font-weight: 600;
     font-size: 14px;
