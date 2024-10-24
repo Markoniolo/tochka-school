@@ -51,7 +51,7 @@ function lecturesSliderInit () {
 
   function itemsToggleInit (lecturesInner) {
     const box = lecturesInner.querySelector('[data-element="lectures__box"]')
-    const button = box.querySelector('[data-element="lectures__more"]')
+    const button = box.querySelector('.lectures__more')
 
     if (box.clientHeight > lecturesInnerHeight) {
       button.addEventListener('click', toggleItems)

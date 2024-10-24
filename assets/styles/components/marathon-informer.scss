@@ -2,7 +2,7 @@
   position: relative;
   @include bgIcon('marathon-informer/marathon-informer-bg.svg');
   background-size: cover;
-  display: block;
+  display: none;
   @include media(md) {
     @include bgIcon('marathon-informer/marathon-informer-bg_tablet.svg');
     background-size: cover;

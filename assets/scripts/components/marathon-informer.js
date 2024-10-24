@@ -14,7 +14,7 @@ function marathonInformerInit () {
 
   const isShown = localStorage.getItem('isMarathonInformerShown')
 
-  if (isShown && !marathonInformer.getAttribute('show-always')) {
-    marathonInformer.remove()
+  if (!isShown || marathonInformer.getAttribute('show-always')) {
+    marathonInformer.style.display = 'block'
   }
 }
