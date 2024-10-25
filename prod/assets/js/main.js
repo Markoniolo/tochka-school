@@ -147,7 +147,8 @@ const orderForm = document.querySelector("[data-element='order-form']")
 if (orderForm) globalFormInit(orderForm, 'onSendOrderMessage', 'orderFormData')
 
 const orderFormTeacher = document.querySelector("[data-element='order-form-teacher']")
-if (orderFormTeacher) globalFormInit(orderFormTeacher, 'onSendOrderMessage', 'orderFormTeacherData')
+if (orderFormTeacher) globalFormInit(orderFormTeacher, 'onSendTeacherOrderMessage', 'orderFormTeacherData')
+
 
 function orderFormTeacherData (globalForm) {
   return {
@@ -155,6 +156,16 @@ function orderFormTeacherData (globalForm) {
     'utm': globalForm.querySelector("[name='utm']").value,
     'tel': globalForm.querySelector("[name='tel']").value,
     'email': globalForm.querySelector("[name='email']").value,
+    'policy': globalForm.querySelector("[name='policy']").checked,
+    'news': globalForm.querySelector("[name='news']").checked,
+  };
+}
+function orderFormData (globalForm) {
+  return {
+    'name': globalForm.querySelector("[name='name']").value,
+    'utm': globalForm.querySelector("[name='utm']").value,
+    'tel': globalForm.querySelector("[name='tel']").value,
+    'class_name': globalForm.querySelector("[name='class_name']").options[globalForm.querySelector("[name='class_name']").selectedIndex].value,
     'policy': globalForm.querySelector("[name='policy']").checked,
     'news': globalForm.querySelector("[name='news']").checked,
   };

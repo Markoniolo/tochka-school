@@ -12,7 +12,7 @@ mixin routes(mod)
       h2.routes__title Выберите направление
       .routes__area
         each item in routeArea
-          .routes__box(class = `routes__box_${item.mod}` : false)
+          .routes__box(class = item.mod ? `routes__box_${item.mod}` : false)
             a.routes__headline(href='#')= item.headline
             .routes__top
               .routes__subtitle= item.subtitle
