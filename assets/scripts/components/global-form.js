@@ -5,28 +5,25 @@ for (let i = 0; i < externalFormArray.length; i++) {
 }
 
 const familyOrderForm = document.querySelector("[data-element='family-order-form']")
-
 if (familyOrderForm) globalFormInit(familyOrderForm, 'onSendConsultMessage', 'consultFormData')
 
 const orderForm = document.querySelector("[data-element='order-form']")
-
 if (orderForm) globalFormInit(orderForm, 'onSendOrderMessage', 'orderFormData')
 
-function orderFormData (globalForm) {
-  console.log('orderFormData');
-  var value = globalForm.querySelector("[name='class_name']").options[globalForm.querySelector("[name='class_name']").selectedIndex].value;
-  console.log(value);
+const orderFormTeacher = document.querySelector("[data-element='order-form-teacher']")
+if (orderFormTeacher) globalFormInit(orderFormTeacher, 'onSendOrderMessage', 'orderFormTeacherData')
+
+function orderFormTeacherData (globalForm) {
   return {
     'name': globalForm.querySelector("[name='name']").value,
     'utm': globalForm.querySelector("[name='utm']").value,
     'tel': globalForm.querySelector("[name='tel']").value,
-    'class_name': globalForm.querySelector("[name='class_name']").options[globalForm.querySelector("[name='class_name']").selectedIndex].value,
+    'email': globalForm.querySelector("[name='email']").value,
     'policy': globalForm.querySelector("[name='policy']").checked,
     'news': globalForm.querySelector("[name='news']").checked,
   };
 }
 function externalFormData (globalForm) {
-  console.log('externalFormData');
   return {
     'name': globalForm.querySelector("[name='name']").value,
     'utm': globalForm.querySelector("[name='utm']").value,
@@ -37,8 +34,6 @@ function externalFormData (globalForm) {
   };
 }
 function consultFormData (globalForm) {
-  console.log('consultFormData');
-  console.log( globalForm.querySelector("[name='messenger']:checked").value);
   return {
     'name': globalForm.querySelector("[name='name']").value,
     'utm': globalForm.querySelector("[name='utm']").value,
@@ -89,10 +84,12 @@ function globalFormInit (form, func_name, type) {
 
       if (type == 'externalFormData') {
         var form_data = externalFormData(globalForm);
-      }else if (type == 'orderFormData') {
+      } else if (type == 'orderFormData') {
         var form_data = orderFormData(globalForm);
-      }else if (type == 'consultFormData') {
+      } else if (type == 'consultFormData') {
         var form_data = consultFormData(globalForm);
+      } else if (type == 'orderFormTeacherData') {
+        var form_data = orderFormTeacherData(globalForm);
       }
 
       const email = globalForm.querySelector('[name="email"]')

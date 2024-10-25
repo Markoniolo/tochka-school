@@ -96,6 +96,8 @@
   padding: 4px 6px;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .custom-select-option.has-focus {
@@ -104,6 +106,7 @@
 
 .custom-select-option.is-selected {
   background-color: #C7E0FF;
+  color: #222222;
 }
 
 .custom-select-optgroup > .custom-select-option {

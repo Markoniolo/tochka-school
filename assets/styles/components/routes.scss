@@ -1,0 +1,264 @@
+.routes {
+  padding: 70px 0 140px;
+  @include media(md) {
+    padding: 40px 0;
+  }
+  @include media(sm) {
+    padding: 0 0 50px;
+    background-color: #f6faff;
+  }
+  &_top {
+    padding: 0;
+    @include media(md) {
+      padding: 0;
+    }
+  }
+  &_blue {
+    background-color: #f6faff;
+  }
+}
+
+.routes__title {
+  color: #222;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.22;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+  @include media(md) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  &::before {
+    content: "";
+    @include bgIcon('routes/routes-decor-arrow.svg');
+    width: 38px;
+    height: 53px;
+    margin-right: 10px;
+    @include media(md) {
+      width: 28px;
+      height: 39px;
+    }
+  }
+}
+
+.routes__area {
+  display: flex;
+  gap: 0 14px;
+  @include media(md) {
+    gap: 20px 20px;
+    flex-wrap: wrap;
+  }
+  @include media(xs) {
+    gap: 15px 0;
+  }
+}
+
+.routes__box {
+  position: relative;
+  width: calc(33.33% - 7px);
+  border-radius: 10px;
+  border: 1px solid #E3EBFE;
+  background: linear-gradient(180deg, #FFF 0%, #E5EDFF 100%);
+  box-shadow: 0 1px 17.3px 0 rgba(0, 0, 0, 0.09);
+  padding: 34px 30px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 254px;
+  @include media(md) {
+    width: calc(50% - 10px);
+    padding: 15px;
+    min-height: 174px;
+  }
+  @include media(xs) {
+    width: 100%;
+  }
+  &_mob {
+    display: none;
+    @include media(md) {
+      display: block;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+  }
+  &:nth-child(1)::after {
+    @include bgIcon('routes/routes-icon-1.svg');
+    background-position: bottom right;
+    width: 218px;
+    height: 185px;
+    @include media(lg) {
+      width: 170px;
+      height: 170px;
+    }
+    @include media(md) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &:nth-child(2)::after {
+    @include bgIcon('routes/routes-icon-2.svg');
+    background-position: bottom right;
+    width: 208px;
+    height: 168px;
+    @include media(lg) {
+      width: 170px;
+      height: 170px;
+    }
+    @include media(md) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &:nth-child(3)::after {
+    @include bgIcon('routes/routes-icon-3.svg');
+    background-position: bottom right;
+    width: 236px;
+    height: 153px;
+    @include media(lg) {
+      width: 170px;
+      height: 170px;
+    }
+    @include media(md) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &:nth-child(4)::after {
+    @include bgIcon('routes/routes-icon-4.svg');
+    background-position: bottom right;
+    width: 174px;
+    height: 174px;
+    @include media(sm) {
+      width: 136px;
+      height: 136px;
+    }
+  }
+}
+
+.routes__headline {
+  position: relative;
+  z-index: 2;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  transition-duration: 0.3s;
+  transition-property: color;
+  @include media(md) {
+    font-size: 18px;
+    line-height: 101%;
+  }
+  @include media(xs) {
+    font-size: 20px;
+  }
+  &:hover {
+    color: #0a58ca;
+  }
+  &::after {
+    content: "";
+    @include bgIcon('routes/routes-icon-line.svg');
+    width: 146px;
+    height: 9px;
+    margin: 15px 0 11px;
+    display: inline-block;
+    @include media(md) {
+      width: 113px;
+      margin: 4px 0 9px;
+    }
+    @include media(xs) {
+      margin: 3px 0 9px;
+    }
+  }
+}
+
+.routes__top {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 53px;
+  display: flex;
+  align-items: center;
+  @include media(md) {
+    margin-bottom: 17px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include media(xs) {
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+}
+
+.routes__subtitle {
+  max-width: 120px;
+  color: #000;
+  font-size: 20px;
+  line-height: 1;
+  @include media(md) {
+    margin-bottom: 9px;
+    font-size: 15px;
+    line-height: 133%;
+  }
+  @include media(xs) {
+    max-width: 100%;
+  }
+}
+
+.routes__note {
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 144%;
+  color: #858ea5;
+  padding: 4px 9px;
+  border: 1px solid #ffca42;
+  border-radius: 5px;
+  @include media(md) {
+    border-radius: 4px;
+    font-size: 11px;
+    margin-left: 0;
+    padding: 3px 7px;
+  }
+  @include media(xs) {
+    margin-left: 15px;
+  }
+}
+
+.routes__button {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  width: 134px;
+  padding: 12px 21px;
+  margin-top: auto;
+  &::after {
+    content: "";
+    @include bgIcon('routes/routes-btn-arrow.svg');
+    min-width: 13px;
+    width: 13px;
+    height: 13px;
+  }
+}
+

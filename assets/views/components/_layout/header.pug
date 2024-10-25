@@ -31,10 +31,16 @@ header.fix.header_shadow
             a(href='starshaya_shkola.html')
               | &Scy;&tcy;&acy;&rcy;&shcy;&acy;&yacy; &shcy;&kcy;&ocy;&lcy;&acy;
               span 9-11 &kcy;&lcy;&acy;&scy;&scy;
+          li
+            a(href='#')
+              | Курсы для учителей
       .nav-consult
         span &Ncy;&ucy;&zhcy;&ncy;&acy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&yacy;?
         p &Ncy;&acy;&pcy;&icy;&shcy;&icy;&tcy;&iecy; &ncy;&acy;&mcy; &vcy; &Tcy;&iecy;&lcy;&iecy;&gcy;&rcy;&acy;&mcy;. &Ocy;&tcy;&vcy;&iecy;&tcy;&icy;&mcy; &ncy;&acy; &vcy;&scy;&iecy; &vcy;&ocy;&pcy;&rcy;&ocy;&scy;&ycy; &icy; &pcy;&ocy;&mcy;&ocy;&zhcy;&iecy;&mcy; &vcy; &vcy;&ycy;&bcy;&ocy;&rcy;&iecy;.
-        a.btn.btn-warning(href='#modal-order' data-fancybox) Оставить заявку
+        if VIEW === 'course-teacher'
+          a.btn.btn-warning(href='#modal-order-teacher' data-fancybox) Оставить заявку
+        else
+          a.btn.btn-warning(href='#modal-order' data-fancybox) Оставить заявку
         a.btn-wp(href='https://wa.me/79182172497' target="_blank") Связаться в WhatsApp
       .nav-contact
         div

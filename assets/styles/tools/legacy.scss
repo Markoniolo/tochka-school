@@ -130,6 +130,7 @@ header .nav-block > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 600;
 }
 
 .nav-school li:not(:last-child) {
@@ -3146,6 +3147,7 @@ Styles for Adaptive
   .offer-blk:nth-child(2) {margin-top: -40px;}
   .offer-blk:nth-child(1) {margin-top: -10px; z-index: 10;}
   .offer-block {background: url(../img/offer-line2.svg) 60% 40% no-repeat; background-size: 82% 82%; margin-top: 70px;}
+  .direction-mob {display: block}
   .direction-blk {padding: 20px 15px 15px;}
   .direction-blk a.title {font-size: 18px;}
   .direction-blk a.title:after {margin: 6px 0 9px;}
@@ -3631,7 +3633,7 @@ Styles for Adaptive
   .mobile-nav {font-size: 0;}
   .mobile-nav:before {background: url(../img/nav-mobile.svg) no-repeat; width: 25px; height: 20px;}
   header .nav-block > div, header .nav-block > div.nav-consult {width: 100%;}
-  header .nav-block > div.nav-consult {border: none; padding: 0; text-align: center; gap: 20px; width: 70%; margin: 0 auto; }
+  header .nav-block > div.nav-consult {border: none; padding: 0; text-align: center; gap: 20px; width: 70%; margin: 30px auto 0; }
   header .nav-block > div.nav-contact {border: none; flex-direction: column;}
   header .nav-block > div.nav-contact > div, header .nav-block > div.nav-contact > div:last-child {width: 100%; padding: 0; text-align: center;}
   .nav-contact {margin: 40px 0;}

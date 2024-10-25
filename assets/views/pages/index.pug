@@ -4,8 +4,9 @@ block head
   +title('Точка знаний')
 
 block body
-  include ../components/primary-offer
-  include ../components/direction
+  include ../components/offer
+  include ../components/routes
+  +routes('top')
   include ../components/about
   include ../components/achiev
   include ../components/concept
@@ -21,3 +22,4 @@ block body
   include ../components/consult-gift
   include ../components/btn-fixed
   +btn-fixed('Подобрать занятия',400,1700)
+  +routes('blue')

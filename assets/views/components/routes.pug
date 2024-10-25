@@ -1,0 +1,21 @@
+-
+  const routeArea = [
+    { headline: 'Начальная школа', subtitle: '1-4 класс', note: '+Семейное обучение', mod: '' },
+    { headline: 'Средняя школа', subtitle: '5-8 класс', note: '+Семейное обучение', mod: '' },
+    { headline: 'Старшая школа', subtitle: '9-11 класс', note: '', mod: '' },
+    { headline: 'Курсы для учителей', subtitle: 'Повышение квалификации', note: '', mod: 'mob' },
+  ]
+
+mixin routes(mod)
+  .routes(class = mod ? `routes_${mod}` : false)
+    .container
+      h2.routes__title Выберите направление
+      .routes__area
+        each item in routeArea
+          .routes__box(class = `routes__box_${item.mod}` : false)
+            a.routes__headline(href='#')= item.headline
+            .routes__top
+              .routes__subtitle= item.subtitle
+              if item.note
+                .routes__note= item.note
+            a.routes__button.btn-warning(href='#') Выбрать
