@@ -42,9 +42,12 @@
         .marathon-order__class
           .marathon-order__class-note Выберите класс:
           select.marathon-order__select(data-role="custom-select" name="class_name" data-element='marathon-order__select')
-            each item in [1,2,3,4,5,6,7,8]
-              option(value=item data-product-old-price= item === 2 ? false : 3700+item
-                data-product-new-price=760+item data-product-link=`#${item}`)!= `${item} класс`
+            each item in [0,1,2,3,4,5,6,7,8]
+              if item === 0
+                option(value='' selected data-product-old-price= item === 2 ? false : 3700+item data-product-new-price=760+item data-product-link=`#${item}`)!= `Выберите класс`
+              else
+                option(value=item data-product-old-price= item === 2 ? false : 3700+item
+                  data-product-new-price=760+item data-product-link=`#${item}`)!= `${item} класс`
         .marathon-order__price
           .marathon-order__price-old(data-element='marathon-order__price-old') 3700 рублей
           .marathon-order__price-new(data-element='marathon-order__price-new') 760 руб

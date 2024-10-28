@@ -8,7 +8,7 @@ form#modal-order.modal-order(data-element='order-form' data-docex="/_thanks" dat
   select.modal-order__select(data-role="custom-select" name="class_name")
     each item in [0,1,2,3,4,5,6,7,8,9,10,11]
       if item === 0
-        option(value='' selected disabled hidden)!= `Выберите класс`
+        option(value='' selected)!= `Выберите класс`
       else
         option(value=item)!= `${item} класс`
   label.modal-order__checkbox
