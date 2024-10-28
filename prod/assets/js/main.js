@@ -202,9 +202,11 @@ function globalFormInit (form, func_name, type) {
 
   const news = form.querySelector('[name="news"]')
   const policy = form.querySelector('[name="policy"]')
+  const classSelect = globalForm.querySelector('.modal-order__select')
 
   if (news) news.addEventListener('change', () => news.closest('label').classList.remove('error-text'))
   if (policy) policy.addEventListener('change',() => policy.closest('label').classList.remove('error-text'))
+  if (classSelect) classSelect.addEventListener('change',() => classSelect.closest('.custom-select-container').querySelector('.custom-select-opener').classList.remove('error'))
 
   const iti = window.intlTelInput(input, {
     utilsScript: "../libs/intlTelInputWithUtils.min",
@@ -240,7 +242,9 @@ function globalFormInit (form, func_name, type) {
       }
 
       const email = globalForm.querySelector('[name="email"]')
+
       let isValid = true
+
       if (email) {
         isValid = validateEmail(email)
         if (!isValid) email.addEventListener('input', () => validateEmail(email))
@@ -255,6 +259,13 @@ function globalFormInit (form, func_name, type) {
       if (policy) {
         if (!policy.checked) {
           policy.closest('label').classList.add('error-text')
+          isValid = false
+        }
+      }
+      if (classSelect) {
+        if (!classSelect.value) {
+          const opener = classSelect.closest('.custom-select-container').querySelector('.custom-select-opener')
+          opener.classList.add('error')
           isValid = false
         }
       }

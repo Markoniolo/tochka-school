@@ -98,6 +98,9 @@
   cursor: pointer;
   font-weight: 500;
   font-size: 15px;
+  &:first-child {
+    display: none;
+  }
 }
 
 .custom-select-option.has-focus {
