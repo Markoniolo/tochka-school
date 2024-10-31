@@ -260,8 +260,8 @@ Styles for Offer
 */
 .offer {
   background: #F6FAFF url(../img/offer-bg.png) bottom center no-repeat;
-  padding: 117px 0 175px;
-  margin-bottom: -145px;
+  padding: 117px 0 225px;
+  margin-bottom: -200px;
 }
 
 .offer h1 {margin: 0 auto 25px;}
@@ -2687,6 +2687,10 @@ Styles for Page end
   padding: 20px 0;
 }
 
+.school-info-content td:first-child:nth-child(3) {
+  width: 30%;
+}
+
 .school-info-content td:not(:first-child), .school-info-content th:not(:first-child) {text-align: center;}
 .school-info-content td, .school-info-content th, .school-info-content .table>:not(:last-child)>:last-child>* {border-bottom: 1px solid rgba(0, 0, 0, 0.10);}
 .school-info-content td:not(:last-child), .school-info-content th:not(:last-child) {border-right: 1px solid rgba(0, 0, 0, 0.10);}
@@ -2707,6 +2711,7 @@ Styles for Page end
   background: url(../img/download-icon.svg) center / contain no-repeat;
   width: 23px;
   height: 23px;
+  flex-shrink: 0;
 }
 
 
@@ -3135,6 +3140,9 @@ Styles for Adaptive
   .slogan {display: none;}
   header .lk a, header.fixed .header-block .lk a {padding: 11px 17px;}
   header .nav-block > div.nav-contact > div:last-child {width: 48%; padding: 26px 35px;}
+  .offer {
+    margin-bottom: -145px;
+  }
   .offer-blk {width: 32%; font-size: 14px;}
   .offer-blk span {display: block; margin: 0 auto;}
   .offer-blk:first-child span {width: 100px; text-align: right; margin-left: 0;}
@@ -3438,6 +3446,9 @@ Styles for Adaptive
 }
 
 @media (max-width: 991px) {
+  .school-info-content td:first-child:nth-child(3) {
+    width: 100%;
+  }
   nav ul {
     display: none;
   }
@@ -3588,7 +3599,6 @@ Styles for Adaptive
   .school-info-content p, .school-info-content h3 {font-size: 14px;}
   .school-info-content thead {display: none;}
   .school-info-content tr {display: flex; flex-direction: column; gap: 14px; padding: 20px; width: calc(50% - 20px); border-radius: 7px; border: 1px solid #E3EBFE; background: #FFF; box-shadow: 0px 1px 17.3px 0px rgba(0, 0, 0, 0.09);}
-  .school-info-content tr td:nth-child(3):before {content: attr(data-label); margin-right: 5px;}
   .school-info-content tbody {display: flex; gap: 20px; flex-wrap: wrap;}
   .school-info-content td {width: 100%; border: none; display: block; font-size: 14px; padding: 0;}
   .school-info-content td:first-child {font-weight: 600; width: 70%; padding: 0;}
@@ -3789,7 +3799,6 @@ Styles for Adaptive
   .teacher-block-image img {width: auto; height: 100%; margin-top: 5%;}
   .licence-info a {display: none;}
   .school-info-content td:first-child {width: 80%;}
-  .school-info-content tr td:nth-child(3):before {display: block;}
   .offer-teacher-name {margin-left: 0;}
   .platform-more {padding: 10px; max-width: 189px;}
   .about h2 {font-size: 16px;}
@@ -4019,7 +4028,6 @@ Styles for Adaptive
   .school-info-content tbody {gap: 10px;}
   .school-info-content tr {width: 100%;}
   .school-info-content td:first-child {max-width: 200px;}
-  .school-info-content tr td:nth-child(3):before {display: inline;}
   .alerts {max-width: calc(100% - 24px);}
   .alerts a {display: block;}
   .abouts-text {width: 100%; min-width: 100%;}

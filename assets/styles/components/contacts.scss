@@ -1,4 +1,4 @@
-.price + .contacts {
+.price + .contacts, .study + .contacts {
   margin-top: 70px;
   @include media(md) {
     margin-top: 40px;

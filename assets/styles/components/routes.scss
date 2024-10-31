@@ -16,34 +16,37 @@
   &_blue {
     background-color: #f6faff;
   }
+  h2 {
+    color: #222;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.22;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    @include media(md) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &::before {
+      content: "";
+      @include bgIcon('routes/routes-decor-arrow.svg');
+      width: 38px;
+      height: 53px;
+      margin-right: 10px;
+      @include media(md) {
+        width: 28px;
+        height: 39px;
+      }
+    }
+  }
 }
 
 .routes__title {
-  color: #222;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.22;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 50px;
-  @include media(md) {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  &::before {
-    content: "";
-    @include bgIcon('routes/routes-decor-arrow.svg');
-    width: 38px;
-    height: 53px;
-    margin-right: 10px;
-    @include media(md) {
-      width: 28px;
-      height: 39px;
-    }
-  }
+
 }
 
 .routes__area {
