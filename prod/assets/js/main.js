@@ -272,10 +272,10 @@ function globalFormInit (form, func_name, type) {
       }
 
       if (isValid) {
-        btnSubmit.disabled = true
         globalForm.submit()
+        btnSubmit.disabled = true
+        location.assign(linkTo)
         clearForm()
-        window.location.href = linkTo;
       }
 
     } else {

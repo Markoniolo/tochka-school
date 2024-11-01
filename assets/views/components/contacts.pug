@@ -8,5 +8,5 @@ mixin contacts(mod, image='contacts/contacts-1.svg')
           picture.contacts__picture
             img.contacts__image(src=staticImg(image) alt='')
           .contacts__buttons
-            a.contacts__button.btn-warning(href='#modal-order' data-fancybox) Оставить заявку
+            a.contacts__button.btn-warning(href='#modal-order' data-fancybox data-options='{"touch": false}') Оставить заявку
             a.contacts__button.btn-wp(href='https://wa.me/79182172497' target="_blank") Связаться в WhatsApp
