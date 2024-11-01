@@ -1,9 +1,20 @@
 .capital {
   margin-top: 40px;
   margin-bottom: 79px;
-  background-color: $blue;
   @include media(md) {
     margin-bottom: 40px;
+  }
+  &_blue {
+    background-color: $blue;
+    .capital__link {
+      color: #6594ff;
+    }
+  }
+  &_green {
+    background-color: #E7F9E8;
+    .capital__link {
+      color: #75AF7A;
+    }
   }
 }
 
@@ -115,5 +126,4 @@
   line-height: 125%;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-  color: #6594ff;
 }
