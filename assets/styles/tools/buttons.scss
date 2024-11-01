@@ -11,6 +11,10 @@
   padding: 20px 28px;
   transition-property: background-color;
   transition-duration: 0.3s;
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 }
 
 .btn-warning:hover {

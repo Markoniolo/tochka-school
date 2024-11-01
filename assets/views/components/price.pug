@@ -1,8 +1,8 @@
-mixin price(mod)
+mixin price(mod, title='Начните обучение на экстернате')
   if mod !== 'teacher'
-    section#block1.price.price-icon(class = mod ? `price_${mod}` : false)
+    section#block1.price.price-icon(class = mod ? mod : false)
       .container
-        h2 Начните обучение на экстернате
+        h2= title
         .row.price-row
           .col-lg-6
             .price-blk

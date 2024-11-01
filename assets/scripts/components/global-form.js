@@ -57,6 +57,7 @@ function consultFormData (globalForm) {
 
 function globalFormInit (form, func_name, type) {
   const globalForm = form
+  const btnSubmit = globalForm.querySelector('.btn-warning')
   const input = globalForm.querySelector("[data-element='input-phone-intl']")
   input.addEventListener('input', function () {
     this.value = this.value.replace(/\D+/g, '')
@@ -135,7 +136,9 @@ function globalFormInit (form, func_name, type) {
       }
 
       if (isValid) {
-        globalForm.submit();
+        btnSubmit.disabled = true
+        globalForm.submit()
+        clearForm()
         window.location.href = linkTo;
       }
 
@@ -149,9 +152,6 @@ function globalFormInit (form, func_name, type) {
     const inputs = globalForm.querySelectorAll('input')
     for (let i = 0; i < inputs.length; i++) {
       inputs[i].value = ''
-    }
-    if (globalForm.classList.contains('modal-external') || globalForm.classList.contains('modal-order')) {
-      globalForm.querySelector('.fancybox-close-small').click()
     }
   }
   input.addEventListener('input', resetError)
