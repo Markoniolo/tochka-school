@@ -1,0 +1,119 @@
+.capital {
+  margin-top: 40px;
+  margin-bottom: 79px;
+  background-color: $blue;
+  @include media(md) {
+    margin-bottom: 40px;
+  }
+}
+
+.capital__area {
+  padding: 40px 0 40px 293px;
+  position: relative;
+  min-height: 157px;
+  display: flex;
+  align-items: center;
+  @include media(md) {
+    min-height: 247px;
+    padding: 40px 276px 40px 0;
+  }
+  @include media(sm) {
+    min-height: auto;
+    padding: 40px 0;
+    display: block;
+    text-align: center;
+  }
+}
+
+.capital__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  flex-shrink: 0;
+  width: 239px;
+  height: 191px;
+  align-self: flex-end;
+  @include media(md) {
+    width: 276px;
+    height: 233px;
+    left: unset;
+    right: 0;
+  }
+  @include media(sm) {
+    display: none;
+  }
+}
+
+.capital__box {
+
+}
+
+.capital__title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 110%;
+  color: #222;
+  text-align: left;
+  @include media(md) {
+    font-size: 30px;
+  }
+  @include media(sm) {
+    text-align: center;
+    max-width: 365px;
+    margin: 0 auto 20px;
+    font-size: 27px;
+  }
+}
+
+.capital__line {
+  display: flex;
+  @include media(md) {
+    display: block;
+  }
+}
+
+.capital__text {
+  position: relative;
+  padding-right: 49px;
+  margin-right: 25px;
+  font-size: 17px;
+  line-height: 135%;
+  color: #222;
+  @include media(md) {
+    max-width: 274px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-right: 0;
+    margin-right: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 127%;
+    color: #000;
+  }
+  @include media(sm) {
+    margin: 0 auto 20px;
+  }
+  @include media(xs) {
+    text-align: center;
+  }
+  &::before {
+    content: '';
+    @include bgIcon('capital/ic_capital_arrow.svg');
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 8px;
+  }
+}
+
+.capital__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #6594ff;
+}
