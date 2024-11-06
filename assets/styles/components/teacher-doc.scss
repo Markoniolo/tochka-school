@@ -20,6 +20,9 @@
     display: block;
     padding: 30px;
   }
+  @include media(xs) {
+    padding: 30px 20px;
+  }
 }
 
 .teacher-doc__box {
@@ -39,6 +42,8 @@
 }
 
 .teacher-doc__list {
+  margin-right: 20px;
+  max-width: 560px;
   display: flex;
   flex-direction: column;
   gap: 35px 0;
@@ -46,6 +51,7 @@
   list-style-type: none;
   @include media(md) {
     gap: 14px 0;
+    margin-right: 0;
   }
 }
 
@@ -74,6 +80,26 @@
     @include media(md) {
       width: 24px;
       height: 24px;
+    }
+  }
+}
+
+.teacher-doc__note {
+  margin-top: 20px;
+  max-width: 500px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 149%;
+  color: rgba(20, 20, 20, 0.74);
+  @include media(md) {
+    display: none;
+  }
+  &_mob {
+    display: none;
+    @include media(md) {
+      display: block;
+      max-width: 100%;
     }
   }
 }
