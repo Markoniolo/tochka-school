@@ -43,18 +43,8 @@
 
 <body class="fix-top" id="body">
   <div class="sticky-header">
-    <a class="marathon-informer" href="#" data-element="marathon-informer">
-      <div class="container">
-        <div class="marathon-informer__area">
-          <div class="marathon-informer__text">
-            <span>Осенний марафон🤩</span>
-            Закрыть пробелы в знаниях и не дать ребенку скатиться в учёбе
-          </div>
-          <div class="marathon-informer__button">Записаться</div>
-          <button class="marathon-informer__close" data-element="marathon-informer__close"></button>
-        </div>
-      </div>
-    </a>
+    <!--if VIEW !== 'marathon'-->
+    <!--  include ../marathon-informer-->
     <header class="fix header_shadow">
       <div class="container">
         <div class="header-block d-flex align-items-center justify-content-between">
@@ -253,121 +243,498 @@
         </div>
       </div>
     </div>
-    <section class="price price-icon violet-block" id="block1">
+    <div class="cost cost_violet">
       <div class="container">
-        <h2>Стоимость годового абонемента</h2>
-        <div class="row price-row">
-          <div class="col-lg-6">
-            <div class="price-blk">
-              <span class="price-title">Занятия онлайн + в записи</span>
-              <ul class="list list-unstyled">
-                <li>
-                  <p>Онлайн-уроки по программе 1 класса с сентября по май</p>
-                </li>
-                <li>
-                  <p>Записи уроков</p>
-                </li>
-                <li>
-                  <p>Личный тьютор-педагог по каждому предмету: проверка заданий, помощь в исправлении ошибок, обратная связь 5 дней в неделю.</p>
-                </li>
-                <li>
-                  <p>Входное и ежемесячное тестирование</p>
-                </li>
-                <li>
-                  <p>Прикрепление к школе-партнёру</p>
-                </li>
-                <li>
-                  <p>Прохождение аттестации</p>
-                </li>
-                <li>
-                  <p>
-                    <span>Бонус:</span> бесплатные занятия летом 2025
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка
-                  </p>
-                </li>
-              </ul>
-              <div class="price-blocks price-month">
-                <p class="prblk">
-                  В рассрочку в месяц:
-                  <span class="old-price">152 235 ₽</span>
-                  <span class="new-price">152 235 ₽</span>
-                </p>
-                <div class="sale-block">
-                  <span class="period">На 12 месяцев</span>
-                  <p class="sale">Скидка 25%</p>
-                </div>
+        <h2 class="cost__caption">Стоимость обучения</h2>
+        <div class="cost__area">
+          <div class="cost__box cost__box_fill">
+            <div class="cost__title">Пробная неделя</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
               </div>
-              <div class="price-blocks price-year">
-                <p>
-                  Полная стоимость:
-                  <span class="old-price">49 014 ₽</span>
-                  <span class="new-price">143 280 ₽</span>
-                </p>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Рассрочка на 7 месяцев без переплат</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
               </div>
-              <a class="btn btn-warning btn-go" href="#">Начать обучение</a>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time"></div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="price-blk">
-              <span class="price-title">Занятия в записи</span>
-              <ul class="list list-unstyled">
-                <li class="not">
-                  <p>Онлайн-уроки по программе 1 класса с сентября по май</p>
-                </li>
-                <li>
-                  <p>Записи уроков</p>
-                </li>
-                <li>
-                  <p>Личный тьютор-педагог по каждому предмету: проверка заданий, помощь в исправлении ошибок, обратная связь 5 дней в неделю.</p>
-                </li>
-                <li>
-                  <p>Входное и ежемесячное тестирование</p>
-                </li>
-                <li>
-                  <p>Прикрепление к школе-партнёру</p>
-                </li>
-                <li>
-                  <p>Прохождение аттестации</p>
-                </li>
-                <li>
-                  <p>
-                    <span>Бонус:</span> бесплатные занятия летом 2025
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка
-                  </p>
-                </li>
-              </ul>
-              <div class="price-blocks price-month">
-                <p class="prblk">
-                  В рассрочку в месяц:
-                  <span class="old-price">152 235 ₽</span>
-                  <span class="new-price">152 235 ₽</span>
-                </p>
-                <div class="sale-block">
-                  <span class="period">На 12 месяцев</span>
-                  <p class="sale">Скидка 25%</p>
-                </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия онлайн + в записи </div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
               </div>
-              <div class="price-blocks price-year">
-                <p>
-                  Полная стоимость:
-                  <span class="old-price">49 014 ₽</span>
-                  <span class="new-price">143 280 ₽</span>
-                </p>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Рассрочка на 7 месяцев без переплат</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
               </div>
-              <a class="btn btn-warning btn-go" href="#">Начать обучение</a>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия в записи</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Рассрочка на 7 месяцев без переплат</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="cost cost_violet">
+      <div class="container">
+        <h2 class="cost__caption">Стоимость обучения</h2>
+        <div class="cost__area">
+          <div class="cost__box cost__box_fill">
+            <div class="cost__title">Пробная неделя</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>15%</span> при покупке в рассрочку на 7 месяцев</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time"></div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия онлайн + в записи </div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>15%</span> при покупке в рассрочку на 7 месяцев</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+                <div class="cost__price-old">49 014 ₽</div>
+                <div class="cost__price-discount">– 30%</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия в записи</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>15%</span> при покупке в рассрочку на 7 месяцев</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+                <div class="cost__price-old">49 014 ₽</div>
+                <div class="cost__price-discount">– 30%</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cost cost_violet">
+      <div class="container">
+        <h2 class="cost__caption">Стоимость обучения</h2>
+        <div class="cost__area">
+          <div class="cost__box cost__box_fill">
+            <div class="cost__title">Пробная неделя</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>50%</span> на первый платёж в рассрочку</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time"></div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия онлайн + в записи </div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>50%</span> на первый платёж в рассрочку</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__note">далее 6 x 7 002 ₽ платежей</div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+                <div class="cost__price-old">49 014 ₽</div>
+                <div class="cost__price-discount">– 15%</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия в записи</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>50%</span> на первый платёж в рассрочку</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__note">далее 6 x 7 002 ₽ платежей</div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+                <div class="cost__price-old">49 014 ₽</div>
+                <div class="cost__price-discount">– 15%</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cost cost_violet">
+      <div class="container">
+        <h2 class="cost__caption">Стоимость обучения</h2>
+        <div class="cost__area">
+          <div class="cost__box cost__box_fill">
+            <div class="cost__title">Пробная неделя</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>7 352 ₽</span> при покупке в рассрочку на 7 месяцев</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time"></div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия онлайн + в записи </div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>7 352 ₽</span> при покупке в рассрочку на 7 месяцев</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+                <div class="cost__price-old">49 014 ₽</div>
+                <div class="cost__price-discount">– 14 705 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия в записи</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>7 352 ₽</span> при покупке в рассрочку на 7 месяцев</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+                <div class="cost__price-old">49 014 ₽</div>
+                <div class="cost__price-discount">– 14 705 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cost cost_violet">
+      <div class="container">
+        <h2 class="cost__caption">Стоимость обучения</h2>
+        <div class="cost__area">
+          <div class="cost__box cost__box_fill">
+            <div class="cost__title">Пробная неделя</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>2 000 ₽</span> на первый платёж в рассрочку</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time"></div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия онлайн + в записи </div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>2 000 ₽</span> на первый платёж в рассрочку</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__note">далее 6 x 5 490 ₽ платежей </div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+                <div class="cost__price-old">49 014 ₽</div>
+                <div class="cost__price-discount">- 5 000 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+          <div class="cost__box">
+            <div class="cost__title">Занятия в записи</div>
+            <div class="cost__inner">
+              <div class="cost__headline">Что включено</div>
+              <div class="cost__list">
+                <div class="cost__item cost__item_minus">2 онлайн-урока в неделю с сентября по май</div>
+                <div class="cost__item">Все занятия в записи</div>
+                <div class="cost__item">Личный тьютор-педагог 5 дней в неделю</div>
+                <div class="cost__item">Проверка домашних заданий по каждому уроку</div>
+                <div class="cost__item">Входное и ежемесячное тестирование</div>
+                <div class="cost__item">Бесплатные занятия летом</div>
+                <div class="cost__item">Набор полезных материалов для учёбы и развития ребёнка</div>
+              </div>
+            </div>
+            <div class="cost__bottom">
+              <div class="cost__text">Скидка <span>2 000 ₽</span> на первый платёж в рассрочку</div>
+              <div class="cost__line">
+                <div class="cost__price-big">290 ₽</div>
+                <div class="cost__price-big-old">1 750 ₽</div>
+                <div class="cost__price-big-span">/ в месяц</div>
+              </div>
+              <div class="cost__note">далее 6 x 5 490 ₽ платежей </div>
+              <div class="cost__line">
+                <div class="cost__span">При полной оплате</div>
+                <div class="cost__price">34 309 ₽</div>
+                <div class="cost__price-old">49 014 ₽</div>
+                <div class="cost__price-discount">- 5 000 ₽</div>
+              </div>
+              <div class="cost__button-box">
+                <a class="cost__button btn-warning" href="#">Начать обучение</a>
+              </div>
+              <div class="cost__time">Предложение действительно до 11.11.2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="capital capital_violet">
       <div class="container">
         <div class="capital__area">
