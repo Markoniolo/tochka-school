@@ -23,6 +23,20 @@ for (let i = 0; i < selectArray.length; i++) {
   customSelect(selectArray[i])
 }
 
+const discount = document.querySelector('[data-element="discount"]')
+
+if (discount) discountInit()
+
+function discountInit () {
+  const close = document.querySelector('[data-element="discount__close"]')
+  close.addEventListener('click', removeDiscount)
+
+  function removeDiscount (e) {
+    e.preventDefault()
+    discount.remove()
+  }
+}
+
 // const externalFormArray = document.querySelectorAll("[data-element='external-form']")
 //
 // for (let i = 0; i < externalFormArray.length; i++) {

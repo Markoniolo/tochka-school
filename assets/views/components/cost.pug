@@ -5,7 +5,7 @@
     'Проверка домашних заданий по каждому уроку',
     'Входное и ежемесячное тестирование',
     'Бесплатные занятия летом',
-    'Набор полезных материалов для учёбы и развития ребёнка'
+    '<span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка'
   ]
 
 mixin cost(mod, title, areaList, text, discount, note)
@@ -20,7 +20,12 @@ mixin cost(mod, title, areaList, text, discount, note)
               .cost__headline Что включено
               .cost__list
                 each item,index in costList
-                  .cost__item(class = index === 0 ? 'cost__item_minus' : false)= item
+                  .cost__item(class = index === 0 ? 'cost__item_minus' : false)!= item
+              label.cost__label
+                .cost__label-inner
+                  input.cost__input(name='certificate' type='checkbox' new-href="#new-href" new-price="10 400 ₽" data-element="cost__teacher-checkbox")
+                  .cost__input-view
+                  .cost__input-text Добавить удостоверение о повышении квалификации – 2 500 руб.
             .cost__bottom
               .cost__text!= text
               .cost__line
