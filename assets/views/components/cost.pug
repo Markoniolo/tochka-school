@@ -8,28 +8,29 @@
     '<span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка'
   ]
 
-mixin cost(mod, title, areaList, text, discount, note)
+mixin cost(mod, title, areaList, text, discount, note, checkbox)
   .cost(class = mod ? `cost_${mod}` : false)
     .container
       h2.cost__caption= title
       .cost__area
         each title, i in areaList
-          .cost__box(class = i === 0 ? 'cost__box_fill' : false)
+          .cost__box(class = i === 0 ? 'cost__box_fill' : false data-element=checkbox ? "price-teacher" : false)
             .cost__title= title
             .cost__inner
               .cost__headline Что включено
               .cost__list
                 each item,index in costList
                   .cost__item(class = index === 0 ? 'cost__item_minus' : false)!= item
-              label.cost__label
-                .cost__label-inner
-                  input.cost__input(name='certificate' type='checkbox' new-href="#new-href" new-price="10 400 ₽" data-element="cost__teacher-checkbox")
-                  .cost__input-view
-                  .cost__input-text Добавить удостоверение о повышении квалификации – 2 500 руб.
+              if checkbox
+                label.cost__label
+                  .cost__label-inner
+                    input.cost__input(name='certificate' type='checkbox' new-href="#new-href" new-price="10 400 ₽" data-element="price-teacher-checkbox")
+                    .cost__input-view
+                    .cost__input-text Добавить удостоверение о повышении квалификации – 2 500 руб.
             .cost__bottom
               .cost__text!= text
               .cost__line
-                .cost__price-big 290 ₽
+                .cost__price-big(data-element=checkbox ? "price-teacher-price" : false) 290 ₽
                 if discount
                   .cost__price-big-old 1 750 ₽
                 if i !== 0
@@ -44,5 +45,5 @@ mixin cost(mod, title, areaList, text, discount, note)
                     .cost__price-old 49 014 ₽
                     .cost__price-discount= discount
               .cost__button-box
-                a.cost__button.btn-warning(href='#') Начать обучение
+                a.cost__button.btn-warning(href='#' old-href=checkbox ? "#old-href" : false old-price=checkbox ? "7 900 ₽" : false data-element=checkbox ? "price-teacher-btn" : false) Начать обучение
               .cost__time= i !== 0 ? 'Предложение действительно до 11.11.2024' : ''
