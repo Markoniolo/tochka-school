@@ -1,49 +1,494 @@
 -
-  const costList = [
-    '2 онлайн-урока в неделю с сентября по май','Все занятия в записи',
-    'Личный тьютор-педагог 5 дней в неделю',
-    'Проверка домашних заданий по каждому уроку',
-    'Входное и ежемесячное тестирование',
-    'Бесплатные занятия летом',
-    '<span>Бонус:</span> Набор полезных материалов для учёбы и развития ребёнка'
-  ]
+  const data = {
+    cost_1: [
+      {
+        mod: 'trial',
+        fill: true,
+        title: 'Пробная неделя',
+        list: [
+          {
+            text: '2 онлайн-урока в течение пробной недели',
+            type: 'plus'
+          }, {text: 'Все занятия в записи с сентября 2024 года', type: 'plus'}, {
+            text: 'Личный тьютор-педагог',
+            type: 'plus'
+          }, {text: 'Проверка домашних заданий по каждому уроку', type: 'plus'}, {
+            text: 'Входное тестирование',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'}
+        ],
+        text: 'Доступ к обучению на 7 дней',
+        price: '290 ₽',
+        oldPrice: '1 750 ₽'
+      },
+      {
+        title: 'Занятия онлайн + в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'plus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Рассрочка на 7 месяцев без переплат',
+        price: '7 002 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '49 014 ₽',
+        time: 'Предложение действительно до 11.11.2024'
+      },
+      {
+        title: 'Занятия в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'minus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Рассрочка на 7 месяцев без переплат',
+        price: '5 490 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '38 430 ₽',
+        time: 'Предложение действительно до 11.11.2024'
+      }
+    ],
+    cost_2: [
+      {
+        mod: 'trial',
+        fill: true,
+        title: 'Пробная неделя',
+        list: [
+          {
+            text: '2 онлайн-урока в течение пробной недели',
+            type: 'plus'
+          }, {text: 'Все занятия в записи с сентября 2024 года', type: 'plus'}, {
+            text: 'Личный тьютор-педагог',
+            type: 'plus'
+          }, {text: 'Проверка домашних заданий по каждому уроку', type: 'plus'}, {
+            text: 'Входное тестирование',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'}
+        ],
+        text: 'Доступ к обучению на 7 дней',
+        price: '290 ₽',
+        oldPrice: '1 750 ₽'
+      },
+      {
+        title: 'Занятия онлайн + в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'plus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Скидка <span>15%</span> при покупке в рассрочку на 7 месяцев',
+        price: '5 951 ₽',
+        oldPrice: '7 002 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '34 309 ₽',
+        oldFullPrice: '49 014 ₽',
+        discount: '– 30%',
+        time: 'Предложение действительно до 11.11.2024'
+      },
+      {
+        title: 'Занятия в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'minus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Скидка <span>15%</span> при покупке в рассрочку на 7 месяцев',
+        price: '4 666 ₽',
+        oldPrice: '5 490 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '32 665 ₽',
+        oldFullPrice: '38 430 ₽',
+        discount: '– 30%',
+        time: 'Предложение действительно до 11.11.2024'
+      }
+    ],
+    cost_3: [
+      {
+        mod: 'trial',
+        fill: true,
+        title: 'Пробная неделя',
+        list: [
+          {
+            text: '2 онлайн-урока в течение пробной недели',
+            type: 'plus'
+          }, {text: 'Все занятия в записи с сентября 2024 года', type: 'plus'}, {
+            text: 'Личный тьютор-педагог',
+            type: 'plus'
+          }, {text: 'Проверка домашних заданий по каждому уроку', type: 'plus'}, {
+            text: 'Входное тестирование',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'}
+        ],
+        text: 'Доступ к обучению на 7 дней',
+        price: '290 ₽',
+        oldPrice: '1 750 ₽'
+      },
+      {
+        title: 'Занятия онлайн + в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'plus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Скидка <span>50%</span> на первый платёж в рассрочку',
+        price: '3 501 ₽',
+        oldPrice: '7 002 ₽',
+        note: 'далее 6 x 7 002 ₽ платежей',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '41 662 ₽',
+        oldFullPrice: '49 014 ₽',
+        discount: '– 15%',
+        time: 'Предложение действительно до 11.11.2024'
+      },
+      {
+        title: 'Занятия в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'minus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Скидка <span>50%</span> на первый платёж в рассрочку',
+        price: '2 745 ₽',
+        oldPrice: '5 490 ₽',
+        note: 'далее 6 x 5 490 ₽ платежей ',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '32 665 ₽',
+        oldFullPrice: '38 430 ₽',
+        discount: '– 15%',
+        time: 'Предложение действительно до 11.11.2024'
+      }
+    ],
+    cost_4: [
+      {
+        mod: 'trial',
+        fill: true,
+        title: 'Пробная неделя',
+        list: [
+          {
+            text: '2 онлайн-урока в течение пробной недели',
+            type: 'plus'
+          }, {text: 'Все занятия в записи с сентября 2024 года', type: 'plus'}, {
+            text: 'Личный тьютор-педагог',
+            type: 'plus'
+          }, {text: 'Проверка домашних заданий по каждому уроку', type: 'plus'}, {
+            text: 'Входное тестирование',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'}
+        ],
+        text: 'Доступ к обучению на 7 дней',
+        price: '290 ₽',
+        oldPrice: '1 750 ₽'
+      },
+      {
+        title: 'Занятия онлайн + в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'plus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Скидка <span>7 352 ₽</span> при покупке в рассрочку на 7 месяцев',
+        price: '5 951 ₽',
+        oldPrice: '7 002 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '34 309 ₽',
+        oldFullPrice: '49 014 ₽',
+        discount: '– 14 705 ₽',
+        time: 'Предложение действительно до 11.11.2024'
+      },
+      {
+        title: 'Занятия в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'minus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Скидка <span>5 764 ₽</span> при покупке в рассрочку на 7 месяцев',
+        price: '4 666 ₽',
+        oldPrice: '5 490 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '32 665 ₽',
+        oldFullPrice: '38 430 ₽',
+        discount: '– 11 529 ₽',
+        time: 'Предложение действительно до 11.11.2024'
+      }
+    ],
+    cost_5: [
+      {
+        mod: 'trial',
+        fill: true,
+        title: 'Пробная неделя',
+        list: [
+          {
+            text: '2 онлайн-урока в течение пробной недели',
+            type: 'plus'
+          }, {text: 'Все занятия в записи с сентября 2024 года', type: 'plus'}, {
+            text: 'Личный тьютор-педагог',
+            type: 'plus'
+          }, {text: 'Проверка домашних заданий по каждому уроку', type: 'plus'}, {
+            text: 'Входное тестирование',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'}
+        ],
+        text: 'Доступ к обучению на 7 дней',
+        price: '290 ₽',
+        oldPrice: '1 750 ₽'
+      },
+      {
+        title: 'Занятия онлайн + в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'plus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Скидка <span>2 000 ₽</span> на первый платёж в рассрочку',
+        price: '5 002 ₽',
+        oldPrice: '7 002 ₽',
+        priceBigSpan: '/ в месяц',
+        note: 'далее 6 x 7 002 ₽ платежей',
+        fullPrice: '44 014 ₽',
+        oldFullPrice: '49 014 ₽',
+        discount: '- 5 000 ₽',
+        time: 'Предложение действительно до 11.11.2024'
+      },
+      {
+        title: 'Занятия в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'minus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Скидка <span>2 000 ₽</span> на первый платёж в рассрочку',
+        price: '3 490 ₽',
+        oldPrice: '5 490 ₽',
+        note: 'далее 6 x 5 490 ₽ платежей',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '33 430 ₽',
+        oldFullPrice: '38 430 ₽',
+        discount: '- 5 000 ₽',
+        time: 'Предложение действительно до 11.11.2024'
+      }
+    ],
+    cost_teacher: [
+      {
+        title: 'Занятия онлайн + в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'plus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Рассрочка на 7 месяцев без переплат',
+        price: '7 002 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '49 014 ₽',
+      },
+      {
+        title: 'Занятия в записи',
+        list: [
+          {text: '2 онлайн-урока в неделю с сентября по май', type: 'minus'}, {
+            text: 'Все занятия в записи',
+            type: 'plus'
+          }, {
+            text: 'Личный тьютор-педагог 5 дней в неделю',
+            type: 'plus'
+          }, {
+            text: 'Проверка домашних заданий по каждому уроку',
+            type: 'plus'
+          }, {text: 'Входное и ежемесячное тестирование', type: 'plus'}, {
+            text: 'Бесплатные занятия летом',
+            type: 'plus'
+          }, {text: 'Набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Рассрочка на 7 месяцев без переплат',
+        price: '5 490 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '38 430 ₽',
+      }
+    ],
+    cost_external: [
+      {
+        title: 'Занятия онлайн + в записи',
+        list: [
+          {text: 'Онлайн-уроки по программе 1 класса с сентября по май', type: 'plus'},
+          {text: 'Записи уроков', type: 'plus'},
+          {text: 'Личный тьютор-педагог по каждому предмету: проверка заданий, помощь в исправлении ошибок, обратная связь 5 дней в неделю.', type: 'plus'},
+          {text: 'Входное и ежемесячное тестирование', type: 'plus'},
+          {text: 'Прикрепление к школе-партнёру', type: 'plus'},
+          {text: 'Прохождение аттестации', type: 'plus'},
+          {text: '<span>Бонус:</span> бесплатные занятия летом 2025', type: 'plus'},
+          {text: '<span>Бонус:</span> набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Рассрочка на 6 месяцев без переплат',
+        price: '23 217 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '139 300 ₽',
+      },
+      {
+        title: 'Занятия в записи',
+        list: [
+          {text: 'Онлайн-уроки по программе 1 класса с сентября по май', type: 'minus'},
+          {text: 'Записи уроков', type: 'plus'},
+          {text: 'Личный тьютор-педагог по каждому предмету: проверка заданий, помощь в исправлении ошибок, обратная связь 5 дней в неделю.', type: 'plus'},
+          {text: 'Входное и ежемесячное тестирование', type: 'plus'},
+          {text: 'Прикрепление к школе-партнёру', type: 'plus'},
+          {text: 'Прохождение аттестации', type: 'plus'},
+          {text: '<span>Бонус:</span> бесплатные занятия летом 2025', type: 'plus'},
+          {text: '<span>Бонус:</span> набор полезных материалов для учёбы и развития ребёнка', type: 'plus'},
+        ],
+        text: 'Рассрочка на 6 месяцев без переплат',
+        price: '19 717 ₽',
+        priceBigSpan: '/ в месяц',
+        fullPrice: '118 300 ₽',
+      }
+    ]
+  }
 
-mixin cost(mod, title, areaList, text, discount, note, checkbox)
+mixin cost(mod, dataName, checkbox)
   .cost(class = mod ? `cost_${mod}` : false)
     .container
       h2.cost__caption= title
       .cost__area
-        each title, i in areaList
-          .cost__box(class = i === 0 ? 'cost__box_fill' : false data-element=checkbox ? "price-teacher" : false)
-            .cost__title= title
+        each box in data[dataName]
+          .cost__box(class = box.fill && box.mod ? 'cost__box_fill cost__box_trial' : false data-element=checkbox ? "price-teacher" : false)
+            .cost__title= box.title
             .cost__inner
               .cost__headline Что включено
               .cost__list
-                each item,index in costList
-                  .cost__item(class = index === 0 ? 'cost__item_minus' : false)!= item
+                each item in box.list
+                  .cost__item(class = item.type === 'minus' ? 'cost__item_minus' : false)!= item.text
+            .cost__bottom
               if checkbox
                 label.cost__label
                   .cost__label-inner
-                    input.cost__input(name='certificate' type='checkbox' new-href="#new-href" new-price="10 400 ₽" data-element="price-teacher-checkbox")
+                    input.cost__input(name='certificate' type='checkbox' new-href="#new-href?promo=TESTNEWRUB" new-price="10 400 ₽" data-element="price-teacher-checkbox")
                     .cost__input-view
                     .cost__input-text Добавить удостоверение о повышении квалификации – 2 500 руб.
-            .cost__bottom
-              .cost__text!= text
-              .cost__line
-                .cost__price-big(data-element=checkbox ? "price-teacher-price" : false) 290 ₽
-                if discount
-                  .cost__price-big-old 1 750 ₽
-                if i !== 0
-                  .cost__price-big-span / в месяц
-              if i !== 0
-                if note
-                  .cost__note= note
+              .cost__info
+                .cost__text!= box.text
                 .cost__line
-                  .cost__span При полной оплате
-                  .cost__price 34 309 ₽
-                  if discount
-                    .cost__price-old 49 014 ₽
-                    .cost__price-discount= discount
+                  .cost__price-big(data-element=checkbox ? "price-teacher-price" : false)= box.price
+                  if box.oldPrice
+                    .cost__price-big-old= box.oldPrice
+                  if box.priceBigSpan
+                    .cost__price-big-span= box.priceBigSpan
+                if box.note
+                  .cost__note= box.note
+                if box.fullPrice
+                  .cost__line
+                    .cost__span При полной оплате
+                    .cost__price= box.fullPrice
+                    if box.oldFullPrice
+                      .cost__price-old= box.oldFullPrice
+                      .cost__price-discount= box.discount
               .cost__button-box
-                a.cost__button.btn-warning(href='#' old-href=checkbox ? "#old-href" : false old-price=checkbox ? "7 900 ₽" : false data-element=checkbox ? "price-teacher-btn" : false) Начать обучение
-              .cost__time= i !== 0 ? 'Предложение действительно до 11.11.2024' : ''
+                a.cost__button.btn-warning(href='#' old-href=checkbox ? "#old-href?promo=TESTNEWRUB" : false old-price=checkbox ? "7 900 ₽" : false data-element=checkbox ? "price-teacher-btn" : false) Начать обучение
+              .cost__time= box.time

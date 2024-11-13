@@ -13,15 +13,15 @@ function priceTeacherInit(box) {
   const checkbox = box.querySelector('[data-element="price-teacher-checkbox"]')
   const price = box.querySelector('[data-element="price-teacher-price"]')
 
-  const newPrice = checkbox.getAttribute('new-price')
-  const oldPrice = btn.getAttribute('old-price')
-
-  const newHref = checkbox.getAttribute('new-href')
-  const oldHref = btn.getAttribute('old-href')
-
   checkbox.addEventListener('change', checkboxChangeHandler)
 
   function checkboxChangeHandler () {
+    const newPrice = checkbox.getAttribute('new-price')
+    const oldPrice = btn.getAttribute('old-price')
+
+    const newHref = checkbox.getAttribute('new-href')
+    const oldHref = btn.getAttribute('old-href')
+
     if (checkbox.checked) {
       price.textContent = newPrice
       btn.href = newHref
