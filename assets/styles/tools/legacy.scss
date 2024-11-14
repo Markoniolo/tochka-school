@@ -26,7 +26,6 @@ header.fixed .header-block {padding: 10px 0;}
 
 .logo {
   gap: 32px;
-  margin-top: -13px;
 }
 
 .slogan {
@@ -3815,7 +3814,7 @@ Styles for Adaptive
 @media (max-width: 575px) {
   //body.fix-top {padding-top: 77px;}
   h2 {line-height: 1.22;}
-  .logo img {max-width: 115px;}
+  .logo img {max-width: 103px;}
   header .nav-block > div.nav-consult {width: 75%; margin-top: 30px; gap: 7px;}
   .nav-consult .tg {margin-top: 7px;}
   header .nav-block > div.nav-contact {margin-top: 35px;}
