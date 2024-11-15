@@ -4,22 +4,13 @@ section.school-info
       button.navigation-btn.btn.btn-warning Навигация по разделу
       .school-info-nav
         #accordion.accordion
-          .accordion-item
-            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse1' aria-expanded='true' aria-controls='collapse1') Основные сведения
-            #collapse1.accordion-collapse.collapse.show(aria-labelledby='heading1' data-bs-parent='#accordion')
-              button.nav-link.active(data-bs-toggle='pill' data-bs-target='#school-nav1-1' type='button' role='tab') Основные сведения
+          button.nav-link.active(data-bs-toggle='pill' data-bs-target='#school-nav1-1' type='button' role='tab') Основные сведения
           .accordion-item
             button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse2' aria-expanded='true' aria-controls='collapse2') Структура и органы управления образовательной организацией
             #collapse2.accordion-collapse.collapse(aria-labelledby='heading2' data-bs-parent='#accordion')
               button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav2-1' type='button' role='tab') Структура и органы управления образовательной организацией
-          .accordion-item
-            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse3' aria-expanded='true' aria-controls='collapse3') Документы
-            #collapse3.accordion-collapse.collapse(aria-labelledby='heading3' data-bs-parent='#accordion')
-              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav3-1' type='button' role='tab') Документы
-          .accordion-item
-            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse4' aria-expanded='true' aria-controls='collapse4') Образование
-            #collapse4.accordion-collapse.collapse(aria-labelledby='heading4' data-bs-parent='#accordion')
               button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav4-1' type='button' role='tab') Образование
+          button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav3-1' type='button' role='tab') Документы
           .accordion-item
             button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse5' aria-expanded='true' aria-controls='collapse5') Руководство
             #collapse5.accordion-collapse.collapse(aria-labelledby='heading5' data-bs-parent='#accordion')
@@ -213,274 +204,274 @@ section.school-info
               | Реализуемые образовательные программы:
               br
               br
-            table.table(style='margin-left: calc(0%); width: 100%; margin-right: calc(0%);')
+            table.table
               thead
                 tr
-                  th(style='width: 42.9481%;') Наименование
-                  th(style='width: 19.5512%;') Форма обучения
-                  th(style='width: 15.216%;') Форма реализации образовательной программы
-                  th(style='width: 22.2313%;') Программа
+                  th Наименование
+                  th Форма обучения
+                  th Форма реализации образовательной программы
+                  th Программа
               tbody
                 tr
-                  td(style='width: 42.9481%;') Курс по Алгебре и Геометрии 8 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(data-label='Код специальности:' style='width: 15.216%;')
+                  td Курс по Алгебре и Геометрии 8 класса
+                  td Очно-заочная
+                  td(data-label='Код специальности:' )
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_8_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по подготовке к ОГЭ по информатике 23/24
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(data-label='Код специальности:' style='width: 15.216%;')
+                  td Курс по подготовке к ОГЭ по информатике 23/24
+                  td Очно-заочная
+                  td(data-label='Код специальности:' )
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/OGE_informatika.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по подготовке к ЕГЭ по информатике 23/24
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(data-label='Код специальности:' style='width: 15.216%;')
+                  td Курс по подготовке к ЕГЭ по информатике 23/24
+                  td Очно-заочная
+                  td(data-label='Код специальности:' )
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/EGE_informatika.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике по программе Л.Г. Петерсон для 2 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(data-label='Код специальности:' style='width: 15.216%;')
+                  td Курс по математике по программе Л.Г. Петерсон для 2 класса
+                  td Очно-заочная
+                  td(data-label='Код специальности:' )
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Peterson_2_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике по программе Л.Г. Петерсон для 3 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике по программе Л.Г. Петерсон для 3 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Peterson_3_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике по программе Л.Г. Петерсон для 4 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике по программе Л.Г. Петерсон для 4 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Peterson_4_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 1 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 1 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_1_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 2 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 2 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_2_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 3 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 3 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_3_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 4 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 4 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_4_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике по программе М.И. Моро для 1 класса 23/24
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике по программе М.И. Моро для 1 класса 23/24
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Moro_1_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике по программе М.И. Моро для 2 класса 23/24
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике по программе М.И. Моро для 2 класса 23/24
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Moro_2_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике по программе М.И. Моро для 3 класса 23/24
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике по программе М.И. Моро для 3 класса 23/24
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Moro_3_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике по программе М.И. Моро для 4 класса 23/24
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике по программе М.И. Моро для 4 класса 23/24
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Moro_4_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике 5 класса 23/24 (базовый уровень)
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике 5 класса 23/24 (базовый уровень)
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/matematika_5_klass_baza.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике 5 класс продвинутый уровень
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике 5 класс продвинутый уровень
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_5_klass_prod.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике 6 класса 23/24 (базовый уровень)
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике 6 класса 23/24 (базовый уровень)
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/matematika_6_klass_baza.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике 6 класс продвинутый уровень
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике 6 класс продвинутый уровень
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_6_klass_prod.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике 7 класса 23/24 (базовый уровень)
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике 7 класса 23/24 (базовый уровень)
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/matematika_7_klass_baza.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по алгебре и геометрии 7 класс продвинутый уровень
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по алгебре и геометрии 7 класс продвинутый уровень
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_7_klass_prod.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике 8 класса 23/24 (базовый уровень)
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по математике 8 класса 23/24 (базовый уровень)
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/matematika_8_klass_baza.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по подготовке к ОГЭ по математике "Стандарт"
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по подготовке к ОГЭ по математике "Стандарт"
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_OGE_Standart.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по подготовке к ОГЭ по математике "На Максимум"
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по подготовке к ОГЭ по математике "На Максимум"
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_OGE_na_max.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 5 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 5 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_5_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 6 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 6 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_6_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 7 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 7 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_7_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 8 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 8 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_8_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 9 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 9 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_9_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 10 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 10 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_10_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по русскому языку для 11 класса
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по русскому языку для 11 класса
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_11_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по подготовки к ЕГЭ по математике (профиль)
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по подготовки к ЕГЭ по математике (профиль)
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_EGE.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по подготовке к ЕГЭ по математике 10 класс
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по подготовке к ЕГЭ по математике 10 класс
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_EGE_10_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по подготовке к ЕГЭ по математике "На Сотку"
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Курс по подготовке к ЕГЭ по математике "На Сотку"
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
-                  td(style='width: 22.2313%;')
+                  td
                     a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_EGE_na_sotky.pdf' rel='noopener noreferrer' target='_blank') Открыть
                 tr
-                  td(style='width: 42.9481%;') Курс по математике и логике. Первые шаги в олимпиадах для 2 класса
-                  td(style='width: 19.5512%;')
+                  td Курс по математике и логике. Первые шаги в олимпиадах для 2 класса
+                  td
                     | Очно-заочная
                     br
-                  td(style='width: 15.216%;')
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
                     br
                   td
                     a(href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_i_logika_2_klass.pdf') Открыть
                 tr
-                  td(style='width: 42.9481%;')
+                  td
                     | Курс по математике и логике. Первые шаги в олимпиадах для 3 класса
                     br
-                  td(style='width: 19.5512%;')
+                  td
                     | Очно-заочная
                     br
-                  td(style='width: 15.216%;')
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
                     br
                   td
                     a(href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_i_logika_3_klass.pdf') Открыть
                     br
                 tr
-                  td(style='width: 42.9481%;')
+                  td
                     | Курс по математике и логике. Первые шаги в олимпиадах для 4 класса
                     br
-                  td(style='width: 19.5512%;') Очно-заочная
-                  td(style='width: 15.216%;')
+                  td Очно-заочная
+                  td
                     | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
                     br
                   td

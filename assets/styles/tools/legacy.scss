@@ -2429,6 +2429,10 @@ Styles for Questions
   background: transparent;
 }
 
+.accordion-button[aria-expanded="true"] {
+
+}
+
 .accordion-button:not(.collapsed) {
   color: #222;
   background: transparent;

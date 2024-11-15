@@ -1,0 +1,75 @@
+.school-info-nav .accordion-item .nav-link {
+  background-color: white;
+}
+
+.school-info-nav .nav-link {
+  background-color: #F6FAFF;
+  &:not(:last-child) {
+    border: none;
+  }
+}
+
+.school-info-nav .accordion > .nav-link {
+  font-weight: 500;
+  &:not(:last-child) {
+    background-color: #F6FAFF;
+  }
+}
+
+.school-info-nav .accordion > .nav-link.active {
+  &:not(:last-child) {
+    background-color: #DBEAFC;
+  }
+}
+
+.school-info-nav .nav-link.active {
+  background-color: #DBEAFC;
+}
+
+.accordion-button {
+  font-weight: 500;
+}
+
+.school-info-content td a {
+  justify-content: center;
+}
+
+.school-info-content {
+  td {
+    width: 25% !important;
+  }
+  th {
+    width: 25% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .accordion-button, .nav-link {
+    padding: 15px 25px !important;
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .school-info-content {
+    td {
+      width: 100% !important;
+    }
+    th {
+      width: 100% !important;
+    }
+  }
+  .school-info-content td a {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1199px) {
+  .accordion-button {
+    color: rgba(0,0,0,.75);
+    font-size: 17px;
+    padding: 18px 25px;
+    font-weight: 500;
+  }
+}
+
