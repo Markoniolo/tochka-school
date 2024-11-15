@@ -1,0 +1,1155 @@
+section.school-info
+  .container
+    .school-info-block.nav.nav-pills(role='tablist' aria-orientation='vertical')
+      button.navigation-btn.btn.btn-warning Навигация по разделу
+      .school-info-nav
+        #accordion.accordion
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse1' aria-expanded='true' aria-controls='collapse1') Основные сведения
+            #collapse1.accordion-collapse.collapse.show(aria-labelledby='heading1' data-bs-parent='#accordion')
+              button.nav-link.active(data-bs-toggle='pill' data-bs-target='#school-nav1-1' type='button' role='tab') Основные сведения
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse2' aria-expanded='true' aria-controls='collapse2') Структура и органы управления образовательной организацией
+            #collapse2.accordion-collapse.collapse(aria-labelledby='heading2' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav2-1' type='button' role='tab') Структура и органы управления образовательной организацией
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse3' aria-expanded='true' aria-controls='collapse3') Документы
+            #collapse3.accordion-collapse.collapse(aria-labelledby='heading3' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav3-1' type='button' role='tab') Документы
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse4' aria-expanded='true' aria-controls='collapse4') Образование
+            #collapse4.accordion-collapse.collapse(aria-labelledby='heading4' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav4-1' type='button' role='tab') Образование
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse5' aria-expanded='true' aria-controls='collapse5') Руководство
+            #collapse5.accordion-collapse.collapse(aria-labelledby='heading5' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav5-1' type='button' role='tab') Руководство
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse6' aria-expanded='true' aria-controls='collapse6') Педагогический состав
+            #collapse6.accordion-collapse.collapse(aria-labelledby='heading6' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav6-1' type='button' role='tab') Педагогический состав
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse7' aria-expanded='true' aria-controls='collapse7')
+              | Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда
+            #collapse7.accordion-collapse.collapse(aria-labelledby='heading7' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav7-1' type='button' role='tab')
+                | Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse8' aria-expanded='true' aria-controls='collapse8') Платные образовательные услуги
+            #collapse8.accordion-collapse.collapse(aria-labelledby='heading8' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav8-1' type='button' role='tab') Платные образовательные услуги
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse9' aria-expanded='true' aria-controls='collapse9') Финансово-хозяйственная деятельность
+            #collapse9.accordion-collapse.collapse(aria-labelledby='heading9' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav9-1' type='button' role='tab') Финансово-хозяйственная деятельность
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse10' aria-expanded='true' aria-controls='collapse10') Вакантные места для приема (перевода) обучающихся
+            #collapse10.accordion-collapse.collapse(aria-labelledby='heading10' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav10-1' type='button' role='tab') Вакантные места для приема (перевода) обучающихся
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse11' aria-expanded='true' aria-controls='collapse11') Стипендии и меры поддержки обучающихся
+            #collapse11.accordion-collapse.collapse(aria-labelledby='heading11' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav11-1' type='button' role='tab') Стипендии и меры поддержки обучающихся
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse12' aria-expanded='true' aria-controls='collapse12') Международное сотрудничество
+            #collapse12.accordion-collapse.collapse(aria-labelledby='heading12' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav12-1' type='button' role='tab') Международное сотрудничество
+          .accordion-item
+            button.accordion-button(type='button' data-bs-toggle='collapse' data-bs-target='#collapse13' aria-expanded='true' aria-controls='collapse13') Организация питания в образовательной организации
+            #collapse13.accordion-collapse.collapse(aria-labelledby='heading13' data-bs-parent='#accordion')
+              button.nav-link(data-bs-toggle='pill' data-bs-target='#school-nav13-1' type='button' role='tab') Организация питания в образовательной организации
+      .school-info-content
+        .tab-content
+          #school-nav1-1.tab-pane.fade.show.active(role='tabpanel')
+            h1
+              strong Основные сведения
+            p
+              br
+            p
+              br
+            p
+              strong Полное наименование организации:
+              |  ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ ОНЛАЙН-ШКОЛА «ТОЧКА ЗНАНИЙ».
+              br
+              br
+              strong Сокращенное наименование организации:
+              |  ООО «ТОЧКА ЗНАНИЙ».
+              br
+              br
+              strong Дата создания организации: 
+              | 28.03.2023
+              strong
+                | .
+                br
+                br
+                | Учредители:
+              strong  
+              | Шелудько Андрей Александрович, Шелудько София Владимировна.
+            p
+              strong Место нахождения
+              | : 350016, Краснодарский край, г.о. город Краснодар, г. Краснодар, ул. Зиповская, д. 45, помещ. 24, ком. 2.
+            p
+              strong Режим и график работы: 
+              | понедельник – пятница, с 10:00 до 19:00 (GMT+3).
+            p
+              strong Контактные телефоны: 
+              | +7 (800) 350-32-68
+              strong .
+            p
+              strong Адрес электронной почты: 
+              a(href='mailto:tochka-school@yandex.ru' title='mailto:tochka-school@yandex.ru') tochka-school@yandex.ru
+              | .
+            p
+              strong Место осуществления образовательной деятельности
+              strong , сведения о которых не включаются в соответствующую запись в реестре лицензий:
+              |  не применимо.
+            p
+              strong Лицензия на осуществление образовательной деятельности:
+              a(href='https://tochka-school.ru/storage/app/media/reestrovaia_vypiska/Reestrovaya_vipiska.pdf')
+                u № Л035-01218-23/00650937
+                u  от 11.05.2023
+                | .
+            p
+              strong Государственная аккредитация образовательной деятельности: 
+              | не требуется.
+          #school-nav2-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Структура и органы управления образовательной организацией
+            p
+              br
+            p
+              br
+              strong Органы управления организацией
+              | :
+            p
+              br
+            p
+              | Единоличный исполнительный орган: Генеральный директор Шелудько Андрей Александрович.
+            p Коллегиальный орган управления: Общее собрание участников.
+            p
+              strong Структурные подразделения организации:
+            ol
+              li
+                p
+                  | Основное подразделение. Руководитель – Генеральный директор Шелудько Андрей Александрович.
+              li
+                p
+                  | Отдел тьюторинга. Руководитель – Генеральный директор Шелудько Андрей Александрович.
+            p
+              strong Место нахождения всех структурных подразделений и органов управления:
+              |  350016, Краснодарский край, г. Краснодар, ул. Зиповская, д. 45, помещ. 24, ком. 2
+            p
+              strong Официальный сайт всех структурных подразделений и органов управления: 
+              a(href='https://tochka-school.ru' title='https://tochka-school.ru')
+                u https://tochka-school.ru
+            p
+              strong Адрес электронной почты всех структурных подразделений и органов управления: 
+              strong  
+              a(href='http://tochka-school@yandex.ru' title='http://tochka-school@yandex.ru')
+                u tochka-school@yandex.ru 
+            p
+              strong Положения о структурных подразделениях (об органах управления): 
+              | уточняется.
+          #school-nav3-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Документы
+            p
+              br
+            p
+              br
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Ustav_ot_26.04.2024.pdf') Устав образовательной организации.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Pravila_vnutrennego_trudovogo_rasporyadka.pdf') Правила внутреннего трудового распорядка.
+            p Коллективный договор: отсутствует.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_yazike_obrazovaniya.pdf') Положение о языке образования.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_primenenii_distancionnih_obrazovatelnih_technologii.pdf')
+                | Положение о применении дистанционных образовательных технологий при реализации образовательных программ.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_ob_electronnoi_informatcinno_obrazovatelnoi_srede.pdf') Положение об электронной информационно-образовательной среде.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_ob_electronnom_dokumentooborote.pdf') Положение об электронном документообороте.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_poryadke_okazaniya_platnih_obrazovatelnih_uslug.pdf') Положение о порядке оказания платных образовательных услуг.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_ob_oformlenii_vozniknoveniea_priostanovleniya_i_prekrasheniya.pdf')
+                | Положение об оформлении возникновения, приостановления и прекращения отношений с обучающимися и (или) родителями (законными представителями) несовершеннолетних обучающихся.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_poryadke_priyoma_na_obucheniye_perevoda_otchisleniya.pdf')
+                | Положение о порядке приёма учащихся на обучение, перевода, отчисления и восстановления учащихся.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Pravila_vnutrennego_rasporyadka_uchashikhsya.pdf') Правила внутреннего распорядка учащихся.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_rezhime_zanyatii_v_OOO.pdf')
+                | Положение о режиме занятий в Обществе с ограниченной ответственностью Онлайн-школа «Точка знаний»
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_tekushem_kontrole_uspevaemosti_i_promezhutochnoy_attestatsii.pdf') Положение о текущем контроле успеваемости и промежуточной аттестации учащихся.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_proktoringe.pdf') Положение о прокторинге.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_ob_ispolzovanii_sistem_vedeokonferentssvyazi_pri_realizatsii.pdf')
+                | Положение об использовании систем видеоконференцсвязи при реализации образовательных программ.
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_ob_okazanii_ucebno_metodicheskoi_podderzhki_uchashimsya.pdf') Положение об оказании учебно-методической поддержки учащимся.
+            p Отчет о результатах самообследования: готовится.
+            p
+              | Предписания органов, осуществляющих государственный контроль (надзор) в сфере образования, отчетов об исполнении таких предписаний (до подтверждения органом, осуществляющим государственный контроль (надзор) в сфере образования, исполнения предписания или признания его недействительным в установленном законом порядке: отсутствуют.
+          #school-nav4-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Образование
+            p
+              br
+            p
+              br
+            p
+              | ООО «ТОЧКА ЗНАНИЙ» реализует образовательные программы дополнительного образования детей и взрослых на основании
+              a(href='https://tochka-school.ru/storage/app/media/reestrovaia_vypiska/Reestrovaya_vipiska.pdf' title='https://yadi.sk/i/pFF4ranEcdhvRA')
+                u Лицензии 
+                u № Л035-01218-23/00650937
+              | , выданной на основании Приказа от 11.05.2023 № 1320 Министерства образования, науки и молодежной политики Краснодарского края.
+            p
+              | Реализуемые образовательные программы:
+              br
+              br
+            table.table(style='margin-left: calc(0%); width: 100%; margin-right: calc(0%);')
+              thead
+                tr
+                  th(style='width: 42.9481%;') Наименование
+                  th(style='width: 19.5512%;') Форма обучения
+                  th(style='width: 15.216%;') Форма реализации образовательной программы
+                  th(style='width: 22.2313%;') Программа
+              tbody
+                tr
+                  td(style='width: 42.9481%;') Курс по Алгебре и Геометрии 8 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(data-label='Код специальности:' style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_8_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по подготовке к ОГЭ по информатике 23/24
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(data-label='Код специальности:' style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/OGE_informatika.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по подготовке к ЕГЭ по информатике 23/24
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(data-label='Код специальности:' style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/EGE_informatika.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике по программе Л.Г. Петерсон для 2 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(data-label='Код специальности:' style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Peterson_2_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике по программе Л.Г. Петерсон для 3 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Peterson_3_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике по программе Л.Г. Петерсон для 4 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Peterson_4_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 1 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_1_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 2 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_2_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 3 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_3_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 4 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_4_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике по программе М.И. Моро для 1 класса 23/24
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Moro_1_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике по программе М.И. Моро для 2 класса 23/24
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Moro_2_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике по программе М.И. Моро для 3 класса 23/24
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Moro_3_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике по программе М.И. Моро для 4 класса 23/24
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_Moro_4_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике 5 класса 23/24 (базовый уровень)
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/matematika_5_klass_baza.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике 5 класс продвинутый уровень
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_5_klass_prod.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике 6 класса 23/24 (базовый уровень)
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/matematika_6_klass_baza.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике 6 класс продвинутый уровень
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_6_klass_prod.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике 7 класса 23/24 (базовый уровень)
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/matematika_7_klass_baza.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по алгебре и геометрии 7 класс продвинутый уровень
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_7_klass_prod.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике 8 класса 23/24 (базовый уровень)
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/matematika_8_klass_baza.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по подготовке к ОГЭ по математике "Стандарт"
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_OGE_Standart.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по подготовке к ОГЭ по математике "На Максимум"
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_OGE_na_max.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 5 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_5_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 6 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_6_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 7 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_7_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 8 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_8_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 9 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_9_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 10 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_10_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по русскому языку для 11 класса
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Russkii_yazik_11_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по подготовки к ЕГЭ по математике (профиль)
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_EGE.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по подготовке к ЕГЭ по математике 10 класс
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_EGE_10_klass.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по подготовке к ЕГЭ по математике "На Сотку"
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                  td(style='width: 22.2313%;')
+                    a(draggable='false' href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_EGE_na_sotky.pdf' rel='noopener noreferrer' target='_blank') Открыть
+                tr
+                  td(style='width: 42.9481%;') Курс по математике и логике. Первые шаги в олимпиадах для 2 класса
+                  td(style='width: 19.5512%;')
+                    | Очно-заочная
+                    br
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                    br
+                  td
+                    a(href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_i_logika_2_klass.pdf') Открыть
+                tr
+                  td(style='width: 42.9481%;')
+                    | Курс по математике и логике. Первые шаги в олимпиадах для 3 класса
+                    br
+                  td(style='width: 19.5512%;')
+                    | Очно-заочная
+                    br
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                    br
+                  td
+                    a(href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_i_logika_3_klass.pdf') Открыть
+                    br
+                tr
+                  td(style='width: 42.9481%;')
+                    | Курс по математике и логике. Первые шаги в олимпиадах для 4 класса
+                    br
+                  td(style='width: 19.5512%;') Очно-заочная
+                  td(style='width: 15.216%;')
+                    | Самостоятельно, с использованием исключительно дистанционных образовательных технологий
+                    br
+                  td
+                    a(href='https://tochka-school.ru/storage/app/media/Program_obucheniya/Matematika_i_logika_4_klass.pdf') Открыть
+                    br
+            p
+              br
+            p
+              strong
+                | Численность учащихся за счёт бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов:
+              |  отсутствуют.
+            p
+              strong Численность обучающихся по
+              strong  договорам об образовании за счёт средств 
+              strong физических и (или) юридических л
+              strong иц:
+              |  уточняется.
+            p
+              strong Языки образования:
+              strong  
+              | образовательные программы реализуются на русском языке в соответствии с
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_yazike_obrazovaniya.pdf')
+                u Положением о языке образования
+                | .
+          #school-nav5-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Руководство
+            p
+              br
+            p
+              br
+            p
+              strong Руководитель организации: 
+            p
+              br
+            p Генеральный директор Александр Александрович Шелудько.
+            p Контактный телефон +7 (800) 350-32-68.
+            p
+              | Адрес электронной почты
+              a(href='mailto:tochka-school@yandex.ru' title='mailto:tochka-school@yandex.ru') tochka-school@yandex.ru
+              | .
+            p
+              br
+            p
+              strong Заместители руководителя: 
+              | отсутствуют.
+            p
+              br
+            p
+              strong Филиалы организации:
+              |  отсутствуют.
+          #school-nav6-1.tab-pane.fade(role='tabpanel')
+            h1(style='text-align: left;')
+              strong Педагогический состав
+            p
+              br
+            p
+              br
+            table(border='0' cellpadding='0' cellspacing='0')
+              tbody
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong
+                        | Лутовинов Дмитрий Владимирович
+                        br
+                  td(style='text-align: left; width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель
+                    p(style='text-align: left;') Преподаваемые курсы: История.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Московский государственный областной гуманитарный институт, учитель истории.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;') Повышение квалификации (3 последних года): Курсы экспертов ОГЭ по истории.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 12 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong
+                        | Кочарян Элен Кареновна
+                        br
+                    p
+                      br
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: История.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Южный федеральный университет, магистратура, учитель истории.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): ГБУ ДПО РО РИПК и ППРО «Совершенствование предметных и методических компетенций учителя истории и обществознания», 2021; ГБУ ДПО РО РИПК и ППРО «Реализация требований обновленного ФГОС СОО и ФОП СОО в деятельности учителя истории и обществознания», 2024; ГБУ ДПО РО РИПК и ППРО «Эффективные педагогические практики ОО с наиболее высокими результатами ЕГЭ в 2023 г. по истории и обществознанию», 2024.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 8 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong
+                        | Дубинин Денис Валерьевич
+                        br
+                    p
+                      br
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: История.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Московский Государственный Областной Университет, учитель истории и общественно-политических дисциплин.
+                    p(style='text-align: left;') Учёная степень: Кандидат исторических наук.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): ФИПИ «Подготовка экспертов для работы в региональной предметной комиссии при проведении ГИА по образовательным программам СОО по предмету «Обществознание» - 2022, 2023, 2024 годы; АСОУ «Подготовка экспертов ЕГЭ-членов предметных комиссий по проверке выполнения заданий с развернутым ответом экзаменационных работ ЕГЭ по обществознанию» - 2022, 2023, 2024 годы; АСОУ «Подготовка экспертов ГИА-9-членов предметных комиссий по проверке выполнения заданий с развернутым ответом экзаменационных работ ГИА-9 по обществознанию» - 2022, 2023, 2024 годы; АСОУ «Подготовка экспертов ГИА-9 -членов предметных комиссий по проверке выполнения заданий с развернутым ответом экзаменационных работ ГИА-9 по истории» - 2022, 2023, 2024 годы; АСОУ «Реализация требований обновленных ФГОС ООО, ФГОС СОО в работе учителя истории» - 2023; АСОУ «Реализация требований обновленных ФГОС ООО, ФГОС НОО в работе учителя» - 2022.
+                    p(style='text-align: left;')
+                      br
+                    p(style='text-align: left;') Профессиональная переподготовка: «Менеджмент в образовании», - 2015 - 2018 годы.
+                    p(style='text-align: left;') Педагогический стаж: 20 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong
+                        | Горошенкина Екатерина Александровна
+                        br
+                    p
+                      br
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Обществознание.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Пермский государственный гуманитарно-педагогический университет, учитель истории; Пермский государственный гуманитарно-педагогический университет, аспирантура, квалификация преподаватель-исследователь.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): РИНО ПГНИУ «Универсальные педагогические компетенции и функциональная грамотность» - 2021; «Внедрение единых подходов к психолого-педагогической и методической подготовке в программах педагогического бакалавриата» - 2022; ПГГПУ «Универсальные педагогические компетенции и функциональная грамотность» - 2022; Институт развития образования Пермского края «Подготовка членов региональных предметных комиссий выполнения заданий с развернутыми ответами ГИА по обществознанию», - 2023; Академия Министерства просвещения «Содержательные аспекты методической подготовки будущего учителя к реализации требований обновленного ФГОС» - 2023.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 10 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong
+                        | Марченко Иван Владимирович
+                        br
+                    p
+                      br
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Обществознание.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Псковский государственный университет, бакалавр, История.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Методы и технологии профориентационной работы педагога-навигатора Всероссийского проекта «Билет в будущее», АНО «ЦНРЛРЧП» - 2021; «Формирование социально-значимых ценностей и нравственных установок на основе материалов образовательного модуля «Великая Отечественная война: без срока давности», ФГБОУ ВО «ПсковГУ» - 2021; «Современная деятельность классного руководителя», ПОИКПРО, - 2022; «Реализация требований обновленных ФГОС НОО, ФГОС ООО в работе учителя (обществоведческие дисциплины)», ПОИКПРО - 2022; «Технология формирующего оценивания как средство персонализации обучения», ПОИПКРО - 2022; «Подготовка к ВСОШ по истории (Осенняя школа по гуманитаристике), ФГБОУ ВО «ПсковГУ» - 2022; «Обеспечение единства подходов к оцениванию заданий ЕГЭ с развернутым ответом по обществознанию», ЦОКО - 2022; «Формирование и оценивание функциональной грамотности обучающихся в контексте обновленных ФГОС: эффективные практики, приемы и технологии», ПОИКПРО - 2023; «Финансовая грамотность в обществознании», НИУ «Высшая школа экономики» - 2023; «Развитие исторического образования в современной России: проблемы и тенденции», ФГБОУ ВО «ПсковГУ» - 2023; «Реализация требований обновленных ФГОС ООО, ФГОС СОО в работе учителя» (история, обществознание), ПОИКПРО - 2023; «Основы преподавания «ОДНКНР» в соответствии с обновленными ФГОС», «ЦИОВ» - 2023; «Профилактика игровой и гаджетовой зависимости», «Знание. Академия» -2024; «Подготовка экспертов предметной комиссии ЕГЭ по обществознанию», ПОИКПРО - 2024.
+                    p(style='text-align: left;')
+                      | Профессиональная переподготовка: «Внутренний туризм и экскурсионная деятельность», гид-экскурсовод, ПсковГУ - 2019.
+                    p(style='text-align: left;') Педагогический стаж: 5 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Бабенко Анна Юрьевна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Математика, Русский язык.
+                    p(style='text-align: left;') Профессиональное образование: ЕГУ им. И.А. Бунина, магистр, История.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): ВИРО им. Н. Ф. Бунакова «Теория и методика преподавания предметных областей «Основы религиозных культур и светской этики» (ОРКСЭ) - 2022; ВИРО им. Н. Ф. Бунакова «Основы духовно-нравственной культуры народов России» (ОДНКР) в контексте реализации ФГОС» - 2022; ФГБУ «Федеральный институт родных языков народов Российской Федерации», «Обновление содержания школьного филологического образования в соответствии с ФГОС НОО: теория и практика преподавания русского языка и родных языков народов Российской Федерации» - 2022; Учебный центр «Профессиональный союз работников народного образования и науки Российской Федереции», «Профессионально-личностное развитие педегогических работников в инновационной среде профессиональных конкурсов: проектирование, подготовка, сопровождение» - 2022; ООО «Центр инновационного образования и воспитания», «Основы обеспечения информационной безопасности детей» - 2023; ФБУН «Новосибирский научно-исследовательский институт гигиены» РОСПОТРЕБНАДЗОРА, «Основы здорового питания (для детей школьного возраста)» - 2022; ВИРО им. Н. Ф. Бунакова «Реализация обновлённых ФГОС НОО в работе учителя» - 2023; ФГАОУ ДПО «Академия реализации государственной политики и профессионального развития работников образования Министерства просвещения Российской Федерации», «Раннее выявление, профилактика девиаций поведения, оказание своевременной педагогической помощи детям /подросткам с девиациями поведения» - 2023.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 10 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Мякишева Елена Юрьевна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Русский язык, 4 класс (2 параллель).
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Мичуринский государственный педагогический институт по специальности «Педагогика и методика начального обучения», квалификация учитель начальных классов.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): АОУ РС (Я) ДПО «ИРО и ПК имени С.Н.Донского-II», «Активные, интерактивные методы и формы организации учебной деятельности в начальной школе в рамках реализации ФГОС»ФГБОУ ВО «Тамбовский государственный университет имени Г.Р.Державина» - 2023; «Современные подходы, инструменты и технологии повышения эффективности образования» - 2021; ООО «Межреспубликанский институт повышения квалификации и переподготовки кадров при Президиуме ФРО», «Планирование и реализация дополнительных мероприятий по усилению мер безопасности в образовательных организациях» - 2021;
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 25 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Шевченко Галина Валерьевна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Начальные классы, Математика.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Тамбовский государственный университет им. Державина.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): Учебный центр «Персонал-Ресурс», «Современные образовательные технологии преподавания основ религиозных культур и светской этики в условиях реализации ФГОС начального общего и основного общего образования» - 2021; Учебный центр «Персонал-Ресурс», «Современные образовательные технологии преподавания кубановедения в условиях реализации ФГОС начального общего, основного общего и среднего общего образования» - 2021; Учебный центр «Персонал-Ресурс», «Содержание и методика преподавания в начальной школе в условиях реализации требований ФГОС НОО нового поколения» - 2022; Учебный центр «Институт регионального развития», «Основы информационной безопасности детей» - 2023.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 30 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Шелудько Андрей Александрович
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: генеральный директор.
+                    p(style='text-align: left;') Преподаваемые курсы: Математика, алгебра, геометрия.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: выссшее, «Специалист по информационной безопасности автоматизированных систем» КубГТУ.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;') Повышение квалификации (3 последних года): нет.
+                    p(style='text-align: left;')
+                      | Профессиональная переподготовка: АНО ДПО «Гуманитарно-технический университет», учитель математики.
+                    p(style='text-align: left;') Педагогический стаж: уточняется.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Кудина Светлана Денисовна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Математика и логика.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Бакалавр, институт НИУ МИЭТ, специальность Радиотехника.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;') Повышение квалификации (3 последних года): нет.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 8 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Маматкова Александра Сергеевна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Математика 1-4 класс по программе Л.Г. Петерсон.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: ТвГУ, Менеджмент в образовании, магистратура - 2020; ТвГУ, Начальное образование - 2018.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): Балтийский семинар «ЭТО (НЕ) МОЁ ДЕЛО», Школа Ирины Громовой- 2024; Практикум для учителей начальных классов «PRIMALAB», Областная гимназия им. Е.М. Примакова - 2023; «Профессионально-личностное развитие педагогических работников в инновационной среде профессиональных конкурсов: проектирование, подготовка, сопровождение», Общероссийский профсоюз образования - 2023; «Технологии формирования и оценки функциональной грамотности в свете Федеральных государственных образовательных стандартов», Автономная некоммерческая организация «Центр развития молодежи» - 2023; «Инновационные подходы сочетания очных и дистанционных методов в образовательном процессе и работе с родителями в соответствии с ФГОС», Центр онлайн-обучения Всероссийского форума «Педагоги России: инновации в образовании» - 2023; «10 способов управления чувствами и эмоциями, Московской институт непрерывного развития образования - 2023; «Новые методы и технологии преподавания в начальной школе по ФГОС», ООО «Московский институт профессиональной переподготовки и повышения квалификации педагогов» - 2023; «Эмоциональный интеллект: создаём безопасную и развивающую образовательную среду», Автономная некоммерческая организация «Центр развития молодежи» - 2022; «Социальные сети как среда взаимодействия субъектов образовательного процесса», Общество с ограниченной ответственностью «Знанио» - 2022.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 5 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Горская Евгения Викторовна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: ИЗО и Технология.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: МГАХУ памяти 1905 года, живописно-педагогическое отделение; ВГИК им С.А.Герасимова, художник-постановщик анимации и компьютерной графики.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: Доцент кафедры художника анимационного фильма, ГИТР.
+                    p(style='text-align: left;') Повышение квалификации (3 последних года): нет.
+                    p(style='text-align: left;')
+                      | Профессиональная переподготовка: Технология наглазурной росписи, Красноярский институт искусств(2021г), Школа современного искусства Свободные мастерские (2018).
+                    p(style='text-align: left;') Педагогический стаж: 15 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Лысенко Надежда Борисовна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: География.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Высшее, КубГУ, географ, преподаватель географии, окончила в 1993 г.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Использование системно-деятельностного подхода в образовательном процессе в условиях перехода на обновленные ФГОС» - 2022 год; «Реализация обновленных ФГОС ООО, ФГОС СОО в работе учителя» - 2023; «Научно-методическое обеспечение проверки и экспертной оценки развернутых ответов выпускников по географии» - 2023, 2022, 2021.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 29 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Титорова Наталья Павловна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Биология.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: высшее, Кемеровский государственный университет, биологический факультет.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;') Повышение квалификации (3 последних года): нет.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 25 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Щербакова Екатерина Александровна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Математика.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: высшее, ФГБОУ ВО «Кубанский государственный университет», ФКТиПМ, Математические методы в экономике.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): ДПО «ОЦ Каменный город», «Профессиональная компетентность педагога: проблемы и перспективы развития современного образования» - 2024; МГИМО МИД России, «Руководство методическим объединением» - 2023; ГБОУ ИРО Краснодарского края, «Научно-методическое обеспечение проверки и оценки развёрнутых ответов выпускников (ОГЭ по математике)» - 2024; ГБОУ ИРО Краснодарского края, «Реализация требований обновлённых ФГОС ООО, ФГОС СОО в работе учителя» - 2024.
+                    p(style='text-align: left;')
+                      | Профессиональная переподготовка: Автономная некоммерческая организация дополнительного профессионального образования «Московская академия профессиональных компетенций», 2018, «Учитель математики».
+                    p(style='text-align: left;') Педагогический стаж: 6 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Баянов Артем Равилевич
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Математика; Математика и Логика.Первые шаги в олимпиадах.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: высшее, Башкирский Государственный Университет, Прикладная математика и информатика.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Организация проектно-исследовательской деятельности учащихся как средство
+                    p(style='text-align: left;')
+                      | развития познавательной активности на уроках математики в условиях введения» - 2023, «Преподавание математики в общеобразовательных организациях в условиях реализации ФГОС СОО и ООО» - 2023.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 13 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Вольфсон Георгий Игоревич
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Математика и логика. Первые шаги в олимпиадах.
+                    p(style='text-align: left;') Профессиональное образование: высшее, математика и прораммирование, СПбГУ.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): Переподготовка экспертов ЕГЭ по математике - 2022, Переподготовка экспертов ЕГЭ по математике - 2023, Переподготовка экспертов ЕГЭ по математике - 2024.
+                    p(style='text-align: left;')
+                      | Профессиональная переподготовка: Теория и методика преподавания математики, СПбАППО - 2013.
+                    p(style='text-align: left;') Педагогический стаж: 20 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Стрюков Александр Андреевич
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Математика. ЕГЭ "Стандарт".
+                    p(style='text-align: left;') Профессиональное образование :магистратура, математика и информатика, КубГУ.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Реализация требований обновленных ФГОС ООО, ФГОС СОО, в работе учителя (математика)» - 2023.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 7 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Щукина Елена Владимировна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Химия.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: высшее по направлению «Физическая химия», химический факультет Пермского Государственного Университета; высшее по направлению «Финансы, кредит и биржевое дело», экономический факультет Пермского Государственного Университета.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Всероссийская олимпиада школьников по химии: организация, проведение, подготовка школьников», Фонд «Талант и успех» - 2023.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 11 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Чистякова Юлия Андреевна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Английский язык.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Специалитет, факультет иностранных языков (учитель английского и французского языков), ЯГПУ им. К.Д. Ушинского; Магистратура, факультет русской филологии и культуры (педагогическое образование), ЯГПУ им. К.Д. Ушинского; Бакалавриат, физико-математический факультет (информатика и ИКТ в образовании), ЯГПУ им. К.Д. Ушинского
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Подготовка экспертов предметной комиссии ГИА по программам основного общего образования. Французский язык», ГАУ ДПО ЯО ИРО, 11.03.2022 - 30.03.2022; «Конкурсные технологии развития профессиональных компетенций педагогических работников», ГЦРО ЯО, 28.09.2022 – 11.01.2023; «Конкурсное движение как формат непрерывного профессионального образования», ГАУ ДПО ЯО ИРО, 16.02.2023 – 31.03.2023; «Педагогические технологии здоровьесбережения субъектов образовательных отношений», Профессиональный союз работников народного образования и науки Российской Федерации «Общероссийский профсоюз образования», 14.07.2023– 19.07.2023; «Инновационные технологии в образовании», Общероссийская организация лидеров образования «Учитель года», 14.12.2023– 17.12.2023; «Конкурсное движение как формат непрерывного профессионального образования», ГАУ ДПО ЯО ИРО, 04.03.2024 – 29.03.2024.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 11 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Таут Вероника Алексндровна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Английский язык.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Учитель иностранных языков высшей категории, Тюменский государственный университет по направлению «Лингвистика».
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): ГАОУ ТО ДПО «ТОГИРРО»; «Индивидуальная программа развития педагога в условиях вызовов и перемен. Профессиональные конкурсы как ресурс личностного роста» - 2021; ГАОУ ТО ДПО «ТОГИРРО»; «Ищи, дерзай, побеждай! Творческая мастерская педагога как площадка апробации и презентации профессионального и конкурсного опыта» - 2022; ГАОУ ТО ДПО «ТОГИРРО»; «Реализация требований обновленных ФГОС НОО, ФГОС ООО в работе учителя» - 2022; ГАОУ ТО ДПО «ТОГИРРО»; «Формирование функциональной грамотности школьников: методика обучения, специфика заданий» - 2022; МГИМО МИД РФ «Руководитель методического объединения» - 2023.
+                    p(style='text-align: left;')
+                      | Профессиональная переподготовка: Государственное и муниципальное управление», в ООО «Институт новых технологий в образовании» - 2017; «Учитель китайского языка» в ООО «Институт новых технологий в образовании» - 2020.
+                    p(style='text-align: left;') Педагогический стаж: 10 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Серавкина Вера Игоревна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Английский язык.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Башкирский Государственный Университет, Факультет романо-германской филологии, специальность Английский язык, Литература; квалификация Филолог, преподаватель.
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Подготовка экспертов для работы в региональной предметной комиссии при проведении государственной итоговой аттестации по образовательным программа основного общего образования» по предмету «Английский язык», ФИПИ - 2022; «Технологии подготовки одаренных детей к интеллектуальным состязаниям» в рамках Года педагога и наставника 2023, ФГБОУ ВО МГЛУ - 2023; «Подготовка экспертов для работы в республиканской предметной комиссии по иностранным языкам при проведении государственной итоговой аттестации по образовательным программам основного общего образования» ИРО РБ - 2024.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 16 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Пятакова Полина Алексеевна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: старший преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Русский язык.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: ФГБОУ ВО «Кубанский государственный университет», направление «Филология».
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Научно-методическое обеспечение проверки и оценки развёрнутых ответов выпускников ЕГЭ по литературе» - 2022 г.; «Научно-методическое обеспечение проверки и оценки развёрнутых ответов выпускников (ЕГЭ по литературе)» - 2024.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 7 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Константинова Евгения Владимировна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Русский язык.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: Высшее, ФГБОУ ВО "Кубанский государственный университет", направление "Филология".
+                    p(style='text-align: left;') Учёная степень: нет.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;') Повышение квалификации (3 последних года):
+                    p(style='text-align: left;')
+                      | «Научно-методическое обеспечение проверки и оценки развернутых ответов выпускников по литературе ЕГЭ» (2021 г.);
+                    p(style='text-align: left;')
+                      | «Научно-методическое обеспечение проверки и оценки развернутых ответов выпускников по русскому языку ОГЭ (русский язык)» (2021 г.);
+                    p(style='text-align: left;')
+                      | «Инновационные технологии работы с детьми с ОВЗ в условиях инклюзивной практики в соответствии с требованиями ФГОС» (2021 г.);
+                    p(style='text-align: left;') «Школа современного учителя русского языка» (2021 г.);
+                    p(style='text-align: left;')
+                      | «Научно-методическое обеспечение проверки и оценки развернутых ответов выпускников по русскому языку ГИА-9» (2022 г.);
+                    p(style='text-align: left;')
+                      | «Научно-методическое обеспечение проверки и оценки развёрнутых ответов выпускников ЕГЭ по литературе» (2022 г.);
+                    p(style='text-align: left;')
+                      | «Реализация требований обновленных ФГОС НОО, ФГОС ООО в работе учителя» (2022 г.);
+                    p(style='text-align: left;')
+                      | «Управление современными образовательными системами» «Флагманы образования. Муниципалитет» (2022 г.);
+                    p(style='text-align: left;')
+                      | «Научно-методическое обеспечение проверки и оценки развёрнутых ответов выпускников (ЕГЭ по литературе)» (2023 г.);
+                    p(style='text-align: left;')
+                      | «Организация деятельности участника конкурса профессионального мастерства педагогических работников» (2023 г.);
+                    p(style='text-align: left;')
+                      | «Научно-методическое обеспечение проверки и оценки развёрнутых ответов выпускников (ЕГЭ по литературе)» (2024 г.).
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 8 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Костылева Екатерина Сергеевна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Физика.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: ФГАОУ ВО «Тюменский государственный университет» Физика, бакалавр; ФГАОУ ВО «Тюменский государственный университет» Психологическое консультирование, магистратура.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;') Повышение квалификации (3 последних года):
+                    p(style='text-align: left;')
+                      | «Фокусы образования и навыки XXI века. Конкурс профессионального мастерства как территория инновационных идей и смыслов», Тюмень: ТОГИРРО, - 2021;
+                    p(style='text-align: left;')
+                      | «Подготовка экспертов для работы в региональной предметной комиссии при проведении государственной итоговой аттестации по образовательным программам основного общего образования» по предмету «Физика», «Федеральный институт педагогических измерений» - 2021;
+                    p(style='text-align: left;')
+                      | «Подготовка экспертов для работы в региональной предметной комиссии при проведении ЕГЭ по предмету «Физика». Интерпретация результатов оценочных процедур», Тюмень: ТОГИРРО - 2021;
+                    p(style='text-align: left;')
+                      | ФГАО ВО «Тюменский государственный университет», «К успешной карьере через цифровую гигиену и информационный стресс-менеджмент» - 2021;
+                    p(style='text-align: left;')
+                      | Повышение квалификации в объединенном учебно-методическом центре по ГО и ЧС Государственного казенного учреждения Тюменской области по категории Уполномоченные работники по ГО и ЧС организаций не отнесенных к категориям по ГО, Тюмень, 36 часов, 2023 г.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 11 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Серёжкин Сергей Витальевич
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Физика.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: бакалавриат, «Педагогическое образование. Физическое образование» ТюмГу.
+                    p(style='text-align: left;') Учёное звание: нет.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): Повышение квалификации в Образовательном Фонде «Талант и успех» по программе «Организация науно-технической, исследовательской и проектной деятельности школьников в области космонавтики» - 2021.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 5 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Шастунова Ульяна Юрьевна 
+                    p
+                      br
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: Физика.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: высшее, Теплофизика в строительной и нефтегазовой отраслях, ТюмГУ, 2009; высшее, преподаватель высших и средних учреждений по предмету Физика, ТюмГУ, 2009.
+                    p(style='text-align: left;') Учёное звание: кандидат физико-математических наук.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Обучение физике в контексте современных педагогических технологий: экспериментальный подход» с 23.03 по 29.03.2021 года; ФГАОУ ВО "ТюмГУ" по доп профес программе "Принципы естественнонаучного познания как часть фундаментального образования" с 05.04 по 26.04.2021 года; ФГБНУ «ФИПИ» «Подготовка экспертов для работы в региональной предметной комиссии при проведении государственной итоговой аттестации по образовательным программам среднего общего образования по предмету «Физика» с 23.10.2023 по 24.11.2023; ГАОУ ТО ДПО «ТОГИРРО» по программе «Формирование функциональной грамотности школьника: методика обучения, специфика заданий» с 01.04 по 10.04.2023 года.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 19 лет.
+                tr
+                  td(style='width: 8.3667%;' width='139')
+                    p
+                      strong Берендеева Ирина Александровна
+                  td(style='width: 91.5801%;' width='848')
+                    p(style='text-align: left;') Должность: преподаватель.
+                    p(style='text-align: left;') Преподаваемые курсы: литература.
+                    p(style='text-align: left;')
+                      | Профессиональное образование: высшее, специальность «Филология», квалификация - учитель русского языка, литературы и культурологии, Тобольский государственный педагогический институт имени Д.И.Менделеева. Аспирантура Тюменского государственного университета, специальность «Русская литература».
+                    p(style='text-align: left;') Учёное звание: кандидат филологических наук.
+                    p(style='text-align: left;')
+                      | Повышение квалификации (3 последних года): «Технологии формирования и оценки функциональной грамотности в свете ФГОС» - 2024; «Развитие предметной компетенции учителя русского языка: теоретические и практические аспекты» - 2022; «Реализация требований обновленных ФГОС ООО в работе учителя» (учебные предметы «Русский язык», «Литература» - 2022.
+                    p(style='text-align: left;') Профессиональная переподготовка: нет.
+                    p(style='text-align: left;') Педагогический стаж: 20 лет.
+            p
+              br
+          #school-nav7-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Материально-техническое обеспечение и оснащенность образовательного процесса. 
+              strong Доступная среда
+            p
+              br
+            p
+              br
+            p
+              | ООО «ТОЧКА ЗНАНИЙ» реализует образовательные программы исключительно с применением дистанционных образовательных технологий в соответствии с локальным актом:
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_primenenii_distancionnih_obrazovatelnih_technologii.pdf')
+                | Положение о применении дистанционных образовательных технологий при реализации образовательных программ.
+            p
+              | Для реализации образовательных программ ООО «ТОЧКА ЗНАНИЙ» разработало специализированную Платформу «Точка знаний», доступ к которой осуществляется посредством сети «Интернет» через сайт
+              a(href='https://tochka-school.ru.' title='https://tochka-school.ru.')
+                u https://tochka-school.ru
+                u .
+            p
+              | Электронная образовательная среда функционирует в соответствии с
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_ob_electronnoi_informatcinno_obrazovatelnoi_srede.pdf') Положением об электронной информационно-образовательной среде
+              a(href='https://disk.yandex.ru/i/zQUa_8XkpRp6Ww' title='https://disk.yandex.ru/i/zQUa_8XkpRp6Ww')
+              |  и позволяет обеспечить полностью дистанционный образовательный процесс, в том числе видеоконференцсвязь (
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_ob_ispolzovanii_sistem_vedeokonferentssvyazi_pri_realizatsii.pdf')
+                | Положение об использовании систем видеоконференцсвязи при реализации образовательных программ
+              | ).
+            p
+              | Учащимся оказывается учебно-методическая помощь в соответствии с
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_ob_okazanii_ucebno_metodicheskoi_podderzhki_uchashimsya.pdf') Положением об оказании учебно-методической поддержки учащимся
+              | .
+            p
+              | Учащиеся обеспечены электронными учебными материалами, онлайн-лекциями, записями таких лекций.
+            p Реализация образовательных программ в помещениях не осуществляется.
+          #school-nav8-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Платные образовательные услуги
+            p
+              br
+            p
+              br
+            p
+              | ООО «ТОЧКА ЗНАНИЙ» оказывает платные образовательные услуги в соответствии с
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Polozhenie_o_poryadke_okazaniya_platnih_obrazovatelnih_uslug.pdf') Положением о порядке оказания платных образовательных услуг
+              | .
+            p
+              a(href='https://tochka-school.ru/storage/app/media/Dokumenti/Svedeniya_ob_organizatcii/Obrazets_dogovora_okazaniya_platnikh_obrazovatelnikh_uslug.pdf') Образец договора об оказании платных образовательных услуг
+              | .
+            p
+              | Стоимость утверждена Генеральным директором и указана на сайте
+              a(href='https://tochka-school.ru' title='https://tochka-school.ru')
+                u https://tochka-school.ru
+              | .
+            p
+              | Стоимость обучения завесит от возраста учащихся, направления и наименования образовательной программы:
+            ol
+              li
+                p
+                  | Для учащихся, возраст которых соответствует 1-4 классу по адресу:
+                  a(href='https://tochka-school.ru/nachalnaya-shkola' title='https://tochka-school.ru/nachalnaya-shkola')
+                    u https://tochka-school.ru/nachalnaya-shkola
+              li
+                p
+                  | Для учащихся, возраст которых соответствует 5-9 классу по адресу:
+                  a(href='https://tochka-school.ru/srednyaya-shkola' title='https://tochka-school.ru/srednyaya-shkola')
+                    u https://tochka-school.ru/srednyaya-shkola
+              li
+                p
+                  | Для учащихся, возраст которых соответствует 10-11 классу по адресу:
+                  a(href='https://tochka-school.ru/starshaya-shkola' title='https://tochka-school.ru/starshaya-shkola')
+                    u https://tochka-school.ru/starshaya-shkola
+            p
+              br
+            p
+              br
+          #school-nav9-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Финансово-хозяйственная деятельность
+            p
+              br
+            p
+              br
+            p
+              | Финансовое обеспечение образовательной деятельности за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов: не осуществляется.
+            p
+              br
+            p
+              | Финансовое обеспечение образовательной деятельности по договорам об оказании платных образовательных услуг за счет средств физических (юридических)лиц: уточняется.
+            p
+              | Информация о поступлении финансовых и материальных средств по итогам финансового года:
+            p
+              a(href='https://bo.nalog.ru/organizations-card/12140124#financialResult')
+                | За
+                u 2023 год
+                | .
+            p
+              | Информация о расходовании финансовых и материальных средств по итогам финансового года:
+            p
+              a(href='https://bo.nalog.ru/organizations-card/12140124#balance' title='https://bo.nalog.ru/organizations-card/12140124#balance')
+                u За 2023 год.
+          #school-nav10-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Вакантные места для приема (перевода) 
+              strong обучающихся
+            p
+              br
+            p
+              br
+            p
+              | Вакантные места, финансируемые за счет бюджетных ассигнований федерального бюджета, бюджетов субъектов Российской Федерации, местных бюджетов: отсутствуют.
+            p
+              | Вакантные места, финансируемые по договорам об образовании за счет средств физических и (или) юридических лиц: ограничения и квоты не установлены.
+            p
+              br
+          #school-nav11-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Стипендии и меры поддержки обучающихся
+            p
+              br
+            p
+              br
+            p В настоящий момент стипендии учащимся не предоставляются.
+            p Социальная поддержка не предоставляется.
+            p Общежитие и (или) интернат отсутствуют.
+          #school-nav12-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Международное сотрудничество
+            h1
+              strong  
+            p
+              br
+            p
+              | ООО «ТОЧКА ЗНАНИЙ» не имеет заключенных и (или) планируемых к заключению договоров с иностранными и (или) международными организациями по вопросам образования и науки.
+          #school-nav13-1.tab-pane.fade(role='tabpanel')
+            h1
+              strong Организация питания в образовательной организации
+            p
+              br
+            p
+              br
+            p
+              | ООО «ТОЧКА ЗНАНИЙ» реализует образовательные программы с применением исключительно дистанционных образовательных технологий, ввиду чего учащиеся не обеспечиваются питанием непосредственно в ООО «ТОЧКА ЗНАНИЙ».
+            p
+              br
+            p Специальные меры охраны здоровья не предпринимаются.
