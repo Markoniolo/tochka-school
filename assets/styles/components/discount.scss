@@ -25,6 +25,13 @@
   }
 }
 
+.discount__box {
+  @include media(xs) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .discount__text {
   margin-right: 20px;
   font-weight: 700;
@@ -40,7 +47,6 @@
   @include media(xs) {
     margin-bottom: 6px;
     position: relative;
-    padding-right: 180px;
     font-size: 10px;
   }
   span {
@@ -64,11 +70,9 @@
     margin: 0 4px;
   }
   @include media(xs) {
-    position: absolute;
-    top: 0;
-    right: 0;
     font-size: 22px;
     line-height: 136%;
+    display: none;
   }
   &::before {
     content: '';
@@ -80,6 +84,22 @@
     right: -2px;
     left: -2px;
     bottom: -2px;
+  }
+  &_mobile {
+    display: none;
+    @include media(xs) {
+      display: block;
+      font-size: 22px;
+      line-height: 136%;
+      font-weight: 700;
+      margin-left: 10px;
+    }
+  }
+}
+
+.discount__text-small {
+  @include media(xs) {
+    width: 100%;
   }
 }
 

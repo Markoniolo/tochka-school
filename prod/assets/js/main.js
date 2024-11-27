@@ -705,7 +705,7 @@ $(document).ready(function(){
 
 
 // Навигация по разделу
-  $('.navigation-btn, .nav-link').click(function () {
+  $('.classes-block .navigation-btn, .classes-block .nav-link').click(function () {
     var button = $('.navigation-btn');
     if (button.text() === 'Навигация по разделу') {
       button.text('Закрыть навигацию');
@@ -714,14 +714,16 @@ $(document).ready(function(){
     }
     var nav_link = $(this);
     $(".navigation-btn, .school-info-nav").toggleClass('active');
-    let gradeUrl = window.location.search.replace( /gr=\w*\d*/, "");
-    gradeUrl = gradeUrl.replace("?&", "?");
-    if (gradeUrl.includes('?')) {
-      gradeUrl = gradeUrl.replace("?", "?gr="+nav_link.attr('id')?.replace("pills-tab", "")+"&");
-    } else {
-      gradeUrl = gradeUrl + "?gr="+nav_link.attr('id')?.replace("pills-tab", "");
+    if (nav_link.attr('id')?.replace("pills-tab", "") > 0) {
+      let gradeUrl = window.location.search.replace( /gr=\w*\d*/, "");
+      gradeUrl = gradeUrl.replace("?&", "?");
+      if (gradeUrl.includes('?')) {
+        gradeUrl = gradeUrl.replace("?", "?gr="+nav_link.attr('id')?.replace("pills-tab", "")+"&");
+      } else {
+        gradeUrl = gradeUrl + "?gr="+nav_link.attr('id')?.replace("pills-tab", "");
+      }
+      history.replaceState(null, document.title, gradeUrl);
     }
-    history.replaceState(null, document.title, gradeUrl);
   });
 
   $(document).on('mouseup', function(e){
