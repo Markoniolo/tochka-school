@@ -59,9 +59,7 @@ function globalFormInit (form, func_name, type) {
   const globalForm = form
   const btnSubmit = globalForm.querySelector('.btn-warning')
   const input = globalForm.querySelector("[data-element='input-phone-intl']")
-  input.addEventListener('input', function () {
-    this.value = this.value.replace(/\D+/g, '')
-  })
+
   const inputHidden = globalForm.querySelector("[data-element='input-phone-hidden']")
   const linkTo = globalForm.getAttribute("data-docex")
 
@@ -77,6 +75,10 @@ function globalFormInit (form, func_name, type) {
     utilsScript: "../libs/intlTelInputWithUtils.min",
     initialCountry: 'ru',
     separateDialCode: true
+  })
+
+  input.addEventListener('input', function () {
+    this.value = this.value.replace(/\D+/g, '')
   })
 
   input.addEventListener('input', updateHiddenInput)
@@ -136,6 +138,9 @@ function globalFormInit (form, func_name, type) {
       }
 
       if (isValid) {
+        if (iti.selectedCountryData.dialCode === "7" && input.value.length > 10) {
+          inputHidden.value = inputHidden.value.substring(1)
+        }
         globalForm.submit()
         btnSubmit.disabled = true
         location.assign(linkTo)
