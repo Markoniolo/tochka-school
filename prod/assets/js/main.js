@@ -289,7 +289,7 @@ function globalFormInit (form, func_name, type) {
 
       if (isValid) {
         if (iti.selectedCountryData.dialCode === "7" && input.value.length > 10) {
-          inputHidden.value = inputHidden.value.substring(1)
+          inputHidden.value = iti.selectedCountryData.dialCode + inputHidden.value.substring(inputHidden.value.length - 10)
         }
         globalForm.submit()
         btnSubmit.disabled = true
