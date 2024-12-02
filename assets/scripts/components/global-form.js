@@ -81,12 +81,6 @@ function globalFormInit (form, func_name, type) {
     this.value = this.value.replace(/\D+/g, '')
   })
 
-  input.addEventListener('input', updateHiddenInput)
-
-  function updateHiddenInput () {
-    inputHidden.value = iti.selectedCountryData.dialCode + input.value
-  }
-
   function resetError () {
     input.classList.remove("error")
   }
@@ -139,12 +133,16 @@ function globalFormInit (form, func_name, type) {
 
       if (isValid) {
         if (iti.selectedCountryData.dialCode === "7" && input.value.length > 10) {
-          inputHidden.value = iti.selectedCountryData.dialCode + inputHidden.value.substring(inputHidden.value.length - 10)
+          inputHidden.value = (iti.selectedCountryData.dialCode + input.value).substring(input.value.length - 10)
+        } else {
+          inputHidden.value = iti.selectedCountryData.dialCode + input.value
         }
         globalForm.submit()
         btnSubmit.disabled = true
-        location.assign(linkTo)
-        clearForm()
+        setTimeout(() => {
+          clearForm()
+          location.assign(linkTo)
+        }, 100)
       }
 
     } else {
