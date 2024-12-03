@@ -233,6 +233,7 @@ function globalFormInit (form, func_name, type) {
     if (iti.selectedCountryData.dialCode === "7" && input.value.length > 10) {
       inputHidden.value = input.value.substring(input.value.length - 10)
     }
+    inputHidden.value = iti.selectedCountryData.dialCode + inputHidden.value
   })
 
   function resetError () {
@@ -286,7 +287,6 @@ function globalFormInit (form, func_name, type) {
       }
 
       if (isValid) {
-        inputHidden.value = iti.selectedCountryData.dialCode + inputHidden.value
         globalForm.submit()
         btnSubmit.disabled = true
         setTimeout(() => {
