@@ -229,6 +229,10 @@ function globalFormInit (form, func_name, type) {
 
   input.addEventListener('input', function () {
     this.value = this.value.replace(/\D+/g, '')
+    inputHidden.value = input.value
+    if (iti.selectedCountryData.dialCode === "7" && input.value.length > 10) {
+      inputHidden.value = input.value.substring(input.value.length - 10)
+    }
   })
 
   function resetError () {
@@ -282,11 +286,7 @@ function globalFormInit (form, func_name, type) {
       }
 
       if (isValid) {
-        if (iti.selectedCountryData.dialCode === "7" && input.value.length > 10) {
-          inputHidden.value = (iti.selectedCountryData.dialCode + input.value).substring(input.value.length - 10)
-        } else {
-          inputHidden.value = iti.selectedCountryData.dialCode + input.value
-        }
+        inputHidden.value = iti.selectedCountryData.dialCode + inputHidden.value
         globalForm.submit()
         btnSubmit.disabled = true
         setTimeout(() => {
