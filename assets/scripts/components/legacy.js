@@ -91,11 +91,18 @@ $(function(){
   window.addEventListener('scroll', fixedHeader, { passive: true });
 
   function fixedHeader () {
-    if (window.pageYOffset > 200) {
+    if (window.pageYOffset > 20) {
       $('header').addClass('fixed');
     }
-    else if (window.pageYOffset < 100) {
+    else if (window.pageYOffset < 10) {
       $('header').removeClass('fixed');
+    }
+
+    if (window.pageYOffset > 200) {
+      $('header').addClass('fixed-height');
+    }
+    else if (window.pageYOffset < 100) {
+      $('header').removeClass('fixed-height');
     }
   }
 });

@@ -122,3 +122,108 @@ h2 {
   z-index: 10;
   top: 0;
 }
+
+.offer {
+  @include bgIcon('offer/offer_bg.png');
+  background-size: cover;
+  background-position: bottom center;
+  margin-top: -109px;
+  @include media(md) {
+    margin-top: -99px;
+    padding: 100px 0 160px;
+    @include bgIcon('offer/offer_bg_tablet.png');
+    background-size: cover;
+    background-position: bottom center;
+  }
+  @include media(sm) {
+    padding: 110px 0 160px;
+  }
+  @include media(xs) {
+    @include bgIcon('offer/offer_bg_mob.png');
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+
+.primary-offer {
+  padding: 195px 0 150px;
+  margin-bottom: 0;
+  margin-top: -109px;
+  @include media(md) {
+    margin-top: -99px;
+  }
+  @media (max-width: 1199px) {
+    padding: 65px 0 70px;
+    margin-bottom: 0;
+  }
+  &::after, &::before {
+    content: none;
+  }
+}
+
+.primary-ofr {
+  @include bgIcon('offer/primary-ofr_bg.png');
+  background-size: cover;
+  background-position: bottom center;
+  @include media(sm) {
+    @include bgIcon('offer/primary-ofr_bg_tablet.png');
+    background-size: cover;
+    background-position: bottom center;
+  }
+  @include media(xs) {
+    @include bgIcon('offer/primary-ofr_bg_mob.png');
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+
+.secondary-offer {
+  @include bgIcon('offer/primary-secondary_bg.png');
+  background-size: cover;
+  background-position: bottom center;
+  @include media(sm) {
+    @include bgIcon('offer/primary-secondary_bg_tablet.png');
+    background-size: cover;
+    background-position: bottom center;
+  }
+  @include media(xs) {
+    @include bgIcon('offer/primary-secondary_bg_mob.png');
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.hight-offer-block {
+  padding: 0;
+  background-color: transparent;
+  &::after, &::before {
+    content: none;
+    @media (max-width: 575px) {
+      content: none;
+    }
+  }
+  @include media(md) {
+    margin-top: -99px;
+  }
+  @media (max-width: 991px) {
+    padding-top: 130px;
+  }
+  @include bgIcon('offer/primary-high_bg.png');
+  background-size: cover;
+  background-position: bottom center;
+  @include media(sm) {
+    @include bgIcon('offer/primary-high_bg_tablet.png');
+    background-size: cover;
+    background-position: bottom center;
+  }
+  @include media(xs) {
+    @include bgIcon('offer/primary-high_bg_mob.png');
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+
+.hight-offer {
+  background-color: transparent;
+  padding: 100px 0 150px;
+}

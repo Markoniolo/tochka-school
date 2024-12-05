@@ -9,6 +9,88 @@
     @include bgIcon('discount/discount-bg_mob.svg');
     background-size: cover;
   }
+
+  &_new-year {
+    @include bgIcon('discount/discount-new-year-bg.svg');
+    background-size: cover;
+    @include media(md) {
+      @include bgIcon('discount/discount-new-year-bg_tablet.svg');
+      background-size: cover;
+    }
+    @include media(xs) {
+      @include bgIcon('discount/discount-new-year-bg_mob.svg');
+      background-size: cover;
+      padding: 3px 0 0;
+      text-align: center;
+    }
+
+    .discount__text {
+      @include media(md) {
+        margin-top: 0;
+        margin-bottom: -3px;
+        font-size: 20px;
+      }
+      @include media(xs) {
+        margin-top: 0;
+        font-size: 13px;
+      }
+    }
+
+    .discount__text, .discount__time {
+      color: $white;
+    }
+    .discount__time {
+      @include media(xs) {
+        font-size: 9px;
+      }
+    }
+    .discount__text-price {
+      color: #222222;
+      @include media(xs) {
+        display: block;
+        font-size: 13px;
+        margin: -5px 0 0;
+        &::before {
+          top: -1px;
+          right: -1px;
+          left: -1px;
+          bottom: -1px;
+        }
+      }
+      &_mobile {
+        @include media(xs) {
+          display: none;
+        }
+      }
+    }
+    .discount__box {
+      @include media(xs) {
+        display: block;
+      }
+    }
+    .discount__text-big {
+      @include media(lg) {
+        display: block;
+      }
+      @include media(md) {
+        text-align: center;
+      }
+      @include media(xs) {
+        font-size: 13px;
+      }
+    }
+    .discount__close {
+      @include media(xs) {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        margin: 0;
+        top: 20px;
+        right: 5px;
+        @include bgIcon('discount/ic_discount_close_mob.svg');
+      }
+    }
+  }
 }
 
 .discount__area {
