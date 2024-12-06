@@ -275,3 +275,10 @@ h2 {
     }
   }
 }
+
+.offer, .primary-ofr, .secondary-offer, .hight-offer-block {
+  margin-top: -80px;
+  @include media(md) {
+    margin-top: -60px;
+  }
+}
