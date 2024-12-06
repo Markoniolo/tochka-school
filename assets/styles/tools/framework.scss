@@ -130,6 +130,9 @@ h2 {
   header.white {
     background-color: white;
   }
+  header.fixed {
+    background-color: white;
+  }
   .offer {
     @include bgIcon('offer/offer_bg.png');
     background-size: cover;

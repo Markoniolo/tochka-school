@@ -13,7 +13,7 @@
   &_new-year {
     @include bgIcon('discount/discount-new-year-bg.svg');
     background-size: cover;
-    @include media(md) {
+    @include media(lg) {
       @include bgIcon('discount/discount-new-year-bg_tablet.svg');
       background-size: cover;
     }
@@ -25,7 +25,7 @@
     }
 
     .discount__text {
-      @include media(md) {
+      @include media(lg) {
         margin-top: 0;
         margin-bottom: -3px;
         font-size: 20px;
@@ -72,7 +72,7 @@
       @include media(lg) {
         display: block;
       }
-      @include media(md) {
+      @include media(lg) {
         text-align: center;
       }
       @include media(xs) {
@@ -100,7 +100,7 @@
   align-items: center;
   justify-content: space-between;
   min-height: 80px;
-  @include media(md) {
+  @include media(lg) {
     padding-right: 0;
     flex-direction: column;
     justify-content: center;
