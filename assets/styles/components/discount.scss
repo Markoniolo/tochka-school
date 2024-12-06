@@ -10,7 +10,7 @@
     background-size: cover;
   }
 
-  &_new-year {
+  &_new-year, &_new-year-no-promo {
     @include bgIcon('discount/discount-new-year-bg.svg');
     background-size: cover;
     @include media(lg) {
@@ -88,6 +88,65 @@
         top: 20px;
         right: 5px;
         @include bgIcon('discount/ic_discount_close_mob.svg');
+      }
+    }
+  }
+  &_new-year-no-promo {
+    @include media(xs) {
+      padding: 0;
+    }
+    .discount__area {
+      @include media(lg) {
+        flex-direction: row;
+      }
+      @include media(xs) {
+        flex-direction: column;
+      }
+    }
+    .discount__time {
+      font-weight: 500;
+      font-size: 13px;
+      color: #fff;
+      padding: 8px 11px;
+      border: 2px solid #fff;
+      border-radius: 4px;
+      background-color: transparent;
+      @include media(lg) {
+        padding: 6px 8px;
+      }
+      @include media(xs) {
+        margin-top: 7px;
+        padding: 4px 6px;
+      }
+    }
+    .discount__text {
+      @include media(lg) {
+        text-align: center;
+        font-size: 19px;
+      }
+      @include media(md) {
+        margin-right: 20px;
+      }
+      @include media(xs) {
+        margin-right: 0;
+      }
+    }
+    .discount__text-hide-mob {
+      @include media(xs) {
+        display: none;
+      }
+    }
+    .discount__text-price {
+      @include media(lg) {
+        display: block;
+      }
+      @include media(xs) {
+        margin-top: -2px;
+      }
+      &_mobile {
+        @include media(lg) {
+          display: none;
+        }
       }
     }
   }
