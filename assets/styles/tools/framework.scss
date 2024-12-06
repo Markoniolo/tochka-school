@@ -134,14 +134,14 @@ h2 {
     background-color: white;
   }
   .offer {
-    @include bgIcon('offer/offer_bg.png');
+    @include bgIcon('offer/offer_bg.webp');
     background-size: cover;
     background-position: bottom center;
-    margin-top: -109px;
+    margin-top: -111px;
     @include media(md) {
-      margin-top: -99px;
+      margin-top: -101px;
       padding: 100px 0 160px;
-      @include bgIcon('offer/offer_bg_tablet.png');
+      @include bgIcon('offer/offer_bg_tablet.webp');
       background-size: cover;
       background-position: bottom center;
     }
@@ -149,9 +149,12 @@ h2 {
       padding: 110px 0 160px;
     }
     @include media(xs) {
-      @include bgIcon('offer/offer_bg_mob.png');
+      @include bgIcon('offer/offer_bg_mob.webp');
       background-size: cover;
       background-position: bottom center;
+    }
+    @media (max-width: 575px) {
+      padding-bottom: 30px;
     }
   }
 
@@ -172,32 +175,32 @@ h2 {
   }
 
   .primary-ofr {
-    @include bgIcon('offer/primary-ofr_bg.png');
+    @include bgIcon('offer/primary-ofr_bg.webp');
     background-size: cover;
     background-position: bottom center;
     @include media(sm) {
-      @include bgIcon('offer/primary-ofr_bg_tablet.png');
+      @include bgIcon('offer/primary-ofr_bg_tablet.webp');
       background-size: cover;
       background-position: bottom center;
     }
     @include media(xs) {
-      @include bgIcon('offer/primary-ofr_bg_mob.png');
+      @include bgIcon('offer/primary-ofr_bg_mob.webp');
       background-size: cover;
       background-position: bottom center;
     }
   }
 
   .secondary-offer {
-    @include bgIcon('offer/primary-secondary_bg.png');
+    @include bgIcon('offer/primary-secondary_bg.webp');
     background-size: cover;
     background-position: bottom center;
     @include media(sm) {
-      @include bgIcon('offer/primary-secondary_bg_tablet.png');
+      @include bgIcon('offer/primary-secondary_bg_tablet.webp');
       background-size: cover;
       background-position: bottom center;
     }
     @include media(xs) {
-      @include bgIcon('offer/primary-secondary_bg_mob.png');
+      @include bgIcon('offer/primary-secondary_bg_mob.webp');
       background-size: cover;
       background-position: center center;
     }
@@ -218,16 +221,16 @@ h2 {
     @media (max-width: 991px) {
       padding-top: 130px;
     }
-    @include bgIcon('offer/primary-high_bg.png');
+    @include bgIcon('offer/primary-high_bg.webp');
     background-size: cover;
     background-position: bottom center;
     @include media(sm) {
-      @include bgIcon('offer/primary-high_bg_tablet.png');
+      @include bgIcon('offer/primary-high_bg_tablet.webp');
       background-size: cover;
       background-position: bottom center;
     }
     @include media(xs) {
-      @include bgIcon('offer/primary-high_bg_mob.png');
+      @include bgIcon('offer/primary-high_bg_mob.webp');
       background-size: cover;
       background-position: bottom center;
     }
