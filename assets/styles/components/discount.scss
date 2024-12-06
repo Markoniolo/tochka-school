@@ -1,7 +1,7 @@
 .discount {
   @include bgIcon('discount/discount-bg.svg');
   background-size: cover;
-  @include media(md) {
+  @include media(lg) {
     @include bgIcon('discount/discount-bg_tablet.svg');
     background-size: cover;
   }
