@@ -1,6 +1,6 @@
 mixin price(mod, title='Начните обучение на экстернате')
   if mod !== 'teacher'
-    section#block1.price.price-icon(class = mod ? mod : false)
+    section#block1.price.price-icon(class = mod ? mod : false data-btn-fixed-hide="true")
       .container
         h2= title
         .row.price-row
@@ -77,7 +77,7 @@ mixin price(mod, title='Начните обучение на экстернат�
                   span.new-price 143 280 ₽
               a.btn.btn-warning.btn-go(href='#') Начать обучение
   else
-    section#block1.price.price-icon(class = mod ? `price_${mod}` : false)
+    section#block1.price.price-icon(class = mod ? `price_${mod}` : false data-btn-fixed-hide="true")
       .container
         h2 Стоимость курса
         .row.price-row

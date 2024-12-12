@@ -269,8 +269,6 @@
   @include media(md) {
     position: static;
     transform: none;
-    width: 20px;
-    height: 20px;
     flex-shrink: 0;
     margin-left: 12px;
   }

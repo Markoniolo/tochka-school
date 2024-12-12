@@ -431,7 +431,7 @@
   }
 
 mixin cost(mod, dataName, checkbox)
-  .cost(class = mod ? `cost_${mod}` : false)
+  .cost(class = mod ? `cost_${mod}` : false data-btn-fixed-hide="true")
     .container
       h2.cost__caption= title
       .cost__area

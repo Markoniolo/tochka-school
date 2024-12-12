@@ -7,7 +7,7 @@
   ]
 
 mixin routes(mod)
-  .routes(class = mod ? `routes_${mod}` : false)
+  .routes(class = mod ? `routes_${mod}` : false data-btn-fixed-hide="true")
     .container
       h2.routes__title Выберите направление
       .routes__area
