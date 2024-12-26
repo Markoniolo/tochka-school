@@ -1583,7 +1583,7 @@ Styles for Classes
   overflow: hidden;
 }
 
-.classes-teacher-image img {
+.classes-teacher img {
   width: 183px;
   height: 250px;
   object-fit: cover;
@@ -3294,7 +3294,7 @@ Styles for Adaptive
   .classes-teacher-body {margin-bottom: 25px;}
   .classes-teacher-header {display: flex; gap: 15px; align-items: center;}
   .classes-teacher-image {width: 100px; min-width: 100px; height: 100px; justify-content: center;}
-  .classes-teacher-image img {width: 100px; height: 100px; object-fit: contain;}
+  .classes-teacher img {width: 100px; height: 100px; object-fit: contain;}
   .classes-teacher-info .btn {width: 100%;}
   .classes-teacher-header p {max-width: 70%;}
   .classes-teacher-header span {margin-bottom: 15px;}
