@@ -760,7 +760,7 @@ $(document).ready(function(){
 
 
 // Навигация по разделу
-  $('.classes-block .navigation-btn, .classes-block .nav-link').click(function () {
+  $('.navigation-btn, .nav-link').click(function () {
     var button = $('.navigation-btn');
     if (button.text() === 'Навигация по разделу') {
       button.text('Закрыть навигацию');
