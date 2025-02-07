@@ -36,6 +36,16 @@
       .cost__title {
         background: rgba(145,217,147,.5);
       }
+      .cost__item {
+        &::before {
+          @include bgIcon('icons/check_green-dark.svg')
+        }
+        &_minus {
+          &::before {
+            @include bgIcon('icons/check-not.svg')
+          }
+        }
+      }
     }
     .cost__title {
       background: #e7f9e8;
@@ -43,6 +53,11 @@
     .cost__item {
       &::before {
         @include bgIcon('icons/check_green.svg')
+      }
+      &_minus {
+        &::before {
+          @include bgIcon('icons/check-not.svg')
+        }
       }
     }
     .cost__bottom {
