@@ -2,21 +2,30 @@
   position: relative;
   background: #3b414f;
   color: #FFFFFF;
-  padding: 70px 0 40px;
+  padding: 80px 0 40px;
   font-size: 15px;
-  @include media(xs) {
+  @include media(md) {
+    padding: 40px 0 94px;
+  }
+  @media (max-width: 743px) {
     text-align: center;
-    padding: 40px 0 70px;
+    padding: 50px 0 54px;
   }
   a {
     color: #FFFFFF;
+  }
+  .container {
+    position: relative;
+    @media (max-width: 768px) {
+      max-width: 670px;
+    }
   }
 }
 
 .footer__area {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 34px;
+  padding-bottom: 140px;
   margin-bottom: 36px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   @include media(md) {
@@ -25,8 +34,10 @@
     align-items: flex-end;
     border: none;
     min-height: 464px;
+    padding-bottom: 0;
+    margin-bottom: 8px;
   }
-  @include media(xs) {
+  @media (max-width: 743px) {
     padding-bottom: 0;
     min-height: auto;
   }
@@ -42,7 +53,7 @@
       left: 0;
       max-width: 262px;
     }
-    @include media(xs) {
+    @media (max-width: 743px) {
       position: static;
       max-width: 100%;
       display: flex;
@@ -52,24 +63,25 @@
     }
   }
   &:nth-child(2) {
-    max-width: 212px;
+    max-width: 265px;
     width: 100%;
     @include media(md) {
       max-width: 262px;
       border-top: 1px solid rgba(255, 255, 255, 0.07);
-      padding-top: 16px;
-      padding-bottom: 16px;
+      padding-top: 14px;
+      padding-bottom: 14px;
     }
-    @include media(xs) {
+    @media (max-width: 743px) {
       max-width: 100%;
     }
     .footer__title {
       @include media(md) {
         display: flex;
         align-items: center;
+        justify-content: center;
         &::after {
           content: "";
-          margin-left: 10px;
+          margin-left: 6px;
           background: url(../img/footer/ic-arrow-down.svg) no-repeat;
           width: 8px;
           flex-shrink: 0;
@@ -77,7 +89,7 @@
           transition: transform .3s;
         }
       }
-      @include media(xs) {
+      @media (max-width: 743px) {
         justify-content: center;
       }
     }
@@ -87,22 +99,23 @@
     width: 100%;
     @include media(md) {
       max-width: 262px;
-      padding-top: 16px;
-      padding-bottom: 16px;
+      padding-top: 14px;
+      padding-bottom: 14px;
       border-top: 1px solid rgba(255, 255, 255, 0.07);
       border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     }
-    @include media(xs) {
+    @media (max-width: 743px) {
       max-width: 100%;
-      margin-bottom: 35px;
+      margin-bottom: 6px;
     }
     .footer__title {
       @include media(md) {
         display: flex;
         align-items: center;
+        justify-content: center;
         &::after {
           content: "";
-          margin-left: 10px;
+          margin-left: 6px;
           background: url(../img/footer/ic-arrow-down.svg) no-repeat;
           width: 8px;
           flex-shrink: 0;
@@ -110,7 +123,7 @@
           transition: transform .3s;
         }
       }
-      @include media(xs) {
+      @media (max-width: 743px) {
         justify-content: center;
       }
     }
@@ -118,7 +131,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 54px;
+  margin-bottom: 45px;
   width: 187px;
   height: 80px;
   display: inline-block;
@@ -127,7 +140,7 @@
     width: 162px;
     height: 69px;
   }
-  @include media(xs) {
+  @media (max-width: 743px) {
     position: absolute;
     top: 0;
     left: 50%;
@@ -146,11 +159,13 @@ a.footer__lk {
   display: none;
   @include media(md) {
     display: inline-flex;
-    margin-bottom: 50px;
+    margin-bottom: 44px;
     align-items: center;
+    justify-content: center;
     color: #000;
-    padding: 12px 33px;
-    border-radius: 4px;
+    border-radius: 10px;
+    padding: 12px 37px;
+    font-size: 14px;
     &::after {
       content: "";
       background: url(../img/icons/lk.svg) no-repeat;
@@ -160,22 +175,31 @@ a.footer__lk {
       margin-left: 10px;
     }
   }
-  @include media(xs) {
-    margin-bottom: 35px;
+  @media (max-width: 743px) {
+    margin-bottom: 24px;
+    max-width: 241px;
+    width: 100%;
   }
 }
 
 .footer__text {
+  font-size: 15px;
+  line-height: 160%;
+  @media (max-width: 743px) {
+    max-width: 246px;
+    font-size: 14px;
+    line-height: 171%;
+  }
   &:first-of-type {
-    margin-bottom: 46px;
-    @include media(xs) {
-      margin-bottom: 35px;
+    margin-bottom: 38px;
+    @media (max-width: 743px) {
+      margin-bottom: 22px;
     }
   }
 }
 
 .footer__title {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-weight: 500;
   font-size: 22px;
   line-height: 101%;
@@ -198,7 +222,7 @@ a.footer__lk {
 .footer__list {
   display: flex;
   flex-direction: column;
-  gap: 10px 0;
+  gap: 8px 0;
   @include media(md) {
     display: none;
     margin-top: 16px;
@@ -208,20 +232,44 @@ a.footer__lk {
 .footer__link {
   @include media(md) {
     font-size: 14px;
+    text-align: center;
+  }
+}
+
+.footer__blog {
+  margin-top: 28px;
+  min-width: 139px;
+  @include media(md) {
+    display: none;
+  }
+  &_mob {
+    display: none;
+    @include media(md) {
+      display: block;
+      margin-top: 18px;
+      width: 100%;
+      max-width: 262px;
+    }
+    @media (max-width: 743px) {
+      margin: 20px auto 22px;
+      max-width: 241px;
+    }
   }
 }
 
 .footer__contacts {
-  max-width: 281px;
+  margin-right: 40px;
+  max-width: 241px;
   width: 100%;
   @include media(md) {
+    margin-right: 0;
     max-width: 262px;
-    margin-top: 40px;
+    margin-top: 26px;
   }
-  @include media(xs) {
+  @media (max-width: 743px) {
     order: -1;
     max-width: 100%;
-    margin-top: 100px;
+    margin-top: 90px;
     margin-bottom: 35px;
   }
   .footer__title {
@@ -232,19 +280,20 @@ a.footer__lk {
 }
 
 .footer__contacts-box {
-  margin-bottom: 50px;
+  margin-bottom: 22px;
   display: flex;
   flex-direction: column;
   @include media(md) {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
-  @include media(xs) {
-    margin-bottom: 35px;
+  @media (max-width: 743px) {
+    max-width: 241px;
+    margin: 0 auto 28px;
   }
 }
 
 .footer__phone {
-  margin-bottom: 7px;
+  margin-bottom: 2px;
   font-weight: 600;
   font-size: 24px;
 }
@@ -257,22 +306,14 @@ a.footer__lk {
 }
 
 .footer__whatsapp {
-  margin-bottom: 16px;
+  margin-bottom: 25px;
   display: flex;
   align-items: center;
   @include media(md) {
-    font-size: 17px;
+    font-size: 14px;
   }
-  @include media(xs) {
+  @media (max-width: 743px) {
     justify-content: center;
-  }
-  &::before {
-    content: "";
-    background: url(../img/icons/whatsapp.svg) no-repeat;
-    width: 25px;
-    flex-shrink: 0;
-    height: 25px;
-    margin-right: 10px;
   }
 }
 
@@ -287,13 +328,22 @@ a.footer__lk {
 }
 
 .footer__headline {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+  @include media(md) {
+    margin-bottom: 12px;
+  }
+  @media (max-width: 743px) {
+    margin-top: -10px;
+  }
 }
 
 .footer__social-list {
   display: flex;
   gap: 0 15px;
-  @include media(xs) {
+  @include media(md) {
+    gap: 0 20px;
+  }
+  @media (max-width: 743px) {
     justify-content: center;
   }
 }
@@ -303,8 +353,12 @@ a.footer__lk {
 }
 
 .footer__social-icon {
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
+  @include media(md) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .footer__bottom {
@@ -312,7 +366,14 @@ a.footer__lk {
   align-items: center;
   justify-content: space-between;
   @include media(md) {
+    margin-top: 28px;
     flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  @media (max-width: 743px) {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -326,11 +387,16 @@ a.footer__lk {
   align-items: center;
   @include media(md) {
     margin-bottom: 50px;
+    position: absolute;
+    top: 438px;
+    left: 12px;
   }
-  @include media(xs) {
-    max-width: 100%;
+  @media (max-width: 743px) {
     justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    position: static;
+    max-width: 235px;
+    font-size: 14px;
   }
   &::before {
     content: '';
@@ -339,17 +405,25 @@ a.footer__lk {
     height: 48px;
     margin-right: 15px;
     background-image: url(../img/footer/footer-organization.png);
-    @include media(xs) {
+    @media (max-width: 743px) {
       content: none;
     }
   }
 }
 
 .footer__license {
+  position: relative;
+  left: -100px;
   color: rgba(255, 255, 255, 0.5);
   @include media(md) {
+    position: absolute;
+    left: 12px;
+    top: 534px;
     width: 100%;
     order: 1;
+  }
+  @media (max-width: 743px) {
+    position: static;
   }
 }
 
@@ -357,9 +431,9 @@ a.footer__lk {
   @include media(md) {
     margin-right: 185px;
   }
-  @include media(xs) {
+  @media (max-width: 743px) {
     order: -1;
-    margin: 0 auto 35px;
+    margin: 0 auto 30px;
   }
 }
 

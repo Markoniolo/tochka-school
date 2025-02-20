@@ -3,49 +3,61 @@ header.fix
     .header-block.d-flex.align-items-center.justify-content-between
       .logo.d-flex.align-items-center.justify-content-between
         div
-          img.logo-image(src=staticImg('icons/logo_new_year.svg') alt='Точка знаний')
-        .slogan &Ocy;&ncy;&lcy;&acy;&jcy;&ncy;-&shcy;&kcy;&ocy;&lcy;&acy;
+          img.logo-image(src=staticImg('logo_new.svg') alt='Точка знаний')
+        .slogan Онлайн-школа
       nav.d-flex.align-items-center
-        button.mobile-nav.d-flex.align-items-center &Mcy;&iecy;&ncy;&yucy;
+        button.mobile-nav.d-flex.align-items-center Меню
         ul.list-unstyled
           li
-            a(href='index.html') &Gcy;&lcy;&acy;&vcy;&ncy;&acy;&yacy;
+            a(href='index.html') Главная
           li
-            a.anchor(href='#Reviews') &Ocy;&tcy;&zcy;&ycy;&vcy;&ycy;
+            a.anchor(href='#Reviews') Отзывы
           li
             a(href='#') Курсы для учителей
       .lk
-        a.btn.btn-warning.d-flex.align-items-center(href='#') &Lcy;&icy;&chcy;&ncy;&ycy;&jcy; &kcy;&acy;&bcy;&icy;&ncy;&iecy;&tcy;
+        a.btn.btn-warning.d-flex.align-items-center(href='#') Личный кабинет
     .nav-block
       .nav-school
         ul.list-unstyled
           li
             a(href='nachalnaya_shkola.html')
-              | &Ncy;&acy;&chcy;&acy;&lcy;&softcy;&ncy;&acy;&yacy; &shcy;&kcy;&ocy;&lcy;&acy;
-              span 1-4 &kcy;&lcy;&acy;&scy;&scy;
+              | Начальная школа
+              span 1-4 класс
           li
             a(href='srednyaya_shkola.html')
-              | &Scy;&rcy;&iecy;&dcy;&ncy;&yacy;&yacy; &shcy;&kcy;&ocy;&lcy;&acy;
-              span 5-8 &kcy;&lcy;&acy;&scy;&scy;
+              | Средняя школа
+              span 5-8 класс
           li
             a(href='starshaya_shkola.html')
-              | &Scy;&tcy;&acy;&rcy;&shcy;&acy;&yacy; &shcy;&kcy;&ocy;&lcy;&acy;
-              span 9-11 &kcy;&lcy;&acy;&scy;&scy;
+              | Старшая школа
+              span 9-11 класс
           li
             a(href='#')
-              | Курсы для учителей
+              | Курс для учителя
+          li
+            a(href='#')
+              | Предзапись на учебный год 25/26
+          li
+            a(href='#')
+              | Наш блог
       .nav-consult
-        span &Ncy;&ucy;&zhcy;&ncy;&acy; &kcy;&ocy;&ncy;&scy;&ucy;&lcy;&softcy;&tcy;&acy;&tscy;&icy;&yacy;?
-        p &Ncy;&acy;&pcy;&icy;&shcy;&icy;&tcy;&iecy; &ncy;&acy;&mcy; &vcy; &Tcy;&iecy;&lcy;&iecy;&gcy;&rcy;&acy;&mcy;. &Ocy;&tcy;&vcy;&iecy;&tcy;&icy;&mcy; &ncy;&acy; &vcy;&scy;&iecy; &vcy;&ocy;&pcy;&rcy;&ocy;&scy;&ycy; &icy; &pcy;&ocy;&mcy;&ocy;&zhcy;&iecy;&mcy; &vcy; &vcy;&ycy;&bcy;&ocy;&rcy;&iecy;.
+        span Нужна консультация?
+        p Оставьте заявку. Ответим на все вопросы и&nbsp;поможем в выборе.
         if VIEW === 'course-teacher'
           a.btn.btn-warning(href='#modal-order-teacher' data-fancybox data-options='{"touch": false}') Оставить заявку
         else
           a.btn.btn-warning(href='#modal-order' data-fancybox data-options='{"touch": false}') Оставить заявку
-        a.btn-wp(href='https://wa.me/79182172497' target="_blank") Связаться в WhatsApp
+        .nav-contact.nav-contact_mob
+          div
+            a.nav-tel(href='tel:88003503268') 8 800 350 32 68
+            span Звонок по России бесплатный
+          div.nav-box
+            a.link-wp(href='https://wa.me/79182172497' target="_blank") Написать в WhatsApp
+            a.nav-email(href='mailto:tochka-school@yandex.ru') tochka-school@yandex.ru
       .nav-contact
         div
           a.nav-tel(href='tel:88003503268') 8 800 350 32 68
-          span &Zcy;&vcy;&ocy;&ncy;&ocy;&kcy; &pcy;&ocy; &Rcy;&ocy;&scy;&scy;&icy;&icy; &bcy;&iecy;&scy;&pcy;&lcy;&acy;&tcy;&ncy;&ycy;&jcy;
+          span Звонок по России бесплатный
         div.nav-box
-          a.whatsapp(href='https://wa.me/79182172497') 8 (918) 217-24-97
-          a.nav-email(href='mailto:school-matematik-andrei@yandex.ru') school-matematik-andrei@yandex.ru
+          a.link-wp(href='https://wa.me/79182172497' target="_blank") Написать в WhatsApp
+          a.nav-email(href='mailto:tochka-school@yandex.ru') tochka-school@yandex.ru

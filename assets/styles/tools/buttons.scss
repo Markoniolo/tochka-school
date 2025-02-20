@@ -91,3 +91,28 @@
     background: url(../img/icons/ic_whatsapp_white.svg) center / contain no-repeat;
   }
 }
+
+.btn-border {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  text-align: center;
+  display: inline-block;
+  &_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      content: '';
+      @include bgIcon('icons/ic_arrow_btn_right_white.svg');
+      width: 11px;
+      height: 8px;
+      flex-shrink: 0;
+      margin-left: 10px;
+    }
+  }
+}

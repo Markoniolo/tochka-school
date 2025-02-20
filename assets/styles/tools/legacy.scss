@@ -103,8 +103,7 @@ header.active {
 header .nav-block {
   display: none;
   border-top: 1px solid rgba(0, 0, 0, 0.10);
-  padding-top: 35px;
-  padding: 35px 0 30px 160px;
+  padding: 35px 0 18px 32px;
 }
 
 header.active .nav-block {
@@ -114,7 +113,7 @@ header.active .nav-block {
 }
 
 header .nav-block > div {
-  width: 30%;
+  width: 28%;
 }
 
 .nav-school {margin-top: -20px;}
@@ -141,6 +140,7 @@ header .nav-block > div {
 }
 
 .nav-school li span {
+  margin-right: 10px;
   color: rgba(34, 34, 34, 0.50);
   font-weight: 400;
 }
@@ -154,21 +154,17 @@ header .nav-block > div.nav-consult {
   flex-direction: column;
   gap: 15px;
   border-left: 1px solid rgba(0, 0, 0, 0.07);
-  border-right: 1px solid rgba(0, 0, 0, 0.07);
-  padding: 0 70px 0 75px;
+  padding: 0 70px 0 58px;
   width: 36%;
-  margin-left: 5%;
+  margin-left: 0;
 }
 
 .nav-consult .btn-warning, .nav-consult .btn-wp {
   padding: 12px 20px;
-  max-width: 244px;
+  max-width: 218px;
   width: 100%;
   font-size: 13px;
   line-height: normal;
-  @include media(xs) {
-    max-width: 100%;
-  }
 }
 
 .nav-consult .btn-wp {
@@ -210,7 +206,10 @@ header .nav-block > div.nav-consult {
   color: #222;
   font-size: 19px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  @media (max-width: 1399px) {
+    margin-bottom: 2px;
+  }
 }
 
 .nav-box {
@@ -222,13 +221,35 @@ header .nav-block > div.nav-consult {
 header .nav-block > div.nav-contact {
   width: 28%;
   padding-left: 70px;
+  border-left: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.nav-contact {
+  &_mob {
+    display: none !important;
+    @media (max-width: 1399px) {
+      display: block !important;
+      margin-top: 6px;
+      div:first-of-type {
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  .link-wp {
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .nav-contact span {
   display: block;
   color: rgba(34, 34, 34, 0.40);
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 46px;
 }
 
 .nav-contact .whatsapp {
@@ -249,10 +270,13 @@ header .nav-block > div.nav-contact {
   color: #222;
   font-size: 14px;
   line-height: 1.7;
+  @include media(xs) {
+    text-decoration: underline;
+  }
 }
 
 header .lk {margin-left: auto;}
-header .lk a {padding: 15px 24px;}
+header .lk a {padding: 17px 45px;}
 
 
 /*
@@ -3090,13 +3114,19 @@ Styles for Adaptive
 }
 
 @media (max-width: 1399px) {
+  header.active .nav-block {
+    padding-bottom: 20px;
+  }
+  .nav-school li {
+    margin: 4px 0;
+  }
   .about-blk:nth-child(2) .about-image {
     margin-left: auto;
   }
   header .nav-block {padding-left: 0; padding-bottom: 0;}
   header .nav-block > div.nav-consult {width: 50%; border-right: 0;
     padding-bottom: 20px;}
-  header .nav-block > div.nav-contact {width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.07); display: flex; justify-content: space-between; padding-bottom: 0;}
+  header .nav-block > div.nav-contact {width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.07); display: none; justify-content: space-between; padding-bottom: 0;}
   header .nav-block > div.nav-contact > div {width: 50%; padding: 26px 10px;}
   header .nav-block > div.nav-contact > div:last-child {padding: 26px 50px;}
   header .nav-block > div.nav-school {padding-left: 70px; width: 45%;}
@@ -3559,9 +3589,9 @@ Styles for Adaptive
   header .nav-block {padding-top: 20px;}
   header .nav-block > div.nav-consult {padding: 0 0 0 70px;}
   .nav-school {margin-top: -10px;}
-  .nav-school li a {padding: 11px 0;}
-  header .nav-block > div.nav-school {width: 49%;}
-  header .nav-block > div.nav-consult {padding: 0 0 0 35px; width: 45%;}
+  .nav-school li a {padding: 11px 13px;}
+  header .nav-block > div.nav-school {width: 50%;}
+  header .nav-block > div.nav-consult {padding: 0 0 0 7px; width: 45%; border: none}
   .learn-info {padding: 15px; width: 85%;}
   .learn {padding-top: 100px;}
   .learn-image {margin-left: -40px; z-index: 2; margin-right: -20px;}
@@ -3627,6 +3657,15 @@ Styles for Adaptive
 }
 
 @media (max-width: 767px) {
+  header.fix.active {
+    padding-bottom: 70px;
+  }
+  body.lock header .container {
+    max-width: 100%;
+  }
+  .nav-consult .btn-warning, .nav-consult .btn-wp {
+    margin: 10px auto 0;
+  }
   .about-blk:nth-child(2) .about-image {
     margin: -15px 60px -20px 0;
   }
@@ -3653,7 +3692,7 @@ Styles for Adaptive
   header .nav-block > div.nav-consult {border: none; padding: 0; text-align: center; gap: 20px; width: 70%; margin: 30px auto 0; }
   header .nav-block > div.nav-contact {border: none; flex-direction: column;}
   header .nav-block > div.nav-contact > div, header .nav-block > div.nav-contact > div:last-child {width: 100%; padding: 0; text-align: center;}
-  .nav-contact {margin: 40px 0;}
+  .nav-contact {margin: 30px 0;}
   .nav-contact span {margin-bottom: 20px;}
   .nav-contact .whatsapp {justify-content: center;}
   header.active .nav-block {padding-top: 0;}
@@ -3817,6 +3856,10 @@ Styles for Adaptive
   .error-content .btn-arw {padding: 14px 28px;}
   .page-error .page-end-content {padding: 70px 0;}
   .video-wrapper iframe {height: 350px;}
+  .nav-consult p {
+    max-width: 240px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 575px) {
@@ -3995,7 +4038,7 @@ Styles for Adaptive
   .footer-requisites p:not(:last-child) {margin-bottom: 26px;}
   .footer-company p {line-height: 1.7; max-width: 100%;}
   .footer-company p:not(:last-child) {margin-bottom: 0;}
-  .nav-school li a {padding: 11px 13px;}
+  .nav-school li a {padding: 11px 12px;}
   .primary-ofr span.offer-class {display: none;}
   .hight-offer {padding: 30px 0; height: calc(100% + 30px);}
   .primary-offer .breadcrumb-block ol {padding: 0 0 15px;}
