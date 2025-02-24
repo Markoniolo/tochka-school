@@ -10,10 +10,6 @@
     background-size: cover;
   }
 
-  & ~ header.active {
-    top: 80px;
-  }
-
   &_new-year, &_new-year-no-promo {
     @include bgIcon('discount/discount-new-year-bg.svg');
     background-size: cover;
