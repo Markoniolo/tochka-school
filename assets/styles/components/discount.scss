@@ -11,9 +11,7 @@
   }
 
   & ~ header.active {
-    @include media(xs) {
-      padding-bottom: 80px;
-    }
+    top: 80px;
   }
 
   &_new-year, &_new-year-no-promo {
