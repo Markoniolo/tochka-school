@@ -1,20 +1,21 @@
 .predzaps-informer {
   border-radius: 10px;
   @include bgIcon('predzaps-informer/predzaps-informer-bg.svg');
-  max-width: 457px;
-  margin: 25px auto 0;
+  max-width: 514px;
+  margin: 32px auto -18px;
   padding: 20px 20px 12px;
-  min-height: 99px;
+  min-height: 146px;
   @include media(md) {
-    margin: 25px auto 10px;
-  }
-  @include media(xs) {
+    margin: 18px auto -5px;
     @include bgIcon('predzaps-informer/predzaps-informer-bg-mob.svg');
     background-size: cover;
-    min-height: 134px;
+    min-height: 129px;
     padding: 15px;
     max-width: 363px;
-    margin: 25px auto -8px;
+  }
+  @include media(xs) {
+    margin: 20px auto 39px;
+    background-position: bottom right;
   }
 }
 
@@ -27,27 +28,31 @@
 }
 
 .predzaps-informer__area {
-  display: flex;
-  align-items: center;
-  @include media(xs) {
-    display: block;
-  }
+
 }
 
 .predzaps-informer__text {
   font-weight: 500;
   font-size: 14px;
-  line-height: 144%;
+  line-height: 120%;
   color: #222;
+  @include media(md) {
+    font-size: 13px;
+    line-height: 136%;
+  }
   span {
     display: inline-block;
-    margin-left: 4px;
+    margin-left: 0;
+    margin-right: 4px;
     font-weight: 500;
     font-size: 14px;
-    line-height: 144%;
+    line-height: 120%;
     color: #222;
     position: relative;
     z-index: 1;
+    @include media(md) {
+      font-size: 13px;
+    }
     &::before {
       content: '';
       border-radius: 5px;
@@ -60,11 +65,25 @@
       right: -4px;
     }
   }
+  b {
+    font-weight: 500;
+    @include media(md) {
+      display: none;
+    }
+  }
+  i {
+    display: none;
+    @include media(md) {
+      display: inline;
+      font-style: unset;
+      font-weight: 500;
+    }
+  }
 }
 
 .predzaps-informer__button {
   display: inline-block;
-  margin-left: 14px;
+  margin-top: 21px;
   border: 1px solid #222;
   border-radius: 41px;
   font-weight: 500;
@@ -72,9 +91,9 @@
   line-height: 12px;
   color: #222;
   padding: 6px 18px 8px;
-  @include media(xs) {
-    margin-left: 0;
-    margin-top: 9px;
+  @include media(md) {
+    margin-top: 14px;
+    min-width: 118px;
     display: inline-flex;
     align-items: center;
     &::after {
