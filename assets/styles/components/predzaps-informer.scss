@@ -1,30 +1,37 @@
 .predzaps-informer {
   border-radius: 10px;
   @include bgIcon('predzaps-informer/predzaps-informer-bg.svg');
-  max-width: 514px;
-  margin: 32px auto -18px;
+  max-width: 543px;
+  margin: 32px auto -4px;
   padding: 20px 20px 12px;
-  min-height: 146px;
+  min-height: 215px;
   @include media(md) {
-    margin: 18px auto -5px;
-    @include bgIcon('predzaps-informer/predzaps-informer-bg-mob.svg');
+    margin: 24px auto -12px;
+    @include bgIcon('predzaps-informer/predzaps-informer-bg_tablet.svg');
     background-size: cover;
-    min-height: 129px;
-    padding: 15px;
-    max-width: 363px;
+    background-position: center right;
+    padding: 15px 20px;
+    min-height: 127px;
+    width: 100%;
+    max-width: 100%;
   }
   @include media(xs) {
-    margin: 20px auto 39px;
-    background-position: bottom right;
+    margin: 20px auto -14px;
+    min-height: 141px;
+    padding: 15px 14px;
+    @include bgIcon('predzaps-informer/predzaps-informer-bg_mob.svg');
   }
 }
 
 .predzaps-informer__title {
   margin-bottom: 8px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 26px;
   line-height: 103%;
   color: #222;
+  @include media(md) {
+    font-size: 18px;
+  }
 }
 
 .predzaps-informer__area {
@@ -32,37 +39,48 @@
 }
 
 .predzaps-informer__text {
+  max-width: 326px;
+  width: 100%;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 120%;
+  font-size: 20px;
+  line-height: 132%;
   color: #222;
   @include media(md) {
+    max-width: 100%;
     font-size: 13px;
     line-height: 136%;
   }
   span {
-    display: inline-block;
+    display: inline;
     margin-left: 0;
     margin-right: 4px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 120%;
+    font-size: 20px;
+    line-height: 132%;
     color: #222;
     position: relative;
     z-index: 1;
     @include media(md) {
       font-size: 13px;
+      display: inline-block;
+      margin-left: 2px;
+      margin-right: 3px;
+    }
+    @include media(xs) {
+      margin-left: 0;
     }
     &::before {
-      content: '';
-      border-radius: 5px;
-      background: #d5fbd7;
-      position: absolute;
-      z-index: -2;
-      top: 2px;
-      left: -4px;
-      bottom: 0;
-      right: -4px;
+      @include media(md) {
+        content: '';
+        border-radius: 5px;
+        background: #d5fbd7;
+        position: absolute;
+        z-index: -2;
+        top: 2px;
+        left: -4px;
+        bottom: 0;
+        right: -4px;
+      }
     }
   }
   b {
@@ -82,27 +100,34 @@
 }
 
 .predzaps-informer__button {
-  display: inline-block;
-  margin-top: 21px;
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
   border: 1px solid #222;
   border-radius: 41px;
   font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 15px;
   color: #222;
-  padding: 6px 18px 8px;
+  padding: 14px 30px 14px;
   @include media(md) {
     margin-top: 14px;
     min-width: 118px;
-    display: inline-flex;
-    align-items: center;
-    &::after {
-      content: '';
-      @include bgIcon('icons/ic_arrow_btn_right_black.svg');
-      width: 9px;
-      height: 7px;
-      flex-shrink: 0;
-      margin-left: 8px;
+    padding: 9px 21px;
+  }
+  @include media(xs) {
+    margin-top: 16px;
+  }
+  &::after {
+    content: '';
+    @include bgIcon('icons/ic_arrow_btn_right_black.svg');
+    width: 14px;
+    height: 8px;
+    flex-shrink: 0;
+    margin-left: 9px;
+    @include media(md) {
+      width: 11px;
+      height: 8px;
     }
   }
 }
